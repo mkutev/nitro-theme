@@ -68,7 +68,7 @@
                                     {% endif %}
                                     
                                     {% if collection.image %}
-                                      {{ collection.image.aspect_ratio }}
+                                      {{ collection.image.aspect_ratio | round 2}}
                                       <img src="{{ collection.image.src | image_url: width: 135 }}" alt="{{ collection.title | escape }}">  
                                     {% endif %}
                                     
@@ -77,7 +77,7 @@
                                     <span>{{ product.title | escape }}</span>
                                     <small style="visibility: hidden">1 version</small>
                                     {% if product.featured_image %}
-                                      {{ product.featured_image.aspect_ratio }}
+                                      {{ product.featured_image.aspect_ratio | round 2}}
                                       <img src="{{ product.featured_image.src | image_url: width: 135 }}" alt="{{ product.title | escape }}">
                                     {% endif %}
                                   {% endif %}
