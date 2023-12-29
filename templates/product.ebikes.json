@@ -95,9 +95,9 @@
           "type": "collapsible_row",
           "repeater": "{{ product.metafields.custom.specifications.value }}",
           "settings": {
-            "heading": "{{ block.repeater.derailleur_guard.value }}",
+            "heading": "",
             "icon": "none",
-            "row_content": "<p>{{ block.repeater.freewheel_casette.value }}<\/p>",
+            "row_content": "<p>{{ block.repeater.freewheel_casette.value }}{{ block.repeater.tires.value }}{{ block.repeater.stem.value }}{{ block.repeater.spokes.value }}{{ block.repeater.shifter_type.value }}{{ block.repeater.rear_light.value }}<\/p>",
             "page": ""
           }
         }
