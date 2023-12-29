@@ -91,29 +91,29 @@
     "98f95bb2-36aa-4826-a203-a6cf07444c97": {
       "type": "collapsible-content",
       "blocks": {
-        "32fa4c92-9c81-4a09-ae6d-901ec77498bc": {
+        "c82fe0d4-50e4-4b10-9979-0d48f3c9a93e": {
           "type": "collapsible_row",
           "repeater": "{{ product.metafields.custom.specifications.value }}",
           "settings": {
             "heading": "{{ block.repeater.derailleur_guard.value }}",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>{{ block.repeater.freewheel_casette.value }}<\/p>",
             "page": ""
           }
         }
       },
       "block_order": [
-        "32fa4c92-9c81-4a09-ae6d-901ec77498bc"
+        "c82fe0d4-50e4-4b10-9979-0d48f3c9a93e"
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
-        "heading_alignment": "center",
-        "layout": "none",
+        "heading": "Specifications",
+        "heading_size": "h2",
+        "heading_alignment": "left",
+        "layout": "section",
         "color_scheme": "",
         "container_color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
