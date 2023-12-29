@@ -96,7 +96,7 @@
           "repeater": "{{ product.metafields.custom.specifications.value }}",
           "settings": {
             "heading": "{{ block.repeater.derailleur_guard.value }}",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>{{ block.repeater.freewheel_casette.value }}<\/p>",
             "page": ""
           }
