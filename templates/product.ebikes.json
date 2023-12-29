@@ -95,7 +95,7 @@
           "type": "collapsible_row",
           "repeater": "{{ product.metafields.custom.specifications.value }}",
           "settings": {
-            "heading": "",
+            "heading": "Specifications",
             "icon": "none",
             "row_content": "<p>{{ block.repeater.freewheel_casette.value }}{{ block.repeater.tires.value }}{{ block.repeater.stem.value }}{{ block.repeater.spokes.value }}{{ block.repeater.shifter_type.value }}{{ block.repeater.rear_light.value }}<\/p>",
             "page": ""
@@ -107,10 +107,10 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Specification",
+        "heading": "",
         "heading_size": "h2",
         "heading_alignment": "left",
-        "layout": "row",
+        "layout": "section",
         "color_scheme": "",
         "container_color_scheme": "",
         "open_first_collapsible_row": false,
