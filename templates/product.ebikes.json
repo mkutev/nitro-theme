@@ -119,11 +119,35 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "5caff35b-e0d6-4530-b8f6-e71d9ac9421d": {
+      "type": "rich-text",
+      "blocks": {
+        "template--21903643967800__5caff35b-e0d6-4530-b8f6-e71d9ac9421d-text-1": {
+          "type": "text",
+          "repeater": "{{ product.metafields.custom.specifications.value }}",
+          "settings": {
+            "text": "<p>{{ block.repeater.freewheel_casette.value }}<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--21903643967800__5caff35b-e0d6-4530-b8f6-e71d9ac9421d-text-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "related-products",
-    "98f95bb2-36aa-4826-a203-a6cf07444c97"
+    "98f95bb2-36aa-4826-a203-a6cf07444c97",
+    "5caff35b-e0d6-4530-b8f6-e71d9ac9421d"
   ]
 }
