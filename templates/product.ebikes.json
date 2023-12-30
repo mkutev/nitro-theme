@@ -88,42 +88,19 @@
         "padding_bottom": 28
       }
     },
-    "7735de56-32f1-4235-9fa1-a6399f19016c": {
-      "type": "collapsible-content",
-      "blocks": {
-        "template--21903643967800__7735de56-32f1-4235-9fa1-a6399f19016c-collapsible_row-1": {
-          "type": "collapsible_row",
-          "repeater": "{{ product.metafields.custom.specifications.value }}",
-          "settings": {
-            "heading": "{{ block.repeater.derailleur_guard.value }}",
-            "icon": "none",
-            "row_content": "<p>{{ block.repeater.freewheel_casette.value }}<\/p>",
-            "page": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21903643967800__7735de56-32f1-4235-9fa1-a6399f19016c-collapsible_row-1"
-      ],
+    "e6d53c50-c137-4648-8957-d41ebf4426e8": {
+      "type": "custom-liquid",
       "settings": {
-        "caption": "",
-        "heading": "",
-        "heading_size": "h2",
-        "heading_alignment": "left",
-        "layout": "section",
+        "custom_liquid": "{% for metafield in product.metafields %}\n{{metafield.key}}\n{% endfor %}",
         "color_scheme": "",
-        "container_color_scheme": "",
-        "open_first_collapsible_row": false,
-        "image_ratio": "adapt",
-        "desktop_layout": "image_second",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     }
   },
   "order": [
     "main",
     "related-products",
-    "7735de56-32f1-4235-9fa1-a6399f19016c"
+    "e6d53c50-c137-4648-8957-d41ebf4426e8"
   ]
 }
