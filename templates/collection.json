@@ -34,14 +34,14 @@
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "{{ collection.metafields.custom.collection_seo_title.value }}",
             "heading_size": "h2"
           }
         },
         "bb7c8b21-9d49-45ae-8765-a74ee4042794": {
           "type": "caption",
           "settings": {
-            "caption": "TEst",
+            "caption": "{{ collection.metafields.custom.collection_seo_subtitle.value }}",
             "text_style": "subtitle",
             "text_size": "medium"
           }
@@ -49,7 +49,7 @@
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>{{ collection.metafields.custom.collection_seo_text | metafield_tag }}<\/p>"
           }
         }
       },
