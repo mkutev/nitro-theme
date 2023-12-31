@@ -35,7 +35,15 @@
           "type": "heading",
           "settings": {
             "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading_size": "h2"
+          }
+        },
+        "bb7c8b21-9d49-45ae-8765-a74ee4042794": {
+          "type": "caption",
+          "settings": {
+            "caption": "TEst",
+            "text_style": "subtitle",
+            "text_size": "medium"
           }
         },
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-text-1": {
@@ -47,6 +55,7 @@
       },
       "block_order": [
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-heading-1",
+        "bb7c8b21-9d49-45ae-8765-a74ee4042794",
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-text-1"
       ],
       "settings": {
