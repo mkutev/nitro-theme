@@ -73,7 +73,7 @@
         "template--21903643935032__31e1ab76-b5a2-41e0-99ee-2de4fc247e1d-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "{{ collection.metafields.custom.collection_seo_title.value }}",
+            "heading": "{{ collection.metafields.custom.collection_seo_subtitle.value }}",
             "icon": "none",
             "row_content": "<p>{{ collection.metafields.custom.collection_seo_text | metafield_tag }}<\/p>",
             "page": ""
@@ -85,8 +85,8 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Collapsible content",
-        "heading_size": "h1",
+        "heading": "{{ collection.metafields.custom.collection_seo_title.value }}",
+        "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "row",
         "color_scheme": "",
