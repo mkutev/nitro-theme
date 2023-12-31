@@ -42,7 +42,7 @@
           "type": "caption",
           "settings": {
             "caption": "{{ collection.metafields.custom.collection_seo_subtitle.value }}",
-            "text_style": "subtitle",
+            "text_style": "caption-with-letter-spacing",
             "text_size": "medium"
           }
         },
