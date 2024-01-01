@@ -58,7 +58,7 @@
                                   aria-current="page"
                                 {% endif %}
                                 >
-                                  {%  if grandchildlink.type == 'collection_link' %}
+                                  {% if grandchildlink.type == 'collection_link' %}
                                     
                                     {% assign collection = collections[grandchildlink.object.handle] %}
                                     <span>{{ collection.title | escape }}</span>
@@ -68,7 +68,7 @@
                                     {% endif %}
                                     
                                     {% if collection.image %}
-                                      {{ collection.image.aspect_ratio | round: 2}}
+                                      {{ collection.image.aspect_ratio | round: 2 }}
                                       <img src="{{ collection.image.src | image_url: width: 135 }}" alt="{{ collection.title | escape }}">  
                                     {% endif %}
                                     

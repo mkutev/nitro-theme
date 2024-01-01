@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/bluedot-voltbike-black.svg",
+    "logo": "shopify://shop_images/bluedot-voltbike-black.svg",
     "logo_width": 90,
-    "favicon": "shopify:\/\/shop_images\/bluedot.svg",
+    "favicon": "shopify://shop_images/bluedot.svg",
     "type_header_font": "montserrat_n9",
     "heading_scale": 100,
     "type_body_font": "montserrat_n4",
@@ -99,7 +99,7 @@
     "sale_badge_color_scheme": "accent-2",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "",
-    "brand_description": "<p><\/p>",
+    "brand_description": "<p></p>",
     "brand_image_width": 100,
     "social_facebook_link": "",
     "social_instagram_link": "",
@@ -138,7 +138,7 @@
     ],
     "blocks": {
       "316487575649303945": {
-        "type": "shopify:\/\/apps\/easify-product-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "type": "shopify://apps/easify-product-options/blocks/app-embed-block/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
         "disabled": false,
         "settings": {
         }
@@ -358,7 +358,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",

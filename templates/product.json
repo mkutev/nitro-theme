@@ -8,7 +8,7 @@
         "li:not(:last-child):hover a {color: #2979ff;}"
       ],
       "settings": {
-        "custom_liquid": "<!-- Breadcrumbs -->\n<div class=\"breadcrumbs\">\n  <ul>\n    <li><a href=\"\/\">Home<\/a><\/li>\n    {% if collection %}\n      <li><a href=\"{{ collection.url }}\">{{ collection.title }}<\/a><\/li>\n    {% endif %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}<\/a><\/li>\n    {% endif %}\n  <\/ul>\n<\/div>",
+        "custom_liquid": "<!-- Breadcrumbs -->\n<div class=\"breadcrumbs\">\n  <ul>\n    <li><a href=\"/\">Home</a></li>\n    {% if collection %}\n      <li><a href=\"{{ collection.url }}\">{{ collection.title }}</a></li>\n    {% endif %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}</a></li>\n    {% endif %}\n  </ul>\n</div>",
         "color_scheme": "",
         "padding_top": 12,
         "padding_bottom": 12

@@ -49,7 +49,7 @@
         "template--21903643935032__b50483cb-86c9-4454-a4d6-451bc3e3331c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>{{ collection.metafields.custom.collection_seo_text | metafield_tag }}<\/p>"
+            "text": "<p>{{ collection.metafields.custom.collection_seo_text | metafield_tag }}</p>"
           }
         }
       },
