@@ -13,8 +13,7 @@
           {% assign formatted_words = formatted_words | append: ' ' %}
         {% endif %}
       {% endfor %}
-      <p>Name: {{ formatted_words }}</p>
-      <p>Value: {{ metafield.last }}</p>
+      <p>{{ formatted_words }}: {{ metafield.last }}</p>
     {% endfor %}
   {% endif %}
 </div>
