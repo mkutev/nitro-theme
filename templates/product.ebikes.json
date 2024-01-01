@@ -91,7 +91,7 @@
     "e6d53c50-c137-4648-8957-d41ebf4426e8": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% render product-specifications-metafields %}",
+        "custom_liquid": "{% render 'product-specs-metafields' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
