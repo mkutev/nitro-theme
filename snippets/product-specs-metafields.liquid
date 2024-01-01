@@ -2,19 +2,21 @@
   Custom Metafields Block
 {% endcomment %}
 
+<em>product-specs-metafields</em>
+
 <div class="specs-container">
-{% if product.metafields.specs %}
-  {% for metafield in product.metafields.specs %}
-    {% assign words = metafield.first | replace: '_', ' ' | split: ' ' %}
-    {% assign formatted_words = '' %}
-    {% for word in words %}
-      {% assign formatted_words = formatted_words | append: word | capitalize %}
-      {% if forloop.last == false %}
-        {% assign formatted_words = formatted_words | append: ' ' %}
-      {% endif %}
+  {% if product.metafields.specs %}
+    {% for metafield in product.metafields.specs %}
+      {% assign words = metafield.first | replace: '_', ' ' | split: ' ' %}
+      {% assign formatted_words = '' %}
+      {% for word in words %}
+        {% assign formatted_words = formatted_words | append: word | capitalize %}
+        {% if forloop.last == false %}
+          {% assign formatted_words = formatted_words | append: ' ' %}
+        {% endif %}
+      {% endfor %}
+      <p>Name: {{ formatted_words }}</p>
+      <p>Value: {{ metafield.last }}</p>
     {% endfor %}
-    <p>Name: {{ formatted_words }}</p>
-    <p>Value: {{ metafield.last }}</p>
-  {% endfor %}
-{% endif %}
+  {% endif %}
 </div>
