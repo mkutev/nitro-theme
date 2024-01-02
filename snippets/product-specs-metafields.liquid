@@ -15,13 +15,15 @@
     if product.metafields.specs
       for metafield in product.metafields.specs
         assign formatted_words = ''
-        assign words = metafield.first | split "_"
+
+        assign words = metafield.first | split: '_'
         for word in words
           assign formatted_words = formatted_words | append: word | capitalize
           if forloop.last == false
             assign formatted_words = formatted_words | append: ' '
           endif
         endfor
+
         echo '<p class="spec"><span>' | append: formatted_words | append: '</span> ' | append: metafield.last | append: '</p>'
       endfor
     endif
