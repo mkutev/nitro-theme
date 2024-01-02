@@ -1,5 +1,6 @@
 {% comment %}
   Custom block for displaying product specifications.
+          echo '<p class="spec"><span>' | append: formatted_words | append: '</span> ' | append: metafield.last | append: '</p>'
 {% endcomment %}
 
 {% style %}
@@ -23,8 +24,6 @@
             assign formatted_words = formatted_words | append: ' '
           endif
         endfor
-
-        echo '<p class="spec"><span>' | append: formatted_words | append: '</span> ' | append: metafield.last | append: '</p>'
       endfor
     endif
   %}
