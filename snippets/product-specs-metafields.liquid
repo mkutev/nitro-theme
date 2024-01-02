@@ -21,6 +21,7 @@
         for word in words
           assign formatted_words = formatted_words | append: word | capitalize
           if forloop.last == false
+            echo '!last'
             assign formatted_words = formatted_words | append: ' '
           endif
         endfor
