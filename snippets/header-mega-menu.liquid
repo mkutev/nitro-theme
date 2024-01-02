@@ -50,37 +50,41 @@
                         <ul class="list-unstyled list--{{ childlink.handle }}" role="list">
                           {%- for grandchildlink in childlink.links -%}
                             <li>
-                              <a 
+                              <a
                                 id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}-{{ grandchildlink.handle }}"
                                 href="{{ grandchildlink.url }}"
                                 class="mega-menu__link link{% if grandchildlink.current %} mega-menu__link--active{% endif %}"
                                 {% if grandchildlink.current %}
                                   aria-current="page"
                                 {% endif %}
-                                >
-                                  {% if grandchildlink.type == 'collection_link' %}
-                                    
-                                    {% assign collection = collections[grandchildlink.object.handle] %}
-                                    <span>{{ collection.title | escape }}</span>
-                                
-                                    {% if childlink.handle == 'by-model' %}
-                                      <small>{{ collection.products_count | escape }} models</small>
-                                    {% endif %}
-                                    
-                                    {% if collection.image %}
-                                      {{ collection.image.aspect_ratio | round: 2 }}
-                                      <img src="{{ collection.image.src | image_url: width: 135 }}" alt="{{ collection.title | escape }}">  
-                                    {% endif %}
-                                    
-                                  {% elsif grandchildlink.type =='product_link' %}
-                                    {% assign product = all_products[grandchildlink.object.handle] %}
-                                    <span>{{ product.title | escape }}</span>
-                                    <small style="visibility: hidden">1 version</small>
-                                    {% if product.featured_image %}
+                              >
+                                {% if grandchildlink.type == 'collection_link' %}
+                                  {% assign collection = collections[grandchildlink.object.handle] %}
+                                  <span>{{ collection.title | escape }}</span>
+
+                                  {% if childlink.handle == 'by-model' %}
+                                    <small>{{ collection.products_count | escape }} models</small>
+                                  {% endif %}
+
+                                  {% if collection.image %}
+                                    {{ collection.image.aspect_ratio | round: 2 }}
+                                    <img
+                                      src="{{ collection.image.src | image_url: width: 135 }}"
+                                      alt="{{ collection.title | escape }}"
+                                    >
+                                  {% endif %}
+
+                                {% elsif grandchildlink.type == 'product_link' %}
+                                  {% assign product = all_products[grandchildlink.object.handle] %}
+                                  <span>{{ product.title | escape }}</span>
+                                  <small style="visibility: hidden">1 version</small>
+                                  {% if product.featured_image %}
+                                    <!--
                                       {{ product.featured_image.aspect_ratio | round: 2 }}
                                       <img src="{{ product.featured_image.src | image_url: width: 135 }}" alt="{{ product.title | escape }}">
-                                    {% endif %}
+                                    -->
                                   {% endif %}
+                                {% endif %}
                               </a>
                             </li>
                           {%- endfor -%}
