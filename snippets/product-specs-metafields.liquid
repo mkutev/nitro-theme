@@ -18,7 +18,7 @@
         assign formatted_words = ''
 
         assign words = metafield.first | split: '_'
-        echo words
+        echo words | append: ', '
         for word in words
           assign formatted_words = formatted_words | append: word | capitalize
           if forloop.last == false
