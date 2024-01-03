@@ -75,7 +75,7 @@
         "template--21903643967800__0c985838-4540-451d-9c81-afb8534dbd48-collapsible_row-1": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Specifications",
+            "heading": "",
             "icon": "none",
             "row_content": "<p><strong>Battery:<\/strong> 48V 17.5Ah Li-ion (840Wh) Samsung<\/p><p><strong>Battery Style:<\/strong> Internal<\/p><p><strong>Bottom Bracket:<\/strong> Neco 910, 23.5mm + 120mm + 23.5mm<\/p><p><strong>Brakes:<\/strong> Hydraulic disc brakes front\/rear Tektro HD-E350<\/p><p><strong>Brake Lever:<\/strong> Tektro Auriga with safety power cut<\/p><p><strong>Chain:<\/strong> KMC Rust Buster. 12.7mm pin to pin center. 124 links. Total length 1547.8mm.<\/p><p><strong>Crankset:<\/strong> Aluminum Alloy-6061 44T Crank, 170mm with Outer Guard<\/p><p><strong>Derailleur Guard:<\/strong> Rear Metal Derailleur Guard<\/p><p><strong>Fork:<\/strong> RST Guide aluminum alloy suspension with lockout function. 90mm travel. 135mm dropout. 32mm stanchions.<\/p><p><strong>Freewheel Cassette:<\/strong> Sunrace M2 Freewheel Super-Low 7 Speed 13-34T<\/p><p><strong>Front Light:<\/strong> Spanninga Kendo+ LED 30 Lux. Powered by the main battery and controlled from the keypad.<\/p><p><strong>Handlebars:<\/strong> PROMAX ALLUMINUM ALLOY 31.8mm*22.2mm*680mm, 9 degree<\/p><p><strong>Hubset:<\/strong> Alloy 6061 Electric Motor<\/p><p><strong>Motor:<\/strong> 500W (750W Peak) Hub Motor<\/p><p><strong>Motor Type:<\/strong> Wheel Hub<\/p><p><strong>Pedals:<\/strong> Wellgo LU-313 with reflectors<\/p><p><strong>Rear Derailleur:<\/strong> Shimano Acera RD-410 7 speed direct rear derailler<\/p><p><strong>Rear Light:<\/strong> LED brake light. Powered by the main battery and activated any time the brakes are applied.<\/p><p><strong>Rims:<\/strong> 26 inch with 36 spokes<\/p><p><strong>Seat:<\/strong> Velo Plush VL-6142<\/p><p><strong>Seat Post:<\/strong> Promax SP-252 Aluminum 6061 Alloy, 30.4mm*350mm<\/p><p><strong>Shifter Type:<\/strong> Shimano Tourney TX50R6CT Thumb Shifter Plus 7-Speed<\/p><p><strong>Spokes:<\/strong> Front 12G, Rear 13G<\/p><p><strong>Stem:<\/strong> PROMAX MODEL MA-596 with adjustable angle 35° - 145°. 105mm extension with bar bore 31.8mm.<\/p><p><strong>Tires:<\/strong> Kenda Juggernaut 26x4 KS Shield, Wire Bead, 30 TPI casing. Puncture resistant layer.<\/p>",
             "page": ""
@@ -93,7 +93,7 @@
         "layout": "section",
         "color_scheme": "",
         "container_color_scheme": "",
-        "open_first_collapsible_row": false,
+        "open_first_collapsible_row": true,
         "image_ratio": "adapt",
         "desktop_layout": "image_second",
         "padding_top": 36,
