@@ -1,8 +1,52 @@
+{% comment %}
+  Custom block for displaying product specifications.
+          echo '<p class="spec"><span>' | append: formatted_words | append: '</span> ' | append: metafield.last | append: '</p>'
+{% endcomment %}
+
+{% style %}
+  .specs-container .spec span {
+    font-weight: bold;
+    color: black;
+    letter-spacing: normal;
+  }
+{% endstyle %}
+
+<div class="specs-container page-width">
+  {% liquid
+    if product.metafields.specs
+      for metafield in product.metafields.specs
+        assign formatted_words = ''
+
+        assign words = metafield.first | split: '_'
+
+        for word in words
+          assign cap_word = word | capitalize
+          assign formatted_words = formatted_words | append: cap_word
+          if forloop.last == false
+            assign formatted_words = formatted_words | append: ' '
+          endif
+        endfor
+
+        echo '<p class="spec"><span>' | append: formatted_words | append: ':</span> ' | append: metafield.last | append: '</p>'
+      endfor
+    endif
+  %}
+</div>
+
+
 {% schema %}
-{
-  "name": "Specifications",
-  "settings": []
-}
+	{
+		"name": "Specifications",
+		"tag": "section",
+		"class": "section",
+		"disabled_on": {
+			"groups": [
+				"header",
+				"footer"
+			]
+		},
+		"settings": []
+	}
 {% endschema %}
 
 {% stylesheet %}
