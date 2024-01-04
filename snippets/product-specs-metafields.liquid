@@ -12,6 +12,7 @@
   #specs-container .specs-list .spec span {
     color: black;
     letter-spacing: normal;
+    margin-right: 5px;
   }
 {% endstyle %}
 
@@ -46,7 +47,7 @@
                     endif
                   endfor
 
-                  echo '<li class="spec"><span>' | append: formatted_words | append: ' </span>' | append: metafield.last | append: '</li>'
+                  echo '<li class="spec"><span>' | append: formatted_words | append: '</span>' | append: metafield.last | append: '</li>'
                 endfor
               endif
             %}
