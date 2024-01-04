@@ -78,7 +78,11 @@
         >
           Sizing
         </h2>
-        <div 
+        <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
+          {% if product.metafields.sizing.diagram %}
+            diagram exists
+          {% endif %}
+        </div>
       </div>
     </div>
   </div>
