@@ -4,19 +4,22 @@
 {% endcomment %}
 
 {% style %}
-  .specs-container {
+  #specs-container .spec-list {
     list-style: none;
     padding: 0;
   }
 
-  .specs-container .spec span {
+  #specs-container .specs-list .spec span {
     color: black;
     letter-spacing: normal;
   }
 {% endstyle %}
 
 <div class="isolate">
-  <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width">
+  <div
+    id="specs-container"
+    class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+  >
     <div class="rich-text__wrapper rich-text__wrapper--left page-width">
       <div class="rich-text__blocks left">
         <h2
@@ -27,7 +30,7 @@
           Specifications
         </h2>
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 2;">
-          <ul class="specs-container">
+          <ul class="specs-list">
             {% liquid
               if product.metafields.specs
                 for metafield in product.metafields.specs
