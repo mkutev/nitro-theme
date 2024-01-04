@@ -80,7 +80,11 @@
         </h2>
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
           {% if product.metafields.sizing.diagram %}
-            diagram exists
+            <img
+              src="{{ product.metafields.sizing.diagram.src | image_url }}"
+              alt="{{ product.title | escape }} sizing chart."
+              width="600"
+            >
           {% endif %}
         </div>
       </div>
