@@ -4,6 +4,11 @@
 {% endcomment %}
 
 {% style %}
+  #specs-container .rich-text__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
   #specs-container .specs-list {
     list-style: none;
     padding: 0;
@@ -15,6 +20,16 @@
     /* margin-right: 5px; */
     font-weight: 500;
   }
+
+  @media screen and (min-width: 750px) {
+    #specs-container .rich-text__wrapper {
+      flex-direction: row;
+    }
+
+    #specs-container .block-specs {
+      max-width: 33%;
+    }
+  }
 {% endstyle %}
 
 <div class="isolate">
@@ -23,7 +38,7 @@
     class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
   >
     <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks left">
+      <div class="rich-text__blocks block-specs left">
         <h2
           class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
           data-cascade
@@ -55,6 +70,7 @@
           </ul>
         </div>
       </div>
+      <div class="rich-text__blocks block-sizing left"></div>
     </div>
   </div>
 </div>
