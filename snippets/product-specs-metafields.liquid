@@ -4,43 +4,52 @@
 {% endcomment %}
 
 {% style %}
+  .specs-container {
+    list-style: none;
+    padding: 0;
+  }
+
   .specs-container .spec span {
-    font-weight: bold;
     color: black;
     letter-spacing: normal;
   }
 {% endstyle %}
 
 <div class="isolate">
-	<div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width">
-		<div class="rich-text__wrapper rich-text__wrapper--left page-width">
-			<div class="rich-text__blocks left">
-				<h2 class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order: 1;">Specifications</h2>
-				<div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 2;">
+  <div class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width">
+    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+      <div class="rich-text__blocks left">
+        <h2
+          class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+          data-cascade
+          style="--animation-order: 1;"
+        >
+          Specifications
+        </h2>
+        <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 2;">
+          <ul class="specs-container page-width">
+            {% liquid
+              if product.metafields.specs
+                for metafield in product.metafields.specs
+                  assign formatted_words = ''
 
-					<ul class="specs-container page-width">
-						{% liquid
-							if product.metafields.specs
-								for metafield in product.metafields.specs
-									assign formatted_words = ''
+                  assign words = metafield.first | split: '_'
 
-									assign words = metafield.first | split: '_'
+                  for word in words
+                    assign cap_word = word | capitalize
+                    assign formatted_words = formatted_words | append: cap_word
+                    if forloop.last == false
+                      assign formatted_words = formatted_words | append: ' '
+                    endif
+                  endfor
 
-									for word in words
-										assign cap_word = word | capitalize
-										assign formatted_words = formatted_words | append: cap_word
-										if forloop.last == false
-											assign formatted_words = formatted_words | append: ' '
-										endif
-									endfor
-
-									echo '<li class="spec"><span>' | append: formatted_words | append: ':</span> ' | append: metafield.last | append: '</li>'
-								endfor
-							endif
-						%}
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+                  echo '<li class="spec"><span>' | append: formatted_words | append: ':</span> ' | append: metafield.last | append: '</li>'
+                endfor
+              endif
+            %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
