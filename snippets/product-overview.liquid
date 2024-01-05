@@ -17,7 +17,13 @@
         assign additional = field[additional_key]
         assign image = field[image_key]
       %}
-      
+
+      <div class="zone">
+        <h2>{{ header }}</h2>
+        <p>{{ content }}</p>
+        <p>{{ additional }}</p>
+        <img src="{{ image }}" alt="{{ header }}">
+      </div>
     {% endfor %}
     
   </div>
