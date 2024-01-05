@@ -90,7 +90,7 @@
           <p>{{ additional }}</p>
         </div>
         <div class="zone__cover">
-          <img src="{{ image | image_url }}" alt="{{ header }}">
+          <img src="{{ image | image_url: 500 }}" alt="{{ header }}">
         </div>
       </div>
     {% endfor %}
