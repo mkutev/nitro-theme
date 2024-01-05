@@ -22,11 +22,19 @@
     box-shadow: 0 0 15px rgb(0 0 0 / 5%);
   }
 
-  .zone__cover img {
+  .product-overview__grid .zone__cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
+  .product-overview__grid .zone__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+  }
+
 
   {% for i in (1..4) %}
     .zone-{{ i }} { grid-area: zone-{{ i }}}
