@@ -22,7 +22,7 @@
         <h2>{{ header.value }}</h2>
         <p>{{ content.value }}</p>
         <p>{{ additional.value }}</p>
-        <img src="{{ image.value | image_url }}" alt="{{ header }}">
+        <img src="{{ image.value | image_url: width: 500 }}" alt="{{ header }}">
       </div>
     {% endfor %}
     
