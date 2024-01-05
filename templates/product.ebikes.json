@@ -109,6 +109,7 @@
         "template--21903643967800__52b472ae-c5f2-4419-986f-edf6e5aa3c93-row-2",
         "template--21903643967800__52b472ae-c5f2-4419-986f-edf6e5aa3c93-row-3"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -127,7 +128,6 @@
     },
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'product-overview' %}",
         "color_scheme": "",
