@@ -1,18 +1,20 @@
 <div class="product-overview page-width">
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:1;">Overview</h2>
   <div class="product-overview__grid">
-    {% liquid
-      for i in (1..4)
-        assign zone_prefix = 'z'
-        assign field = product.metafields.custom
+    {{ assign zone_prefix = 'z' }}
+    {{ assign field = product.metafields.custom }}
 
+    {% for i in (1..4) %}
+      {% liquid
         assign header_key = zone_prefix | append: i | append: '_header'
         assign content_key = zone_prefix | append: i | append: '_content'
         assign additional_key = zone_prefix | append: i | append: '_additional'
         assign image_key = zone_prefix | append: i | append: '_image'
-
-        assign header =
-      endfor
-    %}
+        assign header = field[header_key]
+        assign content = field[content_key]
+        assign additional = field[additional_key]
+        assign image = field[image_key]
+      %}
+    {% endfor %}
   </div>
 </div>
