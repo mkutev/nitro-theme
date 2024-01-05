@@ -13,7 +13,8 @@
     width: 100%;
   }
 
-  #specs-container .specs-list {
+  #specs-container .specs-list,
+  #specs-container .block-sizing ul {
     list-style: none;
     padding: 0;
   }
@@ -23,6 +24,10 @@
     letter-spacing: normal;
     /* margin-right: 5px; */
     font-weight: 500;
+  }
+
+  #specs-container .block-sizing ul {
+
   }
 
   @media screen and (min-width: 750px) {
@@ -84,7 +89,7 @@
         </h2>
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
           {% if product.metafields.sizing.content %}
-            <ul class="specs-content">
+            <ul>
               {{ product.metafields.sizing['content-text'] }}
             </ul>
           {% endif %}
