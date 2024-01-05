@@ -2,8 +2,8 @@
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:1;">Overview</h2>
   <div class="product-overview__grid">
     
-    {{ assign zone_prefix = 'z' }}
-    {{ assign field = product.metafields.custom }}
+    {% assign zone_prefix = 'z' %}
+    {% assign field = product.metafields.custom %}
 
     {% for i in (1..4) %}
       
