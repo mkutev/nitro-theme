@@ -95,7 +95,7 @@
         assign image = field[image_key].value
       %}
 
-      <div class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ i }}">
+      <div class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ i - 1 }}">
         <div class="zone__content">
           <h2>{{ header }}</h2>
           <p>{{ content }}</p>
