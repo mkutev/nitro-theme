@@ -4,7 +4,7 @@
     
     {% assign zone_prefix = 'z' %}
     {% assign field = product.metafields.custom %}
-
+    {{ product.metafields.custom.z1_header }}
     {% for i in (1..4) %}
       
       {% liquid
@@ -12,13 +12,11 @@
         assign content_key = zone_prefix | append: i | append: '_content'
         assign additional_key = zone_prefix | append: i | append: '_additional'
         assign image_key = zone_prefix | append: i | append: '_image'
-        assign header = product.metafields.custom[header_key]
+        assign header = field[header_key]
         assign content = field[content_key]
         assign additional = field[additional_key]
         assign image = field[image_key]
       %}
-
-      {{ product.metafields.custom.product_overview }}
 
       <div class="zone">
         <h2>{{ header }}</h2>
