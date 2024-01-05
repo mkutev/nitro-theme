@@ -3,7 +3,7 @@
   <div class="product-overview__grid">
     
     {% assign zone_prefix = 'z' %}
-    {% assign field = product.metafields.custom %}
+    {% assign field = product.metafields.custom.product_overview %}
     {{ product.metafields.custom.z1_header }}
     {% for i in (1..4) %}
       
