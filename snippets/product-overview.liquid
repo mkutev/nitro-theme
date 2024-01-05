@@ -12,7 +12,7 @@
     grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4";
   }
 
-  .product-overview__grid__zone {
+  .product-overview__grid .zone {
     display: grid;
     gap: 0;
     grid-template-columns: 1fr;
@@ -27,7 +27,7 @@
   {% endfor %}
 
   @media screen and (min-width: 768px) {
-    .product-overview__grid__zone {
+    .product-overview__grid .zone {
       grid-template-areas: ". .";
       grid-template-rows: 1fr;
       min-height: auto;
@@ -54,7 +54,7 @@
         assign image = field[image_key].value
       %}
 
-      <div class="product-overview__grid__zone zone-{{ i }}">
+      <div class="product-overview__grid zone zone-{{ i }}">
         <h2>{{ header }}</h2>
         <p>{{ content }}</p>
         <p>{{ additional }}</p>
