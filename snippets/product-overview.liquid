@@ -5,6 +5,7 @@
     {% assign zone_prefix = 'z' %}
     {% assign field = product.metafields.custom.product_overview %}
     {{ product.metafields.custom.product_overview }}
+    {{ metaobject }}
     {% for i in (1..4) %}
       
       {% liquid
