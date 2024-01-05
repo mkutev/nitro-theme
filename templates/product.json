@@ -8,7 +8,7 @@
         "li:not(:last-child):hover a {color: #2979ff;}"
       ],
       "settings": {
-        "custom_liquid": "<!-- Breadcrumbs -->\n<div class=\"breadcrumbs\">\n  <ul>\n    <li><a href=\"/\">Home</a></li>\n    {% if collection %}\n      <li><a href=\"{{ collection.url }}\">{{ collection.title }}</a></li>\n    {% endif %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}</a></li>\n    {% endif %}\n  </ul>\n</div>",
+        "custom_liquid": "<!-- Breadcrumbs -->\n<div class=\"breadcrumbs\">\n  <ul>\n    <li><a href=\"\/\">Home<\/a><\/li>\n    {% if collection %}\n      <li><a href=\"{{ collection.url }}\">{{ collection.title }}<\/a><\/li>\n    {% endif %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}<\/a><\/li>\n    {% endif %}\n  <\/ul>\n<\/div>",
         "color_scheme": "",
         "padding_top": 12,
         "padding_bottom": 12
@@ -109,11 +109,28 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "17044205140d0763f7": {
+      "type": "apps",
+      "blocks": {
+        "1b1ca003-1038-4a89-abdc-84ea049a36bf": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "1b1ca003-1038-4a89-abdc-84ea049a36bf"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "7e5544b3-a15e-4a28-8050-381c21f384ea",
     "main",
-    "related-products"
+    "related-products",
+    "17044205140d0763f7"
   ]
 }
