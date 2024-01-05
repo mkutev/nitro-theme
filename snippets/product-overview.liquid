@@ -55,10 +55,14 @@
       %}
 
       <div class="product-overview__grid zone zone-{{ i }}">
-        <h2>{{ header }}</h2>
-        <p>{{ content }}</p>
-        <p>{{ additional }}</p>
-        <img src="{{ image | image_url: width: 500 }}" alt="{{ header }}">
+        <div class="zone__content">
+          <h2>{{ header }}</h2>
+          <p>{{ content }}</p>
+          <p>{{ additional }}</p>
+        </div>
+        <div class="zone__cover">
+          <img src="{{ image | image_url: width: 500 }}" alt="{{ header }}">
+        </div>
       </div>
     {% endfor %}
     
