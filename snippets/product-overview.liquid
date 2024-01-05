@@ -25,6 +25,14 @@
   {% for i in (1..4) %}
     .zone-{{ i }} { grid-area: zone-{{ i }}}
   {% endfor %}
+
+  @media screen and (min-width: 768px) {
+    .product-overview__grid__zone {
+      grid-template-areas: ". .";
+      grid-template-rows: 1fr;
+      min-height: auto;
+    }
+  }
     
 {% endstyle %}
 
