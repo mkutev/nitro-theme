@@ -4,10 +4,14 @@
     {% liquid
       for i in (1..4)
         assign zone_prefix = 'z'
+        assign field = product.metafields.custom
+
         assign header_key = zone_prefix | append: i | append: '_header'
         assign content_key = zone_prefix | append: i | append: '_content'
         assign additional_key = zone_prefix | append: i | append: '_additional'
         assign image_key = zone_prefix | append: i | append: '_image'
+
+        assign header =
       endfor
     %}
   </div>
