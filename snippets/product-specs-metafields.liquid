@@ -88,7 +88,7 @@
           Sizing
         </h2>
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
-          {% if product.metafields.sizing.content %}
+          {% if product.metafields.sizing['content-text'] %}
             <ul>
               {{ product.metafields.sizing['content-text'] }}
             </ul>
