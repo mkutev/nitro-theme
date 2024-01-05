@@ -4,13 +4,11 @@
     {% for i in (1..4) %}
       {% assign zone_prefix = 'z' | append: i %}
 
-      <!-- Now, use this prefix to access each metafield -->
       {% assign header = product.metafields.custom[zone_prefix | append: '_header'] %}
       {% assign content = product.metafields.custom[zone_prefix | append: '_content'] %}
       {% assign additional = product.metafields.custom[zone_prefix | append: '_additional'] %}
       {% assign image = product.metafields.custom[zone_prefix | append: '_image'] %}
 
-      <!-- Now you can use these variables within the loop -->
       <div class="zone">
         <h2>{{ header }}</h2>
         <p>{{ content }}</p>
