@@ -3,7 +3,7 @@
     "e16c4942-1fcf-4859-b500-a91988b5c19b": {
       "type": "video",
       "settings": {
-        "heading": "Video",
+        "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
         "video": "shopify:\/\/files\/videos\/AboutUs-Banner-Alt.mp4",
