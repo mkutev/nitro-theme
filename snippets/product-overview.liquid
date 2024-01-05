@@ -2,7 +2,10 @@
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:1;">Overview</h2>
   <div class="product-overview__grid">
     {% liquid
-
+      for i in (1..4)
+        assign zone_prefix = 'z'
+        echo zone_prefix
+      endfor
     %}
 
     {% for i in (1..4) %}
