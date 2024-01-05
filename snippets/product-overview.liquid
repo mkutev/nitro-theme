@@ -12,7 +12,7 @@
         assign content_key = zone_prefix | append: i | append: '_content'
         assign additional_key = zone_prefix | append: i | append: '_additional'
         assign image_key = zone_prefix | append: i | append: '_image'
-        assign header = field[header_key]
+        assign header = product.metafields.custom[header_key]
         assign content = field[content_key]
         assign additional = field[additional_key]
         assign image = field[image_key]
