@@ -1,3 +1,23 @@
+{% style %}
+  .product-overview__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em 0px;
+    grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4";
+  }
+
+  .product-overview__grid__zone {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "." ".";
+    overflow: hidden;
+    box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+  }
+{% endstyle %}
+
 <div class="product-overview page-width">
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:1;">Overview</h2>
   <div class="product-overview__grid">
@@ -18,7 +38,7 @@
         assign image = field[image_key].value
       %}
 
-      <div class="zone zone-{{ i }}">
+      <div class="product-overview__grid__zone zone-{{ i }}">
         <h2>{{ header }}</h2>
         <p>{{ content }}</p>
         <p>{{ additional }}</p>
