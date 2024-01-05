@@ -12,17 +12,17 @@
         assign content_key = zone_id | append: '_content'
         assign additional_key = zone_id | append: '_additional'
         assign image_key = zone_id | append: '_image'
-        assign header = field[header_key]
-        assign content = field[content_key]
-        assign additional = field[additional_key]
-        assign image = field[image_key]
+        assign header = field[header_key].value
+        assign content = field[content_key].value
+        assign additional = field[additional_key].value
+        assign image = field[image_key].value
       %}
 
       <div class="zone zone-{{ i }}">
-        <h2>{{ header.value }}</h2>
-        <p>{{ content.value }}</p>
-        <p>{{ additional.value }}</p>
-        <img src="{{ image.value | image_url: width: 500 }}" alt="{{ header }}">
+        <h2>{{ header }}</h2>
+        <p>{{ content }}</p>
+        <p>{{ additional }}</p>
+        <img src="{{ image | image_url: width: 500 }}" alt="{{ header }}">
       </div>
     {% endfor %}
     
