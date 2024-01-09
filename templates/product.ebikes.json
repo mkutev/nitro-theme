@@ -36,16 +36,16 @@
             "picker_type": "button"
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {
           }
         }
       },
@@ -56,8 +56,8 @@
         "description",
         "price",
         "variant_picker",
-        "buy_buttons",
-        "quantity_selector"
+        "quantity_selector",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
