@@ -9,7 +9,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
     gap: 1em 0px;
-    grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4";
+    grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8";
   }
 
   .product-overview__grid .zone {
@@ -53,27 +53,31 @@
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(3, 1fr);
       gap: 2em;
-      grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4";
+      grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8";
     }
-
+ 
     .product-overview__grid .zone {
       min-height: 400px;
     }
 
     .product-overview__grid .zone-1,
-    .product-overview__grid .zone-3 {
+    .product-overview__grid .zone-3,
+    .product-overview__grid .zone-6, 
+    .product-overview__grid .zone-7 {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: ". .";
     }
 
-    .product-overview__grid .zone-2 {
+    .product-overview__grid .zone-2,
+    .product-overview__grid .zone-5 {
       grid-template-rows: 1fr 1fr;
       grid-template-columns: 1fr;
       grid-template-areas: "." ".";
     }
 
-    .product-overview__grid .zone-4 {
+    .product-overview__grid .zone-4,
+    .product-overview__grid .zone-8 {
       grid-template-columns: 1fr 2fr;
     }
   }
