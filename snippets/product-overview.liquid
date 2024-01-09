@@ -91,7 +91,7 @@
 <div class="product-overview page-width">
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:0;">Overview</h2>
   <div class="product-overview__grid">
-    {% for i in (1..8) %}
+    {% for i in (1..10) %}
       {% liquid
         assign zone_id = zone_prefix | append: i
         assign header_key = zone_id | append: '_header'
