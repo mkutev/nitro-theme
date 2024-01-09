@@ -112,59 +112,6 @@
         "padding_bottom": 28
       }
     },
-    "b51d48dd-5266-4cfe-b04d-57ee2273de70": {
-      "type": "multicolumn",
-      "blocks": {
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-2": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-3": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-1",
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-2",
-        "template--21903643967800__b51d48dd-5266-4cfe-b04d-57ee2273de70-column-3"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "170452725046cbedab": {
       "type": "apps",
       "blocks": {
@@ -187,7 +134,6 @@
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "related-products",
-    "b51d48dd-5266-4cfe-b04d-57ee2273de70",
     "170452725046cbedab"
   ]
 }
