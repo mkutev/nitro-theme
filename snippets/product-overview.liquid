@@ -63,7 +63,7 @@
     .product-overview__grid .zone-1,
     .product-overview__grid .zone-3,
     .product-overview__grid .zone-6, 
-    .product-overview__grid .zone-7 {
+    .product-overview__grid .zone-7, {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: ". .";
@@ -77,10 +77,13 @@
     }
 
     .product-overview__grid .zone-4,
-    .product-overview__grid .zone-8,
+    .product-overview__grid .zone-8 {
+      grid-template-columns: 1fr 2fr;
+    }
+
     .product-overview__grid .zone-9,
     .product-overview__grid .zone-10 {
-      grid-template-columns: 1fr 2fr;
+      grid-template-columns: 2fr 3fr;
     }
   }
 {% endstyle %}
