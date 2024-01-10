@@ -1,12 +1,16 @@
 {% liquid
   assign zone_prefix = 'z'
   assign metafield_count = 0
-  assign max_iterations = 10
+  assign max_iterations = 12
   assign field = product.metafields.custom.product_overview.value
 
   for i in (1..max_iterations)
     assign temp_key = zone_prefix | append: i | append: '_' | append: 'header'
-    echo temp_key
+    if field[temp_key] == blank
+      break
+    else
+      assign metafield_count = metafield_count | plus: 1
+    endif
   endfor
 %}
 
