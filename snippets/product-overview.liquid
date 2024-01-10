@@ -2,7 +2,9 @@
   assign zone_prefix = 'z'
   assign metafield_count = 0
   assign field = product.metafields.custom.product_overview.value
-
+  
+  echo field[1].value
+  
   for key in product.metafields.custom.product_overview.value
     echo product.metafields.custom.product_overview.value[key].value
     if product.metafields.custom.product_overview.value[key].value
