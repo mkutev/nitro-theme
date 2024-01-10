@@ -1,16 +1,11 @@
 {% liquid
   assign zone_prefix = 'z'
   assign metafield_count = 0
+  assign max_iterations = 10
   assign field = product.metafields.custom.product_overview.value
-  
-  echo product.metafields.custom.product_overview.value
-  
-  for key in product.metafields.custom.product_overview.value
-    echo product.metafields.custom.product_overview.value[key].value
-    if product.metafields.custom.product_overview.value[key].value
-      assign metafield_count = metafield_count | plus: 1
-      echo 'Counted'
-    endif
+
+  for i in (1..max_iterations)
+    assign temp_key = zone_prefix | append: i | append: '_'
   endfor
 %}
 
