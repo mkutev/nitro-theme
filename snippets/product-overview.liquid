@@ -18,7 +18,7 @@
   .product-overview__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat({{ zone_count }}, 1fr);
+    grid-template-rows: repeat( {{ zone_count }} , 1fr);
     gap: 1em 0px;
     {% case zone_count %}
       {% when 8 %}
@@ -73,9 +73,18 @@
   @media screen and (min-width: 1024px) {
     .product-overview__grid {
       grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(6, 1fr);
       gap: 2em;
-      grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" "zone-10 zone-10 zone-10";
+      {% case zone_count %}
+        {% when 8 %}
+          grid-template-rows: repeat(6, 1fr);
+          grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8";
+        {% when 9 %}
+          grid-template-rows: repeat(7, 1fr);
+          grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" ;
+        {% when 10 %}
+          grid-template-rows: repeat(8, 1fr);
+          grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" "zone-10 zone-10 zone-10";
+        {% endcase %}
     }
 
     .product-overview__grid .zone {
