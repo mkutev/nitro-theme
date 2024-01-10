@@ -1,6 +1,6 @@
 {% liquid
   assign zone_prefix = 'z'
-  assign metafield_count = 0
+  assign zone_count = 0
   assign max_iterations = 12
   assign field = product.metafields.custom.product_overview.value
 
@@ -9,12 +9,10 @@
     if field[temp_key] == blank
       break
     else
-      assign metafield_count = metafield_count | plus: 1
+      assign zone_count = zone_count | plus: 1
     endif
   endfor
 %}
-
-{{ metafield_count }}
 
 {% style %}
   .product-overview__grid {
@@ -53,7 +51,7 @@
   }
 
 
-  {% for i in (1..10) %}
+  {% for i in (1..zone_count) %}
     .zone-{{ i }} { grid-area: zone-{{ i }}}
   {% endfor %}
 
@@ -72,14 +70,14 @@
       gap: 2em;
       grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" "zone-10 zone-10 zone-10";
     }
- 
+
     .product-overview__grid .zone {
       min-height: 400px;
     }
 
     .product-overview__grid .zone-1,
     .product-overview__grid .zone-3,
-    .product-overview__grid .zone-6, 
+    .product-overview__grid .zone-6,
     .product-overview__grid .zone-7 {
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
@@ -112,7 +110,7 @@
 <div class="product-overview page-width">
   <h2 class="title h1 scroll-trigger animate--slide-in" data-cascade style="--animation-order:0;">Overview</h2>
   <div class="product-overview__grid">
-    {% for i in (1..10) %}
+    {% for i in (1..zone_count) %}
       {% liquid
         assign zone_id = zone_prefix | append: i
         assign header_key = zone_id | append: '_header'
@@ -126,18 +124,23 @@
       %}
 
       {% unless header == blank %}
-
-      <div class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ i }}">
-        <div class="zone__content">
-          <h2>{{ header }}</h2>
-          <p>{{ content }}</p>
-          <p>{{ additional }}</p>
+        <div
+          class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in"
+          data-cascade
+          style="--animation-order: {{ i }}"
+        >
+          <div class="zone__content">
+            <h2>{{ header }}</h2>
+            <p>{{ content }}</p>
+            <p>{{ additional }}</p>
+          </div>
+          <div
+            class="zone__cover"
+            style="background: url('{{ image | image_url: width:500 }}'); background-repeat: no-repeat; background-size: contain; background-position: center;"
+          >
+            <!-- <img src="{{ image | image_url: width:500 }}" alt="{{ header }}"> -->
+          </div>
         </div>
-        <div class="zone__cover" style="background: url('{{ image | image_url: width:500 }}'); background-repeat: no-repeat; background-size: contain; background-position: center;">
-          <!-- <img src="{{ image | image_url: width:500 }}" alt="{{ header }}"> -->
-        </div>
-      </div>
-
       {% endunless %}
     {% endfor %}
   </div>
