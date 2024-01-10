@@ -5,6 +5,13 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "914b1f0e-aea9-4c6a-be44-7288b70e9331": {
+          "type": "text",
+          "settings": {
+            "heading": "Heading",
+            "subtext": "<p>We are a proud Canadian business located in beautiful British Columbia, Canada! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.<\/p>"
+          }
+        },
         "ff0449f7-eebe-4e9a-98b1-259d0572be7f": {
           "type": "link_list",
           "settings": {
@@ -14,6 +21,7 @@
         }
       },
       "block_order": [
+        "914b1f0e-aea9-4c6a-be44-7288b70e9331",
         "ff0449f7-eebe-4e9a-98b1-259d0572be7f"
       ],
       "settings": {
