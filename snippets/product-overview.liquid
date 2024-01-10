@@ -3,7 +3,7 @@
   assign metafield_count = 0
   assign field = product.metafields.custom.product_overview.value
   
-  echo field[1].value
+  echo field[1].type
   
   for key in product.metafields.custom.product_overview.value
     echo product.metafields.custom.product_overview.value[key].value
