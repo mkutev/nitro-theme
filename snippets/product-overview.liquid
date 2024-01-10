@@ -5,7 +5,7 @@
   assign field = product.metafields.custom.product_overview.value
 
   for i in (1..max_iterations)
-    assign temp_key = zone_prefix | append: i | append: '_'
+    assign temp_key = zone_prefix | append: i | append: '_' | append: 'header'
     echo temp_key
   endfor
 %}
