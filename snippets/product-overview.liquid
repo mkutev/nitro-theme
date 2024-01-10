@@ -113,6 +113,8 @@
         assign image = field[image_key].value
       %}
 
+      {% unless header == blank %}
+
       <div class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in" data-cascade style="--animation-order: {{ i }}">
         <div class="zone__content">
           <h2>{{ header }}</h2>
@@ -123,6 +125,8 @@
           <!-- <img src="{{ image | image_url: width:500 }}" alt="{{ header }}"> -->
         </div>
       </div>
+
+      {% endunless %}
     {% endfor %}
   </div>
 </div>
