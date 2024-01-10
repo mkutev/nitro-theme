@@ -153,12 +153,19 @@
             <h2>{{ header }}</h2>
             <p>{{ content }}</p>
           </div>
-          <div
-            class="zone__cover"
-            style="background: url('{{ image | image_url: width:500 }}'); background-repeat: no-repeat; background-size: contain; background-position: center;"
-          >
-            <!-- <img src="{{ image | image_url: width:500 }}" alt="{{ header }}"> -->
-          </div>
+          
+          {% if classes contains 'xl-image' %}
+            <div
+              class="zone__cover"
+              style="background: url('{{ image | image_url: width:1000 }}'); background-repeat: no-repeat; background-size: contain; background-position: center;"
+            ></div>
+          {% else %}
+            <div
+              class="zone__cover"
+              style="background: url('{{ image | image_url: width:500 }}'); background-repeat: no-repeat; background-size: contain; background-position: center;"
+            ></div>
+          {% endif %}
+        
         </div>
       {% endunless %}
     {% endfor %}
