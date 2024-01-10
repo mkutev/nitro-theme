@@ -1,8 +1,17 @@
 {% liquid
   assign zone_prefix = 'z'
+  assign metafield_count = 0
   assign field = product.metafields.custom.product_overview.value
+
+  for key in product.metafields.custom.product_overview.value
+    if product.metafields.custom.product_overview.value[key]
+      assign metafield_count = metafield_count | plus: 1
+    endif
+  endfor
 %}
-{{ field }}
+
+{{ metafield_count }}
+
 {% style %}
   .product-overview__grid {
     display: grid;
