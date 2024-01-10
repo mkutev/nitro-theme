@@ -135,24 +135,23 @@
         assign zone_id = zone_prefix | append: i
         assign header_key = zone_id | append: '_header'
         assign content_key = zone_id | append: '_content'
-        assign additional_key = zone_id | append: '_additional'
+        assign css_key = zone_id | append: '_css'
         assign image_key = zone_id | append: '_image'
         assign header = field[header_key].value
         assign content = field[content_key].value
-        assign additional = field[additional_key].value
+        assign classes = field[css_key].value
         assign image = field[image_key].value
       %}
 
       {% unless header == blank %}
         <div
-          class="product-overview__grid zone zone-{{ i }} scroll-trigger animate--slide-in"
+          class="product-overview__grid zone zone-{{ i }} {{ classes }} scroll-trigger animate--slide-in"
           data-cascade
           style="--animation-order: {{ i }}"
         >
           <div class="zone__content">
             <h2>{{ header }}</h2>
             <p>{{ content }}</p>
-            <p>{{ additional }}</p>
           </div>
           <div
             class="zone__cover"
