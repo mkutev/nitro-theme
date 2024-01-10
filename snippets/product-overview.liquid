@@ -6,6 +6,7 @@
   for key in product.metafields.custom.product_overview.value
     if product.metafields.custom.product_overview.value[key]
       assign metafield_count = metafield_count | plus: 1
+      echo 'Counted'
     endif
   endfor
 %}
