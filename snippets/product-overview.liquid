@@ -18,9 +18,16 @@
   .product-overview__grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat({{ zone_count }}, 1fr);
     gap: 1em 0px;
-    grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9" "zone-10";
+    {% case zone_count %}
+      {% when 8 %}
+        grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8";
+      {% when 9 %}
+        grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9";
+      {% when 10 %}
+        grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9" "zone-10";
+    {% endcase %}
   }
 
   .product-overview__grid .zone {
