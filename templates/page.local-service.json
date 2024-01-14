@@ -6,9 +6,28 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1705213500a189bef0": {
+      "type": "apps",
+      "blocks": {
+        "simple_store_locator_store_locator_bRQaU6": {
+          "type": "shopify:\/\/apps\/simple-store-locator\/blocks\/store_locator\/271d5575-daa7-4857-a8af-4ecfc578a160",
+          "settings": {
+            "paddingTop": 0,
+            "paddingBottom": 0
+          }
+        }
+      },
+      "block_order": [
+        "simple_store_locator_store_locator_bRQaU6"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1705213500a189bef0"
   ]
 }
