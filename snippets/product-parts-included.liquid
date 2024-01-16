@@ -1,5 +1,56 @@
 {% style %}
+  #parts-included-container .parts {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #parts-included-container .part {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: 0px -10px;
+    border: 1px dashed lightgray;
+    margin: 0 0.5em 0.5em 0;
+  }
+
+  #parts-included-container .part::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: auto;
+    top: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
   
+  #parts-included-container .part.multitool::after {
+      content: "Multitool";
+  }
+  
+  #parts-included-container .part.charger::after {
+      content: "Charger";
+  }
+  
+  #parts-included-container .part.pedals::after {
+      content: "Pedals";
+  }
+
+  @media screen and (min-width: 768px) {
+    #parts-included-container .parts {
+        justify-content: flex-start;
+    }
+    
+    #parts-included-container .part {
+        margin: 0 1em 1em 0;
+        width: 250px;
+        height: 250px;
+    }
+  }
 {% endstyle %}
 
 <div class="isolate">
