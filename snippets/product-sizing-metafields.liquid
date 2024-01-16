@@ -13,6 +13,12 @@
     width: 100%;
   }
 
+  #sizing-container .block-sizing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
   #sizing-container .block-sizing ul {
     list-style: none;
     padding: 0;
@@ -47,7 +53,7 @@
     class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
   >
     <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks block-sizing ">
+      <div class="rich-text__blocks">
         <h2
           class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
           data-cascade
@@ -55,7 +61,7 @@
         >
           Sizing
         </h2>
-        <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
+        <div class="block-sizing rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
           {% if product.metafields.sizing['content-text'] %}
             <ul>
               {{ product.metafields.sizing['content-text'] }}
