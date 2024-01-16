@@ -15,8 +15,6 @@
     border: 1px dashed lightgray;
     margin: 0 0.5em 0.5em 0;
     display: block; 
-    background-repeat: no-repeat;
-    background-position: center; 
   }
 
   #parts-included-container .part::after {
@@ -32,15 +30,15 @@
   }
 
   #parts-included-container .multitool {
-    background: url("{{ 'Multitool-sm.jpg' | file_img_url }}");
+    background: url("{{ 'Multitool-sm.jpg' | file_img_url }}") center auto no-repeat;
   }
 
   #parts-included-container .charger {
-    background: url("{{ 'FastChargerBrick2-sm.jpg' | file_img_url }}");
+    background: url("{{ 'FastChargerBrick2-sm.jpg' | file_img_url }}") center auto no-repeat;
   }
 
   #parts-included-container .pedals {
-    background: url("{{ 'Pedals-sm-flipped.jpg' | file_img_url }}");
+    background: url("{{ 'Pedals-sm-flipped.jpg' | file_img_url }}") center auto no-repeat;
   }
   
   #parts-included-container .part.multitool::after {
