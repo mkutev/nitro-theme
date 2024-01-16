@@ -30,15 +30,15 @@
   }
 
   #parts-included-container .multitool {
-    background: url("{{ 'Multitool-sm.jpg' | file_img_url }}") no-repeat center / auto;
+    background: url("{{ 'Multitool-sm.jpg' | file_img_url: '300x' }}") no-repeat center / contain;
   }
 
   #parts-included-container .charger {
-    background: url("{{ 'FastChargerBrick2-sm.jpg' | file_img_url }}") no-repeat center / auto;
+    background: url("{{ 'FastChargerBrick2-sm.jpg' | file_img_url: '300x' }}") no-repeat center / contain;
   }
 
   #parts-included-container .pedals {
-    background: url("{{ 'Pedals-sm-flipped.jpg' | file_img_url }}") no-repeat center / auto;
+    background: url("{{ 'Pedals-sm-flipped.jpg' | file_img_url: '300x' }}") no-repeat center / contain;
   }
   
   #parts-included-container .part.multitool::after {
