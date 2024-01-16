@@ -170,12 +170,12 @@
           {% if classes contains 'xl-image' %}
             <div
               class="zone__cover"
-              style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }};"
+              style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
             > </div>
           {% else %}
             <div
               class="zone__cover"
-              style="background: url('{{ image | image_url: width:500 }}');"
+              style="background: url('{{ image | image_url: width:500 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
             > </div>
           {% endif %}
         
