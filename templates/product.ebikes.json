@@ -78,6 +78,15 @@
         "padding_bottom": 52
       }
     },
+    "custom_liquid_eVNAhC": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-parts-included' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "e6d53c50-c137-4648-8957-d41ebf4426e8": {
       "type": "custom-liquid",
       "settings": {
@@ -108,12 +117,14 @@
       "block_order": [
         "9c9d34f6-307a-49e1-9f26-99a1769bda2c"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -134,6 +145,7 @@
   "order": [
     "main",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
+    "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "custom_liquid_WeMtDF",
     "170452725046cbedab",
