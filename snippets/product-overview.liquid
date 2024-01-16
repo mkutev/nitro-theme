@@ -149,6 +149,7 @@
         assign content = field[content_key].value
         assign classes = field[css_key].value
         assign image = field[image_key].value
+        assign image_size = classes contains 'contain'
       %}
 
       {% unless header == blank %}
@@ -165,7 +166,7 @@
           {% if classes contains 'xl-image' %}
             <div
               class="zone__cover"
-              style="background: url('{{ image | image_url: width:1000 }}');"
+              style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size ? 'contain' : 'cover' }};"
             > </div>
           {% else %}
             <div
