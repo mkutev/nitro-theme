@@ -1,0 +1,76 @@
+{% comment %}
+  Custom block for displaying product specifications.
+          echo '<p class="spec"><span>' | append: formatted_words | append: '</span> ' | append: metafield.last | append: '</p>'
+{% endcomment %}
+
+{% style %}
+  #sizing-container .rich-text__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #sizing-container .rich-text__blocks {
+    width: 100%;
+  }
+
+  #sizing-container .block-sizing ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  #sizing-container .block-sizing ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+  }
+
+  #sizing-container .block-sizing ul i {
+    color: #2979ff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-right: 3px;
+  }
+
+  #sizing-container .block-sizing ul span {
+    color: black;
+  }
+
+  #sizing-container .block-sizing ul li {
+    display: inline-block;
+  }
+
+{% endstyle %}
+
+<div class="isolate">
+  <div
+    id="sizing-container"
+    class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+  >
+    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+      <div class="rich-text__blocks block-sizing ">
+        <h2
+          class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+          data-cascade
+          style="--animation-order: 3;"
+        >
+          Sizing
+        </h2>
+        <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
+          {% if product.metafields.sizing['content-text'] %}
+            <ul>
+              {{ product.metafields.sizing['content-text'] }}
+            </ul>
+          {% endif %}
+          {% if product.metafields.sizing.diagram %}
+            <img
+              src="{{ product.metafields.sizing.diagram | image_url }}"
+              alt="{{ product.title | escape }} sizing chart."
+              width="100%"
+              style="border: none;"
+            >
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
