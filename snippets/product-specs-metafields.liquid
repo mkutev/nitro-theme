@@ -13,31 +13,9 @@
     width: 100%;
   }
 
-  #specs-container .specs-list,
-  #specs-container .block-sizing ul {
+  #specs-container .specs-list {
     list-style: none;
     padding: 0;
-  }
-
-  #specs-container .block-sizing ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0 10px;
-  }
-
-  #specs-container .block-sizing ul i {
-    color: #2979ff;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-right: 3px;
-  }
-
-  #specs-container .block-sizing ul span {
-    color: black;
-  }
-
-  #specs-container .block-sizing ul li {
-    display: inline-block;
   }
 
   #specs-container .specs-list .spec span {
@@ -47,17 +25,6 @@
     font-weight: 500;
   }
 
-
-
-  @media screen and (min-width: 750px) {
-    #specs-container .rich-text__wrapper {
-      flex-direction: row;
-    }
-
-    #specs-container .block-specs {
-      max-width: 33%;
-    }
-  }
 {% endstyle %}
 
 <div class="isolate">
@@ -66,7 +33,7 @@
     class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
   >
     <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks block-specs left">
+      <div class="rich-text__blocks left">
         <h2
           class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
           data-cascade
@@ -98,30 +65,7 @@
           </ul>
         </div>
       </div>
-      <div class="rich-text__blocks block-sizing left">
-        <h2
-          class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
-          data-cascade
-          style="--animation-order: 3;"
-        >
-          Sizing
-        </h2>
-        <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 4;">
-          {% if product.metafields.sizing['content-text'] %}
-            <ul>
-              {{ product.metafields.sizing['content-text'] }}
-            </ul>
-          {% endif %}
-          {% if product.metafields.sizing.diagram %}
-            <img
-              src="{{ product.metafields.sizing.diagram | image_url }}"
-              alt="{{ product.title | escape }} sizing chart."
-              width="100%"
-              style="border: none;"
-            >
-          {% endif %}
-        </div>
-      </div>
+
     </div>
   </div>
 </div>
