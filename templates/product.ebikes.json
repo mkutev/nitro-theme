@@ -117,14 +117,12 @@
       "block_order": [
         "9c9d34f6-307a-49e1-9f26-99a1769bda2c"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "related-products": {
       "type": "related-products",
-      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
