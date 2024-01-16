@@ -42,6 +42,15 @@
     display: inline-block;
   }
 
+  #sizing-container .block-sizing img {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+    object-fit: contain;
+    max-width: 100%;
+    width: 1px;
+  }
+
   @media screen and (min-width: 1024px) {
     #sizing-container .block-sizing {
       flex-wrap: nowrap;
