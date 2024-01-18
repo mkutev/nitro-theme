@@ -83,11 +83,29 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "featured_blog_yPgqNG": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "stories",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "featured_collection",
-    "1705564819beeb675d"
+    "1705564819beeb675d",
+    "featured_blog_yPgqNG"
   ]
 }
