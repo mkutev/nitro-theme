@@ -87,7 +87,7 @@
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Blog posts",
+        "heading": "Latest Stories",
         "heading_size": "h1",
         "blog": "stories",
         "post_limit": 4,
