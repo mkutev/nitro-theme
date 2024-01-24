@@ -108,3 +108,12 @@
   display: flex;
   flex-direction: column;
 }
+
+/* All-bikes Section */
+.mega-menu__link--all-bikes {
+  max-width: 250px;
+}
+
+.mega-menu__link--all-bikes h2 {
+  margin: 0;
+}
