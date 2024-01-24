@@ -121,3 +121,8 @@
 .mega-menu__link--all-bikes p {
   /* margin: 0; */
 }
+
+mega-menu__link--all-bikes button {
+  border-color: #2979ff;
+  color: #2979ff; 
+}
