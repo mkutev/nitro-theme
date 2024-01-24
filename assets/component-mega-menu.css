@@ -115,5 +115,9 @@
 }
 
 .mega-menu__link--all-bikes h2 {
+  margin: 0 0 1em;
+}
+
+.mega-menu__link--all-bikes p {
   margin: 0;
 }
