@@ -125,6 +125,7 @@
 
 .mega-menu__link--all-bikes a {
   background-color: #2979ff;
+  display: inline-block; 
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
