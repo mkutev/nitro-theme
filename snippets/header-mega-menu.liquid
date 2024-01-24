@@ -36,10 +36,11 @@
                 >
                   {%- for childlink in link.links -%}
                     <li>
-                      
                       {% if childlink.handle == 'all-bikes' %}
-                        <h2>Not sure what you're looking for?</h2>
-                        <p>Take a look through our catalog.</p>
+                        <div class="mega-menu__link--all-bikes">
+                          <h2>Not sure what you're looking for?</h2>
+                          <p>Take a look through our catalog.</p>
+                        </div>
                       {% else %}
                         <a
                           id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
@@ -72,7 +73,7 @@
                                   {% if childlink.handle == 'by-model' %}
                                     <small>{{ collection.products_count | escape }} models</small>
                                   {% endif %}
-                                  
+
                                   {% if collection.image %}
                                     <img
                                       src="{{ collection.image.src | image_url: width: 135 }}"
