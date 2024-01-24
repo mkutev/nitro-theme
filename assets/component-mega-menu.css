@@ -112,6 +112,7 @@
 /* All-bikes Section */
 .mega-menu__link--all-bikes {
   max-width: 250px;
+  box-sizing: border-box;
 }
 
 .mega-menu__link--all-bikes h2 {
@@ -125,7 +126,7 @@
 .mega-menu__link--all-bikes a {
   background-color: #2979ff;
   color: white;
-  padding: 10px 15px;
+  padding: 5px 15px;
   border-radius: 5px;
   text-decoration: none;
 }
