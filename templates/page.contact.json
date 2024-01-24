@@ -44,6 +44,52 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_8f4LPD": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AQUNmr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Calgary Store",
+            "heading_size": "h1"
+          }
+        },
+        "text_yVHA3h": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_T4qjiz": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AQUNmr",
+        "text_yVHA3h",
+        "button_T4qjiz"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "form": {
       "type": "contact-form",
       "settings": {
@@ -58,6 +104,7 @@
   "order": [
     "main",
     "image_with_text_FAMUWn",
+    "image_with_text_8f4LPD",
     "form"
   ]
 }
