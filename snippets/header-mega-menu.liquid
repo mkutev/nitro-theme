@@ -66,6 +66,11 @@
                                     <small>{{ collection.products_count | escape }} models</small>
                                   {% endif %}
 
+                                  {% if childlink.handle == 'all-bikes' %}
+                                    <h2>Not sure what you're looking for?</h2>
+                                    <p>Take a look through our catalog.</p>
+                                  {% endif %}
+                                  
                                   {% if collection.image %}
                                     <img
                                       src="{{ collection.image.src | image_url: width: 135 }}"
