@@ -115,6 +115,10 @@
   box-sizing: border-box;
 }
 
+.mega-menu__link--all-bikes * {
+  display: block;
+}
+
 .mega-menu__link--all-bikes h2 {
   /* margin: 0 0 5px; */
 }
