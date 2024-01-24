@@ -58,11 +58,58 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_FAMUWn": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_AaRzp7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Canada <strong>Headquarters<\/strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_H8zfmH": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our headquarters, distribution center and showroom are located in Port Coquitlam, BC, Canada. At this location we meet new customers, test and inspect each bike prior to shipping. Our showroom is also open for local pickups and test rides during the regular work hours.<br\/>Wearing an approved helmet and signing liability waiver is mandatory when test riding our bikes. If you don't bring your own helmet then you can use one of the VoltBike helmets available at the entrance. Please click on the link for <a href=\"https:\/\/www.voltbike.com\/help-center\/can-i-test-ride-your-bikes-at-your-port-coquitlam-bc-location\">full test ride instructions.<\/a><br\/>There is no need of appointment to visit our headquarter. Our complete address is 1579 Kingsway Ave Unit 1125, Port Coquitlam, BC, V3C 0H1, Canada. Please click below for <a href=\"https:\/\/www.voltbike.com\/help-center\/article\/can-i-pick-up-my-bike-canadian-customers\">local pickup instructions<\/a>.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_MyHEgm": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_AaRzp7",
+        "text_H8zfmH",
+        "button_MyHEgm"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "rich_text_Jbapha"
+    "rich_text_Jbapha",
+    "image_with_text_FAMUWn"
   ]
 }
