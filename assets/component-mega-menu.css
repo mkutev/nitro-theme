@@ -122,7 +122,8 @@
   /* margin: 0; */
 }
 
-.mega-menu__link--all-bikes .button {
-  border-color: #2979ff;
-  color: #2979ff; 
+.mega-menu__link--all-bikes a {
+  background-color: #2979ff;
+  color: white;
+  padding: 5px 10px;
 }
