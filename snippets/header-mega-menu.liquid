@@ -44,6 +44,10 @@
                           aria-current="page"
                         {% endif %}
                       >
+                        {% if childlink.handle == 'all-bikes' %}
+                          <h2>Not sure what you're looking for?</h2>
+                          <p>Take a look through our catalog.</p>
+                        {% endif %}
                         {{ childlink.title | escape }}
                       </a>
                       {%- if childlink.links != blank -%}
@@ -64,11 +68,6 @@
 
                                   {% if childlink.handle == 'by-model' %}
                                     <small>{{ collection.products_count | escape }} models</small>
-                                  {% endif %}
-
-                                  {% if childlink.handle == 'all-bikes' %}
-                                    <h2>Not sure what you're looking for?</h2>
-                                    <p>Take a look through our catalog.</p>
                                   {% endif %}
                                   
                                   {% if collection.image %}
