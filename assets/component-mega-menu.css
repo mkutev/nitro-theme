@@ -102,6 +102,11 @@
 
 .mega-menu__list .list--by-model li img{
   display: block;
+  max-width: 135px;
+  max-height: 85px;
+  width: auto; 
+  height: auto;
+  object-fit: contain;
 }
 
 .mega-menu__list .list--by-model li a {
