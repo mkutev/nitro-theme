@@ -114,6 +114,10 @@
   flex-direction: column;
 }
 
+.mega-menu__list .list--by-model li a small {
+  color: #2979ff;
+}
+
 /* All-bikes Section */
 .mega-menu__link--all-bikes {
   max-width: 250px;
