@@ -132,11 +132,12 @@
 .mega-menu__link--all-bikes * {
   display: block;
   box-sizing: border-box;
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .mega-menu__link--all-bikes .heading {
-  font-size: 2em;
+  font-size: 28px;
+  line-height: normal;
 }
 
 .mega-menu__link--all-bikes a {
