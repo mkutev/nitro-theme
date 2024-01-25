@@ -149,13 +149,13 @@
   text-decoration: none;
 }
 
-.mega-menu__link--all-bikes .button--affirm {
+.mega-menu__link--all-bikes a.button--affirm {
   display: flex;
   text-decoration: none;
   color: gray;
   font-size: 0.9em;
 }
 
-.mega-menu__link--all-bikes .button--affirm img {
+.mega-menu__link--all-bikes a.button--affirm img {
   display: inline-block;
 }
