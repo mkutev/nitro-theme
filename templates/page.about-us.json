@@ -39,8 +39,8 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Joe-1.jpg",
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "Joe Fedilo",
+            "text": "<h5>Senior Bike Mechanic<\/h5><p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
