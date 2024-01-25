@@ -116,6 +116,7 @@
 
 .mega-menu__list .list--by-model li a small {
   color: #2979ff;
+  font-weight: bold;
 }
 
 /* All-bikes Section */
