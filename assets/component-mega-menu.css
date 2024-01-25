@@ -135,14 +135,6 @@
   margin: 5px 0;
 }
 
-.mega-menu__link--all-bikes h2 {
-  /* margin: 0 0 5px; */
-}
-
-.mega-menu__link--all-bikes p {
-  /* margin: 0; */
-}
-
 .mega-menu__link--all-bikes a {
   background-color: #2979ff;
   display: inline-block; 
