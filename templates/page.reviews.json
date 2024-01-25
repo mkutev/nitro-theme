@@ -6,9 +6,26 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "170621599592b202f6": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_all_reviews_page_U97btV": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_all_reviews_page_U97btV"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "170621599592b202f6"
   ]
 }
