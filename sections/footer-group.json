@@ -18,11 +18,19 @@
             "heading": "Quick links",
             "menu": "footer"
           }
+        },
+        "link_list_qM3YNa": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
         }
       },
       "block_order": [
         "914b1f0e-aea9-4c6a-be44-7288b70e9331",
-        "ff0449f7-eebe-4e9a-98b1-259d0572be7f"
+        "ff0449f7-eebe-4e9a-98b1-259d0572be7f",
+        "link_list_qM3YNa"
       ],
       "settings": {
         "color_scheme": "background-2",
