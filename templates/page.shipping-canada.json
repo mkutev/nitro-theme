@@ -24,7 +24,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/shipping-canada.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 50,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
