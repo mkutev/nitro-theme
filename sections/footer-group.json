@@ -22,8 +22,8 @@
         "link_list_qM3YNa": {
           "type": "link_list",
           "settings": {
-            "heading": "More",
-            "menu": "footer"
+            "heading": "Support",
+            "menu": "footer-menu-more"
           }
         }
       },
