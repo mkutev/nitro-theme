@@ -151,6 +151,7 @@
 
 .mega-menu__link--all-bikes a.button--affirm {
   display: flex;
+  align-items: center;
   text-decoration: none;
   color: gray;
   font-size: 0.9em;
