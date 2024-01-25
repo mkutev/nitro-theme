@@ -155,8 +155,10 @@
   text-decoration: none;
   color: gray;
   font-size: 0.9em;
+  gap: 10px;
 }
 
 .mega-menu__link--all-bikes a.button--affirm img {
   display: inline-block;
+  margin-bottom: 16px;
 }
