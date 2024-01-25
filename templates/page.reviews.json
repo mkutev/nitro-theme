@@ -7,6 +7,36 @@
         "padding_bottom": 28
       }
     },
+    "rich_text_CAdw9K": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_yJ4mHj": {
+          "type": "heading",
+          "settings": {
+            "heading": "10+ years in the industry",
+            "heading_size": "h1"
+          }
+        },
+        "text_UnaAVL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the assurance of our 10+ years in the industry with over 1,000 verified reviews. Your peace of mind is our priority. Join our thriving community, living proof that electric bikes are designed for everyone.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yJ4mHj",
+        "text_UnaAVL"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "170621599592b202f6": {
       "type": "apps",
       "blocks": {
@@ -26,6 +56,7 @@
   },
   "order": [
     "main",
+    "rich_text_CAdw9K",
     "170621599592b202f6"
   ]
 }
