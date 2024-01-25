@@ -114,6 +114,10 @@
   flex-direction: column;
 }
 
+.mega-menu__list .list--by-model li a span {
+  text-transform: uppercase;
+}
+
 .mega-menu__list .list--by-model li a small {
   color: #2979ff;
   font-weight: bold;
