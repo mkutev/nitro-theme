@@ -74,6 +74,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_MckeEQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chinard-1.jpg",
+            "title": "Chinard Benedicto",
+            "text": "<h5>Bike Mechanic<\/h5><p>Momchil splits his time between web development, product photography, and the design of marketing materials. In his spare time, he likes going for bike rides, taking photos, spending time with family and friends, and checking up on the Canucks.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -81,7 +91,8 @@
         "column_7Wm7xg",
         "column_yzwXJB",
         "column_BAMcFw",
-        "column_C7XgGf"
+        "column_C7XgGf",
+        "column_MckeEQ"
       ],
       "settings": {
         "title": "Our Team",
