@@ -38,7 +38,7 @@
                     <li>
                       {% if childlink.handle == 'all-bikes' %}
                         <div class="mega-menu__link--all-bikes">
-                          <h2>Not sure what you're looking for?</h2>
+                          <p class="heading">Not sure what you're looking for?</p>
                           <p>Take a look through our catalog.</p>
                           <a href="{{ childlink.url }}" class="">View All Bikes</a>
                         </div>
@@ -72,7 +72,7 @@
                                   <span>{{ collection.title | escape }}</span>
 
                                   {% if childlink.handle == 'by-model' %}
-                                    <small>{{ collection.products_count | escape }} models</small>
+                                    <small>{{ collection.products_count | escape }} Models</small>
                                   {% endif %}
 
                                   {% if collection.image %}
