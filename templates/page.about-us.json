@@ -84,6 +84,26 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_zqRneP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Bernie-2.jpg",
+            "title": "Bernard Henze",
+            "text": "<h5>Bike Mechanic<\/h5><p>Bicycle Bernie joins our team with over 30 years of bicycle maintenance and assembly expertise. During the 80's and 90's, he was one of Richmond's \"go-to-guys\" if you required any kind of assistance associated with your bicycle.<\/p><p>He also brings valuable experience in customer service and sales, and is very much looking forward to getting his hands dirty with your VoltBike!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Gt78Ga": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pedro-1.jpg",
+            "title": "Chinard Benedicto",
+            "text": "<h5>Bike Mechanic<\/h5><p>Momchil splits his time between web development, product photography, and the design of marketing materials. In his spare time, he likes going for bike rides, taking photos, spending time with family and friends, and checking up on the Canucks.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -92,7 +112,9 @@
         "column_yzwXJB",
         "column_BAMcFw",
         "column_C7XgGf",
-        "column_MckeEQ"
+        "column_MckeEQ",
+        "column_zqRneP",
+        "column_Gt78Ga"
       ],
       "settings": {
         "title": "Our Team",
