@@ -140,7 +140,7 @@
   line-height: normal;
 }
 
-.mega-menu__link--all-bikes a {
+.mega-menu__link--all-bikes .button--custom {
   background-color: #2979ff;
   display: inline-block; 
   color: white;
