@@ -225,20 +225,11 @@
             "text": "<p>Once a new order is placed, each bike is individually inspected and tested. Our bike mechanics are doing complete mechanical tune-up. Performance test is executed on each of the electrical components. Once the bike has passed the VoltBike inspection process, it is then assembled based on your specific modifications, including upgrades and added accessories.<\/p>",
             "text_style": "body"
           }
-        },
-        "button_eL4FCq": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_BjphFk",
-        "text_xRVPWj",
-        "button_eL4FCq"
+        "text_xRVPWj"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/service_center.jpg",
