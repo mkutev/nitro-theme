@@ -36,10 +36,57 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_4G4MtR": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ED8UQG": {
+          "type": "heading",
+          "settings": {
+            "heading": "BENEFITS",
+            "heading_size": "h1"
+          }
+        },
+        "text_kBfXL8": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><\/h2><ul><li>10% off our already aggressive prices for all models, with additional volume discounts for &gt; 10 bike orders (Applies to USA and Canada).<\/li><li>$300 worth of spare parts with every fleet purchased ( including sensors, tubes, lights, controllers, and more).<\/li><li>You can become part of our ambassador program through which you will be eligible to receive $50 reward every time you are referred on a new order.<\/li><\/ul>",
+            "text_style": "body"
+          }
+        },
+        "button_YBbDMd": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_ED8UQG",
+        "text_kBfXL8",
+        "button_YBbDMd"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "rich_text_6nNhKD"
+    "rich_text_6nNhKD",
+    "image_with_text_4G4MtR"
   ]
 }
