@@ -56,6 +56,13 @@
             "icon_3": "none",
             "heading_3": ""
           }
+        },
+        "popup_xLF3Hb": {
+          "type": "popup",
+          "settings": {
+            "text": "Shipping",
+            "page": "shipping-canada"
+          }
         }
       },
       "block_order": [
@@ -66,7 +73,8 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "icon_with_text_wJnRbE"
+        "icon_with_text_wJnRbE",
+        "popup_xLF3Hb"
       ],
       "settings": {
         "enable_sticky_info": true,
