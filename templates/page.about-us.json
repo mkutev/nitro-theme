@@ -208,6 +208,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_with_text_L7TFW8": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BjphFk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Individually Tuned and Tested",
+            "heading_size": "h1"
+          }
+        },
+        "text_xRVPWj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Once a new order is placed, each bike is individually inspected and tested. Our bike mechanics are doing complete mechanical tune-up. Performance test is executed on each of the electrical components. Once the bike has passed the VoltBike inspection process, it is then assembled based on your specific modifications, including upgrades and added accessories.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_eL4FCq": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BjphFk",
+        "text_xRVPWj",
+        "button_eL4FCq"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/service_center.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -215,6 +262,7 @@
     "main",
     "multicolumn_ybdwmN",
     "image_with_text_Vkfrw6",
-    "image_with_text_qyxamP"
+    "image_with_text_qyxamP",
+    "image_with_text_L7TFW8"
   ]
 }
