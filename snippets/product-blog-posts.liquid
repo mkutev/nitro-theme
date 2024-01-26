@@ -28,8 +28,10 @@
             data-cascade
             style="--animation-order: 4;"
           >
-            {% for article in related_posts %}
-            {% endfor %}
+            {% if related_posts.size > 0 %}
+              {% for article in related_posts %}
+              {% endfor %}
+            {% endif %}
           </div>
         </div>
       </div>
