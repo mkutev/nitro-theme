@@ -1,0 +1,38 @@
+{% comment %}
+  Custom block for product template that displays blog posts with a matching tag.
+{% endcomment %}
+
+{% style %}
+{% endstyle %}
+
+{% if product.metafields.blog.tags %}
+  {% assign product_tag = product.metafields.blog.tags %}
+  {% assign related_posts = blogs.stories.articles | where: 'tags', product_tag %}
+
+  <div class="isolate">
+    <div
+      id="sizing-container"
+      class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+    >
+      <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+        <div class="rich-text__blocks">
+          <h2
+            class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+            data-cascade
+            style="--animation-order: 3;"
+          >
+            Related Blog Posts
+          </h2>
+          <div
+            class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
+            data-cascade
+            style="--animation-order: 4;"
+          >
+            {% for article in related_posts %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
