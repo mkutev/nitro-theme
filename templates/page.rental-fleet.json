@@ -120,20 +120,11 @@
             "text": "<ul><li>Your company must have valid business license and permit to operate rental bike business.<\/li><li>It's recommended that your business do have insurance coverage for rental bikes.<\/li><li>You must have physical location where you can meet customers. We are also going to use this location to promote your business on our website and social channels.<\/li><li>You business should have online presence and website. Customers should be able to find online information they need like rental prices, rental availability, rental policies, photos of the bikes and more.<\/li><\/ul>",
             "text_style": "body"
           }
-        },
-        "button_GmWiX8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
-          }
         }
       },
       "block_order": [
         "heading_RLCQhA",
-        "text_49n7QW",
-        "button_GmWiX8"
+        "text_49n7QW"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/voltbike-police.jpg",
