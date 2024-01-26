@@ -42,6 +42,20 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": true
           }
+        },
+        "icon_with_text_wJnRbE": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "image_1": "shopify:\/\/shop_images\/shipping-icon.svg",
+            "heading_1": "Free Shipping",
+            "icon_2": "star",
+            "image_2": "shopify:\/\/shop_images\/warranty-icon.svg",
+            "heading_2": "1 Year Warranty",
+            "icon_3": "none",
+            "heading_3": ""
+          }
         }
       },
       "block_order": [
@@ -51,7 +65,8 @@
         "description",
         "price",
         "variant_picker",
-        "buy_buttons"
+        "buy_buttons",
+        "icon_with_text_wJnRbE"
       ],
       "settings": {
         "enable_sticky_info": true,
