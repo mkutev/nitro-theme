@@ -40,6 +40,7 @@
       "blocks": {
         "heading_CJD4JY": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Building a Rental Fleet",
             "heading_size": "h1"
@@ -58,7 +59,7 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
