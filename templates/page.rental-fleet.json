@@ -13,33 +13,13 @@
         "heading_7pN9dr": {
           "type": "heading",
           "settings": {
-            "heading": "Image banner",
+            "heading": "Building a Rental Fleet",
             "heading_size": "h1"
-          }
-        },
-        "text_AyKYak": {
-          "type": "text",
-          "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
-            "text_style": "body"
-          }
-        },
-        "buttons_E9fCCf": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_7pN9dr",
-        "text_AyKYak",
-        "buttons_E9fCCf"
+        "heading_7pN9dr"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/AshConrad-WhistlerEbikes-sm2.jpg",
