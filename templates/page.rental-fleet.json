@@ -50,23 +50,14 @@
         "text_kBfXL8": {
           "type": "text",
           "settings": {
-            "text": "<h2><\/h2><ul><li>10% off our already aggressive prices for all models, with additional volume discounts for &gt; 10 bike orders (Applies to USA and Canada).<\/li><li>$300 worth of spare parts with every fleet purchased ( including sensors, tubes, lights, controllers, and more).<\/li><li>You can become part of our ambassador program through which you will be eligible to receive $50 reward every time you are referred on a new order.<\/li><\/ul>",
+            "text": "<ul><li>10% off our already aggressive prices for all models, with additional volume discounts for &gt; 10 bike orders (Applies to USA and Canada).<\/li><li>$300 worth of spare parts with every fleet purchased ( including sensors, tubes, lights, controllers, and more).<\/li><li>You can become part of our ambassador program through which you will be eligible to receive $50 reward every time you are referred on a new order.<\/li><\/ul>",
             "text_style": "body"
-          }
-        },
-        "button_YBbDMd": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
         "heading_ED8UQG",
-        "text_kBfXL8",
-        "button_YBbDMd"
+        "text_kBfXL8"
       ],
       "settings": {
         "height": "adapt",
