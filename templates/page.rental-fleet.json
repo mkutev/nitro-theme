@@ -6,9 +6,40 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "rich_text_6nNhKD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_CJD4JY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Building a Rental Fleet",
+            "heading_size": "h1"
+          }
+        },
+        "text_fPcXJr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Voltbike we are actively looking for rental fleet operators.<\/p><p>We understand the value which this would bring to our brand and because of that we are offering aggressive incentive. In addition for the chance to work with established brand you will also have the opportunity to take part in our referral ambassador program and earn money with every bike you sell. Our rental fleet partners will be added to our ambassador map where potential customers in your area would be directed to you. On top of that we will promote your location on Facebook, Instagram and other media channels we use.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CJD4JY",
+        "text_fPcXJr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "rich_text_6nNhKD"
   ]
 }
