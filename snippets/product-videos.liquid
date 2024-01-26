@@ -1,3 +1,49 @@
 {% comment %}
   A custom block to display YouTube videos related to the current product.
 {% endcomment %}
+
+{% style %}
+    .videos-tab {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .videos-tab .video {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 48%;
+      margin: 1em;
+  }
+
+  .videos-tab .video .thumb {
+      aspect-ratio: 16/9;
+      background-size: 102% auto;
+      background-position: center;
+      border-radius: 5px;
+      overflow: hidden;
+  }
+
+  .videos-tab .video .title {
+      display: block;
+      width: fit-content;
+      width: -moz-fit-content;
+      margin: auto;
+      color: var(--blue-primary);
+      font-weight: bold;
+  }
+
+  .videos-tab .video {
+      text-decoration-color: var(--blue-primary);
+  }
+
+  .videos-tab .video:hover .thumb {
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      filter: brightness(0.8);
+  }
+{% endstyle %}
+
+{% liquid
+
+%}
