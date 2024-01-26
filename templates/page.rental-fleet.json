@@ -136,6 +136,7 @@
         "button_GmWiX8"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/voltbike-police.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
