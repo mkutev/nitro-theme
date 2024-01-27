@@ -57,33 +57,33 @@
     "image_with_text_dLJ3tp": {
       "type": "image-with-text",
       "blocks": {
+        "caption_twYHtA": {
+          "type": "caption",
+          "settings": {
+            "caption": "Step 2",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "heading_PxzFCC": {
           "type": "heading",
           "settings": {
-            "heading": "Image with text",
+            "heading": "Choose Your Payment",
             "heading_size": "h1"
           }
         },
         "text_PcCNbH": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>During the checkout process, kindly select Affirm and complete the required details to generate your calculations.<\/p>",
             "text_style": "body"
-          }
-        },
-        "button_Jc8jaL": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false
           }
         }
       },
       "block_order": [
+        "caption_twYHtA",
         "heading_PxzFCC",
-        "text_PcCNbH",
-        "button_Jc8jaL"
+        "text_PcCNbH"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/step_2_laptop.jpg",
