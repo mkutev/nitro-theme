@@ -133,6 +133,7 @@
         "text_hFTRaQ"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/step_3_laptop.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
