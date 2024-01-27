@@ -6,9 +6,57 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_with_text_JMemYa": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_9WrndA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Fill your Cart",
+            "heading_size": "h1"
+          }
+        },
+        "text_JgYBic": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_K4GG7P": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9WrndA",
+        "text_JgYBic",
+        "button_K4GG7P"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/laptop_step_1.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_JMemYa"
   ]
 }
