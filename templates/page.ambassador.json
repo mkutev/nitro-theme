@@ -6,9 +6,26 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "17066391495fcca669": {
+      "type": "apps",
+      "blocks": {
+        "s_store_locator_storeify_storelocator_Pcqc68": {
+          "type": "shopify:\/\/apps\/s-store-locator\/blocks\/storeify-storelocator\/e7003487-cc51-4321-9488-2c47c07a5b17",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "s_store_locator_storeify_storelocator_Pcqc68"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "17066391495fcca669"
   ]
 }
