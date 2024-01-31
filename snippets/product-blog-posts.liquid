@@ -52,12 +52,13 @@
               <div class="article">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
+                <p>{{ content | truncate: 100 }}</p>
+
                 <img
                   src="{{ article.image.src |image_url: width: 200, height: 200 }}"
                   alt="{{ article.image.alt | escape }}"
                   width="200"
                 >
-                <p>{{ content | truncate: 50 }}</p>
               </div>
             {% endfor %}
           {% else %}
