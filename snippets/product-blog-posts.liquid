@@ -7,15 +7,22 @@
 
 {% liquid
   assign articles = blogs.stories.articles
+  assign articles_related = ''
   assign product_tag = product.metafields.blog.tags
   assign articles_qty = articles.size
-  assign articles_related_qty = 0
+  assign articles_related_qty = articles_related.size
 
   for article in articles
     if article.tags contains product_tag
-      assign articles_related_qty = articles_related_qty | plus: 1
+      assign articles_related = articles_related | append: article | append: ','
     endif
   endfor
+
+  if articles_related != empty
+    assign articles_related = articles_related | split: ','
+  else
+    assign articles_related = ''
+  endif
 %}
 
 <div class="isolate">
@@ -44,7 +51,7 @@
             <br>
             Related articles: {{ articles_related_qty }}
             <br>
-            {% for article in articles %}
+            {% for article in articles_related %}
               {{ article.title }}
               <br>
             {% endfor %}
