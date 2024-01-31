@@ -51,7 +51,7 @@
               {% assign content = article.content | truncate: 50 %}
               <div class="article">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
-                <h3>{{ article.title }}</h3>
+                <h4>{{ article.title }}</h4>
                 <img
                   src="{{ article.image.src |image_url: width: 200, height: 200 }}"
                   alt="{{ article.image.alt | escape }}"
