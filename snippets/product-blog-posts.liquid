@@ -40,7 +40,9 @@
           Total articles: {{ articles_qty }}
 
           {% if product_tag != empty %}
-            Product tag metafield not empty, value: {{ product_tag }}
+            Product tag metafield not empty, value: {{ product_tag -}}
+            <br>
+            Related articles: {{ articles_related_qty }}
             <br>
             {% for article in articles %}
               {{ article.title }}
