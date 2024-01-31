@@ -10,7 +10,6 @@
   assign articles_related = ''
   assign product_tag = product.metafields.blog.tags
   assign articles_qty = articles.size
-  assign articles_related_qty = articles_related.size
 
   for article in articles
     if article.tags contains product_tag
@@ -25,6 +24,8 @@
   else
     assign articles_related = ''
   endif
+
+  assign articles_related_qty = articles_related.size
 %}
 
 <div class="isolate">
