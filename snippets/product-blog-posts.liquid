@@ -51,8 +51,8 @@
             <br>
             # of related articles: {{ articles_related_qty }}
             <br>
-            {% for id in articles_related_ids %}
-              {{ id }}
+            {% for handle in articles_related_handles %}
+              {{ handle }}
               <br>
             {% endfor %}
           {% else %}
