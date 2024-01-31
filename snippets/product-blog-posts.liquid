@@ -34,9 +34,9 @@
             style="--animation-order: 4;"
           >
             Total posts: {{ total_posts }}
-            {{ for post in related_posts }}
-            {{ post }}
-            {{ endfor }}
+            {% for post in related_posts %}
+              {{ post }}
+            {% endfor %}
             {% if related_posts.size > 0 %}
               {% for article in related_posts %}
               {% endfor %}
