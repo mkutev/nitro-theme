@@ -23,13 +23,13 @@
           >
             Related Blog Posts
           </h2>
-          {{ product_tag }}
           <div
             class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
             data-cascade
             style="--animation-order: 4;"
           >
             {% if related_posts.size > 0 %}
+              {{ product_tag }}
               {% for article in related_posts %}
               {% endfor %}
             {% endif %}
