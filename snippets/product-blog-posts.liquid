@@ -23,6 +23,7 @@
           >
             Related Blog Posts
           </h2>
+          {{ product_tag }}
           <div
             class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
             data-cascade
@@ -30,7 +31,6 @@
           >
             {% if related_posts.size > 0 %}
               {% for article in related_posts %}
-                {{ product_tag }}
               {% endfor %}
             {% endif %}
           </div>
