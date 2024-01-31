@@ -52,7 +52,7 @@
                 <h3>{{ article.title }}</h3>
                 {{ article.image }}
                 {{ article.created_at }}
-                {{ article.content }}
+                {{ article.content | truncate: 100, '...' }}
               </div>
             {% endfor %}
           {% else %}
