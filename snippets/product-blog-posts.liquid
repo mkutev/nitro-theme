@@ -13,6 +13,7 @@
 
   for article in articles_all
     if article.tags contains product_tag
+      echo article.handle
       assign aritcles_related_handles = aritcles_related_handles | append: article.handle
       assign aritcles_related_handles = aritcles_related_handles | append: ','
     endif
