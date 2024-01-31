@@ -7,6 +7,8 @@
 
 {% if product.metafields.blog.tags %}
   {% assign product_tag = product.metafields.blog.tags %}
+  {% assign total_posts = blogs.stories.articles.size %}
+
   {% assign related_posts = blogs.stories.articles | where: 'tags', product_tag %}
 
   <div class="isolate">
@@ -28,8 +30,8 @@
             data-cascade
             style="--animation-order: 4;"
           >
+            Total posts: {{ total_posts }}
             {% if related_posts.size > 0 %}
-              {{ product_tag }}
               {% for article in related_posts %}
               {% endfor %}
             {% endif %}
