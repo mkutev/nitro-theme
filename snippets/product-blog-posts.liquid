@@ -52,7 +52,7 @@
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h3>{{ article.title }}</h3>
                 {{ article.image }}
-                <p>{{ article.content | truncate: 100, '...' }}</p>
+                <p>{{ article.content | truncate: 50 }}</p>
               </div>
             {% endfor %}
           {% else %}
