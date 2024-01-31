@@ -48,7 +48,7 @@
           {% if product_tag != empty %}
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
-              {% assign content = article.content | truncate: 50 %}
+              {% assign content = article.content | strip_html %}
               <div class="article">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
@@ -57,7 +57,7 @@
                   alt="{{ article.image.alt | escape }}"
                   width="200"
                 >
-                <p>{{ content }}</p>
+                <p>{{ content | truncate: 50 }}</p>
               </div>
             {% endfor %}
           {% else %}
