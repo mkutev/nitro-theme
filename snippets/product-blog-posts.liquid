@@ -51,6 +51,7 @@
             # of related articles: {{ articles_related_qty }}
             <br>
             {% for id in articles_related_ids %}
+              {{ id }}
               {% assign article = articles[id] %}
               {{ article.title }}
             {% endfor %}
