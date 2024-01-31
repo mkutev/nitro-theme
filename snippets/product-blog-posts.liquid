@@ -13,18 +13,18 @@
 
   for article in articles_all
     if article.tags contains product_tag
-      assign articles_related_ids = articles_related_ids | append: article.handle
-      assign articles_related_ids = articles_related_ids | append: ','
+      assign aritcles_related_handles = aritcles_related_handles | append: article.handle
+      assign aritcles_related_handles = aritcles_related_handles | append: ','
     endif
   endfor
 
-  if articles_related_ids != empty
-    assign articles_related_ids = articles_related_ids | split: ','
+  if aritcles_related_handles != empty
+    assign aritcles_related_handles = aritcles_related_handles | split: ','
   else
-    assign articles_related_ids = ''
+    assign aritcles_related_handles = ''
   endif
 
-  assign articles_related_qty = articles_related_ids.size
+  assign articles_related_qty = aritcles_related_handles.size
 %}
 
 <div class="isolate">
