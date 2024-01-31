@@ -7,7 +7,10 @@
 
 {% if product.metafields.blog.tags %}
   {% assign product_tag = product.metafields.blog.tags %}
+
   {% assign total_posts = blogs.stories.articles.size %}
+
+  {% assign related_posts_qty = 0 %}
 
   {% assign related_posts = blogs.stories.articles | where: 'tags', product_tag %}
 
@@ -31,6 +34,9 @@
             style="--animation-order: 4;"
           >
             Total posts: {{ total_posts }}
+            {{ for post in related_posts }}
+            {{ post }}
+            {{ endif }}
             {% if related_posts.size > 0 %}
               {% for article in related_posts %}
               {% endfor %}
