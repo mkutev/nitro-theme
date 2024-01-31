@@ -46,10 +46,6 @@
           style="--animation-order: 4;"
         >
           {% if product_tag != empty %}
-            Tag: {{ product_tag }}
-            <br>
-            # of related articles: {{ articles_related_qty }}
-            <br>
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               <div class="article">
