@@ -50,9 +50,8 @@
             <br>
             # of related articles: {{ articles_related_qty }}
             <br>
-            {{ articles_related_ids }}
+            {{ articles_related_ids.size }}
             {% for id in articles_related_ids %}
-              {{ id }}
               {% assign article = articles[id] %}
               {{ article.title }}
             {% endfor %}
