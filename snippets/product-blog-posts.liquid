@@ -52,8 +52,7 @@
             <br>
             {% for id in articles_related_ids %}
               {{ id }}
-              {% assign article = articles[id] %}
-              {{ article.title }}
+              <br>
             {% endfor %}
           {% else %}
             blog.tags is empty.
