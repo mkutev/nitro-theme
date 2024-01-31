@@ -14,6 +14,7 @@
 
   for article in articles
     if article.tags contains product_tag
+      echo article.title
       assign articles_related = articles_related | append: article
       assign articles_related = articles_related | append: ','
     endif
