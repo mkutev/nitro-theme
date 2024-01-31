@@ -7,7 +7,6 @@
 
 {% liquid
   assign articles_all = blogs.stories.articles
-  assign articles_related_ids = ''
   assign articles_related_handles = ''
   assign product_tag = product.metafields.blog.tags
 
@@ -54,6 +53,9 @@
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               {{ article.title }}
+              {{ article.image }}
+              {{ article.created_at }}
+              {{ article.content }}
               <br>
             {% endfor %}
           {% else %}
