@@ -49,9 +49,9 @@
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               <div class="article">
+                <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h3>{{ article.title }}</h3>
                 {{ article.image }}
-                {{ article.created_at }}
                 <p>{{ article.content | truncate: 100, '...' }}</p>
               </div>
             {% endfor %}
