@@ -53,7 +53,7 @@
             <br>
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
-              {{ article.handle }}
+              {{ article.title }}
               <br>
             {% endfor %}
           {% else %}
