@@ -68,6 +68,7 @@
         "text_yVHA3h"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/calgary_store.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
