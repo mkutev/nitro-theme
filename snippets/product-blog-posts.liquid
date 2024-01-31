@@ -47,14 +47,16 @@
           Total articles: {{ articles_qty }}
 
           {% if product_tag != empty %}
-            Product tag metafield not empty, value: {{ product_tag }}
+            Tag: {{ product_tag }}
             <br>
-            Related articles: {{ articles_related_qty }}
+            # of related articles: {{ articles_related_qty }}
             <br>
             {% for article in articles_related %}
               {{ article.title }}
               <br>
             {% endfor %}
+          {% else %}
+            blog.tags is empty.
           {% endif %}
         </div>
       </div>
