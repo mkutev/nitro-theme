@@ -52,7 +52,7 @@
               <div class="article">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h3>{{ article.title }}</h3>
-                {{ article.image }}
+                <img src="{{ article.image | file_img_url: 'small' }}" width="200">
                 <p>{{ content }}</p>
               </div>
             {% endfor %}
