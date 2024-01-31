@@ -53,7 +53,7 @@
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h3>{{ article.title }}</h3>
                 <img
-                  src="{{ article.image.src | file_img_url: 'small' }}"
+                  src="{{ article.image.src }}"
                   alt="{{ article.image.alt | escape }}"
                   width="200"
                 >
