@@ -6,13 +6,12 @@
 {% endstyle %}
 
 {% liquid
-  assign articles = blogs.stories.articles
+  assign articles_all = blogs.stories.articles
   assign articles_related_ids = ''
   assign product_tag = product.metafields.blog.tags
 
-  for article in articles
+  for article in articles_all
     if article.tags contains product_tag
-      echo article.id
       assign articles_related_ids = articles_related_ids | append: article.id
       assign articles_related_ids = articles_related_ids | append: ','
     endif
@@ -52,7 +51,7 @@
             # of related articles: {{ articles_related_qty }}
             <br>
             {% for id in articles_related_ids %}
-              {{ id }}
+              {{ articles_all[id].title }}
               <br>
             {% endfor %}
           {% else %}
