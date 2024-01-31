@@ -52,7 +52,7 @@
             <br>
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
-              {{ article.title }}
+              <h3>{{ article.title }}</h3>
               {{ article.image }}
               {{ article.created_at }}
               {{ article.content }}
