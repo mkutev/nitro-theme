@@ -131,6 +131,7 @@
     },
     "featured_blog_GWWn6E": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Related Blog Posts",
         "heading_size": "h1",
