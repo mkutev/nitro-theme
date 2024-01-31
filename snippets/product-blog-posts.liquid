@@ -35,7 +35,7 @@
           >
             Total posts: {{ total_posts }}
             {% for post in related_posts %}
-              {{ post }}
+              {{ post.created_at | date: '%B %d, %Y' }}
             {% endfor %}
             {% if related_posts.size > 0 %}
               {% for article in related_posts %}
