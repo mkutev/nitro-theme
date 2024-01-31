@@ -36,7 +36,7 @@
             Total posts: {{ total_posts }}
             {{ for post in related_posts }}
             {{ post }}
-            {{ endif }}
+            {{ endfor }}
             {% if related_posts.size > 0 %}
               {% for article in related_posts %}
               {% endfor %}
