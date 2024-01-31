@@ -8,24 +8,24 @@
 {% liquid
   assign articles_all = blogs.stories.articles
   assign articles_related_ids = ''
-  assign aritcles_related_handles = ''
+  assign articles_related_handles = ''
   assign product_tag = product.metafields.blog.tags
 
   for article in articles_all
     if article.tags contains product_tag
       echo article.handle
-      assign aritcles_related_handles = aritcles_related_handles | append: article.handle
-      assign aritcles_related_handles = aritcles_related_handles | append: ','
+      assign articles_related_handles = articles_related_handles | append: article.handle
+      assign articles_related_handles = articles_related_handles | append: ','
     endif
   endfor
 
-  if aritcles_related_handles != empty
-    assign aritcles_related_handles = aritcles_related_handles | split: ','
+  if articles_related_handles != empty
+    assign articles_related_handles = articles_related_handles | split: ','
   else
-    assign aritcles_related_handles = ''
+    assign articles_related_handles = ''
   endif
 
-  assign articles_related_qty = aritcles_related_handles.size
+  assign articles_related_qty = articles_related_handles.size
 %}
 
 <div class="isolate">
