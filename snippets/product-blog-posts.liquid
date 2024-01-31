@@ -5,43 +5,49 @@
 {% style %}
 {% endstyle %}
 
-{% if product.metafields.blog.tags %}
-  {% assign product_tag = product.metafields.blog.tags %}
+{% liquid
+  assign articles = blogs.stories.articles
+  assign product_tag = product.metafields.blog.tags
+  assign articles_qty = articles.size
+  assign articles_related_qty = 0
 
-  {% assign articles = blogs.stories.articles | where: 'tags', product_tag %}
-  {% assign articles_qty = articles.size %}
+  for article in articles
+    if article.tags contains product_tag
+      assign articles_related_qty = articles_related_qty | plus: 1
+    endif
+  endfor
+%}
 
-  <div class="isolate">
-    <div
-      id="sizing-container"
-      class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
-    >
-      <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-        <div class="rich-text__blocks">
-          <h2
-            class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
-            data-cascade
-            style="--animation-order: 3;"
-          >
-            Related Blog Posts
-          </h2>
-          <div
-            class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
-            data-cascade
-            style="--animation-order: 4;"
-          >
-            Total articles: {{ articles_qty }}
+<div class="isolate">
+  <div
+    id="sizing-container"
+    class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+  >
+    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+      <div class="rich-text__blocks">
+        <h2
+          class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+          data-cascade
+          style="--animation-order: 3;"
+        >
+          Related Blog Posts
+        </h2>
+        <div
+          class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
+          data-cascade
+          style="--animation-order: 4;"
+        >
+          Total articles: {{ articles_qty }}
 
-            {% if product_tag != empty %}
-              Product tag metafield not empty, value: {{ product_tag }}
-              <br>
-              {% for article in articles %}
-                {{ article.title }}
-              {% endfor %}
-            {% endif %}
-          </div>
+          {% if product_tag != empty %}
+            Product tag metafield not empty, value: {{ product_tag }}
+            <br>
+            {% for article in articles %}
+              {{ article.title }}
+            {% endfor %}
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
-{% endif %}
+</div>
