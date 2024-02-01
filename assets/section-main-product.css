@@ -1599,3 +1599,8 @@ a.product__text {
     border: none;
   }
 }
+
+.instock-alert {
+    border-left: 5px solid #09BC8A;
+    background-color: rgb(9 188 138 / 20%);
+}
