@@ -78,8 +78,12 @@
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               {% assign content = article.content | strip_html %}
-              {% assign counter = 1 %}
-              <div class="related-blog-posts__post">
+              {% assign counter = 2 %}
+              <div
+                class="related-blog-posts__post scroll-trigger animate--slide-in"
+                data-cascade
+                style="--animation-order: {{ counter }}"
+              >
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
                 <img
@@ -91,6 +95,7 @@
                 <p>{{ content | truncate: 80 }}</p>
                 <a href="{{ article.url }}">Read Post</a>
               </div>
+              {% assign counter = counter | plus: 1 %}
             {% endfor %}
           {% else %}
             blog.tags is empty.
