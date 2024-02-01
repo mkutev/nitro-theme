@@ -8,6 +8,10 @@
     flex-direction: row;
     flex-wrap: no-wrap;
   }
+
+  .related-blog-posts__post {
+    max-width: 300px;
+  }
 {% endstyle %}
 
 {% liquid
@@ -53,9 +57,10 @@
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
                 <img
-                  src="{{ article.image.src |image_url: width: 200, height: 200 }}"
+                  src="{{ article.image.src |image_url: width: 300, height: 300 }}"
                   alt="{{ article.image.alt | escape }}"
-                  width="200"
+                  width="300"
+                  height="300"
                 >
                 <p>{{ content | truncate: 100 }}</p>
                 <a href="{{ article.url }}">Read Post</a>
