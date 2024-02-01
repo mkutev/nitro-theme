@@ -74,14 +74,14 @@
           Related Blog Posts
         </h2>
         <div
-          class="related-blog-posts__post-list rte scroll-trigger animate--slide-in"
+          class="related-blog-posts__post-list rte"
           data-cascade
-          style="--animation-order: 2;"
         >
           {% if product_tag != empty %}
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               {% assign content = article.content | strip_html %}
+              {% assign counter = 1 %}
               <div class="related-blog-posts__post">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
