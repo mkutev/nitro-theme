@@ -3,6 +3,11 @@
 {% endcomment %}
 
 {% style %}
+  .related-blog-post__post-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 {% endstyle %}
 
 {% liquid
@@ -26,25 +31,25 @@
 
 <div class="related-blog-posts isolate">
   <div class="content-container content-container--full-width color-background-1">
-    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks">
+    <div class="related-blog-posts__wrapper related-blog-posts__wrapper--left page-width">
+      <div class="related-blog-posts__blocks">
         <h2
-          class="rich-text__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+          class="related-blog-posts__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
           data-cascade
-          style="--animation-order: 3;"
+          style="--animation-order: 1;"
         >
           Related Blog Posts
         </h2>
         <div
-          class="block-sizing rich-text__text rte scroll-trigger animate--slide-in"
+          class="related-blog-posts__post-list rte scroll-trigger animate--slide-in"
           data-cascade
-          style="--animation-order: 4;"
+          style="--animation-order: 2;"
         >
           {% if product_tag != empty %}
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               {% assign content = article.content | strip_html %}
-              <div class="article">
+              <div class="related-blog-posts_post">
                 <small>{{ article.created_at | date: '%b %d, %y' }}</small>
                 <h4>{{ article.title }}</h4>
                 <p>{{ content | truncate: 100 }}</p>
