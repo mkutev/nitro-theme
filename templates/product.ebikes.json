@@ -28,7 +28,7 @@
         "custom_liquid_katXdi": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "In-stock and ships on the next business day."
+            "custom_liquid": "<div class=\"in-stock\">In-stock and ships on the next business day.<\/div>"
           }
         },
         "price": {
