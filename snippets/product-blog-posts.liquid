@@ -75,10 +75,10 @@
         </h2>
         <div class="related-blog-posts__post-list rte">
           {% if product_tag != empty %}
+            {% assign counter = 2 %}
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
               {% assign content = article.content | strip_html %}
-              {% assign counter = 2 %}
               <div
                 class="related-blog-posts__post scroll-trigger animate--slide-in"
                 data-cascade
