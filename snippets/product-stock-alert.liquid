@@ -1,0 +1,5 @@
+{% liquid
+   if product.metafields.custom.in_stock_alert
+      echo '<div class="instock-alert">' | append: product.metafields.custom.in_stock_alert | append: '</div>'
+   endif
+%}
