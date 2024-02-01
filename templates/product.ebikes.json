@@ -25,6 +25,12 @@
           "settings": {
           }
         },
+        "custom_liquid_katXdi": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "In-stock and ships on the next business day."
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -63,6 +69,7 @@
         "title",
         "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b",
         "description",
+        "custom_liquid_katXdi",
         "price",
         "variant_picker",
         "buy_buttons",
