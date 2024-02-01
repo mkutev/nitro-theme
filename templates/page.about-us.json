@@ -104,6 +104,16 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_h8WJaU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Yavor-3.jpg",
+            "title": "Yavor Yankov",
+            "text": "<h5>Bike Mechanic<\/h5><p>With his love for biking, Yavor spends his days making sure all bikes meet VoltBike's commitment to quality at the VoltBike manufacturing site in Port Coquitlam, BC, Canada. On the weekend, you will probably find him re-organizing his CD collection.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -114,7 +124,8 @@
         "column_C7XgGf",
         "column_MckeEQ",
         "column_zqRneP",
-        "column_Gt78Ga"
+        "column_Gt78Ga",
+        "column_h8WJaU"
       ],
       "settings": {
         "title": "Our Team",
