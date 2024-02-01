@@ -1615,4 +1615,5 @@ a.product__text {
     padding: 1rem 2.5rem;
     color: #484848;
     border-radius: 0 5px 5px 0;
+    font-size: small;
 }
