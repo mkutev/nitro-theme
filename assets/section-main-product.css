@@ -1604,3 +1604,11 @@ a.product__text {
     border-left: 5px solid #09BC8A;
     background-color: rgb(9 188 138 / 20%);
 }
+
+.backorder-alert, .instock-alert {
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    line-height: normal;
+    color: #484848;
+    border-radius: 0 5px 5px 0;
+}
