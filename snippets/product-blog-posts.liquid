@@ -73,10 +73,7 @@
         >
           Related Blog Posts
         </h2>
-        <div
-          class="related-blog-posts__post-list rte"
-          data-cascade
-        >
+        <div class="related-blog-posts__post-list rte">
           {% if product_tag != empty %}
             {% for handle in articles_related_handles %}
               {% assign article = articles[handle] %}
