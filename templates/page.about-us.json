@@ -58,6 +58,16 @@
         "column_BAMcFw": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/jason_photo_1.jpg",
+            "title": "Jason",
+            "text": "<h5>Marketing Manager<\/h5><p>Erin joined the VoltBike team to meet the demand for the 2020 season. Holding down the customer support lines, Erin is essential part of our team. You can typically find her swimming, working out, and soon to be out on the trail with the rest of the VoltBike crew!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MhXhHb": {
+          "type": "column",
+          "settings": {
             "image": "shopify:\/\/shop_images\/Erin-2.jpg",
             "title": "Erin Altstadt",
             "text": "<h5>Customer Relations Specialist<\/h5><p>Erin joined the VoltBike team to meet the demand for the 2020 season. Holding down the customer support lines, Erin is essential part of our team. You can typically find her swimming, working out, and soon to be out on the trail with the rest of the VoltBike crew!<\/p>",
@@ -131,6 +141,7 @@
         "column_7Wm7xg",
         "column_yzwXJB",
         "column_BAMcFw",
+        "column_MhXhHb",
         "column_C7XgGf",
         "column_MckeEQ",
         "column_zqRneP",
