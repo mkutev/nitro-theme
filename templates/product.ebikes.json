@@ -139,7 +139,7 @@
     "custom_liquid_8eq7nr": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "{% render 'product-instagram-feed' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
