@@ -178,15 +178,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "custom_liquid_d6LU7P": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "Test\n\n<!-- LightWidget WIDGET --><script src=\"https:\/\/cdn.lightwidget.com\/widgets\/lightwidget.js\"><\/script><iframe src=\"https:\/\/cdn.lightwidget.com\/widgets\/8a79a8eb9bda5ef283d4dab6b070bcb4.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;border:0;overflow:hidden;\"><\/iframe>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -198,7 +189,6 @@
     "custom_liquid_QHDtRT",
     "170452725046cbedab",
     "custom_liquid_XR8Uw3",
-    "related-products",
-    "custom_liquid_d6LU7P"
+    "related-products"
   ]
 }
