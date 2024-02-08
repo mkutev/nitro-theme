@@ -139,7 +139,7 @@
     "custom_liquid_pzMHV4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "Test",
+        "custom_liquid": "{% render 'product-instagram-feed' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
