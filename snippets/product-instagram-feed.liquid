@@ -1,5 +1,5 @@
 {% liquid
-   if product.metafields.custom.in_stock_alert
-      echo '<h2>Customer Photos</h2><div class="instock-alert">' | append: product.metafields.custom.in_stock_alert | append: '</div>'
+   if product.metafields.custom.instagram_feed
+      echo '<h2>Customer Photos</h2>' | append: product.metafields.custom.instagram_feed | append: ' '
    endif
 %}
