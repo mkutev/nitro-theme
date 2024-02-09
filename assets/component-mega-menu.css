@@ -124,23 +124,23 @@
 }
 
 /* All-bikes Section */
-.mega-menu__link--all-bikes {
+.mega-menu__link--view-all {
   max-width: 250px;
   box-sizing: border-box;
 }
 
-.mega-menu__link--all-bikes * {
+.mega-menu__link--view-all * {
   display: block;
   box-sizing: border-box;
   margin: 10px 0;
 }
 
-.mega-menu__link--all-bikes .heading {
+.mega-menu__link--view-all .heading {
   font-size: 28px;
   line-height: normal;
 }
 
-.mega-menu__link--all-bikes .button--custom {
+.mega-menu__link--view-all .button--custom {
   background-color: #2979ff;
   display: inline-block; 
   color: white;
@@ -149,7 +149,7 @@
   text-decoration: none;
 }
 
-.mega-menu__link--all-bikes a.button--affirm {
+.mega-menu__link--view-all a.button--affirm {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -157,7 +157,7 @@
   font-size: 0.9em;
 }
 
-.mega-menu__link--all-bikes a.button--affirm img {
+.mega-menu__link--view-all a.button--affirm img {
   display: inline-block;
   margin-bottom: 16px;
   margin-left: 5px;
