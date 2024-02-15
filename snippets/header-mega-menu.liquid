@@ -65,6 +65,18 @@
                             <p>Take a look through our catalog.</p>
                             <a href="{{ childlink.url }}" class="button--custom">View All Replacement Parts</a>
                           </div>
+                        {% when 'image-container-accessories' %}
+                          <img
+                            src="{{ 'Accessories-compressed.jpg' | file_img_url: '150x150' }}"
+                            alt="Thumbnail of various VoltBike accessories."
+                            width="150"
+                          >
+                        {% when 'image-container-replacement-parts' %}
+                          <img
+                            src="{{ 'Accessories-compressed.jpg' | file_img_url }}"
+                            alt="Thumbnail of various VoltBike replacement parts."
+                            width="150"
+                          >
                         {% else %}
                           <a
                             id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
