@@ -159,7 +159,7 @@
       },
       "11161734289043474827": {
         "type": "shopify:\/\/apps\/rt-instant-faq-help-center\/blocks\/app-embed\/42a6a0f1-7775-488e-92d1-ef440cc5a462",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
