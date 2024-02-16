@@ -51,7 +51,7 @@
         "collection": "all-products",
         "products_to_show": 5,
         "columns_desktop": 5,
-        "full_width": true,
+        "full_width": false,
         "show_view_all": false,
         "view_all_style": "link",
         "enable_desktop_slider": true,
