@@ -40,6 +40,15 @@
         "show_text_below": false
       }
     },
+    "custom_liquid_eYBC8z": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -104,6 +113,7 @@
   },
   "order": [
     "image_banner",
+    "custom_liquid_eYBC8z",
     "featured_collection",
     "1705564819beeb675d",
     "featured_blog_yPgqNG"
