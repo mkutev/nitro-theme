@@ -14,7 +14,7 @@
             <details id="Details-HeaderMenu-{{ forloop.index }}" class="mega-menu">
               <summary
                 id="HeaderMenu-{{ link.handle }}"
-                class="header__menu-item list-menu__item link focus-inset {{ link.handle }}"
+                class="header__menu-item list-menu__item link focus-inset"
               >
                 <span
                   {%- if link.child_active %}
@@ -128,6 +128,8 @@
                                       >
                                     {% endif %}
                                   {% endif %}
+                                {% else %}
+                                  {{ grandchildlink.title | escape }}
                                 {% endif %}
                               </a>
                             </li>
