@@ -1,5 +1,59 @@
 {
   "sections": {
+    "slideshow_zKTVBD": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_jP6xij": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/newyear2024-v2-homebanner-v2.webp",
+            "heading": "Winter Sale",
+            "heading_size": "h1",
+            "subheading": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": true,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "inverse",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_iXcAPM": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_jP6xij",
+        "slide_iXcAPM"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "large",
+        "slider_visual": "dots",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -34,6 +88,7 @@
         "text_PAm4XC",
         "button"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/newyear2024-v2-homebanner-v2.webp",
         "image_overlay_opacity": 0,
@@ -97,14 +152,12 @@
       "block_order": [
         "judge_me_reviews_ugc_media_grid_E9nWPp"
       ],
-      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
-      "disabled": true,
       "settings": {
         "heading": "Latest Stories",
         "heading_size": "h1",
@@ -122,6 +175,7 @@
     }
   },
   "order": [
+    "slideshow_zKTVBD",
     "image_banner",
     "custom_liquid_eYBC8z",
     "featured_collection",
