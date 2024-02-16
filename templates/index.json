@@ -51,6 +51,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
@@ -89,12 +90,14 @@
       "block_order": [
         "judge_me_reviews_ugc_media_grid_E9nWPp"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
     },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Latest Stories",
         "heading_size": "h1",
@@ -109,6 +112,59 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_VMnzdf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_dGKqJP": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BKdKHX": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_zwxqim": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_dGKqJP",
+        "column_BKdKHX",
+        "column_zwxqim"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -116,6 +172,7 @@
     "custom_liquid_eYBC8z",
     "featured_collection",
     "1705564819beeb675d",
-    "featured_blog_yPgqNG"
+    "featured_blog_yPgqNG",
+    "multicolumn_VMnzdf"
   ]
 }
