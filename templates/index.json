@@ -43,7 +43,7 @@
     "custom_liquid_eYBC8z": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "{% render 'homepage-four-box' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
