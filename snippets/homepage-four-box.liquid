@@ -4,23 +4,23 @@
 
 {% style %}
   #shipping {
-        background-image: url("{{media url=wysiwyg/local_service_mechanic.jpg}}");
+        background-image: url("{{ 'local_service_mechanic.jpg' | file_img_url }}");
         background-size: 100% auto;
     }
 
     #assembled {
-        background-image: url("{{media url=wysiwyg/bc-rebate.jpg}}");
+        background-image: url("{{ 'bc-rebate.jpg' | file_img_url }}");
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     #ambassador {
-        background-image: url("{{media url=webp/fourbox-ambassador-50.webp}}");
+        background-image: url("{{ 'fourbox-ambassador-50.webp' | file_img_url }}");
         background-size: 100% auto;
     }
 
     #rentals {
-        background-image: url("{{media url=webp/fourbox-rentals-50.webp}}");
+        background-image: url("{{ 'fourbox-rentals-50.webp' | file_img_url }}");
         background-size: 104% auto;
     }
 
