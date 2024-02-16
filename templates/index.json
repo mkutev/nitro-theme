@@ -45,8 +45,8 @@
       "settings": {
         "custom_liquid": "{% render 'homepage-four-box' %}",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 52,
+        "padding_bottom": 20
       }
     },
     "featured_collection": {
