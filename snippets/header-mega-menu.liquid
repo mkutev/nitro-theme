@@ -102,30 +102,31 @@
                                   aria-current="page"
                                 {% endif %}
                               >
-                                {% if grandchildlink.type == 'collection_link' %}
-                                  {% assign collection = collections[grandchildlink.object.handle] %}
-                                  <span>{{ collection.title | escape }}</span>
+                                {% if link.handle == 'electric-bikes' %}
+                                  {% if grandchildlink.type == 'collection_link' %}
+                                    {% assign collection = collections[grandchildlink.object.handle] %}
+                                    <span>{{ collection.title | escape }}</span>
 
-                                  {% if childlink.handle == 'by-model' %}
-                                    <small>{{ collection.products_count | escape }} Models</small>
-                                  {% endif %}
+                                    {% if childlink.handle == 'by-model' %}
+                                      <small>{{ collection.products_count | escape }} Models</small>
+                                    {% endif %}
 
-                                  {% if collection.image %}
-                                    <img
-                                      src="{{ collection.image.src | image_url: width: 135 }}"
-                                      alt="{{ collection.title | escape }}"
-                                    >
-                                  {% endif %}
-
-                                {% elsif grandchildlink.type == 'product_link' %}
-                                  {% assign product = all_products[grandchildlink.object.handle] %}
-                                  <span>{{ product.title | escape }}</span>
-                                  <small style="visibility: hidden">1 version</small>
-                                  {% if product.featured_image %}
-                                    <img
-                                      src="{{ product.featured_image.src | image_url: width: 135 }}"
-                                      alt="{{ product.title | escape }}"
-                                    >
+                                    {% if collection.image %}
+                                      <img
+                                        src="{{ collection.image.src | image_url: width: 135 }}"
+                                        alt="{{ collection.title | escape }}"
+                                      >
+                                    {% endif %}
+                                  {% elsif grandchildlink.type == 'product_link' %}
+                                    {% assign product = all_products[grandchildlink.object.handle] %}
+                                    <span>{{ product.title | escape }}</span>
+                                    <small style="visibility: hidden">1 version</small>
+                                    {% if product.featured_image %}
+                                      <img
+                                        src="{{ product.featured_image.src | image_url: width: 135 }}"
+                                        alt="{{ product.title | escape }}"
+                                      >
+                                    {% endif %}
                                   {% endif %}
                                 {% endif %}
                               </a>
