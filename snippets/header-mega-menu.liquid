@@ -77,6 +77,11 @@
                             alt="Thumbnail of various VoltBike replacement parts."
                             width="228"
                           >
+                        {% when 'company-info' %}
+                          <p>
+                            <span style="font-weight: bold;">VoltBike Electric Inc</span><br>
+                            <span style="font-style: italic;">Premium electric bikes.</span>
+                          </p>
                         {% else %}
                           <a
                             id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
@@ -127,15 +132,6 @@
                                         alt="{{ product.title | escape }}"
                                       >
                                     {% endif %}
-                                  {% endif %}
-                                {% elsif link.handle == 'contact' %}
-                                  {% if childlink.handle == 'company-info' %}
-                                    <p>
-                                      <span style="font-weight: bold;">VoltBike Electric Inc</span><br>
-                                      <span style="font-style: italic;">Premium electric bikes.</span>
-                                    </p>
-                                  {% else %}
-                                    {{ grandchildlink.title | escape }}
                                   {% endif %}
                                 {% else %}
                                   {{ grandchildlink.title | escape }}
