@@ -140,7 +140,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/fourbox-ambassador-50.webp",
-            "title": "Column",
+            "title": "Find a local VoltBike Ambassador.",
             "text": "",
             "link_label": "",
             "link": ""
@@ -150,7 +150,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/fourbox-rentals-50.webp",
-            "title": "Column",
+            "title": "Learn about rental fleets.",
             "text": "",
             "link_label": "",
             "link": ""
@@ -165,17 +165,17 @@
       ],
       "settings": {
         "title": "",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
-        "background_style": "primary",
+        "background_style": "none",
         "button_label": "Button label",
         "button_link": "",
         "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
