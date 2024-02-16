@@ -128,6 +128,13 @@
                                       >
                                     {% endif %}
                                   {% endif %}
+                                {% elsif link.handle == 'contact' %}
+                                  {% if childlink.handle == 'company-info' %}
+                                    <p>
+                                      <span style="font-weight: bold;">VoltBike Electric Inc</span><br>
+                                      <span style="font-style: italic;">Premium electric bikes.</span>
+                                    </p>
+                                  {% endif %}
                                 {% else %}
                                   {{ grandchildlink.title | escape }}
                                 {% endif %}
