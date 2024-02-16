@@ -10,6 +10,13 @@
             "heading_size": "h0"
           }
         },
+        "text_PAm4XC": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike.",
+            "text_style": "body"
+          }
+        },
         "button": {
           "type": "buttons",
           "settings": {
@@ -24,6 +31,7 @@
       },
       "block_order": [
         "heading",
+        "text_PAm4XC",
         "button"
       ],
       "settings": {
