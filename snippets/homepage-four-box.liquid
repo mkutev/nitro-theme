@@ -1,0 +1,118 @@
+{% comment %}
+  Custom snippet for four-box image-link section of home page.
+{% endcomment %}
+
+{% style %}
+  #shipping {
+        background-image: url("{{media url=wysiwyg/local_service_mechanic.jpg}}");
+        background-size: 100% auto;
+    }
+
+    #assembled {
+        background-image: url("{{media url=wysiwyg/bc-rebate.jpg}}");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #ambassador {
+        background-image: url("{{media url=webp/fourbox-ambassador-50.webp}}");
+        background-size: 100% auto;
+    }
+
+    #rentals {
+        background-image: url("{{media url=webp/fourbox-rentals-50.webp}}");
+        background-size: 104% auto;
+    }
+
+    .fourbox a {
+        width: 100%;
+        min-height: 75px;
+        height: 16vw;
+        background-position: center;
+    }
+
+    .fourbox h2 {
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 3rem;
+        display: block;
+        line-height: 100%;
+        letter-spacing: 0;
+        border-radius: 5px;
+        color: black;
+    }
+
+    .fourbox h2 span {
+        display: block;
+        font-weight: 400;
+        font-size: 2.2rem;
+    }
+
+    @media (max-width: 767px) {
+        .fourbox h2 {
+            position: relative;
+            height: 100%;
+            margin: auto 0;
+            background-color: none;
+            padding: 3vw 0 3vw 3vw;
+            font-size: 2.2rem;
+            border-radius: 0;
+            background: linear-gradient(45deg, rgb(228 228 228), rgb(200 200 200/ 0%));
+        }
+
+        .fourbox h2 span {
+            font-size: 1.4rem;
+        }
+
+        .box1 h2 {
+            background: linear-gradient(45deg, rgb(235, 235, 235), rgb(200 200 200/ 0%));
+        }
+
+        .box2 h2 {
+            background: linear-gradient(45deg, rgb(225, 225, 225), rgb(200 200 200/ 0%));
+        }
+    }
+
+    @media (min-width: 768px) {
+
+        .box1 h2,
+        .box2 h2 {
+            background: none;
+        }
+
+        .fourbox h2 {
+            position: absolute;
+            margin: 0 30px 0 0;
+            top: 30px;
+            left: 30px;
+            padding: 5px 10px;
+            background-color: white;
+        }
+    }
+{% endstyle %}
+
+<div class="fourbox row" style="margin: 0; margin-top: -1px">
+  <div class="box1 col-xl-3 col-lg-6 col-sm-12" style="padding: 0">
+    <a id="shipping" class="image-link" href="{{store url='local-service'}}">
+      <h2><span>Get your bike serviced</span>locally</h2>
+    </a>
+  </div>
+
+  <div class="box2 col-xl-3 col-lg-6 col-sm-12" style="padding: 0">
+    <a id="assembled" class="image-link" href="news/post/unlock-big-savings-on-electric-bikes-with-bc-e-bike-rebates">
+      <h2><span>BC Electric Bike</span>rebates</h2>
+    </a>
+  </div>
+
+  <div class="box1 col-xl-3 col-lg-6 col-sm-12" style="padding: 0">
+    <a id="ambassador" class="image-link" href="{{store url='ambassador'}}">
+      <h2><span>Find a local VoltBike</span>Ambassador</h2>
+    </a>
+  </div>
+
+  <div class="box2 col-xl-3 col-lg-6 col-sm-12" style="padding: 0">
+    <a id="rentals" class="image-link" href="{{store url='rent'}}">
+      <h2><span>Learn about</span>RENTAL FLEETS</h2>
+    </a>
+  </div>
+</div>
