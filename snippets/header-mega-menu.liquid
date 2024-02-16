@@ -134,6 +134,8 @@
                                       <span style="font-weight: bold;">VoltBike Electric Inc</span><br>
                                       <span style="font-style: italic;">Premium electric bikes.</span>
                                     </p>
+                                  {% else %}
+                                    {{ grandchildlink.title | escape }}
                                   {% endif %}
                                 {% else %}
                                   {{ grandchildlink.title | escape }}
