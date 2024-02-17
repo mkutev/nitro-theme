@@ -8,28 +8,20 @@
         "914b1f0e-aea9-4c6a-be44-7288b70e9331": {
           "type": "text",
           "settings": {
-            "heading": "VOLTBIKE",
+            "heading": "<strong>VoltBike Electric Inc.<\/strong>",
             "subtext": "<p>We are a proud Canadian business located in beautiful British Columbia, Canada! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.<\/p>"
-          }
-        },
-        "ff0449f7-eebe-4e9a-98b1-259d0572be7f": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Company",
-            "menu": "footer"
           }
         },
         "link_list_qM3YNa": {
           "type": "link_list",
           "settings": {
             "heading": "Support",
-            "menu": "footer-menu-more"
+            "menu": "quick-links-1"
           }
         }
       },
       "block_order": [
         "914b1f0e-aea9-4c6a-be44-7288b70e9331",
-        "ff0449f7-eebe-4e9a-98b1-259d0572be7f",
         "link_list_qM3YNa"
       ],
       "settings": {
@@ -38,7 +30,7 @@
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
         "show_social": false,
-        "enable_country_selector": true,
+        "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": false,
         "show_policy": false,
