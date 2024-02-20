@@ -78,13 +78,16 @@
                             width="228"
                           >
                         {% when 'company-info' %}
-                          <p style="margin-top: 0;">
-                            <span style="font-size: 2rem; font-weight: bold;">VoltBike Electric Inc</span><br>
-                            <span style="font-style: italic;">Quality e-bikes at a great price.</span>
-                            📌<a>1579 Kingsway Ave #1125, Port Coquitlam, BC V3C 0H1</a> ☎️<a href="tel:+18003504840"
-                              >+1 (800) 350-4840</a
-                            >
-                          </p>
+                          <ul style="margin-top: 0;">
+                            <li style="font-size: 2rem; font-weight: bold;">VoltBike Electric Inc</li>
+                            <li style="font-style: italic;">Quality e-bikes at a great price.</li>
+                            <li>
+                              📌<a href="https://maps.app.goo.gl/wZ6eHcNuUd97fWDq9" target="_blank"
+                                >1579 Kingsway Ave #1125, Port Coquitlam, BC V3C 0H1</a
+                              >
+                            </li>
+                            <li>☎️<a href="tel:+18003504840">+1 (800) 350-4840</a></li>
+                          </ul>
                         {% else %}
                           <a
                             id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
