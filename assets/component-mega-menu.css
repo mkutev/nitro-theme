@@ -170,3 +170,8 @@
 .mega-menu__company-info * {
   text-decoration: none; 
 }
+
+.mega-menu__company-info a {
+  color: black;
+  opacity: 80%;
+} 
