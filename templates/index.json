@@ -153,6 +153,7 @@
       "block_order": [
         "judge_me_reviews_ugc_media_grid_E9nWPp"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -160,7 +161,7 @@
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
       "settings": {
-        "heading": "Latest Stories",
+        "heading": "Recent Posts",
         "heading_size": "h1",
         "blog": "stories",
         "post_limit": 4,
@@ -169,7 +170,7 @@
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "show_view_all": true,
+        "show_view_all": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
