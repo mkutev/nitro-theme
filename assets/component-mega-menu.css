@@ -162,3 +162,11 @@
   margin-bottom: 16px;
   margin-left: 5px;
 }
+
+.mega-menu__compnay-info {
+  list-style: none;
+}
+
+.mega-menu__compnay-info * {
+  text-decoration: none; 
+}
