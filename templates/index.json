@@ -147,7 +147,7 @@
         "custom_liquid": "{% render 'home-instagram-feed' %}",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 60
       }
     },
     "1705564819beeb675d": {
@@ -169,6 +169,7 @@
     },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Recent Posts",
         "heading_size": "h2",
