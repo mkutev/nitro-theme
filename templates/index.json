@@ -55,15 +55,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "custom_liquid_eYBC8z": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'homepage-four-box' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 40
-      }
-    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -92,8 +83,18 @@
         "padding_bottom": 40
       }
     },
+    "custom_liquid_eYBC8z": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'homepage-four-box' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "custom_liquid_kBzfcT": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'home-instagram-feed' %}",
         "color_scheme": "",
@@ -139,8 +140,8 @@
   },
   "order": [
     "slideshow_zKTVBD",
-    "custom_liquid_eYBC8z",
     "featured_collection",
+    "custom_liquid_eYBC8z",
     "custom_liquid_kBzfcT",
     "1705564819beeb675d",
     "featured_blog_yPgqNG"
