@@ -113,7 +113,7 @@
       "settings": {
         "product": "yukon-750-limited",
         "color_scheme": "",
-        "secondary_background": true,
+        "secondary_background": false,
         "media_size": "small",
         "constrain_to_viewport": true,
         "media_fit": "contain",
