@@ -116,11 +116,11 @@
       "settings": {
         "product": "yukon-750-limited",
         "color_scheme": "",
-        "secondary_background": false,
+        "secondary_background": true,
         "media_size": "medium",
         "constrain_to_viewport": false,
         "media_fit": "contain",
-        "media_position": "left",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
@@ -189,7 +189,7 @@
       "settings": {
         "product": "bravo",
         "color_scheme": "",
-        "secondary_background": false,
+        "secondary_background": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
         "media_fit": "contain",
