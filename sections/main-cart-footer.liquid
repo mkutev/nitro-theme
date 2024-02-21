@@ -60,7 +60,8 @@
 
                 <div class="totals">
                   <h2 class="totals__total">{{ 'sections.cart.estimated_total' | t }}</h2>
-                  <p class="totals__total-value">{{ cart.total_price }}</p>
+                  <span class="totals__total-value">{{ cart.total_price }}</span>
+                  <span class="totals__total-value">{{ money_with_currency }}</span>
                 </div>
 
                 <small class="tax-note caption-large rte">
