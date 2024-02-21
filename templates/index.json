@@ -141,6 +141,15 @@
         "padding_bottom": 60
       }
     },
+    "custom_liquid_kBzfcT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-instagram-feed' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1705564819beeb675d": {
       "type": "apps",
       "blocks": {
@@ -181,6 +190,7 @@
     "image_banner",
     "custom_liquid_eYBC8z",
     "featured_collection",
+    "custom_liquid_kBzfcT",
     "1705564819beeb675d",
     "featured_blog_yPgqNG"
   ]
