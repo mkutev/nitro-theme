@@ -209,7 +209,7 @@
         "description": "<p>A selection of our best-selling ebikes and accessories.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "all-products",
+        "collection": "accessories",
         "products_to_show": 10,
         "columns_desktop": 5,
         "full_width": false,
