@@ -157,6 +157,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "7297205921758642463": {
+        "type": "shopify:\/\/apps\/mappy-store-locator\/blocks\/bss-sl-script\/edfca2bd-82ad-413c-b32c-580d239b17ab",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
