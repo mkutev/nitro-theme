@@ -85,6 +85,7 @@
         },
         "quantity_selector_gwaJei": {
           "type": "quantity_selector",
+          "disabled": true,
           "settings": {
           }
         },
@@ -97,6 +98,7 @@
         },
         "share_6gKcTU": {
           "type": "share",
+          "disabled": true,
           "settings": {
             "share_label": "Share"
           }
