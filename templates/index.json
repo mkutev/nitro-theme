@@ -55,62 +55,13 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "image_banner": {
-      "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Winter Sale",
-            "heading_size": "h0"
-          }
-        },
-        "text_PAm4XC": {
-          "type": "text",
-          "settings": {
-            "text": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike.",
-            "text_style": "body"
-          }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text_PAm4XC",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify:\/\/shop_images\/newyear2024-v2-homebanner-v2.webp",
-        "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "inverse",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
-        "show_text_below": false
-      }
-    },
     "custom_liquid_eYBC8z": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render 'homepage-four-box' %}",
         "color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 20
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "featured_collection": {
@@ -137,8 +88,8 @@
         "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 20,
+        "padding_bottom": 40
       }
     },
     "custom_liquid_kBzfcT": {
@@ -146,8 +97,8 @@
       "settings": {
         "custom_liquid": "{% render 'home-instagram-feed' %}",
         "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 60
+        "padding_top": 20,
+        "padding_bottom": 80
       }
     },
     "1705564819beeb675d": {
@@ -188,7 +139,6 @@
   },
   "order": [
     "slideshow_zKTVBD",
-    "image_banner",
     "custom_liquid_eYBC8z",
     "featured_collection",
     "custom_liquid_kBzfcT",
