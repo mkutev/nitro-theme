@@ -118,9 +118,81 @@
         "color_scheme": "",
         "secondary_background": false,
         "media_size": "small",
-        "constrain_to_viewport": true,
+        "constrain_to_viewport": false,
         "media_fit": "contain",
         "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_dCHehJ": {
+      "type": "featured-product",
+      "blocks": {
+        "text_PqmQrT": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_igaf7C": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_QD6yYT": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_cJbXpn": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_AVQqbW": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "buy_buttons_FHUYKF": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_xK8XHi": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_PqmQrT",
+        "title_igaf7C",
+        "price_QD6yYT",
+        "variant_picker_cJbXpn",
+        "quantity_selector_AVQqbW",
+        "buy_buttons_FHUYKF",
+        "share_xK8XHi"
+      ],
+      "settings": {
+        "product": "bravo",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "right",
         "image_zoom": "lightbox",
         "hide_variants": false,
         "enable_video_looping": false,
@@ -213,6 +285,7 @@
   "order": [
     "slideshow_zKTVBD",
     "featured_product_QQXczb",
+    "featured_product_dCHehJ",
     "featured_collection",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
