@@ -55,6 +55,76 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "featured_product_QQXczb": {
+      "type": "featured-product",
+      "blocks": {
+        "text_9nNqiQ": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_pkNhxb": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_Qb4pnb": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_9JwXDb": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_gwaJei": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_jUzfjE": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_6gKcTU": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_9nNqiQ",
+        "title_pkNhxb",
+        "price_Qb4pnb",
+        "variant_picker_9JwXDb",
+        "quantity_selector_gwaJei",
+        "buy_buttons_jUzfjE",
+        "share_6gKcTU"
+      ],
+      "settings": {
+        "product": "yukon-750-limited",
+        "color_scheme": "",
+        "secondary_background": true,
+        "media_size": "small",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
@@ -139,6 +209,7 @@
   },
   "order": [
     "slideshow_zKTVBD",
+    "featured_product_QQXczb",
     "featured_collection",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
