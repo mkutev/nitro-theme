@@ -144,7 +144,7 @@
     "custom_liquid_kBzfcT": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% render 'product-instagram-feed' %}",
+        "custom_liquid": "{% render 'home-instagram-feed' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
