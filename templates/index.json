@@ -60,6 +60,7 @@
       "blocks": {
         "text_9nNqiQ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "{{ section.settings.product.vendor }}",
             "text_style": "uppercase"
