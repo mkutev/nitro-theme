@@ -171,7 +171,7 @@
       "type": "featured-blog",
       "settings": {
         "heading": "Recent Posts",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "blog": "stories",
         "post_limit": 4,
         "columns_desktop": 4,
