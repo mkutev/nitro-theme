@@ -140,12 +140,6 @@
 
     ],
     "blocks": {
-      "316487575649303945": {
-        "type": "shopify:\/\/apps\/easify-product-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "14060646107696862457": {
         "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
@@ -155,6 +149,12 @@
       "5784066569132941777": {
         "type": "shopify:\/\/apps\/s-store-locator\/blocks\/embed-app\/e7003487-cc51-4321-9488-2c47c07a5b17",
         "disabled": false,
+        "settings": {
+        }
+      },
+      "316487575649303945": {
+        "type": "shopify:\/\/apps\/easify-product-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "disabled": true,
         "settings": {
         }
       }
