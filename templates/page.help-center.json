@@ -22,9 +22,9 @@
         "collapsible_row_pwBAbK": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "How do Test Rides work?",
+            "icon": "none",
+            "row_content": "<p>We are open Mon-Fri 9am-5pm and Saturdays we are open from 10am-3pm for test rides.<\/p><p>We are located at #1125 - 1579 Kingsway Ave, Port Coquitlam, BC.<\/p>",
             "page": ""
           }
         },
