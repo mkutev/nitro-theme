@@ -163,13 +163,13 @@
         "disabled": false,
         "settings": {
           "button_color": "#2979ff",
-          "secondary_color": "#FFFFFF",
-          "ternary_color": "#6A6A6A",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "contact",
           "button_horizontal_position": "bottom_right",
           "button_vertical_position": "lowest",
-          "greeting_message": ""
+          "greeting_message": "Feel free to drop us a message with any bike or support question you have. A VoltBike member is here to help!"
         }
       }
     },
