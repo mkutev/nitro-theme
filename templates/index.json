@@ -55,37 +55,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "rich_text_g473zm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jLA3zW": {
-          "type": "heading",
-          "settings": {
-            "heading": "Featured electric bikes",
-            "heading_size": "h2"
-          }
-        },
-        "text_YpdwP4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Check out our most popular ebikes.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_jLA3zW",
-        "text_YpdwP4"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "left",
-        "content_alignment": "left",
-        "color_scheme": "background-2",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 8
-      }
-    },
     "featured_product_QQXczb": {
       "type": "featured-product",
       "blocks": {
@@ -144,6 +113,7 @@
         "buy_buttons_jUzfjE",
         "share_6gKcTU"
       ],
+      "disabled": true,
       "settings": {
         "product": "yukon-750-limited",
         "color_scheme": "",
@@ -217,6 +187,7 @@
         "buy_buttons_FHUYKF",
         "share_xK8XHi"
       ],
+      "disabled": true,
       "settings": {
         "product": "bravo",
         "color_scheme": "",
@@ -229,6 +200,34 @@
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 12,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_jHcDgq": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured electric bikes",
+        "heading_size": "h2",
+        "description": "<p>A selection of our most popular and best-selling electric bikes.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all-bikes",
+        "products_to_show": 6,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     },
@@ -316,9 +315,9 @@
   },
   "order": [
     "slideshow_zKTVBD",
-    "rich_text_g473zm",
     "featured_product_QQXczb",
     "featured_product_dCHehJ",
+    "featured_collection_jHcDgq",
     "featured_collection",
     "custom_liquid_kBzfcT",
     "custom_liquid_eYBC8z",
