@@ -13,9 +13,9 @@
         "collapsible_row_ETNPTJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Can I customize my bike order? Can I add or remove parts?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>We offer customizable options for each bike model such as: frame size, battery size, front rack and accessory choice.<\/p><p>The complimentary accessory offered for each bike cannot be exchanged as a monetary value towards the bike.<\/p>",
             "page": ""
           }
         },
