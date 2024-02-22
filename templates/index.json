@@ -55,6 +55,36 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text_g473zm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jLA3zW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h2"
+          }
+        },
+        "text_YpdwP4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_jLA3zW",
+        "text_YpdwP4"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "featured_product_QQXczb": {
       "type": "featured-product",
       "blocks": {
@@ -206,7 +236,7 @@
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
-        "description": "<p>A selection of our best-selling ebikes and accessories.<\/p>",
+        "description": "<p>A selection of our most popular best-selling accessories.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "accessories",
@@ -285,6 +315,7 @@
   },
   "order": [
     "slideshow_zKTVBD",
+    "rich_text_g473zm",
     "featured_product_QQXczb",
     "featured_product_dCHehJ",
     "featured_collection",
