@@ -234,7 +234,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured products",
+        "title": "Featured accessories",
         "heading_size": "h2",
         "description": "<p>A selection of our most popular best-selling accessories.<\/p>",
         "show_description": false,
@@ -274,7 +274,7 @@
         "custom_liquid": "{% render 'homepage-four-box' %}",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 40
+        "padding_bottom": 80
       }
     },
     "1705564819beeb675d": {
