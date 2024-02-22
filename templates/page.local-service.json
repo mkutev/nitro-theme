@@ -10,16 +10,14 @@
     "1705213500a189bef0": {
       "type": "apps",
       "blocks": {
-        "simple_store_locator_store_locator_BMcqkt": {
-          "type": "shopify:\/\/apps\/simple-store-locator\/blocks\/store_locator\/271d5575-daa7-4857-a8af-4ecfc578a160",
+        "progus_store_locator_app_block_NHCC6X": {
+          "type": "shopify:\/\/apps\/progus-store-locator\/blocks\/app-block\/d7896016-8cc9-45e0-860e-ba85ba3d5be4",
           "settings": {
-            "paddingTop": 0,
-            "paddingBottom": 0
           }
         }
       },
       "block_order": [
-        "simple_store_locator_store_locator_BMcqkt"
+        "progus_store_locator_app_block_NHCC6X"
       ],
       "settings": {
         "include_margins": true
