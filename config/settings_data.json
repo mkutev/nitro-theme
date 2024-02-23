@@ -96,7 +96,7 @@
     "drawer_shadow_blur": 5,
     "badge_position": "bottom left",
     "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "accent-2",
+    "sale_badge_color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "VoltBike Electric Inc.",
     "brand_description": "<p>We are a proud Canadian business located in beautiful British Columbia and we are here to stay! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.<\/p>",
@@ -242,9 +242,9 @@
       },
       "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#dd1d1d",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#fff",
           "button": "#dd1d1d",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
