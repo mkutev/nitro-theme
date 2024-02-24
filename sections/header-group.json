@@ -47,12 +47,11 @@
     },
     "custom_liquid_JM7Rw7": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'global-banner' %}",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 100
       }
     }
   },
