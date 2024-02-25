@@ -143,6 +143,15 @@
             "row_content": "<p>Your bike will arrive about 95% assembled. Unlike other electric bike sellers we do ship our bikes with both wheels attached. The only assembly that may be required is to install the handlebars and pedals, and you are good to go! The whole process should not take more than 10-20 minutes, and no technical skills are required. See manual for more information.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_ntHd4J": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Pedelec and Power on Demand e-bikes",
+            "icon": "none",
+            "row_content": "<p>Pedelec is pedal assist. Meaning that as you pedal, the power kicks in and assists your movement. The motor is engaged as you start pedaling and will continue to only as you pedal.Power-on-Demand bikes have the option of using a throttle instead of pedaling, much like a scooter or motorcycle.Our throttle has a safety button to engage it whenever needed.Voltbike offers you both of these components on all of our bike models! So you get the convenience of pedal assist and using throttle to get you where you need to go without breaking a sweat!<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -154,7 +163,8 @@
         "collapsible_row_QeR3pP",
         "collapsible_row_NXaaJP",
         "collapsible_row_peRg7x",
-        "collapsible_row_ft4FmF"
+        "collapsible_row_ft4FmF",
+        "collapsible_row_ntHd4J"
       ],
       "settings": {
         "caption": "",
