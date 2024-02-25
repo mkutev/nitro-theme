@@ -1,5 +1,47 @@
 {
   "sections": {
+    "rich_text_p9Ghi7": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bmEFfL": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_k3fxBq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please be aware that as of February 23, 2024, Voltbike has transitioned to a new web platform. If you had an account created before this date, you will be required to register for a new account using your original email address. Rest assured, your existing orders will be seamlessly transferred to your new account.<\/p>"
+          }
+        },
+        "button_JL7mrC": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bmEFfL",
+        "text_k3fxBq",
+        "button_JL7mrC"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-login",
       "settings": {
@@ -9,6 +51,7 @@
     }
   },
   "order": [
+    "rich_text_p9Ghi7",
     "main"
   ]
 }
