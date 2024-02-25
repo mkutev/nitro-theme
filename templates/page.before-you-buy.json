@@ -116,6 +116,15 @@
             "row_content": "<p>There are a few different possibilities for your payment not processing. Most times you will need to give your credit card company a call to let them know that you are trying to place this order. The transaction is usually a high amount and sometimes this gets flagged as unusual activity on your card and blocked from going through. A call to your credit card company usually will clear this up. Another reason could be that you have incorrectly inputted your card number, expiry date or CVV number on the back. Please ensure that everything is correct and you have called your credit card company before calling us as we will likely get the same result.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_NXaaJP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does Support work?",
+            "icon": "none",
+            "row_content": "<p>We at Voltbike appreciate and support our customers and want everyone to enjoy their Voltbikes for years to come.<\/p><p>We offer a few different channels of support such as:<\/p><p><strong>Email<\/strong>: <a href=\"mailto:sales@voltbike.com\">sales@voltbike.com<\/a><\/p><p>Definitely the quickest and best way to get any problem solved. Email us with photos or videos of any issue in question. This is the best way to contact us because if we speak with you over the phone most likely we will ask you to email us with photos regardless. <\/p><p>This is very helpful because this way there is also a paper trail and anyone picking up phones can refer back to it, whereas a phonecall is between you and the rep who is sometimes walking around the warehouse and unable to record the details of your issue.<\/p><p><strong>Technical telephone line<\/strong>: 1-800-350-4840 (Dial 2)<\/p><p>Call us business hours Mon-Sat and select 2 for technical support. <\/p><p><strong>Support Ticket<\/strong>:  If you would rather fill out a form, we have a new ticketing <a href=\"https:\/\/www.voltbike.com\/support\"><strong>system.<\/strong><\/a><strong> <\/strong><\/p><p>Bear with us as this is not the fastest way to get through to a representative. Depending on the seriousness of each case, emailing or calling is a more direct way to get a response. <\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -124,7 +133,8 @@
         "collapsible_row_Uhz37H",
         "collapsible_row_3aPrye",
         "collapsible_row_JJwTPN",
-        "collapsible_row_QeR3pP"
+        "collapsible_row_QeR3pP",
+        "collapsible_row_NXaaJP"
       ],
       "settings": {
         "caption": "",
