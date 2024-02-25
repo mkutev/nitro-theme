@@ -206,6 +206,15 @@
             "row_content": "<p>Our business model is direct to consumer. This means that we skip the traditional style distribution through bike shops and dealerships. We deliver the bike directly to you, skipping the middle man and passing the savings to the end customer. On top of getting a better price, the end consumer also benefits from dealing with only one company which is much easier.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_DmzcXH": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How much does it cost to charge VoltBike?",
+            "icon": "none",
+            "row_content": "<p>In Vancouver, BC the cost per kWh varies on the time period. A good, round number that is close to the average is 8.91 cents per kWh. A rough average for an electric bike is 36 volts and about 10 Amp-Hours. To calculate the Kilowatt-hours (kWh) of your electric bike, simply multiply those two numbers together and divide by 1000. This means that it takes about 0.36 kW to charge an electric bike for one hour. In most cases, an electric bike will need to charge for about 4 to 5 hours, so let's say the total consumption for a complete charge cycle is: 5 x 0.36 = 1.8 kWh. So this means it will cost you $0.16 to charge your bike in Vancouver, BC.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -224,7 +233,8 @@
         "collapsible_row_8iD3tK",
         "collapsible_row_VGEwby",
         "collapsible_row_T7gMcG",
-        "collapsible_row_DCBwmK"
+        "collapsible_row_DCBwmK",
+        "collapsible_row_DmzcXH"
       ],
       "settings": {
         "caption": "",
