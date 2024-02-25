@@ -22,7 +22,7 @@
         "column_cnpRDW": {
           "type": "column",
           "settings": {
-            "title": "Company Information",
+            "title": "<a href=\"\/pages\/company-information\" title=\"Company Information\">Company Information<\/a>",
             "text": "<p>Question regarding Voltbike etc.<\/p>",
             "link_label": "",
             "link": ""
