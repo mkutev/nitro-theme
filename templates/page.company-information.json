@@ -66,9 +66,9 @@
         "collapsible_row_ETNPTJ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I customize my bike order? Can I add or remove parts?",
+            "heading": "Who is VoltBike?",
             "icon": "none",
-            "row_content": "<p>We offer customizable options for each bike model such as: frame size, battery size, front rack and accessory choice.<\/p><p>The complimentary accessory offered for each bike cannot be exchanged as a monetary value towards the bike.<\/p>",
+            "row_content": "<p>A premium designer of electric bikes...at half the price. We abandon regular distribution methods and deliver bikes directly to customers. We’re proud to build the world’s finest electric bikes – by and for people who love to ride. VoltBike is our own trademark registered in both Canada and USA.<\/p>",
             "page": ""
           }
         },
@@ -118,7 +118,7 @@
       ],
       "settings": {
         "caption": "",
-        "heading": "Before You Buy",
+        "heading": "Company Information",
         "heading_size": "h1",
         "heading_alignment": "center",
         "layout": "none",
