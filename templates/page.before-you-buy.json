@@ -197,6 +197,15 @@
             "row_content": "<p>The short answer is: no, you do not. According to federal law, a bicycle with an electric motor capable of generating up to 500 watts of power (or 750 watts for USA) are able to propel a rider to a speed of up to 20 mph, equipped with fully functioning power assist pedals, is considered to be a bicycle or a consumer good rather than a motor vehicle. Most provinces in Canada allow riders 14 or 16 years and up to drive power assisted electric bikes. Over 18 years of age do not require any kind of license whatsoever. Please check your local regulations for further inquiries.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_DCBwmK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why are your prices so low?",
+            "icon": "none",
+            "row_content": "<p>Our business model is direct to consumer. This means that we skip the traditional style distribution through bike shops and dealerships. We deliver the bike directly to you, skipping the middle man and passing the savings to the end customer. On top of getting a better price, the end consumer also benefits from dealing with only one company which is much easier.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -214,7 +223,8 @@
         "collapsible_row_N6mmht",
         "collapsible_row_8iD3tK",
         "collapsible_row_VGEwby",
-        "collapsible_row_T7gMcG"
+        "collapsible_row_T7gMcG",
+        "collapsible_row_DCBwmK"
       ],
       "settings": {
         "caption": "",
