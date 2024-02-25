@@ -31,7 +31,7 @@
         "column_jRdAQP": {
           "type": "column",
           "settings": {
-            "title": "Support, Repairs and Service",
+            "title": "<a href=\"\/pages\/support-repairs-and-service\" title=\"Support, Repairs and Service\">Support, Repairs and Service<\/a>",
             "text": "<p>Support, repairs and service<\/p>",
             "link_label": "",
             "link": ""
