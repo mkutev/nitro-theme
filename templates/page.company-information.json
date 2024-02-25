@@ -84,9 +84,9 @@
         "collapsible_row_Uhz37H": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "I recently purchased a second hand Volkbike through a private sale, is warranty transferrable?",
+            "icon": "none",
+            "row_content": "<p>Voltbike warranty is non-transferrable for many reasons, especially because we have no way of knowing what kind of treatment the bike has endured during prior ownership. Saying that, buying anything second hand will always have it's risks and usually does not include any kind of warranty.<\/p>",
             "page": ""
           }
         },
