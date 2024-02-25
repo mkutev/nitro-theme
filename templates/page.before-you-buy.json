@@ -134,6 +134,15 @@
             "row_content": "<p>Yes, VoltBike is in the approved list of retailers participating in the BC E-bike rebate program. With the recent launch of the BC e-Bike Rebates website, residents of British Columbia can now enjoy substantial rebates on qualifying e-bike purchases. BC e-Bike Rebates is a BC government-backed initiative aimed at promoting sustainable transportation options by making electric bikes more accessible to residents of British Columbia. For more information please visit <a href=\"https:\/\/bcebikerebates.ca\/\">https:\/\/bcebikerebates.ca<\/a><\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_ft4FmF": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do you ship your bikes fully assembled?",
+            "icon": "none",
+            "row_content": "<p>Your bike will arrive about 95% assembled. Unlike other electric bike sellers we do ship our bikes with both wheels attached. The only assembly that may be required is to install the handlebars and pedals, and you are good to go! The whole process should not take more than 10-20 minutes, and no technical skills are required. See manual for more information.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -144,7 +153,8 @@
         "collapsible_row_JJwTPN",
         "collapsible_row_QeR3pP",
         "collapsible_row_NXaaJP",
-        "collapsible_row_peRg7x"
+        "collapsible_row_peRg7x",
+        "collapsible_row_ft4FmF"
       ],
       "settings": {
         "caption": "",
