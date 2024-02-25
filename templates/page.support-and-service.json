@@ -93,9 +93,9 @@
         "collapsible_row_3aPrye": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
+            "heading": "Where is the serial number on my VoltBike?",
             "icon": "check_mark",
-            "row_content": "",
+            "row_content": "<p>The best chance of recovering a stolen bicycle is ensuring a registered serial number.<\/p><p>These numbers are used by law enforcement around the world.<\/p><p>Most bike companies like VoltBike do not retain a record of the serial numbers for the bikes sold, but we encourage our customers to record their serial numbers for their records. <\/p><p>The serial number on VoltBike bikes are located on the front headset just above the front fork. <\/p><p>They are engraved, and if you are having difficulty finding them, you may want to use your fingertips to feel for them.<\/p><p>The registration sites we would recommend using would be the bike index,   <a href=\"https:\/\/bikeindex.org\/\" target=\"_blank\">Bike Index - Bike registration that works<\/a> and 529 Garage   <a href=\"https:\/\/project529.com\/garage\" target=\"_blank\">529 Garage: Register. Respond. Recover. | Join the World's Largest Bicycle Registration Service to Protect Your Bike (project529.com)<\/a><\/p>",
             "page": ""
           }
         },
