@@ -102,9 +102,9 @@
         "collapsible_row_JJwTPN": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Can I test ride your bikes at your Port Coquitlam, BC location?",
+            "icon": "none",
+            "row_content": "<p>We do offer test rides at our Port Coquitlam, BC, Canada location. Test rides are available between Monday-Friday 9am to 5pm and Saturday between 10am and 3pm. Most of the VoltBike models are available for test ride.The safety of our customers is our top priority. Wearing an approved helmet during test rides is mandatory. You can either bring your own helmet or you can use one of the VoltBike approved helmets available in the showroom. If you have never been on electric bike before then it's important to get yourself familiar with the operation of the electric bike. You can watch some of the videos available on our video <a href=\"https:\/\/www.voltbike.com\/how-to-videos\">section here. <\/a>You can also check our <a href=\"https:\/\/support.voltbike.com\/help-center\" title=\"https:\/\/support.voltbike.com\/help-center\">Help Center <\/a>section with many frequently asked questions. Our showroom staff is also available for you in case you have questions prior or after your test ride.<\/p>",
             "page": ""
           }
         }
