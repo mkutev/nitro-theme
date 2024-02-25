@@ -152,6 +152,15 @@
             "row_content": "<p>Pedelec is pedal assist. Meaning that as you pedal, the power kicks in and assists your movement. The motor is engaged as you start pedaling and will continue to only as you pedal.Power-on-Demand bikes have the option of using a throttle instead of pedaling, much like a scooter or motorcycle.Our throttle has a safety button to engage it whenever needed.Voltbike offers you both of these components on all of our bike models! So you get the convenience of pedal assist and using throttle to get you where you need to go without breaking a sweat!<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_MPnjyg": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How does Voltbike replace parts\/offer support?",
+            "icon": "none",
+            "row_content": "<p>After purchasing your Voltbike, we do offer support to all of our customers.<br\/><br\/>If there is a component on your bike that has malfunctioned, here is what you can do to get your bike back to running at peak condition.<br\/><br\/>1. In the <a href=\"http:\/\/www.voltbike.com\/how-to-videos\">How to Videos<\/a> section of our website we offer solutions to many of the most common issues that may present themselves to Voltbike owners with many miles on their odometers. <a href=\"http:\/\/www.voltbike.com\/how-to-videos\">Click here for How to Videos.<\/a><br\/><br\/>2. Take some photos of the area in question and send it to us in an email.<br\/><br\/>3. We will then send you replacement parts as needed. We provide video instructions on how to change any parts.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -164,7 +173,8 @@
         "collapsible_row_NXaaJP",
         "collapsible_row_peRg7x",
         "collapsible_row_ft4FmF",
-        "collapsible_row_ntHd4J"
+        "collapsible_row_ntHd4J",
+        "collapsible_row_MPnjyg"
       ],
       "settings": {
         "caption": "",
