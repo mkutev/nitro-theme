@@ -2,9 +2,52 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
+      }
+    },
+    "rich_text_7wtay3": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WztqcT": {
+          "type": "heading",
+          "settings": {
+            "heading": "Help Center",
+            "heading_size": "h0"
+          }
+        },
+        "text_FRc96q": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_HYErJr": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WztqcT",
+        "text_FRc96q",
+        "button_HYErJr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
       }
     },
     "multicolumn_DdrHjt": {
@@ -134,6 +177,7 @@
   },
   "order": [
     "main",
+    "rich_text_7wtay3",
     "multicolumn_DdrHjt",
     "collapsible_content_X9PW33"
   ]
