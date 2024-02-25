@@ -31,8 +31,8 @@
         "column_jRdAQP": {
           "type": "column",
           "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "<a href=\"\/pages\/support-repairs-and-service\" title=\"Support, Repairs and Service\">Support, Repair and Service<\/a>",
+            "text": "<p>Support, Repair, and Service FAQs for Your Voltbike.<\/p>",
             "link_label": "",
             "link": ""
           }
