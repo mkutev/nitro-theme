@@ -179,6 +179,15 @@
             "row_content": "<p>If you live close to our distribution center located in the lower mainland then you can save the shipping cost and pick up your bike fully assembled. Please note that all pickups are subject to BC taxes.<br\/>Picking up your bike locally saves you the shipping cost of $49 plus you get your bike fully assembled by our bike mechanics. Our bike mechanics will go through the full assembly process and it will be ready to ride. (no box)<br\/><br\/>When placing an order online, as you get through filling in your shipping\/billing info, the option for Local pickup will come up. Please note that this option is available upon selecting the province of \"British Columbia\".<br\/><br\/>After your order is placed, please contact us via email or telephone to set up a time for you to pickup the bike. We are open Mon-Friday 9:30am-6pm. Saturday we are open for pickups by appointment only.<br\/><br\/>Our main distribution center and VoltBike headquarters is located at 1579 Kingsway Ave Unit 1125, Port Coquitlam, BC, V3C 0H1.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_VGEwby": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What makes VoltBike better than the rest?",
+            "icon": "none",
+            "row_content": "<p>We firmly believe that we make the best electric bikes available at the most affordable price. There are many small factors in the construction process that make a large difference in the finished product. Our huge volume of sales gives us enormous feedback from customers which helps us upgrade our line of products each production cycle. The bike you may get will have all those small upgrades our customers care about.Every VoltBike is equipped with features which are extra compared to many other electric bikes on the market. VoltBike comes with headlights and rear lights connected to the main battery, fenders, a rear rack, neoprene chainstay protector, derailleur guard, an adjustable stem and many other advanced features.In addition, each VoltBike is inspected, tested and adjusted prior to leaving our distribution centers.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -194,7 +203,8 @@
         "collapsible_row_ntHd4J",
         "collapsible_row_MPnjyg",
         "collapsible_row_N6mmht",
-        "collapsible_row_8iD3tK"
+        "collapsible_row_8iD3tK",
+        "collapsible_row_VGEwby"
       ],
       "settings": {
         "caption": "",
