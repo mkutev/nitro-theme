@@ -93,9 +93,9 @@
         "collapsible_row_3aPrye": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Can I change my order?",
+            "icon": "none",
+            "row_content": "<p>If you have made an error when placing your order online for an incorrect bike model, helmet or colour selection, accessory, or are having second thoughts on your final order, we can certainly correct it before it ships but we will not be able to adjust any orders that have already shipped.<\/p><p>After an order has shipped there is nothing we can do to make any changes on your order.<\/p><p>If you need to change an order after it has already shipped, then you will need to initiate a return after receiving the shipment.<\/p><p>For more info on our return policy <a href=\"\/pages\/return-policy\" title=\"Return Policy\">click here.<\/a><\/p>",
             "page": ""
           }
         },
