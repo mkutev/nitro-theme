@@ -161,6 +161,15 @@
             "row_content": "<p>After purchasing your Voltbike, we do offer support to all of our customers.<br\/><br\/>If there is a component on your bike that has malfunctioned, here is what you can do to get your bike back to running at peak condition.<br\/><br\/>1. In the <a href=\"http:\/\/www.voltbike.com\/how-to-videos\">How to Videos<\/a> section of our website we offer solutions to many of the most common issues that may present themselves to Voltbike owners with many miles on their odometers. <a href=\"http:\/\/www.voltbike.com\/how-to-videos\">Click here for How to Videos.<\/a><br\/><br\/>2. Take some photos of the area in question and send it to us in an email.<br\/><br\/>3. We will then send you replacement parts as needed. We provide video instructions on how to change any parts.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_N6mmht": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is your return policy?",
+            "icon": "none",
+            "row_content": "<p>We always strive to deliver a quality product. We build, test and inspect all of our bikes prior to shipping.<br\/><br\/>If for some reason the bike is not a good fit for you, we allow returns within a 7 days period.<br\/><br\/>1. New and unused bikes are subject to 10% restocking fee.<br\/><br\/>2. If the bike is used and with less than 10km on the odometer then it is subject to 20% restocking fee.<br\/><br\/>3. If the bike is used and with more than 30km on the odometer then it is subject to 35% restocking fee.<br\/><br\/>The customer is responsible for arranging the freight to come back in our facility. The average cost to ship bike across Canada is $200. The bike needs to be returned in its original packing.<br\/><br\/>Please note that returning a bicycle to us is time-consuming for you and also for us. If you are not sure if the bike will fit you, then please contact our customer service staff which would guide you.<\/p><p><strong>Cancellations<\/strong><\/p><p>You can cancel an order up until the order has been shipped. There is no fee associated with this.<\/p><p>Orders that have already been shipped with valid tracking number cannot be canceled. Once the order is shipped, the customer will be responsible for returning the new merchandise pursuant to the VoltBike return policy to receive a refund.<\/p><p><strong>Helmet Exchange<\/strong><\/p><p>Due to Covid 19, we are no longer accepting any helmet returns or exchanges. If you don't think that either of helmet sizes will fit you, please select a top tube bag as your option for your gift with purchase rather than a helmet.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -174,7 +183,8 @@
         "collapsible_row_peRg7x",
         "collapsible_row_ft4FmF",
         "collapsible_row_ntHd4J",
-        "collapsible_row_MPnjyg"
+        "collapsible_row_MPnjyg",
+        "collapsible_row_N6mmht"
       ],
       "settings": {
         "caption": "",
