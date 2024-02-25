@@ -13,7 +13,7 @@
         "column_rPdH4p": {
           "type": "column",
           "settings": {
-            "title": "Before You Buy",
+            "title": "<a href=\"\/pages\/before-you-buy\" title=\"Before You Buy\">Before You Buy<\/a>",
             "text": "<p>Find common questions before you order<\/p>",
             "link_label": "",
             "link": ""
