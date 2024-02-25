@@ -170,6 +170,15 @@
             "row_content": "<p>We always strive to deliver a quality product. We build, test and inspect all of our bikes prior to shipping.<br\/><br\/>If for some reason the bike is not a good fit for you, we allow returns within a 7 days period.<br\/><br\/>1. New and unused bikes are subject to 10% restocking fee.<br\/><br\/>2. If the bike is used and with less than 10km on the odometer then it is subject to 20% restocking fee.<br\/><br\/>3. If the bike is used and with more than 30km on the odometer then it is subject to 35% restocking fee.<br\/><br\/>The customer is responsible for arranging the freight to come back in our facility. The average cost to ship bike across Canada is $200. The bike needs to be returned in its original packing.<br\/><br\/>Please note that returning a bicycle to us is time-consuming for you and also for us. If you are not sure if the bike will fit you, then please contact our customer service staff which would guide you.<\/p><p><strong>Cancellations<\/strong><\/p><p>You can cancel an order up until the order has been shipped. There is no fee associated with this.<\/p><p>Orders that have already been shipped with valid tracking number cannot be canceled. Once the order is shipped, the customer will be responsible for returning the new merchandise pursuant to the VoltBike return policy to receive a refund.<\/p><p><strong>Helmet Exchange<\/strong><\/p><p>Due to Covid 19, we are no longer accepting any helmet returns or exchanges. If you don't think that either of helmet sizes will fit you, please select a top tube bag as your option for your gift with purchase rather than a helmet.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_8iD3tK": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I pick-up my bike? (Canadian customers)",
+            "icon": "none",
+            "row_content": "<p>If you live close to our distribution center located in the lower mainland then you can save the shipping cost and pick up your bike fully assembled. Please note that all pickups are subject to BC taxes.<br\/>Picking up your bike locally saves you the shipping cost of $49 plus you get your bike fully assembled by our bike mechanics. Our bike mechanics will go through the full assembly process and it will be ready to ride. (no box)<br\/><br\/>When placing an order online, as you get through filling in your shipping\/billing info, the option for Local pickup will come up. Please note that this option is available upon selecting the province of \"British Columbia\".<br\/><br\/>After your order is placed, please contact us via email or telephone to set up a time for you to pickup the bike. We are open Mon-Friday 9:30am-6pm. Saturday we are open for pickups by appointment only.<br\/><br\/>Our main distribution center and VoltBike headquarters is located at 1579 Kingsway Ave Unit 1125, Port Coquitlam, BC, V3C 0H1.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -184,7 +193,8 @@
         "collapsible_row_ft4FmF",
         "collapsible_row_ntHd4J",
         "collapsible_row_MPnjyg",
-        "collapsible_row_N6mmht"
+        "collapsible_row_N6mmht",
+        "collapsible_row_8iD3tK"
       ],
       "settings": {
         "caption": "",
