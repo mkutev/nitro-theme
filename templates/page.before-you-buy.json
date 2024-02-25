@@ -107,6 +107,15 @@
             "row_content": "<p>We do offer test rides at our Port Coquitlam, BC, Canada location. Test rides are available between Monday-Friday 9am to 5pm and Saturday between 10am and 3pm. Most of the VoltBike models are available for test ride.The safety of our customers is our top priority. Wearing an approved helmet during test rides is mandatory. You can either bring your own helmet or you can use one of the VoltBike approved helmets available in the showroom. If you have never been on electric bike before then it's important to get yourself familiar with the operation of the electric bike. You can watch some of the videos available on our video <a href=\"https:\/\/www.voltbike.com\/how-to-videos\">section here. <\/a>You can also check our <a href=\"https:\/\/support.voltbike.com\/help-center\" title=\"https:\/\/support.voltbike.com\/help-center\">Help Center <\/a>section with many frequently asked questions. Our showroom staff is also available for you in case you have questions prior or after your test ride.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_QeR3pP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why isn't my transaction going through?",
+            "icon": "none",
+            "row_content": "<p>There are a few different possibilities for your payment not processing. Most times you will need to give your credit card company a call to let them know that you are trying to place this order. The transaction is usually a high amount and sometimes this gets flagged as unusual activity on your card and blocked from going through. A call to your credit card company usually will clear this up. Another reason could be that you have incorrectly inputted your card number, expiry date or CVV number on the back. Please ensure that everything is correct and you have called your credit card company before calling us as we will likely get the same result.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -114,7 +123,8 @@
         "collapsible_row_pwBAbK",
         "collapsible_row_Uhz37H",
         "collapsible_row_3aPrye",
-        "collapsible_row_JJwTPN"
+        "collapsible_row_JJwTPN",
+        "collapsible_row_QeR3pP"
       ],
       "settings": {
         "caption": "",
