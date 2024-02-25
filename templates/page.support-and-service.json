@@ -75,9 +75,9 @@
         "collapsible_row_pwBAbK": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do Test Rides work?",
+            "heading": "Do you keep a record of the serial numbers of the bikes you sell?",
             "icon": "none",
-            "row_content": "<p>We are open Mon-Fri 9am-5pm and Saturdays we are open from 10am-3pm for test rides.<\/p><p>We are located at #1125 - 1579 Kingsway Ave, Port Coquitlam, BC.<\/p>",
+            "row_content": "<p>We do not keep a record of the serial numbers for the bikes we sell. We advise customers to record their serial number as soon as they receive their bike in case of theft.<\/p>",
             "page": ""
           }
         },
