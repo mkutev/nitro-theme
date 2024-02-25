@@ -93,9 +93,9 @@
         "collapsible_row_3aPrye": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "row_content": "",
+            "heading": "Will riding in the rain affect the battery?",
+            "icon": "none",
+            "row_content": "<p>No. Our bikes are tested in the rain whenever it is raining in Vancouver on a week day (so roughly half the year) and they handle the water just fine. It is important not to store it where it will be rained on, or as one customer learned, submerged in water.<\/p>",
             "page": ""
           }
         },
