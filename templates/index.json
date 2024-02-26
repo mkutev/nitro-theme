@@ -6,9 +6,9 @@
         "slide_jP6xij": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/newyear2024-v2-homebanner-v2.webp",
-            "heading": "Winter Sale",
-            "heading_size": "h1",
+            "image": "shopify:\/\/shop_images\/EarlySpring2024-Banner-wBike_2x-80.jpg",
+            "heading": "Early Spring Sale",
+            "heading_size": "h0",
             "subheading": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike. Offer ends February 25th.",
             "button_label": "Show Now",
             "link": "shopify:\/\/collections\/all-bikes",
@@ -17,8 +17,8 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "center"
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "left"
           }
         },
         "slide_iXcAPM": {
