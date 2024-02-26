@@ -224,6 +224,48 @@
         "padding_bottom": 36
       }
     },
+    "rich_text_G67LTR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Jzgqe4": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_GfgQc8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Still can't find answer to your question? Drop us an email and our customer support team will get back to you 1 day.<\/p>"
+          }
+        },
+        "button_bzXeCg": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Jzgqe4",
+        "text_GfgQc8",
+        "button_bzXeCg"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "contact_form_nhcXfE": {
       "type": "contact-form",
       "settings": {
@@ -240,6 +282,7 @@
     "rich_text_7wtay3",
     "multicolumn_DdrHjt",
     "collapsible_content_X9PW33",
+    "rich_text_G67LTR",
     "contact_form_nhcXfE"
   ]
 }
