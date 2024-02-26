@@ -147,12 +147,55 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_YVzbLk": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NFEbFd": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_Gzdqew": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Please Note:<\/strong> Payment options through Affirm Canada Holdings Ltd. (“Affirm”). Your rate will be 0–31.99% APR (where available and subject to provincial regulatory limitations). APR offered is based on creditworthiness and subject to an eligibility check. Not all customers will be eligible for 0% APR. Payment options depend on your purchase amount, may vary by merchant, and may not be available in all provinces\/territories. Actual payment option terms will be shown at checkout. A down payment (or a payment due today) may be required. Affirm accepts debit cards and PAD as forms of repayment on payment options. Select payment options may be eligible for repayment in the form of credit cards. Please review the terms and conditions of your credit card when using it as a form of repayment. Sample payment options may be: a $800 purchase could be split into 12 monthly payments of $72.21 at 15% APR, or 4 interest-free payments of $200 every 2 weeks. For more information, please see <a href=\"https:\/\/www.affirm.com\/en-ca\/how-it-works.\">https:\/\/www.affirm.com\/en-ca\/how-it-works.<\/a><\/p>"
+          }
+        },
+        "button_CwTqPR": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NFEbFd",
+        "text_Gzdqew",
+        "button_CwTqPR"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_JMemYa",
     "image_with_text_dLJ3tp",
-    "image_with_text_aQBVyW"
+    "image_with_text_aQBVyW",
+    "rich_text_YVzbLk"
   ]
 }
