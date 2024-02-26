@@ -182,7 +182,7 @@
           "type": "collapsible_row",
           "settings": {
             "heading": "Can I wash my Voltbike?",
-            "icon": "check_mark",
+            "icon": "none",
             "row_content": "<p>Though our bikes are water resistant, they are not 100% waterproof and the battery and electrical components could get damaged after exposure to a significant amount water. <\/p><p>We recommend wiping the bike with a damp cloth, you may use rubbing alcohol on the cloth rather than soap if there is a lot of dirt and grime. Always remove your battery prior to cleaning your bike. <\/p><p>Never squirt water into the battery connector or any of the electrical components and always handle your battery with care. <\/p><p>Allow the bike to completely dry before charging, reconnecting the battery and turning the bike on.<\/p>",
             "page": ""
           }
