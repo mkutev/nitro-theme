@@ -293,12 +293,66 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_xcVNxJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rL9V8z": {
+          "type": "heading",
+          "settings": {
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_zxnPPU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you haven't found the answer you're looking for, don't hesitate to reach out to us via email. Our dedicated customer support team aims to respond within 1 business day.<\/p>"
+          }
+        },
+        "button_zeYRAw": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rL9V8z",
+        "text_zxnPPU",
+        "button_zeYRAw"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_cGLfET": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "rich_text_ttHkhw",
     "multicolumn_DdrHjt",
-    "collapsible_content_X9PW33"
+    "collapsible_content_X9PW33",
+    "rich_text_xcVNxJ",
+    "contact_form_cGLfET"
   ]
 }
