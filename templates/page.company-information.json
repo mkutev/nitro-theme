@@ -209,11 +209,21 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
+        "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "contact_form_pTGqjW": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -222,6 +232,7 @@
     "rich_text_BWkRta",
     "multicolumn_DdrHjt",
     "collapsible_content_X9PW33",
-    "rich_text_t4br9f"
+    "rich_text_t4br9f",
+    "contact_form_pTGqjW"
   ]
 }
