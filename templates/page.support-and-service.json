@@ -168,6 +168,15 @@
             "row_content": "<p>You may decide to sell your Voltbike, possibly because you want to purchase our latest model. There are lots of eager people who would love to take the older model off of your hands at a discounted price! Many people decide to do this and they always ask the question.Is warranty transferable? Warranty is usually non-transferable except in special circumstances where an arrangement is made with VoltBike.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_UbpiEP": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I take my Voltbike on a plane?",
+            "icon": "none",
+            "row_content": "<p>All e-bike batteries are considered dangerous goods because they exceed 300WH (watt hours). Most airlines have a limit of 100WH. Most if not all airline companies refuse this large of a battery for recreational use, however mobility scooters for people with disabilities contain a similar battery size which are permitted after approval from the airline. Alternatively you are better off shipping your battery separately via FedEx or a possible Ocean freight ship.<\/p><p>The way to calculate the WH is to multiply the volts by the amp hours:<\/p><p>Urban: 36VT x 13AH = 468 WH<\/p><p>Mariner: 48VT x 14.5AH = 696 WH<\/p><p>Yukon: 48VT x 16AH = 768 WH<\/p><p>Elegant, Enduro & Bravo:48VT x 12.8AH = 614.40 WH<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -177,7 +186,8 @@
         "collapsible_row_Uhz37H",
         "collapsible_row_3aPrye",
         "collapsible_row_XLgyGN",
-        "collapsible_row_hcYgBX"
+        "collapsible_row_hcYgBX",
+        "collapsible_row_UbpiEP"
       ],
       "settings": {
         "caption": "",
