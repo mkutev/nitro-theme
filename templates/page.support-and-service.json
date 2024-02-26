@@ -186,6 +186,15 @@
             "row_content": "<p>Though our bikes are water resistant, they are not 100% waterproof and the battery and electrical components could get damaged after exposure to a significant amount water. <\/p><p>We recommend wiping the bike with a damp cloth, you may use rubbing alcohol on the cloth rather than soap if there is a lot of dirt and grime. Always remove your battery prior to cleaning your bike. <\/p><p>Never squirt water into the battery connector or any of the electrical components and always handle your battery with care. <\/p><p>Allow the bike to completely dry before charging, reconnecting the battery and turning the bike on.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_row_LV7pXL": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are replacement VoltBike keys available if I've misplaced mine?",
+            "icon": "none",
+            "row_content": "<p>Each set of keys supplied with every Voltbike is exclusively matched to its respective battery enclosure. For your convenience, we provide customers with a set of 2 keys, ensuring a backup in the event of misplacement. Similar to standard practice at car dealerships, we do not retain keys for sold bikes. In the unfortunate scenario of losing both keys, the solution would be to drill out the existing battery keylock assembly connecting the battery to the frame and subsequently replace the keylock assembly.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -197,7 +206,8 @@
         "collapsible_row_XLgyGN",
         "collapsible_row_hcYgBX",
         "collapsible_row_UbpiEP",
-        "collapsible_row_EDAcXz"
+        "collapsible_row_EDAcXz",
+        "collapsible_row_LV7pXL"
       ],
       "settings": {
         "caption": "",
