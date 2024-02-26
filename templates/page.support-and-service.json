@@ -172,7 +172,7 @@
         "collapsible_row_UbpiEP": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I take my Voltbike on a plane?",
+            "heading": "Can I take my Voltbike on a airplane?",
             "icon": "none",
             "row_content": "<p>E-bike batteries are classified as dangerous goods due to their watt-hour (WH) rating typically exceeding 300WH. However, most airlines enforce a limit of 100WH for batteries. Consequently, the majority, if not all, airline companies decline the transport of such large batteries for recreational purposes. Nonetheless, batteries of similar size found in mobility scooters for individuals with disabilities are permissible for air travel after receiving approval from the airline. Alternatively, individuals may opt to ship their batteries separately via FedEx or potentially through ocean freight services.<\/p><p>The way to calculate the WH is to multiply the volts by the amp hours:<\/p><p>Urban: 36VT x 13AH = 468 WH<\/p><p>Mariner: 48VT x 14.5AH = 696 WH<\/p><p>Yukon: 48VT x 16AH = 768 WH<\/p><p>Elegant, Enduro & Bravo:48VT x 12.8AH = 614.40 WH<\/p>",
             "page": ""
