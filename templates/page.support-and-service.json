@@ -106,6 +106,15 @@
     "collapsible_content_X9PW33": {
       "type": "collapsible-content",
       "blocks": {
+        "collapsible_row_JJwTPN": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Owner's manuals",
+            "icon": "none",
+            "row_content": "<ul><li>To download the most up-to-date VoltBike owner's manual please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/OwnersManual_rev1.pdf\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/OwnersManual_rev1.pdf\">click here<\/a>.<\/li><li>To download the LCD screen owner's manual for VoltBike Enduro 2019 edition please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/max_drive_manual.pdf?v=1708913154\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/max_drive_manual.pdf?v=1708913154\">click here<\/a>.<\/li><li>To download the LCD screen owner's manual for VoltBike Enduro 2021 edition please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/Bafang_C240.pdf?v=1708913129\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/Bafang_C240.pdf?v=1708913129\">click here<\/a>.<\/li><li>To download the owner's manual for color LCD Screen 850C please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/manual_850C.pdf?v=1708913119\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/manual_850C.pdf?v=1708913119\">click here<\/a>. Currently used on Yukom, Kodiak, Urban Step-Through, Elegant and Bravo models.<\/li><li>To download the owner's manual for color LCD Screen DP C18, please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/CoreModelDisplay-Manual.pdf?v=1708913139\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/CoreModelDisplay-Manual.pdf?v=1708913139\">click here<\/a>. Currently used on the Yukon Core and Bravo Core models.<\/li><\/ul>",
+            "page": ""
+          }
+        },
         "collapsible_row_ETNPTJ": {
           "type": "collapsible_row",
           "settings": {
@@ -141,23 +150,14 @@
             "row_content": "<p>The best chance of recovering a stolen bicycle is ensuring a registered serial number.<\/p><p>These numbers are used by law enforcement around the world.<\/p><p>Most bike companies like VoltBike do not retain a record of the serial numbers for the bikes sold, but we encourage our customers to record their serial numbers for their records. <\/p><p>The serial number on VoltBike bikes are located on the front headset just above the front fork. <\/p><p>They are engraved, and if you are having difficulty finding them, you may want to use your fingertips to feel for them.<\/p><p>The registration sites we would recommend using would be the <a href=\"https:\/\/bikeindex.org\/\" target=\"_blank\" title=\"https:\/\/bikeindex.org\/\">Bike Index<\/a>,  and <a href=\"https:\/\/project529.com\/garage\" target=\"_blank\" title=\"https:\/\/project529.com\/garage\">529 Garage<\/a>.<\/p>",
             "page": ""
           }
-        },
-        "collapsible_row_JJwTPN": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Owner's manuals",
-            "icon": "none",
-            "row_content": "<ul><li>To download the most up-to-date VoltBike owner's manual please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/OwnersManual_rev1.pdf\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/OwnersManual_rev1.pdf\">click here<\/a>.<\/li><li>To download the LCD screen owner's manual for VoltBike Enduro 2019 edition please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/max_drive_manual.pdf?v=1708913154\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/max_drive_manual.pdf?v=1708913154\">click here<\/a>.<\/li><li>To download the LCD screen owner's manual for VoltBike Enduro 2021 edition please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/Bafang_C240.pdf?v=1708913129\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/Bafang_C240.pdf?v=1708913129\">click here<\/a>.<\/li><li>To download the owner's manual for color LCD Screen 850C please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/manual_850C.pdf?v=1708913119\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/manual_850C.pdf?v=1708913119\">click here<\/a>. Currently used on Yukom, Kodiak, Urban Step-Through, Elegant and Bravo models.<\/li><li>To download the owner's manual for color LCD Screen DP C18, please <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/CoreModelDisplay-Manual.pdf?v=1708913139\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0852\/6187\/7560\/files\/CoreModelDisplay-Manual.pdf?v=1708913139\">click here<\/a>. Currently used on the Yukon Core and Bravo Core models.<\/li><\/ul>",
-            "page": ""
-          }
         }
       },
       "block_order": [
+        "collapsible_row_JJwTPN",
         "collapsible_row_ETNPTJ",
         "collapsible_row_pwBAbK",
         "collapsible_row_Uhz37H",
-        "collapsible_row_3aPrye",
-        "collapsible_row_JJwTPN"
+        "collapsible_row_3aPrye"
       ],
       "settings": {
         "caption": "",
