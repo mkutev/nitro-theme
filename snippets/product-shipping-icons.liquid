@@ -1,139 +1,22 @@
-<style>
+<div class="w3-container">
+  <h2>W3.CSS Modal</h2>
+  <p>Add the w3-card-* class to the w3-modal-content container to display the modal as a card.</p>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
 
-
-/*
-
-   Styles for animated modal
-   =========================
-
-*/
-
-/* Start state */
-
-.grid {font-size: 50px;}
-  
-.animated-modal {
-  max-width: 550px;
-  border-radius: 4px;
-  overflow: hidden;
-  
-  transform: translateY(-50px);
-  transition: all .7s;
-}
-
-.animated-modal h2,
-.animated-modal p {
-  transform: translateY(-50px);
-  opacity: 0;
-  
-  transition-property: transform, opacity;
-  transition-duration: .4s;
-}
-
-/* Final state */
-.fancybox-slide--current .animated-modal,
-.fancybox-slide--current .animated-modal h2,
-.fancybox-slide--current .animated-modal p {
-  transform: translateY(0);
-  opacity: 1;
-}
-
-/* Reveal content with different delays */
-.fancybox-slide--current .animated-modal h2 {
-  transition-delay: .1s;
-}
-
-.fancybox-slide--current .animated-modal p {
-  transition-delay: .3s;
-}
-
-</style>
-
-
-<h2>fancyBox v3.2 - Inline content</h2>
-
-<div class="grid">
-  
-  <p>
-    #1 - Default example
-  </p>
-  <p>
-    <a data-fancybox data-src="#modal" href="javascript:;" class="btn">Open demo</a>
-  </p>
-
-  <div style="display: none;" id="modal">
-    <h2>Hello!</h2>
-    <p>You are awesome!</p>
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4">
+      <header class="w3-container w3-teal"> 
+        <span onclick="document.getElementById('id01').style.display='none'" 
+        class="w3-button w3-display-topright">&times;</span>
+        <h2>Modal Header</h2>
+      </header>
+      <div class="w3-container">
+        <p>Some text..</p>
+        <p>Some text..</p>
+      </div>
+      <footer class="w3-container w3-teal">
+        <p>Modal Footer</p>
+      </footer>
+    </div>
   </div>
-  
 </div>
-<div class="grid">
-
-  <p>
-    #2 - Custom open/close animation
-  </p>
-  <p>
-    <a data-fancybox data-animation-duration="700" data-src="#animatedModal" href="javascript:;" class="btn">Open demo</a>
-  </p>
-
-  <div style="display: none;" id="animatedModal" class="animated-modal">
-    <h2>Hello!</h2>
-    <p>This is animated content! Cool, right?</p>
-  </div>
-
-</div>
-
-<div class="grid">
-
-  <p>
-    #3 - Modal window
-  </p>
-
-  <p>
-    <a data-fancybox data-src="#trueModal" data-modal="true" href="javascript:;" class="btn">Open demo</a>
-  </p>
-
-  <div style="display: none;max-width:600px;" id="trueModal">
-    <h2>I'm a modal!</h2>
-    <p>You can close me only by pressing custom button below.</p>
-    <p>It would also be possible to prevent closing using `beforeClose` callback.</p>
-    <p><button data-fancybox-close class="btn">Close me</button></p>
-  </div>
-  
-</div>
-
-<div class="grid">
-
-  <p>
-    #4 - Custom options
-  </p>
-
-  <p>
-    <a data-fancybox data-options='{"src": "#exampleModal", "touch": false, "smallBtn" : false}' href="javascript:;" class="btn">Open demo</a>
-  </p>
-
-  <div style="display: none;max-width:500px;" id="exampleModal">
-    <h2>¡Hola!</h2>
-    <p>You can chose to display small close button (customizable using `btnTpl.smallBtn` option; you can put any html here) or display the toolbar instead.</p>
-  </div>
-  
-</div>
-
-<div class="grid">
-
-  <p>
-    #5 - Make element selectable/clickable
-  </p>
-
-  <p>
-    <a data-fancybox data-src="#selectableModal" href="javascript:;" class="btn">Open demo</a>
-  </p>
-
-  <div style="display: none;max-width:500px;" id="selectableModal">
-    <h2 data-selectable="true">Ciao!</h2>
-    <p data-selectable="true">Sometimes you would want to disable "touch" feature. <br />For example, when you want to make your content selectable.</p>
-  </div>
-  
-</div>
-
-
