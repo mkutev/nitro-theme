@@ -1,5 +1,14 @@
 {
   "sections": {
+    "custom_liquid_PyT3CK": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-shipping-icons' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner_jWntqi": {
       "type": "image-banner",
       "blocks": {
@@ -42,20 +51,11 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "custom_liquid_PyT3CK": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'product-shipping-icons' %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
+    "custom_liquid_PyT3CK",
     "image_banner_jWntqi",
-    "main",
-    "custom_liquid_PyT3CK"
+    "main"
   ]
 }
