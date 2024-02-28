@@ -6,7 +6,7 @@
         "custom_liquid": "{% render 'global-banner' %}",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 32
       }
     },
     "main": {
