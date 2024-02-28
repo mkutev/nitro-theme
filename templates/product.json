@@ -2,16 +2,14 @@
   "sections": {
     "7e5544b3-a15e-4a28-8050-381c21f384ea": {
       "type": "custom-liquid",
-      "disabled": true,
       "custom_css": [
-        "ul {display: flex; list-style: none; font-family: monospace; font-size: 1rem; gap: 10px;}",
-        "li:not(:last-child):hover a {color: #2979ff;}"
+
       ],
       "settings": {
-        "custom_liquid": "<!-- Breadcrumbs -->\n<div class=\"breadcrumbs\">\n  <ul>\n    <li><a href=\"\/\">Home<\/a><\/li>\n    {% if collection %}\n      <li><a href=\"{{ collection.url }}\">{{ collection.title }}<\/a><\/li>\n    {% endif %}\n    {% if product %}\n      <li><a href=\"{{ product.url }}\">{{ product.title }}<\/a><\/li>\n    {% endif %}\n  <\/ul>\n<\/div>",
+        "custom_liquid": "{% render 'global-banner' %}",
         "color_scheme": "",
-        "padding_top": 12,
-        "padding_bottom": 12
+        "padding_top": 40,
+        "padding_bottom": 40
       }
     },
     "main": {
