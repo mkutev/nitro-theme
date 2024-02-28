@@ -3,7 +3,7 @@
     "custom_liquid_JQnheJ": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "",
+        "custom_liquid": "{% render 'global-banner' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
