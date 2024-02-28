@@ -16,9 +16,9 @@
 
 <div class="global-banner__container page-width">
   <picture id="banner">
-    <source srcset="{{ 'earlyspring2024-globalbanner.png' | file_img_url}}" media="(min-width: 1200px)">
+    <source srcset="{{ 'earlyspring2024-globalbanner.png' | file_img_url: 'original' }}" media="(min-width: 1200px)">
     <img
-      src="{{ 'earlyspring2024-globalbanner-narrow.png' | file_img_url }}"
+      src="{{ 'earlyspring2024-globalbanner-narrow.png' | file_img_url: 'original' }}"
       alt="Site banner for current sale."
       style="display: block;"
     >
