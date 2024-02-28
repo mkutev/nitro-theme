@@ -1,5 +1,14 @@
 {
   "sections": {
+    "custom_liquid_dcJ8HH": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'global-banner' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -190,6 +199,7 @@
     }
   },
   "order": [
+    "custom_liquid_dcJ8HH",
     "main",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "custom_liquid_eVNAhC",
