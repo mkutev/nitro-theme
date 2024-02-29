@@ -1,0 +1,94 @@
+{% comment %}
+  A custom block for ebike product pages displaying information about shipping and warranty. Also includes a 'rear more' pop-up.
+{% endcomment %}
+
+{% style %}
+  .box-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+  }
+
+  .prod-info_threebox {
+    font-family: "Montserrat", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin: 1em 0;
+  }
+
+  .prod-info_threebox .box-container > * {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .prod-info_threebox .shipping { }
+
+  .prod-info_threebox .warranty { }
+{% endstyle %}
+
+<section class="prod-info_threebox">
+  <div class="box-container">
+    <a class="shipping open-popup-link" href="#shipping-popup">
+      <img src="{{media url=wysiwyg/shipping-icon.svg}}" width="35" alt="shipping icon."> Free Shipping*
+    </a>
+    <a class="warranty open-popup-link" href="#warranty-popup">
+      <img src="{{media url=wysiwyg/warranty-icon.svg}}" width="25" alt="warranty icon."> 1 Year Warranty
+    </a>
+  </div>
+
+  <div id="warranty-popup" class="white-popup mfp-hide product description">
+    <p>
+      We recognize that purchasing an electric bike online can be a challenging decision, particularly if you lack
+      mechanical experience. That's why we take the extra step in preparing our ebikes. Every VoltBike is partially
+      assembled, meticulously tested, tuned-up, and individually packed in our assembly facility in Vancouver, BC,
+      Canada. This guarantee that you experience trouble-free riding with your electric bike for many years to come.
+      <br>
+      <br>
+      To provide you with peace of mind, Voltbike offers a 1-year limited warranty for the eBikes we sell. Full warranty
+      coverage <a href="/warranty" target="blank">available here</a>. <br>
+      <br>
+      Our electric bikes are thoughtfully designed with a modular approach. All Voltbike components feature quick
+      connectors and are easily replaceable. This include the LCD screen, brake levers, motor brake inhibitors,
+      throttle, motor, and battery. In the event that replacements are needed, virtually any regular cyclist can handle
+      the task with ease.
+      <br>
+      <br>
+      VoltBike is actively collaborating with various bike shops and bike mechanics to establish an authorized repair
+      network throughout Canada and the USA. To access the current list of authorized repair centers, please
+      <a href="https://www.voltbike.com/local-service">click here</a>.
+    </p>
+  </div>
+
+  <div id="shipping-popup" class="white-popup mfp-hide product description">
+    <p>
+      Our ebikes are shipped fully assembled, including both wheels attached, for your convenience. Due to the package's
+      size, we utilize LTL (Less Than Truckload) carriers for shipping. Depending on your location, your bike will be
+      shipped with one of the following carriers: Ace Courier, Day & Ross, or Manitoulin Transport.
+    </p>
+    <p>
+      As part of our online incentive, we are pleased to provide free shipping* for all ebike orders. If you're in the
+      vicinity of our headquarters in Port Coquitlam, BC, Canada, rest assured that pickup from our location is always
+      available free of charge. Additionally, you enjoy the advantage of receiving your electric bicycle fully assembled
+      right out of the box, a service that typically comes at an extra cost with our competitors.
+    </p>
+    <p>
+      *For customers residing in rural or more remote areas where commercial trucks may face challenges with delivery,
+      we kindly request that you provide a business or commercial address for your ebike's delivery. Alternatively you
+      have a option to pick up your electric bike in a shipping terminal close to your location.
+    </p>
+
+    For full shipping details please <a href="https://www.voltbike.com/shipping-canada" target="blank">click here</a>.
+  </div>
+</section>
+
+<script>
+  $(".open-popup-link").magnificPopup({
+  	type: "inline",
+  	mainClass: "mfp-fade",
+  	removeDelay: 160,
+  	preloader: false,
+  	fixedContentPos: false,
+  });
+</script>
