@@ -57,6 +57,12 @@
             "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
+        },
+        "custom_liquid_cJBLaq": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-shipping-warranty' %}"
+          }
         }
       },
       "block_order": [
@@ -67,7 +73,8 @@
         "custom_liquid_katXdi",
         "price",
         "variant_picker",
-        "buy_buttons"
+        "buy_buttons",
+        "custom_liquid_cJBLaq"
       ],
       "settings": {
         "enable_sticky_info": true,
