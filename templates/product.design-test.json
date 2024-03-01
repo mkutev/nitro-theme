@@ -60,8 +60,16 @@
         },
         "custom_liquid_cJBLaq": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "{% render 'product-shipping-warranty' %}"
+          }
+        },
+        "popup_g6zKt7": {
+          "type": "popup",
+          "settings": {
+            "text": "Pop-up link text",
+            "page": "about-us"
           }
         }
       },
@@ -74,7 +82,8 @@
         "price",
         "variant_picker",
         "buy_buttons",
-        "custom_liquid_cJBLaq"
+        "custom_liquid_cJBLaq",
+        "popup_g6zKt7"
       ],
       "settings": {
         "enable_sticky_info": true,
