@@ -72,13 +72,6 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "popup_UE3wyB": {
-          "type": "popup",
-          "settings": {
-            "text": "Pop-up link text",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -91,8 +84,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "share",
-        "popup_UE3wyB"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
