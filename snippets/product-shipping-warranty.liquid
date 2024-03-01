@@ -3,14 +3,14 @@
 {% endcomment %}
 
 {% style %}
-  /* .prod-modal__container {
+  .shipping-warranty__modal .container {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  } */
+  }
 
-  .prod-modal__container .modal-window {
+  .shipping-warranty__modal .modal-window {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.25);
     top: 0;
@@ -23,13 +23,13 @@
     pointer-events: none;
     transition: all 0.3s;
   }
-  .prod-modal__container .modal-window:target {
+  .shipping-warranty__modal .modal-window:target {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .prod-modal__container .modal-window > div {
+  .shipping-warranty__modal .modal-window > div {
     width: 400px;
     position: absolute;
     top: 50%;
@@ -50,28 +50,28 @@
     width: 70px;
     text-decoration: none;
 
-    .prod-modal__container .modal-close:hover {
+    .shipping-warranty__modal .modal-close:hover {
       color: black;
     }
   }
 
-  .prod-modal__container a {
+  .shipping-warranty__modal a {
     color: inherit;
     text-decoration: none;
   }
 
-  .prod-modal__container .modal-window .container {
+  .shipping-warranty__modal .modal-window .container {
     display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh;
   }
 
-  .prod-modal__container small {
+  .shipping-warranty__modal small {
     color: lightgray;
   }
 
-  .prod-modal__container .btn-modal {
+  .shipping-warranty__modal .btn-modal {
     background-color: white;
     padding: 1em 1.5em;
     border-radius: 0.5rem;
@@ -82,7 +82,7 @@
   }
 {% endstyle %}
 
-<div class="prod-modal__container">
+<div class="shipping-warranty__modal">
   <div class="container">
     <div class="interior">
       <a class="btn btn-modal" href="#open-modal-shipping"
