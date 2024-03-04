@@ -4,7 +4,10 @@
 
 {% if product.metafields.custom.compatible_with %}
   {% assign values = product.metafields.custom.compatible_with | remove: '[' | remove: ']' | remove: '"' | split: ',' %}
-  {{ values }}
+
+  {% for value in values %}
+    {{ value }}
+  {% endfor %}
 
 {% else %}
   <p>No compatibility options set.</p>
