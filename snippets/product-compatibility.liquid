@@ -2,4 +2,8 @@
   A custom snippet for accessories and replacement parts to display compatibility with ebikes
 {% endcomment %}
 
-test
+{% if product.metafields.custom.compatible_with %}
+  {{ product.metafields.custom.compatible_with }}
+{% else %}
+  <p>No compatibility options set.</p>
+{% endif %}
