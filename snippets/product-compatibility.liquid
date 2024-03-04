@@ -5,6 +5,7 @@
 {% if product.metafields.custom.compatible_with %}
   {% assign values_raw = product.metafields.custom.compatibile_with %}
   {% assign values = values_raw | split: ',' %}
+  {{ values }}
   <ul>
     {% for value in values %}
       <li>{{ value }}</li>
