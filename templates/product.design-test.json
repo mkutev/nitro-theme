@@ -34,6 +34,12 @@
           "settings": {
           }
         },
+        "custom_liquid_fmWTnG": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-compatability' %}"
+          }
+        },
         "custom_liquid_katXdi": {
           "type": "custom_liquid",
           "settings": {
@@ -67,6 +73,7 @@
         },
         "popup_g6zKt7": {
           "type": "popup",
+          "disabled": true,
           "settings": {
             "text": "Pop-up link text",
             "page": "about-us"
@@ -78,6 +85,7 @@
         "title",
         "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b",
         "description",
+        "custom_liquid_fmWTnG",
         "custom_liquid_katXdi",
         "price",
         "variant_picker",
