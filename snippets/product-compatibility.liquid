@@ -3,14 +3,17 @@
 {% endcomment %}
 
 {% if product.metafields.custom.compatible_with %}
-  {% assign values = product.metafields.custom.compatible_with | split: ',' %}
+  {% assign values_raw = product.metafields.custom.compatible_with | split: ',' %}
   {% assign values = values | remove_first: '[' %}
-  <ul>
-    {% for value in values %}
-      <li>{{ value }}</li>
-    {% endfor %}
-  </ul>
-  hello ?
+
+  {{ values }}
+  <!--
+    <ul>
+      {% for value in values %}
+        <li>{{ value }}</li>
+      {% endfor %}
+    </ul>
+  -->
 {% else %}
   <p>No compatibility options set.</p>
 {% endif %}
