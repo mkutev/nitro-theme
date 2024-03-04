@@ -4,8 +4,9 @@
 
 {% if product.metafields.custom.compatible_with %}
   {% assign values_raw = product.metafields.custom.compatible_with | split: ',' %}
+  {{ values_raw }}
+  <br>
   {% assign value = values_raw | remove: '[' %}
-
   {{ value }}
 
 {% else %}
