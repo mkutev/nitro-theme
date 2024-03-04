@@ -31,6 +31,8 @@
 
 {% if product.metafields.custom.compatible_with %}
   <div class="product-compatibility__container">
+    <span class="product-compatibility__title">Compatible with:</span>
+
     {% assign values = product.metafields.custom.compatible_with
       | remove: '['
       | remove: ']'
