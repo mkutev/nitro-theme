@@ -13,6 +13,10 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
+
+  .product-compatibility__list-item {
+    display: inline-block;
+  }
 {% endstyle %}
 
 {% if product.metafields.custom.compatible_with %}
@@ -26,7 +30,7 @@
 
     <ul class="product-compatibility__list">
       {% for value in values %}
-        <li>{{ value }}</li>
+        <li class="product-compatibility__list-item">{{ value }}</li>
       {% endfor %}
     </ul>
   </div>
