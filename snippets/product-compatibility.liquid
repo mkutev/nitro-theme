@@ -3,14 +3,18 @@
 {% endcomment %}
 
 {% if product.metafields.custom.compatible_with %}
-  {% assign values = product.metafields.custom.compatible_with | remove: '[' | remove: ']' | remove: '"' | split: ',' %}
+  <div class="product-compatibility__container">
+    {% assign values = product.metafields.custom.compatible_with
+      | remove: '['
+      | remove: ']'
+      | remove: '"'
+      | split: ','
+    %}
 
-  <ul>
-    {% for value in values %}
-      <li>{{ value }}</li>
-    {% endfor %}
-  </ul>
-
-{% else %}
-  <p>No compatibility options set.</p>
+    <ul class="product-compatibility__list">
+      {% for value in values %}
+        <li>{{ value }}</li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endif %}
