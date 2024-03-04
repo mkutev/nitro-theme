@@ -3,11 +3,8 @@
 {% endcomment %}
 
 {% if product.metafields.custom.compatible_with %}
-  {% assign values_raw = product.metafields.custom.compatible_with | split: ',' %}
-  {{ values_raw }}
-  <br>
-  {% assign value = product.metafields.custom.compatible_with | remove: '[' | remove: ']' | remove: '"' %}
-  {{ value }}
+  {% assign values = product.metafields.custom.compatible_with | remove: '[' | remove: ']' | remove: '"' | split: ',' %}
+  {{ values }}
 
 {% else %}
   <p>No compatibility options set.</p>
