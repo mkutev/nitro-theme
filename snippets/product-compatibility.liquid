@@ -4,6 +4,7 @@
 
 {% if product.metafields.custom.compatible_with %}
   {% assign value = product.metafields.custom.compatible_with | split: ',' %}
+  {% assign value = value.metafields.custom.compatible_with | remove_first: '[' %}
 
   {{ value }}
 
