@@ -37,6 +37,12 @@
           "settings": {
           }
         },
+        "custom_liquid_yarKMG": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-compatibility' %}"
+          }
+        },
         "custom_liquid_6KQb4w": {
           "type": "custom_liquid",
           "settings": {
@@ -79,6 +85,7 @@
         "title",
         "19bbc261-446d-4362-ac75-156cf142620b",
         "description",
+        "custom_liquid_yarKMG",
         "custom_liquid_6KQb4w",
         "price",
         "variant_picker",
