@@ -6,7 +6,7 @@
   {% assign values_raw = product.metafields.custom.compatible_with | split: ',' %}
   {{ values_raw }}
   <br>
-  {% assign value = product.metafields.custom.compatible_with | remove: '[' | remove: ']' %}
+  {% assign value = product.metafields.custom.compatible_with | remove: '[' | remove: ']' | remove: '"' %}
   {{ value }}
 
 {% else %}
