@@ -2,6 +2,19 @@
   A custom snippet for accessories and replacement parts to display compatibility with ebikes
 {% endcomment %}
 
+{% style %}
+  .product-compatibility__container {
+
+  }
+
+  .product-compatibility__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+{% endstyle %}
+
 {% if product.metafields.custom.compatible_with %}
   <div class="product-compatibility__container">
     {% assign values = product.metafields.custom.compatible_with
