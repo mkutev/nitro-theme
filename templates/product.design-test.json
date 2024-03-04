@@ -37,7 +37,7 @@
         "custom_liquid_fmWTnG": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% render 'product-compatability' %}"
+            "custom_liquid": "{% render 'product-compatibility' %}"
           }
         },
         "custom_liquid_katXdi": {
