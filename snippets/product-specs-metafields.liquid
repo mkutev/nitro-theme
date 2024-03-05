@@ -45,9 +45,9 @@
           <ul class="specs-list">
 
             {% if product.variants.size > 1 %}
-              <li class="speec"><span>Weight</span>{{ product.variants.first.weight_in_unit }} {{ product.variants.first.weight_unit }}</li>
+              <li class="spec"><span>Weight</span>{{ product.variants.first.weight_in_unit }} {{ product.variants.first.weight_unit }}</li>
             {% elsif product.weight > 0 %}
-              <li class="speec"><span>Weight</span>{{ product.weight }} {{ product.weight_unit }}</li>
+              <li class="spec"><span>Weight</span>{{ product.weight }} {{ product.weight_unit }}</li>
             {% endif %}
             
             {% liquid
