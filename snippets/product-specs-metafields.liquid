@@ -43,11 +43,17 @@
         </h2>
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 2;">
           <ul class="specs-list">
+
+            {% if product.variants.size > 1 %}
+              <li class="speec"><span>Weight</span>{{ product.variants.first.weight }} {{ product.variants.first.weight_unit }}</li>
+            {% elsif product.weight > 0 %}
+              <li class="speec"><span>Weight</span>{{ product.weight }} {{ product.weight_unit }}</li>
+            {% endif %}
+            
             {% liquid
               if product.metafields.specs
                 for metafield in product.metafields.specs
                   assign formatted_words = ''
-
                   assign words = metafield.first | split: '_'
 
                   for word in words
