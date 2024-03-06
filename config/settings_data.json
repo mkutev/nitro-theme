@@ -171,6 +171,12 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Feel free to drop us a message with any bike or support question you have. A VoltBike member is here to help!"
         }
+      },
+      "319724205969189013": {
+        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
@@ -244,7 +250,7 @@
         "settings": {
           "background": "#dd1d1d",
           "background_gradient": "",
-          "text": "#fff",
+          "text": "#ffffff",
           "button": "#dd1d1d",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
