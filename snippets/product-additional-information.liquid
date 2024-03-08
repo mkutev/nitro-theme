@@ -12,13 +12,9 @@
           Additional Information
         </h2>
 
-        {{ product.metafields.custom.additional_information }}
+        {{ product.metafields.custom.additional_information.value }}
+
         
-        {% liquid
-          if product.metafields.custom.additional_information
-            echo '' | append: product.metafields.custom.additional_information | append: ' '
-          endif
-        %}
       </div>
     </div>
   </div>
