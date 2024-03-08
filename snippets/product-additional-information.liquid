@@ -12,6 +12,8 @@
           Additional Information
         </h2>
 
+        {{ product.metafields.custom.additional_information }}
+        
         {% liquid
           if product.metafields.custom.additional_information
             echo '' | append: product.metafields.custom.additional_information | append: ' '
