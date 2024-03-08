@@ -154,6 +154,15 @@
         "padding_bottom": 52
       }
     },
+    "custom_liquid_Jwz6Fk": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-additional-information' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "170452725046cbedab": {
       "type": "apps",
       "blocks": {
@@ -207,6 +216,7 @@
     "custom_liquid_WeMtDF",
     "custom_liquid_8eq7nr",
     "custom_liquid_QHDtRT",
+    "custom_liquid_Jwz6Fk",
     "170452725046cbedab",
     "custom_liquid_XR8Uw3",
     "related-products"
