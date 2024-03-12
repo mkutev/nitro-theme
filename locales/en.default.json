@@ -173,7 +173,7 @@
       "xr_button": "View in your space",
       "xr_button_label": "View in your space, loads item in augmented reality window",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "Free Shipping"
+      "shipping_policy_html": ""
     },
     "modal": {
       "label": "Media gallery"
