@@ -1,27 +1,25 @@
-{% if product.metafields.custom.instagram_feed %}
+{%- if product.metafields.custom.instagram_feed -%}
+  <div class="isolate">
+    <div
+      class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+    >
+      <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+        <div class="rich-text__blocks left">
+          <h2
+            class="related-blog-posts__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+            data-cascade
+            style="--animation-order: 1;"
+          >
+            Customer Photos
+          </h2>
 
-<div class="isolate">
-  <div
-    class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
-  >
-    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks left">
-        <h2
-          class="related-blog-posts__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
-          data-cascade
-          style="--animation-order: 1;"
-        >
-          Customer Photos
-        </h2>
-
-        {% liquid
-          if product.metafields.custom.instagram_feed
-            echo '' | append: product.metafields.custom.instagram_feed | append: ' '
-          endif
-        %}
+          {% liquid
+            if product.metafields.custom.instagram_feed
+              echo '' | append: product.metafields.custom.instagram_feed | append: ' '
+            endif
+          %}
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-{% endif %}
+{%- endif -%}
