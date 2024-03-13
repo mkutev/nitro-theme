@@ -21,7 +21,7 @@
               const videoId = item.snippet.resourceId.videoId;
               const videoTitle = item.snippet.title;
               const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-              const videoThumbUrl = item.snippet.thumbnails.standard.url;
+              const videoThumbUrl = item.snippet.thumbnails.high.url;
               const videoEntry = document.createElement('li');
               videoEntry.innerHTML = `
               <a href="${videoUrl}" target="_blank">
