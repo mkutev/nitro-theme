@@ -83,18 +83,15 @@
             data-cascade
             style="--animation-order: 4;"
           >
-            {% if product.metafields.sizing['content-text'] %}
-              <ul>
-                {{ product.metafields.sizing['content-text'] }}
-              </ul>
-            {% endif %}
-            {% if product.metafields.sizing.diagram %}
-              <img
-                src="{{ product.metafields.sizing.diagram | image_url }}"
-                alt="{{ product.title | escape }} sizing chart."
-                style="border: none;"
-              >
-            {% endif %}
+            <ul>
+              {{ product.metafields.sizing['content-text'] }}
+            </ul>
+
+            <img
+              src="{{ product.metafields.sizing.diagram | image_url }}"
+              alt="{{ product.title | escape }} sizing chart."
+              style="border: none;"
+            >
           </div>
         </div>
       </div>
