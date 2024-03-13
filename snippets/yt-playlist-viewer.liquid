@@ -1,0 +1,29 @@
+<ul id="playlist"></ul>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
+    const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
+    const maxResults = 100;
+    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+    console.log(url);
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+        const playlistElement = document.getElementById('playlist');
+        if (data.items) {
+          data.items.forEach(item => {
+            const videoId = item.snippet.resourceId.videoId;
+            const videoTitle = item.snippet.title;
+            const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+            const videoEntry = document.createElement('li');
+            videoEntry.innerHTML = `<a href="${videoUrl}" target="_blank">${videoTitle}</a>`;
+            playlistElement.appendChild(videoEntry);
+          });
+        } else {
+          console.log('No items found in playlist');
+        }
+      })
+      .catch(error => console.log('Error fetching data: ', error));
+  });
+</script>
