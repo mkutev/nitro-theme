@@ -1,4 +1,4 @@
-<ul id="playlist"></ul>
+<ul id="yt-playlist"></ul>
 
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -10,7 +10,7 @@
     fetch(url)
       .then(response => response.json())
       .then(data => {
-        const playlistElement = document.getElementById('playlist');
+        const playlistElement = document.getElementById('yt-playlist');
         if (data.items) {
           data.items.forEach(item => {
             const videoId = item.snippet.resourceId.videoId;
