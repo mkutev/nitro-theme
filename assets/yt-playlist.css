@@ -6,6 +6,7 @@
   flex-wrap: wrap; 
   gap: 20px;
   margin: auto;
+  margin-top: 40px;
   list-style: none; 
   padding: 0;
 }
