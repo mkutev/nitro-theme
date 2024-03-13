@@ -1,6 +1,7 @@
-<ul id="yt-playlist" class="page-width"></ul>
+<div class="page-width">
+  <ul id="yt-playlist"></ul>
 
-<script>
+  <script>
   document.addEventListener('DOMContentLoaded', function() {
     const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
     const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
@@ -26,4 +27,5 @@
       })
       .catch(error => console.log('Error fetching data: ', error));
   });
-</script>
+  </script>
+</div>
