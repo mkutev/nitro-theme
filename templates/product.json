@@ -145,6 +145,7 @@
     },
     "custom_liquid_HXkYpB": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'product-specs-metafields' %}",
         "color_scheme": "",
