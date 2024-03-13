@@ -1,31 +1,69 @@
+{% style %}
+    .yt-playlist__container {
+    max-width: 1500px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+  }
+
+  .yt-playlist__container a {
+    text-decoration: none;
+    color: black;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+  }
+
+  .yt-video__thumb {
+    aspect-ratio: 16 / 9;
+    width: fit-content;
+  }
+
+  .yt-video__thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+{% endstyle %}
+
 <div class="page-width">
-  <ul id="yt-playlist"></ul>
+  <ul id="yt_playlist" class="yt-playlist__container"></ul>
 
   <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
-    const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
-    const maxResults = 100;
-    const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
-    console.log(url);
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        const playlistElement = document.getElementById('yt-playlist');
-        if (data.items) {
-          data.items.forEach(item => {
-            const videoId = item.snippet.resourceId.videoId;
-            const videoTitle = item.snippet.title;
-            const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-            const videoEntry = document.createElement('li');
-            videoEntry.innerHTML = `<a href="${videoUrl}" target="_blank">${videoTitle}</a>`;
-            playlistElement.appendChild(videoEntry);
-          });
-        } else {
-          console.log('No items found in playlist');
-        }
-      })
-      .catch(error => console.log('Error fetching data: ', error));
-  });
+    document.addEventListener('DOMContentLoaded', function() {
+      const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
+      const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
+      const maxResults = 100;
+      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          const playlistElement = document.getElementById('yt_playlist');
+          if (data.items) {
+            data.items.forEach(item => {
+              const videoId = item.snippet.resourceId.videoId;
+              const videoTitle = item.snippet.title;
+              const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+              const videoThumbUrl = item.snippet.thumbnails.standard.url;
+              const videoEntry = document.createElement('li');
+              videoEntry.innerHTML = `
+              <a href="${videoUrl}" target="_blank">
+                <div class="yt-video__thumb">
+                  <img src="${videoThumbUrl}" alt="${videoTitle}"/>
+                </div>
+                <span class="yt-video__title">
+                  ${videoTitle}
+                </span>
+              </a>
+            `;
+              playlistElement.appendChild(videoEntry);
+            });
+          } else {
+            console.log('No items found in playlist');
+          }
+        })
+        .catch(error => console.log('Error fetching data: ', error));
+    });
   </script>
 </div>
