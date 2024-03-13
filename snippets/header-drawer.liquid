@@ -84,8 +84,8 @@
                                         tabindex="-1"
                                       >
                                         {%- for grandchildlink in childlink.links -%}
-                                          {% if grandchildlink != 'image-container-accessories'
-                                            and grandchildlink != 'image-container-replacement-parts'
+                                          {% if grandchildlink.handle != 'image-container-accessories'
+                                            and grandchildlink.handle != 'image-container-replacement-parts'
                                           %}
                                             <li>
                                               <a
