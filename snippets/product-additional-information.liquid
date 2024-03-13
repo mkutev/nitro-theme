@@ -1,26 +1,21 @@
 {% if product.metafields.custom.additional_information.value %}
+  <div class="isolate">
+    <div
+      class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
+    >
+      <div class="rich-text__wrapper rich-text__wrapper--left page-width">
+        <div class="rich-text__blocks left">
+          <h2
+            class="related-blog-posts__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
+            data-cascade
+            style="--animation-order: 1;"
+          >
+            Additional Information
+          </h2>
 
-
-<div class="isolate">
-  <div
-    class="rich-text content-container color-background-1 gradient rich-text--full-width content-container--full-width"
-  >
-    <div class="rich-text__wrapper rich-text__wrapper--left page-width">
-      <div class="rich-text__blocks left">
-        <h2
-          class="related-blog-posts__heading rte inline-richtext h1 scroll-trigger animate--slide-in"
-          data-cascade
-          style="--animation-order: 1;"
-        >
-          Additional Information
-        </h2>
-
-        {{ product.metafields.custom.additional_information | metafield_tag }}
-
-        
+          {{ product.metafields.custom.additional_information | metafield_tag }}
+        </div>
       </div>
     </div>
   </div>
-</div>
-
 {% endif %}
