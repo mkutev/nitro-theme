@@ -1,13 +1,22 @@
+
+
 .yt-playlist__container {
   max-width: 1500px;
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 20px;
   margin: auto;
-  list-style: none;
+  list-style: none; 
   padding: 0;
+}
+
+.yt-playlist__container li {
+  flex: 1 1 100%;
 }
 
 .yt-playlist__container a {
   text-decoration: none;
-  color: black;
+  color: black; 
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -16,11 +25,36 @@
 
 .yt-video__thumb {
   aspect-ratio: 16 / 9;
-  width: fit-content;
+  width: fit-content; 
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .yt-video__thumb img {
-  width: 100%;
+  width: 101%;
   height: 100%;
   object-fit: cover;
+}
+
+.yt-video__title {
+  margin-top: 10px;
+  display: block;
+}
+
+@media (min-width: 685px) { 
+    .yt-playlist__container li {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (min-width: 1010px) {
+  .yt-playlist__container li {
+    flex: 1 1 calc(33.33% - 20px);
+  }
+}
+
+@media (min-width: 1301px) { 
+  .yt-playlist__container li {
+    flex: 1 1 calc(25% - 20px);
+  }
 }
