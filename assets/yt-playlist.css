@@ -16,18 +16,18 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #ffffff00;
-  -webkit-transition: background-color 0.2ms ease-in;
-  -moz-transition: background-color 0.2ms ease-in;
-  -o-transition: background-color 0.2ms ease-in;
-  transition: background-color 0.2ms ease-in;
+  -webkit-transition: all 0.2ms ease-in;
+  -moz-transition: all 0.2ms ease-in;
+  -o-transition: all 0.2ms ease-in;
+  transition: all 0.2ms ease-in;
 }
 
 .yt-playlist__container li:hover {
   background-color: rgba(15,15,15,0.1);
-  -webkit-transition: background-color 0.2ms ease-out;
-  -moz-transition: background-color 0.2ms ease-out;
-  -o-transition: background-color 0.2ms ease-out;
-  transition: background-color 0.2ms ease-out;
+  -webkit-transition: all 0.2ms ease-out;
+  -moz-transition: all 0.2ms ease-out;
+  -o-transition: all 0.2ms ease-out;
+  transition: all 0.2ms ease-out;
 }
 
 .yt-playlist__container a {
