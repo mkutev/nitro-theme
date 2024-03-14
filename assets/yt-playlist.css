@@ -4,7 +4,7 @@
   max-width: 1500px;
   display: flex;
   flex-wrap: wrap; 
-  gap: 0px;
+  gap: 10px;
   margin: auto;
   margin-top: 60px;
   list-style: none; 
