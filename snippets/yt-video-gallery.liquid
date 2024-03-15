@@ -22,13 +22,13 @@
 <script>
     document.addEventListener('DOMContentLoaded', function() {
       const apiKey = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
-
+      const pageHandle = '{{ page.handle }}'
       const playlistIds = {
         'how-to-videos': 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim',
         'customer-videos': 'PLphZ2wNQLicBPCSS_xbfOX-WyHc1efK0p'
       }
       
-      const playlistId_current = playlistIds[{{ page.handle }}];
+      const playlistId_current = playlistIds[pageHandle];
       
       const maxResults = 100;
       const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${playlistId_current}&key=${apiKey}`;
