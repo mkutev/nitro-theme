@@ -148,7 +148,6 @@
     },
     "featured_blog_yPgqNG": {
       "type": "featured-blog",
-      "disabled": true,
       "settings": {
         "heading": "Recent Posts",
         "heading_size": "h2",
