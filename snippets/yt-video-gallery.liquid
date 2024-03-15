@@ -21,16 +21,23 @@
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-      const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
-      const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
+      const apiKey = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
+
+      const playlistIds = {
+        'how-to-videos': 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim',
+        'customer': 'PLphZ2wNQLicBPCSS_xbfOX-WyHc1efK0p';
+      }
+      
+      const playlistId_current = playlistIds[{{ page.handle }}];
+      
       const maxResults = 100;
-      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${playlistId_current}&key=${apiKey}`;
       fetch(url)
         .then(response => response.json())
         .then(data => {
           if (data.items) {
             const videoIds = data.items.map(item => item.snippet.resourceId.videoId);
-            fetchVideoDetails(videoIds, API_KEY).then(details => {
+            fetchVideoDetails(videoIds, apiKey).then(details => {
               const playlistElement = document.getElementById('yt_playlist');
               data.items.forEach((item, index) => {
                 const videoDetail = details.find(detail => detail.videoId === item.snippet.resourceId.videoId);
