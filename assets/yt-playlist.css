@@ -34,7 +34,7 @@
   text-decoration: none;
   color: black; 
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   line-height: 22px;
 }
@@ -55,6 +55,10 @@
 .yt-video__title {
   margin-top: 10px;
   display: block;
+}
+
+.yt-metafields {
+  opacity: 0.5;
 }
 
 @media (min-width: 685px) { 
