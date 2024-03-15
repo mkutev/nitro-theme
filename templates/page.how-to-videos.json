@@ -11,7 +11,7 @@
     "custom_liquid_tk49mF": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% render 'yt-playlist-viewer' %}",
+        "custom_liquid": "{% render 'yt-howto-videos' %}",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 100
