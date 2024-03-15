@@ -1,0 +1,103 @@
+{{ 'yt-gallery.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width">
+  <h1 class="main-page-title page-title h0 scroll-trigger animate--fade-in">How-To Videos</h1>
+  <p style="max-width: 75ch;">
+    Most of the components on VoltBike ebikes are easily replaceable and most of our members are able to perform repairs
+    in a home environment. Take a look at our How-To Video gallery. This should help you with replacing the components
+    on your VoltBike.
+  </p>
+  <ul id="yt_playlist" class="yt-playlist__container"></ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
+      const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
+      const maxResults = 100;
+      const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${maxResults}&playlistId=${PLAYLIST_ID}&key=${API_KEY}`;
+      fetch(url)
+        .then(response => response.json())
+        .then(data => {
+          if (data.items) {
+            const videoIds = data.items.map(item => item.snippet.resourceId.videoId);
+            fetchVideoDetails(videoIds, API_KEY).then(details => {
+              const playlistElement = document.getElementById('yt_playlist');
+              data.items.forEach((item, index) => {
+                const videoDetail = details.find(detail => detail.videoId === item.snippet.resourceId.videoId);
+                const videoId = item.snippet.resourceId.videoId;
+                const videoTitle = item.snippet.title;
+                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                const videoThumbUrl = item.snippet.thumbnails.high.url;
+                const videoViews = videoDetail.viewCount;
+                const uploadDate = videoDetail.uploadDate;
+                const relativeTime = timeAgo(uploadDate);
+                const videoEntry = document.createElement('li');
+                videoEntry.innerHTML = `
+                    <a href="${videoUrl}" target="_blank">
+                      <div class="yt-video__thumb">
+                        <img src="${videoThumbUrl}" alt="${videoTitle}"/>
+                      </div>
+                      <span class="yt-video__title">${videoTitle}</span>
+                      <div class="yt-video__metafields">
+                        <span class="yt-video__views">${videoViews} views</span>
+                        <span class="yt-video__date">• ${relativeTime}</span>
+                      </div>
+                    </a>
+                  `;
+                playlistElement.appendChild(videoEntry);
+              });
+            });
+          } else {
+            console.log('No items found in playlist');
+          }
+        })
+        .catch(error => console.log('Error fetching data: ', error));
+
+      function fetchVideoDetails(videoIds, apiKey) {
+        const ids = videoIds.join(',');
+        const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${ids}&key=${apiKey}`;
+        return fetch(apiUrl)
+          .then(response => response.json())
+          .then(data => {
+            return data.items.map(video => ({
+              videoId: video.id,
+              viewCount: video.statistics.viewCount,
+              uploadDate: video.snippet.publishedAt.substring(0, 10)
+            }));
+          });
+      }
+ 
+      function timeAgo(dateParam) {
+        if (!dateParam) {
+          return null;
+        }
+      
+        const date = typeof dateParam === 'object' ? dateParam : new Date(dateParam);
+        const today = new Date();
+        const seconds = Math.round((today - date) / 1000);
+        const minutes = Math.round(seconds / 60);
+        const hours = Math.round(minutes / 60);
+        const days = Math.round(hours / 24);
+        const weeks = Math.round(days / 7);
+        const months = Math.round(days / 30.4); // Average number of days in month
+        const years = Math.round(days / 365.25); // Account for leap years
+      
+        if (seconds < 60) {
+          return 'Just now';
+        } else if (minutes < 60) {
+          return `${minutes} minute${minutes > 1 ? 's' : ''} ago`;
+        } else if (hours < 24) {
+          return `${hours} hour${hours > 1 ? 's' : ''} ago`;
+        } else if (days < 7) {
+          return `${days} day${days > 1 ? 's' : ''} ago`;
+        } else if (weeks < 5) {
+          return `${weeks} week${weeks > 1 ? 's' : ''} ago`;
+        } else if (months < 12) {
+          return `${months} month${months > 1 ? 's' : ''} ago`;
+        } else {
+          return `${years} year${years > 1 ? 's' : ''} ago`;
+        }
+      }
+    });
+</script>
