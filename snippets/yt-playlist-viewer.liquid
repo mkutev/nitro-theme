@@ -1,7 +1,16 @@
-<div class="page-width">
-  <ul id="yt_playlist" class="yt-playlist__container"></ul>
+{{ 'yt-playlist.css' | asset_url | stylesheet_tag }}
 
-  <script>
+<div class="page-width">
+  <h1 class="main-page-title page-title h0 scroll-trigger animate--fade-in">How-To Videos</h1>
+  <p style="max-width: 75ch;">
+    Most of the components on VoltBike ebikes are easily replaceable and most of our members are able to perform repairs
+    in a home environment. Take a look at our How-To Video gallery. This should help you with replacing the components
+    on your VoltBike.
+  </p>
+  <ul id="yt_playlist" class="yt-playlist__container"></ul>
+</div>
+
+<script>
     document.addEventListener('DOMContentLoaded', function() {
       const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
       const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
@@ -89,5 +98,4 @@
         return Math.floor(seconds) + " seconds ago";
       }
     });
-  </script>
-</div>
+</script>
