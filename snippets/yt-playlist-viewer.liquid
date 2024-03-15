@@ -1,16 +1,7 @@
-{{ 'yt-playlist.css' | asset_url | stylesheet_tag }}
-
 <div class="page-width">
-  <h1 class="main-page-title page-title h0 scroll-trigger animate--fade-in">How-To Videos</h1>
-  <p style="max-width: 75ch;">
-    Most of the components on VoltBike ebikes are easily replaceable and most of our members are able to perform repairs in a
-    home environment. Take a look at our How-To Video gallery. This should help you with replacing the components on
-    your VoltBike.
-  </p>
   <ul id="yt_playlist" class="yt-playlist__container"></ul>
-</div>
 
-<script>
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
       const API_KEY = 'AIzaSyD3SuV-W6L5KJI3H18XOND30XZcJi7J2wY';
       const PLAYLIST_ID = 'PLphZ2wNQLicCbHuh6Kr4dp6SXglyiGOim';
@@ -19,30 +10,84 @@
       fetch(url)
         .then(response => response.json())
         .then(data => {
-          const playlistElement = document.getElementById('yt_playlist');
           if (data.items) {
-            data.items.forEach(item => {
-              const videoId = item.snippet.resourceId.videoId;
-              const videoTitle = item.snippet.title;
-              const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-              const videoThumbUrl = item.snippet.thumbnails.high.url;
-              const videoEntry = document.createElement('li');
-              videoEntry.innerHTML = `
-              <a href="${videoUrl}" target="_blank">
-                <div class="yt-video__thumb">
-                  <img src="${videoThumbUrl}" alt="${videoTitle}"/>
-                </div>
-                <span class="yt-video__title">
-                  ${videoTitle}
-                </span>
-              </a>
-            `;
-              playlistElement.appendChild(videoEntry);
+            const videoIds = data.items.map(item => item.snippet.resourceId.videoId);
+            fetchVideoDetails(videoIds, API_KEY).then(details => {
+              const playlistElement = document.getElementById('yt_playlist');
+              data.items.forEach((item, index) => {
+                const videoDetail = details.find(detail => detail.videoId === item.snippet.resourceId.videoId);
+                const videoId = item.snippet.resourceId.videoId;
+                const videoTitle = item.snippet.title;
+                const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
+                const videoThumbUrl = item.snippet.thumbnails.high.url;
+                const videoViews = videoDetail.viewCount;
+                const uploadDate = videoDetail.uploadDate;
+                const relativeTime = timeAgo(uploadDate);
+                const videoEntry = document.createElement('li');
+                videoEntry.innerHTML = `
+                    <a href="${videoUrl}" target="_blank">
+                      <div class="yt-video__thumb">
+                        <img src="${videoThumbUrl}" alt="${videoTitle}"/>
+                      </div>
+                      <span class="yt-video__title">${videoTitle}</span>
+                      <div class="yt-video__metafields">
+                        <span class="yt-video__views">${videoViews} views</span>
+                        <span class="yt-video__date">• ${relativeTime}</span>
+                      </div>
+                    </a>
+                  `;
+                playlistElement.appendChild(videoEntry);
+              });
             });
           } else {
             console.log('No items found in playlist');
           }
         })
         .catch(error => console.log('Error fetching data: ', error));
+
+      function fetchVideoDetails(videoIds, apiKey) {
+        const ids = videoIds.join(',');
+        const apiUrl = `https://www.googleapis.com/youtube/v3/videos?part=snippet,statistics&id=${ids}&key=${apiKey}`;
+        return fetch(apiUrl)
+          .then(response => response.json())
+          .then(data => {
+            return data.items.map(video => ({
+              videoId: video.id,
+              viewCount: video.statistics.viewCount,
+              uploadDate: video.snippet.publishedAt.substring(0, 10)
+            }));
+          });
+      }
+
+      function timeAgo(dateParam) {
+        const date = typeof dateParam === 'object' ? dateParam : new Date(dateParam);
+        const seconds = Math.floor((new Date() - date) / 1000);
+        let interval = seconds / 31536000; // 365 * 24 * 60 * 60
+        if (interval > 1) {
+          return Math.floor(interval) + " years ago";
+        }
+        interval = seconds / 2592000; // 30 * 24 * 60 * 60
+        if (interval > 1) {
+          return Math.floor(interval) + " months ago";
+        }
+        interval = seconds / 604800; // 7 * 24 * 60 * 60
+        if (interval > 1) {
+          return Math.floor(interval) + " weeks ago";
+        }
+        interval = seconds / 86400; // 24 * 60 * 60
+        if (interval > 1) {
+          return Math.floor(interval) + " days ago";
+        }
+        interval = seconds / 3600; // 60 * 60
+        if (interval > 1) {
+          return Math.floor(interval) + " hours ago";
+        }
+        interval = seconds / 60;
+        if (interval > 1) {
+          return Math.floor(interval) + " minutes ago";
+        }
+        return Math.floor(seconds) + " seconds ago";
+      }
     });
-</script>
+  </script>
+</div>
