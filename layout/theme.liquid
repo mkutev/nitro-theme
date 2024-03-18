@@ -279,6 +279,25 @@
       >
     {%- endif -%}
 
+    {% if template.name == 'index' %}
+      {% style %}
+        .slideshow__slide:first-of-type .banner__heading::before {
+          content: "Extended";
+          display: block;
+          width: fit-content;
+          font-size: 0.6em;
+          text-transform: uppercase;
+          font-style: italic;
+          background: pink;
+          color: white;
+          padding: 5px 12px;
+          border-radius: 5px;
+          -webkit-text-stroke: 1px white;
+          text-stroke: 1px white;
+        }
+      {% endstyle %}
+    {% endif %}
+
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
