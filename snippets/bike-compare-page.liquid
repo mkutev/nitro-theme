@@ -22,7 +22,7 @@
       <tr>
         <th>Product</th>
         {% for ebike in ebikes.products %}
-          <th>{{- product.title | link_to: product.url }}</th>
+          <th>{{- ebike.title | link_to: ebike.url }}</th>
         {% endfor %}
       </tr>
     </thead>
