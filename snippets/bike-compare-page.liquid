@@ -6,13 +6,13 @@
     on your VoltBike.
   </p>
 
-  {% assign collection = collections['all-bikes'] | sort_by: 'best-selling' %}
+  {% assign ebikes = collections['all-bikes'].products | sort_by: 'best-selling' %}
 
   <table>
     <thead>
       <tr>
         <th>Product</th>
-        {% for product in collection.products %}
+        {% for product in ebikes %}
           <th>{{- product.title | link_to: product.url }}</th>
         {% endfor %}
       </tr>
