@@ -8,15 +8,14 @@
 
   {% assign ebikes = collections['all-bikes'] %}
 
-  {{- ebikes -}}
-
-  {% comment %}
-    <ul>
-      {% for collection in collections %}
-        <li>{{- collection.title -}}: {{- collecion.handle -}}</li>
-      {% endfor %}
-    </ul>
-  {% endcomment %}
+  <p>
+    {{- ebikes.title -}}
+    :
+    {{- ebikes.handle -}}
+    ,
+    {{- ebikes.all_products_count -}}
+    products.
+  </p>
 
   <table>
     <thead>
