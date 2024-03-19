@@ -44,7 +44,7 @@
         <div class="rich-text__text rte scroll-trigger animate--slide-in" data-cascade style="--animation-order: 2;">
           <ul class="specs-list">
 
-            {% if product.variants.size > 1 %}
+            {% if product.variants.first.weight > 0 %}
               <li class="spec"><span>Weight</span> {{ product.variants.first.weight_in_unit }} {{ product.variants.first.weight_unit }}</li>
             {% endif %}
             
