@@ -17,6 +17,12 @@
     &nbsp;products.
   </p>
 
+  <ul>
+    {% for ebike in ebikes.products %}
+      <li>{{- ebike.title -}}</li>
+    {% endfor %}
+  </ul>
+
   <table>
     <thead>
       <tr>
