@@ -1,12 +1,14 @@
-{% assign collection = collections['all-bikes'] | sort_by: 'best-selling' %}
+<div class="compare-table__container page-width">
+  {% assign collection = collections['all-bikes'] | sort_by: 'best-selling' %}
 
-<table>
-  <thead>
-    <tr>
-      <th>Product</th>
-      {% for product in collection.products %}
-        <th>{{- product.title | link_to: product.url }}</th>
-      {% endfor %}
-    </tr>
-  </thead>
-</table>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        {% for product in collection.products %}
+          <th>{{- product.title | link_to: product.url }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+  </table>
+</div>
