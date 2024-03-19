@@ -7,14 +7,14 @@
   </p>
 
   {% assign collection = collections['all-bikes'] %}
-  {% assign products = collection.products | sort_by: 'best-selling' %}
+  {% assign bikes = collection.products | sort_by: 'best-selling' %}
 
   <table>
     <thead>
       <tr>
         <th>Product</th>
-        {% for product in products %}
-          <th>{{- product.title | link_to: product.url }}</th>
+        {% for bike in bikes %}
+          <th>{{- bike.title | link_to: bike.url }}</th>
         {% endfor %}
       </tr>
     </thead>
