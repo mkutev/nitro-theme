@@ -20,9 +20,9 @@
   <table>
     <thead>
       <tr>
-        <th>Product</th>
+        <th scope="col">Model</th>
         {% for ebike in ebikes.products %}
-          <th>{{- ebike.title | link_to: ebike.url }}</th>
+          <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
         {% endfor %}
       </tr>
     </thead>
