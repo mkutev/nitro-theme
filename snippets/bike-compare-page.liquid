@@ -1,3 +1,6 @@
+{% style %}
+{% endstyle %}
+
 <div class="compare-table__container page-width">
   <h1 class="main-page-title page-title h0 scroll-trigger animate--fade-in">{{ page_title }}</h1>
   <p style="max-width: 75ch;">
@@ -20,11 +23,25 @@
   <table>
     <thead>
       <tr>
-        <th scope="col">Model</th>
+        <th scope="col empty"></th>
         {% for ebike in ebikes.products %}
           <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
         {% endfor %}
       </tr>
+      <tr>
+        <th scope="col">Image</th>
+        {% for ebike in ebikes.products %}
+          <th scope="col">{{- ebike.featured_image | image_url: width: 250 }}</th>
+        {% endfor %}
+      </tr>
     </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Image</th>
+        {% for ebike in ebikes.products %}
+          <td>{{- ebike.title | link_to: ebike.url }}</td>
+        {% endfor %}
+      </tr>
+    </tbody>
   </table>
 </div>
