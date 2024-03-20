@@ -89,6 +89,13 @@
                             </li>
                             <li>☎️ <a href="tel:+18003504840">+1 (800) 350-4840</a></li>
                           </ul>
+                        {% when 'category-header' %}
+                          {%- if link.handle == 'support' -%}
+                            <div class="mega-menu__link--view-all category-header">
+                              <p class="heading">Everything you need to know.</p>
+                              <p>From our warranty, how-to videos, and even owner's groups.</p>
+                            </div>
+                          {% endif %}
                         {% else %}
                           <a
                             id="HeaderMenu-{{ link.handle }}-{{ childlink.handle }}"
@@ -140,6 +147,23 @@
                                       >
                                     {% endif %}
                                   {% endif %}
+                                {% elsif childlink.handle == 'quick-links' %}
+                                  {% assign iconFileName = link.handle
+                                    | append: '-'
+                                    | append: childlink.handle
+                                    | append: '-'
+                                    | append: grandchildlink.handle
+                                    | append: '--icon.png'
+                                  %}
+                                  <div class="quick-link__link">
+                                    <img
+                                      src="{{ iconFileName | file_img_url }}"
+                                      alt="Icon for {{ grandchildlink.handle }} link"
+                                      height="25"
+                                    >
+                                    <span>{{ grandchildlink.title | escape }}</span>
+                                    <span>></span>
+                                  </div>
                                 {% else %}
                                   {{ grandchildlink.title | escape }}
                                 {% endif %}
