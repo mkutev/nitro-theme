@@ -31,17 +31,12 @@
       <tr>
         <th scope="col">Image</th>
         {% for ebike in ebikes.products %}
-          <th scope="col">{{- ebike.featured_image | image_url: width: 250 }}</th>
+          <th scope="col">
+            <img url="{{ ebike.featured_image | image_url: width: 250 }}" alt="{{ ebike.title | escape }} image">
+          </th>
         {% endfor %}
       </tr>
     </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Image</th>
-        {% for ebike in ebikes.products %}
-          <td>{{- ebike.title | link_to: ebike.url }}</td>
-        {% endfor %}
-      </tr>
-    </tbody>
+    <tbody></tbody>
   </table>
 </div>
