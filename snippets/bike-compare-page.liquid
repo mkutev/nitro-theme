@@ -37,6 +37,15 @@
         {% endfor %}
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+      <tr>
+        <th scope="row">Price</th>
+        {% for ebike in ebikes.products %}
+          <td>
+            {{ ebike.price | money_with_currency }}
+          </td>
+        {% endfor %}
+      </tr>
+    </tbody>
   </table>
 </div>
