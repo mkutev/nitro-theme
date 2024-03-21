@@ -37,12 +37,6 @@
             </th>
           {% endfor %}
         </tr>
-        <tr>
-          <th scope="col empty"></th>
-          {% for ebike in ebikes.products %}
-            <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
-          {% endfor %}
-        </tr>
       </thead>
       <tbody>
         <tr>
