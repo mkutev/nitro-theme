@@ -133,7 +133,7 @@
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - el.offsetLeft;
-    const walk = (x - startX) * 3; // Scroll-fastness
+    const walk = (x - startX) * 1; // Scroll-fastness
     el.scrollLeft = scrollLeft - walk;
   });
 </script>
