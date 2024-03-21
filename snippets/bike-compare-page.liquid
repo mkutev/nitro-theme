@@ -29,15 +29,15 @@
         <tr>
           <th scope="col empty"></th>
           {% for ebike in ebikes.products %}
-            <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
-          {% endfor %}
-        </tr>
-        <tr>
-          <th scope="col">Image</th>
-          {% for ebike in ebikes.products %}
             <th scope="col">
               <img src="{{ ebike.featured_image | image_url: width: 150 }}" alt="{{ ebike.title | escape }} image">
             </th>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="col empty"></th>
+          {% for ebike in ebikes.products %}
+            <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
           {% endfor %}
         </tr>
       </thead>
