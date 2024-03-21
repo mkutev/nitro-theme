@@ -48,6 +48,14 @@
         {% endfor %}
       </tr>
       <tr>
+        <th scope="row">Motor Type</th>
+        {%- for ebike in ebikes.products -%}
+          <td>
+            {{- ebike.metafields.specs.motor_type -}}
+          </td>
+        {%- endfor -%}
+      </tr>
+      <tr>
         <th scope="row">Motor</th>
         {%- for ebike in ebikes.products -%}
           <td>
