@@ -48,6 +48,14 @@
         {% endfor %}
       </tr>
       <tr>
+        <th scope="row">Motor</th>
+        {%- for ebike in ebikes.products -%}
+          <td>
+            {{- ebike.metafields.specs.motor -}}
+          </td>
+        {%- endfor -%}
+      </tr>
+      <tr>
         <th scope="row">Weight</th>
         {%- for ebike in ebikes.products -%}
           <td>{{- ebike.variants.first.weight | weight_with_unit -}}</td>
