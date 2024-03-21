@@ -1,6 +1,7 @@
 {% style %}
   .compare-table__container {
     overflow-x: auto;
+    cursor: grab;
   }
 
   .compare-table__container table {
@@ -23,7 +24,7 @@
 
   {% assign ebikes = collections['all-bikes'] %}
 
-  <div class="compare-table__container">
+  <div id="draggable-table" class="compare-table__container">
     <table>
       <thead>
         <tr>
@@ -104,3 +105,35 @@
     </table>
   </div>
 </div>
+
+<script>
+  const el = document.getElementById('draggable-table');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+
+  el.addEventListener('mousedown', (e) => {
+    isDown = true;
+    el.style.cursor = 'grabbing';
+    startX = e.pageX - el.offsetLeft;
+    scrollLeft = el.scrollLeft;
+  });
+
+  el.addEventListener('mouseleave', () => {
+    isDown = false;
+    el.style.cursor = 'grab';
+  });
+
+  el.addEventListener('mouseup', () => {
+    isDown = false;
+    el.style.cursor = 'grab';
+  });
+
+  el.addEventListener('mousemove', (e) => {
+    if (!isDown) return;
+    e.preventDefault();
+    const x = e.pageX - el.offsetLeft;
+    const walk = (x - startX) * 3; // Scroll-fastness
+    el.scrollLeft = scrollLeft - walk;
+  });
+</script>
