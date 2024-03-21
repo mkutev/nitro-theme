@@ -32,6 +32,7 @@
             <th scope="col">
               <a href="{{- ebike.url -}}" alt="Link to {{- ebike.title -}} page." target="_blank">
                 <img src="{{ ebike.featured_image | image_url: width: 150 }}" alt="{{ ebike.title | escape }} image">
+                <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
               </a>
             </th>
           {% endfor %}
