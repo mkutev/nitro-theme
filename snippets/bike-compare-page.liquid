@@ -80,6 +80,14 @@
         {%- endfor -%}
       </tr>
       <tr>
+        <th scope="row">Stand-over Height</th>
+        {%- for ebike in ebikes.products -%}
+          <td>
+            {{- ebike.metafields.sizing.stand_over_height -}}
+          </td>
+        {%- endfor -%}
+      </tr>
+      <tr>
         <th scope="row">Weight</th>
         {%- for ebike in ebikes.products -%}
           <td>{{- ebike.variants.first.weight | weight_with_unit -}}</td>
