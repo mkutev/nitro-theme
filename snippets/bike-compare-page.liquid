@@ -50,9 +50,7 @@
       <tr>
         <th scope="row">Weight</th>
         {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.variants.first.weight_with_unit -}}
-          </td>
+          <td>{{- ebike.variants.first.weight | weight_with_unit -}}</td>
         {%- endfor -%}
       </tr>
     </tbody>
