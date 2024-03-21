@@ -111,6 +111,7 @@
   let isDown = false;
   let startX;
   let scrollLeft;
+  let scrollSens = 1;
 
   el.addEventListener('mousedown', (e) => {
     isDown = true;
@@ -133,7 +134,7 @@
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - el.offsetLeft;
-    const walk = (x - startX) * 1; // Scroll-fastness
+    const walk = (x - startX) * scrollSens;
     el.scrollLeft = scrollLeft - walk;
   });
 </script>
