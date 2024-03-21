@@ -47,6 +47,15 @@
           </td>
         {% endfor %}
       </tr>
+      <tr>
+        <th scope="row">Weight</th>
+        {%- for ebike in ebikes.products -%}
+          <td>
+            {{- ebike.variants.first.weight_in_unit -}}
+            {{- ebike.variants.first.weight_unit -}}
+          </td>
+        {%- endfor -%}
+      </tr>
     </tbody>
   </table>
 </div>
