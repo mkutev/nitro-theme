@@ -1,4 +1,7 @@
 {% style %}
+  .compare-table__container table {
+    border-radius: 10px;
+  }
 {% endstyle %}
 
 <div class="compare-table__container page-width">
@@ -11,85 +14,87 @@
 
   {% assign ebikes = collections['all-bikes'] %}
 
-  <table>
-    <thead>
-      <tr>
-        <th scope="col empty"></th>
-        {% for ebike in ebikes.products %}
-          <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
-        {% endfor %}
-      </tr>
-      <tr>
-        <th scope="col">Image</th>
-        {% for ebike in ebikes.products %}
-          <th scope="col">
-            <img src="{{ ebike.featured_image | image_url: width: 250 }}" alt="{{ ebike.title | escape }} image">
-          </th>
-        {% endfor %}
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">Price</th>
-        {% for ebike in ebikes.products %}
-          <td>
-            {%- if ebike.price_varies -%}Starting at&nbsp;{%- endif -%}
-            {{ ebike.price | money_with_currency }}
-          </td>
-        {% endfor %}
-      </tr>
-      <tr>
-        <th scope="row">Motor Type</th>
-        {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.metafields.specs.motor_type -}}
-          </td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Motor</th>
-        {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.metafields.specs.motor -}}
-          </td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Battery</th>
-        {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.metafields.specs.battery -}}
-          </td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Frame Size</th>
-        {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.metafields.sizing.frame_size -}}
-          </td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Stand-over Height</th>
-        {%- for ebike in ebikes.products -%}
-          <td>
-            {{- ebike.metafields.sizing.stand_over_height -}}
-          </td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Weight</th>
-        {%- for ebike in ebikes.products -%}
-          <td>{{- ebike.variants.first.weight | weight_with_unit -}}</td>
-        {%- endfor -%}
-      </tr>
-      <tr>
-        <th scope="row">Rider Max Weight</th>
-        {%- for ebike in ebikes.products -%}
-          <td>{{- ebike.metafields.specs.rider_max_weight | weight_with_unit -}}</td>
-        {%- endfor -%}
-      </tr>
-    </tbody>
-  </table>
+  <div class="compare-table__container">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col empty"></th>
+          {% for ebike in ebikes.products %}
+            <th scope="col">{{- ebike.title | link_to: ebike.url }}</th>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="col">Image</th>
+          {% for ebike in ebikes.products %}
+            <th scope="col">
+              <img src="{{ ebike.featured_image | image_url: width: 250 }}" alt="{{ ebike.title | escape }} image">
+            </th>
+          {% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Price</th>
+          {% for ebike in ebikes.products %}
+            <td>
+              {%- if ebike.price_varies -%}Starting at&nbsp;{%- endif -%}
+              {{ ebike.price | money_with_currency }}
+            </td>
+          {% endfor %}
+        </tr>
+        <tr>
+          <th scope="row">Motor Type</th>
+          {%- for ebike in ebikes.products -%}
+            <td>
+              {{- ebike.metafields.specs.motor_type -}}
+            </td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Motor</th>
+          {%- for ebike in ebikes.products -%}
+            <td>
+              {{- ebike.metafields.specs.motor -}}
+            </td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Battery</th>
+          {%- for ebike in ebikes.products -%}
+            <td>
+              {{- ebike.metafields.specs.battery -}}
+            </td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Frame Size</th>
+          {%- for ebike in ebikes.products -%}
+            <td>
+              {{- ebike.metafields.sizing.frame_size -}}
+            </td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Stand-over Height</th>
+          {%- for ebike in ebikes.products -%}
+            <td>
+              {{- ebike.metafields.sizing.stand_over_height -}}
+            </td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Weight</th>
+          {%- for ebike in ebikes.products -%}
+            <td>{{- ebike.variants.first.weight | weight_with_unit -}}</td>
+          {%- endfor -%}
+        </tr>
+        <tr>
+          <th scope="row">Rider Max Weight</th>
+          {%- for ebike in ebikes.products -%}
+            <td>{{- ebike.metafields.specs.rider_max_weight | weight_with_unit -}}</td>
+          {%- endfor -%}
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
