@@ -13,7 +13,7 @@
       "settings": {
         "custom_liquid": "{% render 'bike-compare-page' %}",
         "color_scheme": "",
-        "padding_top": 100,
+        "padding_top": 52,
         "padding_bottom": 100
       }
     }
