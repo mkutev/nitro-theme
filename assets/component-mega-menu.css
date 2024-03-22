@@ -143,9 +143,7 @@
 }
 
 .mega-menu__link--view-all .button--custom {
-  background-color: #2979ff;
-  display: inline-flex;
-  color: white;
+  display: flex;
   gap: 8px;
   padding: 8px 10px;
   border-radius: 5px;
@@ -155,6 +153,11 @@
 .mega-menu__link--view-all .button--custom * {
   padding: 0;
   margin: 0;
+}
+
+.mega-menu__link--view-all .button--custom.style-1 {
+  background-color: #2979ff;
+  color: white;
 }
 
 .mega-menu__link--view-all .button--custom.style-2 {
