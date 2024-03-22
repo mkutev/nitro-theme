@@ -144,6 +144,8 @@
 
 .mega-menu__link--view-all .button--custom {
   display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
   gap: 8px;
   padding: 8px 10px;
   border-radius: 5px;
