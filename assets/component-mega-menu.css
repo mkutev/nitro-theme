@@ -146,7 +146,8 @@
   background-color: #2979ff;
   display: inline-flex;
   color: white;
-  padding: 5px 15px;
+  gap: 8px;
+  padding: 8px 10px;
   border-radius: 5px;
   text-decoration: none;
 }
