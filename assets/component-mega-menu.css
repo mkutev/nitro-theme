@@ -151,6 +151,10 @@
   text-decoration: none;
 }
 
+.mega-menu__link--view-all .button--custom.style-2 {
+  background-color: #2979ff1a;
+}
+
 .mega-menu__link--view-all a.button--affirm {
   display: flex;
   align-items: center;
