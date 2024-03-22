@@ -152,6 +152,10 @@
   text-decoration: none;
 }
 
+.mega-menu__link--view-all .button--custom * {
+  padding: 0;
+}
+
 .mega-menu__link--view-all .button--custom.style-2 {
   background-color: #2979ff1a;
 }
