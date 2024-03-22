@@ -104,7 +104,7 @@
         <tr>
           <th scope="row">Rider Max Weight</th>
           {%- for ebike in ebikes.products -%}
-            <td>{{- ebike.metafields.specs.rider_max_weight -}}</td>
+            <td>{{- ebike.metafields.specs.rider_max_weight | weight_with_unit -}}</td>
           {%- endfor -%}
         </tr>
       </tbody>
