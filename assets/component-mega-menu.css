@@ -154,6 +154,7 @@
 
 .mega-menu__link--view-all .button--custom * {
   padding: 0;
+  margin: 0;
 }
 
 .mega-menu__link--view-all .button--custom.style-2 {
