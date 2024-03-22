@@ -144,7 +144,7 @@
 
 .mega-menu__link--view-all .button--custom {
   background-color: #2979ff;
-  display: inline-block;
+  display: inline-flex;
   color: white;
   padding: 5px 15px;
   border-radius: 5px;
