@@ -41,18 +41,18 @@
                           <div class="mega-menu__link--view-all view-all--bikes">
                             <p class="heading">Not sure what you're looking for?</p>
                             <p>Take a look through our catalog.</p>
-                            <a href="{{ childlink.url }}" class="button--custom quick-link__link">View All Bikes</a>
+                            <a href="{{ childlink.url }}" class="button--custom">View All Bikes</a>
                             <a
                               href="{{ pages['compare-ebikes'].url }}"
                               alt="Compare Ebikes link."
-                              class="button--custom style-2"
+                              class="button--custom style-2 quick-link__link"
                             >
                               <img
-                                src="{{ iconFileName | file_img_url }}"
-                                alt="Icon for {{ grandchildlink.handle }} link"
+                                src="{{ compare--icon.png | file_img_url }}"
+                                alt="Compare icon."
                                 height="25"
                               >
-                              <span>{{ grandchildlink.title | escape }}</span>
+                              <span>Compare</span>
                               <span>></span>
                             </a>
 
