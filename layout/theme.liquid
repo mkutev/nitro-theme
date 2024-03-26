@@ -287,6 +287,11 @@
 
     {% if template.name == 'index' %}
       {% style %}
+        .slideshow__slide:first-of-type .banner__media img {
+          object-position: center 60%;
+        }
+
+        
         .slideshow__slide:first-of-type .banner__heading {
           font-family: 'Climate Crisis', sans-serif;
         }
