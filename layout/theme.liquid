@@ -52,6 +52,12 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
+            /* CUSTOM FONT */
+      @font-face {
+        font-family: "Climate Crisis";
+        src: url("{{ 'ClimateCrisis.woff2' | asset_url }}") format("woff2");
+      }
+
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
         {% if forloop.index == 1 -%}
@@ -281,6 +287,10 @@
 
     {% if template.name == 'index' %}
       {% style %}
+        .slideshow__slide:first-of-type .banner__heading {
+          font-family: 'Climate Crisis', sans-serif;
+        }
+
         .slideshow__slide:first-of-type .banner__heading::before {
           content: "Extended";
           display: block;
