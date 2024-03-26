@@ -55,7 +55,7 @@
             /* CUSTOM FONT */
       @font-face {
         font-family: "Climate Crisis";
-        src: url("{{ 'ClimateCrisis.woff2' | asset_url }}") format("woff2");
+        src: url("{{ 'ClimateCrisis.woff2' | file_url }}") format("woff2");
       }
 
       {% for scheme in settings.color_schemes -%}
