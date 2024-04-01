@@ -132,7 +132,7 @@
 }
 
 .mega-menu__link--view-all * {
-  display: block;
+  /* display: block; */
   box-sizing: border-box;
   margin: 10px 0;
 }
