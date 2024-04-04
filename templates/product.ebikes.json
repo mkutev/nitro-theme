@@ -109,22 +109,6 @@
         "padding_bottom": 52
       }
     },
-    "1712235400718697d5": {
-      "type": "apps",
-      "blocks": {
-        "betterdocs_app_faq_block_DMarXd": {
-          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "betterdocs_app_faq_block_DMarXd"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "custom_liquid_eVNAhC": {
       "type": "custom-liquid",
       "settings": {
@@ -195,13 +179,30 @@
         "padding_bottom": 52
       }
     },
+    "1712235400718697d5": {
+      "type": "apps",
+      "blocks": {
+        "betterdocs_app_faq_block_DMarXd": {
+          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "betterdocs_app_faq_block_DMarXd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "custom_liquid_Jwz6Fk": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'product-additional-information' %}",
         "color_scheme": "",
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 100
       }
     },
     "related-products": {
@@ -218,8 +219,8 @@
         "show_vendor": false,
         "show_rating": false,
         "columns_mobile": "2",
-        "padding_top": 36,
-        "padding_bottom": 60
+        "padding_top": 100,
+        "padding_bottom": 100
       }
     }
   },
@@ -227,7 +228,6 @@
     "custom_liquid_wWizfr",
     "main",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
-    "1712235400718697d5",
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "custom_liquid_WeMtDF",
@@ -235,6 +235,7 @@
     "custom_liquid_QHDtRT",
     "170452725046cbedab",
     "custom_liquid_XR8Uw3",
+    "1712235400718697d5",
     "custom_liquid_Jwz6Fk",
     "related-products"
   ]
