@@ -111,16 +111,6 @@
     },
     "1712914485586b43de": {
       "type": "apps",
-      "blocks": {
-        "betterdocs_app_faq_block_qdPmAp": {
-          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "betterdocs_app_faq_block_qdPmAp"
-      ],
       "settings": {
         "include_margins": true
       }
@@ -133,16 +123,6 @@
     },
     "17129145239af3d3a6": {
       "type": "apps",
-      "blocks": {
-        "betterdocs_app_faq_block_iYCq38": {
-          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "betterdocs_app_faq_block_iYCq38"
-      ],
       "settings": {
         "include_margins": true
       }
