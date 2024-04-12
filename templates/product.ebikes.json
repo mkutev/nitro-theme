@@ -197,7 +197,6 @@
     },
     "custom_liquid_Jwz6Fk": {
       "type": "custom-liquid",
-      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'product-additional-information' %}",
         "color_scheme": "",
