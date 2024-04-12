@@ -109,6 +109,28 @@
         "padding_bottom": 12
       }
     },
+    "1712914485586b43de": {
+      "type": "apps",
+      "blocks": {
+        "betterdocs_app_faq_block_qdPmAp": {
+          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "betterdocs_app_faq_block_qdPmAp"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1712914513287548ab": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -157,6 +179,8 @@
   "order": [
     "7e5544b3-a15e-4a28-8050-381c21f384ea",
     "main",
+    "1712914485586b43de",
+    "1712914513287548ab",
     "related-products",
     "17044205140d0763f7",
     "custom_liquid_HXkYpB"
