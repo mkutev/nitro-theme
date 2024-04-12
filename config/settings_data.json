@@ -183,6 +183,12 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "1342486269105851359": {
+        "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-embed\/c034554a-35ea-4075-93e4-50cbca95a696",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
