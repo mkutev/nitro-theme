@@ -43,9 +43,9 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Yukon_Elite_Banner_v1.jpg",
-            "heading": "Introducing <>Yukon Elite",
-            "heading_size": "h1",
-            "subheading": "The best looking mid-drive electric bike with 20Ah battery. Prices at $2749 CAD.",
+            "heading": "<strong>Introducing Yukon Elite<\/strong>",
+            "heading_size": "h0",
+            "subheading": "The best looking mid-drive electric bike with 20Ah battery. Only $2749 CAD with Free Shipping.",
             "button_label": "Learn more",
             "link": "https:\/\/voltbike.com\/collections\/yukon-elite",
             "button_style_secondary": false,
