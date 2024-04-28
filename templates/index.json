@@ -59,9 +59,8 @@
         },
         "slide_nD8xRB": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/spring_banner_ultimate.jpg",
+            "image": "shopify:\/\/shop_images\/spring_banner_ultimate_1.jpg",
             "heading": "Spring Sale",
             "heading_size": "h1",
             "subheading": "Tell your brand's story through images",
