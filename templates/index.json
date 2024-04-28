@@ -59,6 +59,7 @@
         },
         "slide_nD8xRB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/spring_banner_ultimate.jpg",
             "heading": "Spring Sale",
