@@ -3,8 +3,27 @@
     "slideshow_zKTVBD": {
       "type": "slideshow",
       "blocks": {
+        "slide_nD8xRB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/spring_banner_ultimate_4.jpg",
+            "heading": "Bring On Spring Sale",
+            "heading_size": "h1",
+            "subheading": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike. Offer ends May 12.",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
         "slide_jP6xij": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/cherry-blossom-yukonelitest-banner-v7-compressed.jpg",
             "heading": "Pedal into Springtime Deals",
@@ -56,32 +75,13 @@
             "color_scheme": "accent-2",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_nD8xRB": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/spring_banner_ultimate_4.jpg",
-            "heading": "Bring On Spring Sale",
-            "heading_size": "h1",
-            "subheading": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike. Offer ends April 28.",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
+        "slide_nD8xRB",
         "slide_jP6xij",
         "slide_MVQBDK",
-        "slide_iXcAPM",
-        "slide_nD8xRB"
+        "slide_iXcAPM"
       ],
       "custom_css": [
 
