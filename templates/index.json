@@ -8,7 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/victoria-day_homepage-banner-v4.jpg",
             "heading": "Victoria Day Sale",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "subheading": "<strong>Save $100<\/strong> when you purchase two ebikes, plus receive <strong>two free accessories<\/strong> and <strong>free shipping<\/strong>. Offer ends May 26th.",
             "button_label": "Shop Sale",
             "link": "https:\/\/voltbike.com\/collections\/all-bikes",
@@ -18,7 +18,7 @@
             "text_alignment": "left",
             "image_overlay_opacity": 0,
             "color_scheme": "inverse",
-            "text_alignment_mobile": "center"
+            "text_alignment_mobile": "left"
           }
         },
         "slide_jP6xij": {
@@ -92,7 +92,7 @@
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "show_text_below": true,
         "accessibility_info": "Slideshow about our brand"
       }
