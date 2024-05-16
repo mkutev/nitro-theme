@@ -287,37 +287,53 @@
 
     {% if template.name == 'index' %}
       {% style %}
-        .slideshow__slide:first-of-type .banner__media img {
-          object-position: center 60%;
+        .slideshow__slide:first-of-type .banner__heading::before {
+          display: block;
+          width: 100%;
+          max-width: 75px;
+          aspect-ratio: 75/81;
+          content: "";
+          margin-bottom: 1rem;
+          background-image: url( {{'maple-leaf-icon-white-75w.png' | file_img_url }} );
+          background-position: contain; 
+          background-repeat: no-repeat;
+          animation: spinY 3s infinite linear;
         }
 
-
-        .slideshow__slide:first-of-type .banner__heading {
+        
+        .slideshow__slide:nth-of-type(2) .banner__heading {
           font-family: 'Climate Crisis', sans-serif;
-        }
-
-        .slideshow__slide:first-of-type .banner__heading {
-          font-family: 'Climate Crisis', sans-serif;
-          color: #7cf7dd;
+          /* color: #e5839d; */
         }
 
         .slideshow__slide:first-of-type .banner__text p {
-          color: #fff
+          color: white;
         }
 
-        .slideshow__slide:first-of-type .banner__heading::before {
-          content: "Extended";
+        /* 'Introducing' sub-heading */
+        .slideshow__slide:nth-of-type(2) .banner__heading::before {
+          content: "Introducing";
           display: block;
           width: -moz-fit-content;
           width: fit-content;
-          font-size: 0.6em;
-          font-weight: normal;
-          text-transform: uppercase;
-          font-style: italic;
-          background: rgb(243 10 10);
-          color: #faf4f4;
-          padding: 5px 15px;
-          border-radius: 5px;
+          font-size: 0.5em;
+          /* text-transform: uppercase; */
+          /* font-style: italic; */
+          /* background: rgba(104,139,207,0.77); */
+          /* color: #CFDE42; */
+          /* padding: 5px 15px; */
+          /* border-radius: 5px; */
+          /* -webkit-text-stroke: 1px #CFDE42; */
+          /* text-stroke: 1px #CFDE42; */
+        }
+
+        @keyframes spinY {
+          from {
+            transform: rotateY(0deg);
+          }
+          to {
+            transform: rotateY(360deg);
+          }
         }
       {% endstyle %}
     {% endif %}
