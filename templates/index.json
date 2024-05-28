@@ -8,7 +8,7 @@
           "settings": {
             "heading": "Sunny Days Sale",
             "heading_size": "h1",
-            "subheading": "Save up to $450 on a new ebike, plus, receive Free shipping and a Free accessory with every ebike purchase. Offer ends June 16.",
+            "subheading": "Save <strong>up to $450<\/strong> on a new ebike, plus, receive <strong>Free shipping<\/strong> and a <strong>Free accessory<\/strong> with every ebike purchase. Offer ends June 16.",
             "button_label": "Shop Sale",
             "link": "shopify:\/\/collections\/all-bikes",
             "button_style_secondary": false,
