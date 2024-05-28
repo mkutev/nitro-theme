@@ -52,11 +52,12 @@
       {{ body_font_bold_italic | font_face: font_display: 'swap' }}
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
-            /* CUSTOM FONT */
+      /* CUSTOM FONT */
       @font-face {
         font-family: "Climate Crisis";
         src: url("{{ 'ClimateCrisis.woff2' | file_url }}") format("woff2");
       }
+
 
       {% for scheme in settings.color_schemes -%}
         {% assign scheme_classes = scheme_classes | append: ', .color-' | append: scheme.id %}
@@ -285,59 +286,6 @@
       >
     {%- endif -%}
 
-    {% if template.name == 'index' %}
-      {% style %}
-        .slideshow__slide:first-of-type .banner__heading::before {
-          display: block;
-          width: 100%;
-          max-width: 75px;
-          aspect-ratio: 75/81;
-          content: "";
-          margin-bottom: 1rem;
-          background-image: url( {{'maple-leaf-icon-white-75w.png' | file_img_url }} );
-          background-position: contain; 
-          background-repeat: no-repeat;
-          animation: spinY 3s infinite linear;
-        }
-
-        
-        .slideshow__slide:nth-of-type(2) .banner__heading {
-          font-family: 'Climate Crisis', sans-serif;
-          /* color: #e5839d; */
-        }
-
-        .slideshow__slide:first-of-type .banner__text p {
-          color: white;
-        }
-
-        /* 'Introducing' sub-heading */
-        .slideshow__slide:nth-of-type(2) .banner__heading::before {
-          content: "Introducing";
-          display: block;
-          width: -moz-fit-content;
-          width: fit-content;
-          font-size: 0.5em;
-          /* text-transform: uppercase; */
-          /* font-style: italic; */
-          /* background: rgba(104,139,207,0.77); */
-          /* color: #CFDE42; */
-          /* padding: 5px 15px; */
-          /* border-radius: 5px; */
-          /* -webkit-text-stroke: 1px #CFDE42; */
-          /* text-stroke: 1px #CFDE42; */
-        }
-
-        @keyframes spinY {
-          from {
-            transform: rotateY(0deg);
-          }
-          to {
-            transform: rotateY(360deg);
-          }
-        }
-      {% endstyle %}
-    {% endif %}
-
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
       if (Shopify.designMode) {
@@ -412,5 +360,171 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {% if template.name == 'index' %}
+      {% style %}
+        .slideshow__slide:first-of-type h2 {
+          font-family: 'Climate Crisis', sans-serif;
+        }
+
+        .slideshow__slide:first-of-type .slideshow__media {
+          background: linear-gradient(180deg, #93c5fd, #E0F2FE);
+          background-color: #E0F2FE;
+          display: block;
+        }
+
+        .slideshow__slide:first-of-type .wave__blue--background {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url("{{'blue-wave-2.svg' | file_url}}");
+          background-position: 0 86%;
+          background-repeat: repeat-x;
+          background-size: 500px auto;
+          animation: animation__wave--background 5s infinite linear;
+        }
+
+        .slideshow__slide:first-of-type .wave__blue {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url("{{'blue-wave-2.svg' | file_url}}");
+          background-position: 0 100%;
+          background-repeat: repeat-x;
+          background-size: 750px auto;
+          animation: animation__wave 5s infinite linear;
+          mix-blend-mode: overlay;
+        }
+
+        .slideshow__slide:first-of-type .beach__foreground {
+          display: block;
+          width: 100%;
+          height: 100%;
+          /* background-image: url("{{ 'beach-foreground-2.svg' | file_url }}"); */
+          background-image: url("{{ 'beach-with-yukon-shadow-umbrella.svg' | file_url }}");
+          background-position: center 120%;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+        }
+
+        .slideshow__slide:first-of-type .beach__bike {
+          display: block;
+          width: 100%;
+          max-width: 400px;
+          height: 100%;
+          background-image: url("{{ 'yukon-white-vector.svg' | file_url }}");
+          background-position: 90% 70%;
+          background-size: 100% auto;
+          background-repeat: no-repeat;
+        }
+
+        .slideshow__slide:first-of-type .sky__clouds {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("{{ 'cloud-group-v2.svg' | file_url }}");
+          background-position: center -40%;
+          background-size: 70% auto;
+          background-repeat: no-repeat;
+        }
+
+        .slideshow__slide:first-of-type .sky__sun {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-image: url("{{ 'sun.svg' | file_url }}");
+          background-position: 90% 5%;
+          background-size: 10vh auto;
+          background-repeat: no-repeat;
+        }
+
+        .slideshow__slide:first-of-type .banner__accessories {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          background: rgb(240 248 255 / 50%);
+          border-radius: 10px;
+          padding: 10px 20px;
+          mix-blend-mode: multiply;
+        }
+
+        .slideshow__slide:first-of-type .banner__accessories img {
+          max-width: 200px;
+        }
+
+        @keyframes spinY {
+          from {
+            transform: rotateY(0deg);
+          }
+          to {
+            transform: rotateY(360deg);
+          }
+        }
+
+        @keyframes animation__wave {
+          0% {
+            background-position-x: 0;
+            background-position-y: 100%;
+          }
+          33% {
+            background-position-y: 103%;
+          }
+          100% {
+            background-position-x: 750px;
+            background-position-y: 100%;
+          }
+        }
+
+        @keyframes animation__wave--background {
+          0% {
+            background-position-x: 0;
+          }
+          33% {
+          }
+          100% {
+            background-position-x: 500px;
+          }
+        }
+      {% endstyle %}
+    {% endif %}
+
+    {% raw %}
+      <script>
+        const targetBanner = document.querySelector('.slideshow__slide:first-of-type .slideshow__media');
+        const heading = document.querySelector('.slideshow__slide:first-of-type .banner__text');
+
+        const accessoriesContent = `
+            <span>Accessory options:</span>
+            <img src="{% endraw %}{{- 'accessories-transparent-500w.png' | file_img_url: '200x' -}}{% raw %}" alt="Voltbike accessories." />
+        `;
+        
+        const accessoriesContainer = document.createElement("div");
+        const waveElement = document.createElement("div");
+        const waveElementBackground = document.createElement("div");
+        const beachElement = document.createElement("div");
+        const bikeElement = document.createElement("div");
+        const cloudsElement = document.createElement("div");
+        const sunElement = document.createElement("div");
+
+        accessoriesContainer.innerHTML = accessoriesContent;
+        
+        waveElementBackground.classList.add("wave__blue--background", "animation__wave--background")
+        waveElement.classList.add("wave__blue", "animation__wave");
+        beachElement.classList.add("beach__foreground");
+        bikeElement.classList.add("beach__bike");
+        cloudsElement.classList.add("sky__clouds");
+        sunElement.classList.add("sky__sun");
+        accessoriesContainer.classList.add("banner__accessories");
+
+        targetBanner.appendChild(waveElementBackground);
+        targetBanner.appendChild(waveElement);        
+        targetBanner.appendChild(beachElement);
+        targetBanner.appendChild(cloudsElement);
+        targetBanner.appendChild(sunElement);
+
+        heading.insertAdjacentElement('afterend', accessoriesContainer);
+        // targetBanner.appendChild(bikeElement);
+      </script>
+    {% endraw %}
   </body>
 </html>

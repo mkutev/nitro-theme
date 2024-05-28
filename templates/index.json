@@ -3,8 +3,26 @@
     "slideshow_zKTVBD": {
       "type": "slideshow",
       "blocks": {
+        "slide_TgWykU": {
+          "type": "slide",
+          "settings": {
+            "heading": "Sunny Days Sale",
+            "heading_size": "h1",
+            "subheading": "Save up to $450 on a new ebike, plus, receive free shipping and a free accessory with every purchase.",
+            "button_label": "Shop Sale",
+            "link": "shopify:\/\/collections\/all-bikes",
+            "button_style_secondary": false,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-72e5b2db-b71f-48b9-bdc2-4251a683ba66",
+            "text_alignment_mobile": "left"
+          }
+        },
         "slide_nD8xRB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/victoria-day_homepage-banner_v5.webp",
             "heading": "Victoria Day Sale",
@@ -78,6 +96,7 @@
         }
       },
       "block_order": [
+        "slide_TgWykU",
         "slide_nD8xRB",
         "slide_jP6xij",
         "slide_MVQBDK",
