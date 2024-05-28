@@ -143,6 +143,17 @@
                 assign fetch_priority = 'high'
               endif
             -%}
+
+            {{
+              forloop.index
+              | append: ': w'
+              | append: block.settings.image.width
+              | append: ', ar'
+              | append: block.settings.image.aspect_ratio
+              | append: ', h'
+              | append: height
+            }}
+
             {%- if forloop.first %}
               {{
                 block.settings.image
@@ -159,9 +170,9 @@
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
             {%- if placeholder_slide == 1 -%}
-              {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}
+              <!-- {{ 'hero-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }} -->
             {%- else -%}
-              {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+              <!-- {{ 'hero-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }} -->
             {%- endif -%}
           {%- endif -%}
         </div>
