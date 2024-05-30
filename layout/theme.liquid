@@ -381,7 +381,7 @@
           background: url("{{'blue-wave-2.svg' | file_url}}");
           background-position: 0 86%;
           background-repeat: repeat-x;
-          background-size: 500px auto;
+          background-size: calc(100vw/3);;
           animation: animation__wave--background 5s infinite linear;
         }
 
@@ -471,7 +471,7 @@
             background-position-y: 103%;
           }
           100% {
-            background-position-x: 750px;
+            background-position-x: calc(100vw/2);
             background-position-y: 100%;
           }
         }
@@ -483,7 +483,7 @@
           33% {
           }
           100% {
-            background-position-x: 500px;
+            background-position-x: calc(100vw/3);
           }
         }
       {% endstyle %}
