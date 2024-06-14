@@ -168,17 +168,10 @@
           </div>
 
           {% if classes contains 'xl-image' %}
-            {% if classes contains 'animation' %}
-              <div
-                class="zone__cover"
-                style="background: url('{{ image | file_url }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-              ></div>
-            {% else %}
-              <div
-                class="zone__cover"
-                style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-              ></div>
-            {% endif %}
+            <div
+              class="zone__cover"
+              style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
+            ></div>
           {% else %}
             <div
               class="zone__cover"
