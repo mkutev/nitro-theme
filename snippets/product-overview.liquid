@@ -42,7 +42,7 @@
   .product-overview__grid .zone.dark,
   .product-overview__grid .zone.dark * {
     background-color: #3d3d3d;
-    color: white;
+    color: white; 
   }
 
   .product-overview__grid .zone__cover img {
@@ -166,18 +166,19 @@
             <h2>{{ header }}</h2>
             <p>{{ content }}</p>
           </div>
-
+          
           {% if classes contains 'xl-image' %}
             <div
               class="zone__cover"
               style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-            ></div>
+            > </div>
           {% else %}
             <div
               class="zone__cover"
               style="background: url('{{ image | image_url: width:500 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-            ></div>
+            > </div>
           {% endif %}
+        
         </div>
       {% endunless %}
     {% endfor %}
