@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "slideshow_zKTVBD": {
@@ -5,6 +14,7 @@
       "blocks": {
         "slide_TgWykU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "heading": "Sunny Days Sale",
             "heading_size": "h1",
@@ -22,12 +32,11 @@
         },
         "slide_nD8xRB": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/victoria-day_homepage-banner_v5.webp",
+            "image": "shopify:\/\/shop_images\/canada-day_banner-v2.png",
             "heading": "Victoria Day Sale",
-            "heading_size": "h0",
-            "subheading": "<strong>Save $100<\/strong> when you purchase two ebikes, plus receive <strong>one free accessory per bike<\/strong> and <strong>free shipping<\/strong>. Offer ends May 26th. Discount automatically applied at checkout.",
+            "heading_size": "h1",
+            "subheading": "Save <strong>up to $450<\/strong> on a new ebike, plus, receive <strong>Free shipping<\/strong> and a <strong>Free accessory<\/strong> with every ebike purchase. <em>Offer ends June 23.<\/em>",
             "button_label": "Shop Sale",
             "link": "https:\/\/voltbike.com\/collections\/all-bikes",
             "button_style_secondary": false,
