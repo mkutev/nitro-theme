@@ -14,11 +14,10 @@
       "blocks": {
         "slide_TgWykU": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "heading": "Sunny Days Sale",
             "heading_size": "h1",
-            "subheading": "Save <strong>up to $450<\/strong> on a new ebike, plus, receive <strong>Free shipping<\/strong> and a <strong>Free accessory<\/strong> with every ebike purchase. <em>Offer ends June 23.<\/em>",
+            "subheading": "<strong>Save $100 when you buy two ebikes<\/strong>. Plus, receive <strong>free shipping<\/strong> and <strong>a free accessory with each bike<\/strong>. No coupon code needed. Offer ends July 29.",
             "button_label": "Shop Sale",
             "link": "shopify:\/\/collections\/all-bikes",
             "button_style_secondary": false,
@@ -32,6 +31,7 @@
         },
         "slide_nD8xRB": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/canada-day_banner-v2.png",
             "heading": "Canada Day Sale",
