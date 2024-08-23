@@ -3,132 +3,128 @@
 {% endcomment %}
 
 {% style %}
-  #shipping {
-    background-image: url("{{ 'local_service_mechanic.jpg' | file_img_url: 'large' }}");
-  }
-
-  #assembled {
-    background-image: url("{{ 'bc-rebate.jpg' | file_img_url: 'large' }}");
-  }
-
-  #ambassador {
-    background-image: url("{{ 'fourbox-ambassador-50.jpg' | file_img_url: 'large' }}");
-  }
-
-  #rentals {
-    background-image: url("{{ 'fourbox-rentals-50.jpg' | file_img_url: 'large' }}");
-  }
-
-  .fourbox_container {
+  .fourbox__container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .fourbox__container .box {
+    display: flex;
+    max-width: 48%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    transition: all 250ms ease-in;
   }
 
-  .fourbox_container .box {
-    display: block;
-    flex-shrink: 1;
-    flex-grow: 1;
-    height: 100%;
+  .fourbox__container .box:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transform: translateY(-5px);
+    transition: all 250ms ease-out;
   }
 
-  .fourbox_container a {
-    display: block;
-    position: relative;
-    width: 100%;
-    min-height: 75px;
-    height: 12vw;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-
-  .fourbox_container h2 {
-    text-transform: uppercase;
+  .fourbox__container h2 {
     font-weight: 800;
-    font-size: 3rem;
-    display: block;
     line-height: 100%;
     letter-spacing: 0;
-    border-radius: 5px;
     color: black;
+    text-decoration: none;
   }
 
-  .fourbox_container h2 span {
+  .fourbox__container .box__content {
+    padding: 1em 2em; 
+  }
+
+  .fourbox__container .box__cover {
+    min-height: 250px;
     display: block;
-    font-weight: 400;
-    font-size: 2.2rem;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  #service .box__cover {
+    background: linear-gradient(180deg, rgba(103, 150, 219, 1) 0%, rgba(103, 150, 219, 0) 100%), url("{{ 'local_service_mechanic.jpg' | file_img_url: 'large' }}");
+  }
+  #rebates .box__cover {
+    background: linear-gradient(180deg, rgba(134, 191, 153, 1) 0%, rgba(134, 191, 153, 0) 100%), url("{{ 'bc-rebate.jpg' | file_img_url: 'large' }}");
+  }
+  #ambassador .box__cover {
+    background: linear-gradient(180deg, rgba(223, 224, 168, 1) 0%, rgba(223, 224, 168, 0) 100%), url("{{ 'fourbox-ambassador-50.jpg' | file_img_url: 'large' }}");
+  }
+  #rentals .box__cover {
+    background: linear-gradient(180deg, rgba(161, 204, 229, 1) 0%, rgba(161, 204, 229, 0) 100%), url("{{ 'fourbox-rentals-50.jpg' | file_img_url: 'large' }}");
   }
 
   @media (max-width: 767px) {
-    .fourbox_container h2 {
-      position: relative;
-      height: 100%;
-      margin: auto 0;
-      background-color: none;
-      padding: 3vw 0 3vw 3vw;
-      font-size: 2.2rem;
-      border-radius: 0;
-      background: linear-gradient(45deg, rgb(228 228 228), rgb(200 200 200/ 0%));
-    }
-
-    .fourbox_container h2 span {
-      font-size: 1.4rem;
-    }
-
-    .box1 h2 {
-      background: linear-gradient(45deg, rgb(235, 235, 235), rgb(200 200 200/ 0%));
-    }
-
-    .box2 h2 {
-      background: linear-gradient(45deg, rgb(225, 225, 225), rgb(200 200 200/ 0%));
-    }
   }
 
   @media (min-width: 768px) {
-    .box1 h2,
-    .box2 h2 {
-      background: none;
+    .fourbox__container {
+      flex-wrap: nowrap;
     }
-
-    .fourbox_container h2 {
-      position: absolute;
-      margin: 0 30px 0 0;
-      top: 30px;
-      left: 30px;
-      padding: 5px 10px;
-      background-color: white;
+    
+    .fourbox__container .box {
+      max-width: unset; 
     }
   }
 {% endstyle %}
 <div class="page-width isolate scroll-trigger animate--slide-in" data-cascade="">
-  <div class="fourbox_container">
-    <div class="box box1">
-      <a id="shipping" class="image-link" href="{{ 'pages/local-service' | url }}">
-        <h2><span>Get your bike serviced</span>locally</h2>
-      </a>
-    </div>
+  <div class="fourbox__container">
+    <a
+      id="service"
+      class="box"
+      href="{{ 'pages/local-service' | url }}"
+      target="_blank"
+      style="background-color: #6796DB;"
+    >
+      <div class="box__content">
+        <h2 style="color: #143B75">Have your bike serviced locally.</h2>
+      </div>
+      <div class="box__cover"></div>
+    </a>
 
-    <div class="box box2">
-      <a
-        id="assembled"
-        class="image-link"
-        href="{{ '/blogs/news/unlock-big-savings-on-electric-bikes-with-bc-e-bike-rebates' | url }}"
+    <a
+      id="rebates"
+      class="box"
+      href="{{ '/blogs/news/unlock-big-savings-on-electric-bikes-with-bc-e-bike-rebates' | url }}"
+      target="_blank"
+      style="background-color: #86BF99;"
+    >
+      <div class="box__content">
+        <h2 style="color: #2D5932">Learn about BC ebike rebates.</h2>
+      </div>
+      <div class="box__cover"></div>
+    </a>
+
+    <a
+      id="ambassador"
+      class="box"
+      href="{{ '/pages/ambassador' | url }}"
+      target="_blank"
+      style="background-color: #DFE0A8;"
+    >
+      <div class="box__content">
+        <h2 style="color: #474719">Find a local VoltBike ambassador.</h2>
+      </div>
+      <div class="box__cover"></div>
+    </a>
+
+    <a
+      id="rentals"
+      class="box"
+      href="{{ '/pages/rental-fleet' | url }}"
+      target="_blank"
+      style="background-color: #A1CCE5;"
       >
-        <h2><span>BC Electric Bike</span>rebates</h2>
-      </a>
-    </div>
-
-    <div class="box box1">
-      <a id="ambassador" class="image-link" href="{{ '/pages/ambassador' | url }}" target="_blank">
-        <h2><span>Find a local VoltBike</span>Ambassador</h2>
-      </a>
-    </div>
-
-    <div class="box box2">
-      <a id="rentals" class="image-link" href="{{ '/pages/rental-fleet' | url }}">
-        <h2><span>Learn about</span>RENTAL FLEETS</h2>
-      </a>
-    </div>
+      <div class="box__content">
+        <h2 style="color: #17394D">Learn about ebike rental fleets.</h2>
+      </div>
+      <div class="box__cover"></div>
+    </a>
   </div>
 </div>
