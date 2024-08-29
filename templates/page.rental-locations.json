@@ -27,8 +27,8 @@
             "caption": "{{ block.repeater.location.value }}",
             "heading": "{{ block.repeater.name.value }}",
             "text": "<p>{{ block.repeater.description.value }}<\/p>",
-            "button_label": "Visit Site",
-            "button_link": ""
+            "button_label": "Learn More",
+            "button_link": "https:\/\/www.ekruise.com\/kaslo\/"
           }
         }
       },
