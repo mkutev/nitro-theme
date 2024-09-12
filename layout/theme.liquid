@@ -367,7 +367,28 @@
           font-family: 'Climate Crisis', sans-serif;
           font-weight: normal;
         }
-
+        .wavy {
+          animation-name: wavy;
+          animation-duration: 2s;
+          animation-timing-function: ease-in-out;
+          animation-iteration-count: infinite;
+          position: relative;
+          top: 0;
+          left: 0;
+        }
+        
+        @keyframes wavy {
+          0% {
+            top: 0px;
+          }
+          50% {
+            top: -15px;
+          }
+          100% {
+            top: 0px;
+          }
+        }
+        
         /* .slideshow__slide:first-of-type .banner__heading:before {
           content: "Extended";
           display: block;
@@ -393,7 +414,7 @@
           background-size: calc(100vw/3);;
           animation: animation__wave--background 5s infinite linear;
         }
-
+ 
         .slideshow__slide:first-of-type .wave__blue {
           display: block;
           width: 100%;
@@ -410,10 +431,10 @@
           display: block;
           width: 100%;
           height: 100%;
-          /* background-image: url("{{ 'beach-foreground-2.svg' | file_url }}"); */
-          background-image: url("{{ 'labourday-sale-background.webp' | file_url }}");
+          /* background-image: url("{{ 'labourday-sale-background.webp' | file_url }}"); */
+          background-image: url("{{ 'fallintosavings-homepage-banner-v2.webp' | file_url }}");
           background-position: center bottom;
-          background-size: 100% auto;
+          background-size: cover;
           background-repeat: no-repeat;
         }
 
@@ -443,7 +464,7 @@
           width: 100%;
           height: 100%;
           background-image: url("{{ 'sun.svg' | file_url }}");
-          background-position: 90% 5%;
+          background-position: 70% 5%;
           background-size: 10vh auto;
           background-repeat: no-repeat;
         }
@@ -530,10 +551,28 @@
         // targetBanner.appendChild(waveElement);        
         targetBanner.appendChild(beachElement);
         targetBanner.appendChild(cloudsElement);
-        targetBanner.appendChild(sunElement);
+        // targetBanner.appendChild(sunElement);
 
         heading.insertAdjacentElement('afterend', accessoriesContainer);
         // targetBanner.appendChild(bikeElement);
+
+
+        // let delay = 200;
+        // let h2 = document.querySelector(".slideshow__slide:first-of-type h2");
+    
+        // h2.innerHTML = "Labour Day Sale"
+        //   .split("")
+        //   .map(letter => {
+        //     return `<span>` + letter + `</span>`;
+        //   })
+        //   .join("");
+  
+        // Array.from(h2.children).forEach((span, index) => {
+        //   setTimeout(() => {
+        //     span.classList.add("wavy");
+        //   }, index * 30 + delay);
+        // });
+            
       </script>
     {% endraw %}
   </body>
