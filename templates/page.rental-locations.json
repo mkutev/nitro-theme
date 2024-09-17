@@ -38,7 +38,7 @@
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "text_style": "body",
         "button_style": "secondary",
         "desktop_content_position": "middle",
@@ -50,64 +50,10 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
-    },
-    "multicolumn_AgRXtF": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_8Vbbhw": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_CEXMgn": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_DgEaxW": {
-          "type": "column",
-          "settings": {
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_8Vbbhw",
-        "column_CEXMgn",
-        "column_DgEaxW"
-      ],
-      "settings": {
-        "title": "Multicolumn",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "left",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "multirow_N7AzrU",
-    "multicolumn_AgRXtF"
+    "multirow_N7AzrU"
   ]
 }
