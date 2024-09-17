@@ -27,7 +27,7 @@
             "caption": "{{ block.repeater.location.value }}",
             "heading": "{{ block.repeater.name.value }}",
             "text": "<p>{{ block.repeater.description.value }}<\/p>",
-            "button_label": "Learn More",
+            "button_label": "Visit Site",
             "button_link": "{{ block.repeater.store_url.value }}"
           }
         }
