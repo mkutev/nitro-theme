@@ -28,7 +28,7 @@
             "heading": "{{ block.repeater.name.value }}",
             "text": "<p>{{ block.repeater.description.value }}<\/p>",
             "button_label": "Learn More",
-            "button_link": "https:\/\/www.ekruise.com\/kaslo\/"
+            "button_link": "{{ block.repeater.store_url.value }}"
           }
         }
       },
