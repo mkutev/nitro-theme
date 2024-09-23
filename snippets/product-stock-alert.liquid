@@ -1,21 +1,21 @@
 {% style %}
   /* Instock, Backorder, and Bundle Alerts */
   .instock-alert {
-      border-left: 5px solid #09BC8A;
-      background-color: rgb(9 188 138 / 20%);
+    border-left: 5px solid #09BC8A;
+    background-color: rgb(9 188 138 / 20%);
   }
-  
+
   .backorder-alert {
-      border-left: 5px solid #FFD213;
-      background-color: rgb(255 210 19 / 20%);
+    border-left: 5px solid #FFD213;
+    background-color: rgb(255 210 19 / 20%);
   }
-  
+
   .backorder-alert, .instock-alert {
-      margin: 2rem 0;
-      padding: 1rem 2.5rem;
-      color: #484848;
-      border-radius: 0 5px 5px 0;
-      font-size: small;
+    margin: 2rem 0;
+    padding: 1rem 2.5rem;
+    color: #484848;
+    border-radius: 0 5px 5px 0;
+    font-size: small;
   }
 
   .product-alert.alert {
@@ -24,7 +24,7 @@
     border-radius: 10px;
   }
 
-  .product-alert__title {
+  .product-alert alert__title {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -33,7 +33,7 @@
     margin-bottom: 15px;
   }
 
-  .alert__title svg {
+  .product-alert alert__title svg {
     height: 25px;
     width: auto;
     vertical-align: middle;
@@ -45,9 +45,11 @@
   }
 {% endstyle %}
 
-{%- if product.metafields.custom.in_stock_alert or product.metafields.custom.backorder_alert or product.metafields.custom.promo_alert -%}
+{%- if product.metafields.custom.in_stock_alert
+  or product.metafields.custom.backorder_alert
+  or product.metafields.custom.promo_alert
+-%}
   <div class="product-alert__container">
-    
     {%- if product.metafields.custom.in_stock_alert -%}
       <div class="instock-alert">{{ product.metafields.custom.in_stock_alert }}</div>
     {%- endif -%}
@@ -59,10 +61,8 @@
     {%- if product.metafields.custom.promo_alert -%}
       <div class="product-alert alert alert--promo">
         <span class="alert__title">{% render 'icon-bundle' %} Bundle and save:</span>
-        <p>{{ product.metafields.custom.promo_alert }}</p>
+        <p class="alert__content">{{ product.metafields.custom.promo_alert }}</p>
       </div>
     {%- endif -%}
-
   </div>
-      
 {%- endif -%}
