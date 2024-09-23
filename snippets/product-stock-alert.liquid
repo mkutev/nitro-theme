@@ -6,4 +6,9 @@
   if product.metafields.custom.backorder_alert
       echo '<div class="backorder-alert">' | append: product.metafields.custom.backorder_alert | append: '</div>'
    endif
+
+  if product.metafields.custom.promo_alert
+      echo '<div class="promotional-alert">' | append: product.metafields.custom.promo_alert | append: '</div>'
+   endif
+  
 %}
