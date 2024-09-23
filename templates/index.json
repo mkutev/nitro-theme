@@ -17,9 +17,9 @@
           "settings": {
             "heading": "Fall Into Bike Savings",
             "heading_size": "h1",
-            "subheading": "<strong>Save $100 when you buy two ebikes<\/strong>. Plus, receive <strong>free shipping<\/strong> and <strong>a free accessory with each bike<\/strong>. No coupon code needed. Offer ends Septemper 29.",
+            "subheading": "<strong>Save $100 when you buy two ebikes</strong>. Plus, receive <strong>free shipping</strong> and <strong>a free accessory with each bike</strong>. No coupon code needed. Offer ends September 30.",
             "button_label": "Shop Sale",
-            "link": "shopify:\/\/collections\/all-bikes",
+            "link": "shopify://collections/all-bikes",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -33,12 +33,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/canada-day_banner-v2.png",
+            "image": "shopify://shop_images/canada-day_banner-v2.png",
             "heading": "Canada Day Sale",
             "heading_size": "h1",
-            "subheading": "Save <strong>up to $450<\/strong> on a new ebike, plus, receive <strong>Free shipping<\/strong> and a <strong>Free accessory<\/strong> with every ebike purchase. <em>Offer ends July 8.<\/em>",
+            "subheading": "Save <strong>up to $450</strong> on a new ebike, plus, receive <strong>Free shipping</strong> and a <strong>Free accessory</strong> with every ebike purchase. <em>Offer ends July 8.</em>",
             "button_label": "Shop Sale",
-            "link": "https:\/\/voltbike.com\/collections\/all-bikes",
+            "link": "https://voltbike.com/collections/all-bikes",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -52,12 +52,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/cherry-blossom-yukonelitest-banner-v7-compressed.jpg",
+            "image": "shopify://shop_images/cherry-blossom-yukonelitest-banner-v7-compressed.jpg",
             "heading": "Pedal into Springtime Deals",
             "heading_size": "h0",
-            "subheading": "<strong>Save up to $400<\/strong>, receive a <strong>complimentary accessory<\/strong>, and get <strong>free, next day shipping<\/strong> with the purchase of any ebike. Offer ends April 28.",
+            "subheading": "<strong>Save up to $400</strong>, receive a <strong>complimentary accessory</strong>, and get <strong>free, next day shipping</strong> with the purchase of any ebike. Offer ends April 28.",
             "button_label": "Shop Now",
-            "link": "shopify:\/\/collections\/all-bikes",
+            "link": "shopify://collections/all-bikes",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -70,12 +70,12 @@
         "slide_MVQBDK": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Yukon_Elite_Banner_v1.jpg",
-            "heading": "<strong>Yukon Elite<\/strong>",
+            "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
+            "heading": "<strong>Yukon Elite</strong>",
             "heading_size": "h0",
-            "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD<\/strong> with Free Shipping.",
+            "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD</strong> with Free Shipping.",
             "button_label": "Learn more",
-            "link": "https:\/\/voltbike.com\/collections\/yukon-elite",
+            "link": "https://voltbike.com/collections/yukon-elite",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
@@ -88,12 +88,12 @@
         "slide_iXcAPM": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/NewWestPolice-50_6df65766-44cf-4b22-acae-3271ffde2b5a.webp",
+            "image": "shopify://shop_images/NewWestPolice-50_6df65766-44cf-4b22-acae-3271ffde2b5a.webp",
             "heading": "Trusted",
             "heading_size": "h1",
             "subheading": "By law enforcement.",
             "button_label": "Shop Rugged Ebikes",
-            "link": "shopify:\/\/collections\/fat-tire",
+            "link": "shopify://collections/fat-tire",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": true,
@@ -130,7 +130,7 @@
       "settings": {
         "title": "Featured electric bikes",
         "heading_size": "h2",
-        "description": "<p>A selection of our most popular and best-selling electric bikes.<\/p>",
+        "description": "<p>A selection of our most popular and best-selling electric bikes.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all-bikes",
@@ -157,7 +157,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_tV3Waz": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1600
           }
@@ -175,7 +175,7 @@
       "settings": {
         "title": "Featured accessories",
         "heading_size": "h2",
-        "description": "<p>A selection of our most popular best-selling accessories.<\/p>",
+        "description": "<p>A selection of our most popular best-selling accessories.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "accessories",
