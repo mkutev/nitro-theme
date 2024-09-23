@@ -51,7 +51,8 @@
 
     {%- if product.metafields.custom.promo_alert -%}
       <div class="product-alert alert alert--promo">
-        {{ product.metafields.custom.promo_alert }}
+        <span class="alert__title">{% render 'icon-bundle' %} Bundle and save:</span>
+        <p>{{ product.metafields.custom.promo_alert }}</p>
       </div>
     {%- endif -%}
 
