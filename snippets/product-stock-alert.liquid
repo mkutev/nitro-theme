@@ -51,7 +51,9 @@
     endif
   
     if product.metafields.custom.promo_alert
-      echo '<div class="product-alert alert alert--promo">{{ product.metafields.custom.promo_alert }}</div>'
+      echo '<div class="product-alert alert alert--promo">'
+      echo product.metafields.custom.promo_alert
+      echo '</div>'
     endif
   
     echo '</div>'
