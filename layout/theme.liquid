@@ -54,8 +54,8 @@
 
       /* CUSTOM FONT */
       @font-face {
-        font-family: "Climate Crisis";
-        src: url("{{ 'ClimateCrisis.woff2' | file_url }}") format("woff2");
+        font-family: "Unbounded";
+        src: url("{{ 'Unbounded-VariableFont.ttf' | file_url }}") format("truetype");
       }
 
 
@@ -364,9 +364,15 @@
     {% if template.name == 'index' %}
       {% style %}
         .slideshow__slide:first-of-type h2 {
-          font-family: 'Climate Crisis', sans-serif;
+          font-family: 'Unbounded', sans-serif;
+          font-weight: 900;
+        }
+
+        .slideshow__slide:first-of-type h2.h2 {
+          font-family: 'Unbounded', sans-serif;
           font-weight: normal;
         }
+        
         .wavy {
           animation-name: wavy;
           animation-duration: 2s;
@@ -376,7 +382,7 @@
           top: 0;
           left: 0;
         }
-        
+
         @keyframes wavy {
           0% {
             top: 0px;
@@ -388,7 +394,7 @@
             top: 0px;
           }
         }
-        
+
         /* .slideshow__slide:first-of-type .banner__heading:before {
           content: "Extended";
           display: block;
@@ -414,7 +420,7 @@
           background-size: calc(100vw/3);;
           animation: animation__wave--background 5s infinite linear;
         }
- 
+
         .slideshow__slide:first-of-type .wave__blue {
           display: block;
           width: 100%;
@@ -432,8 +438,18 @@
           width: 100%;
           height: 100%;
           /* background-image: url("{{ 'labourday-sale-background.webp' | file_url }}"); */
-          background-image: url("{{ 'fallintosavings-homepage-banner-v2.webp' | file_url }}");
+          background-image: url("{{ 'thanksgiving2024-homepage-banner-3x.webp' | file_url }}");
           background-position: center bottom;
+          background-size: cover;
+          background-repeat: no-repeat;
+        }
+
+        .slideshow__slide:first-of-type .banner__gradient {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(to right, #FED8B1 20%, #FED8B100 50%);
+          background-position: center;
           background-size: cover;
           background-repeat: no-repeat;
         }
@@ -523,11 +539,20 @@
       <script>
         const targetBanner = document.querySelector('.slideshow__slide:first-of-type .slideshow__media');
         const heading = document.querySelector('.slideshow__slide:first-of-type .banner__text');
-
+        const headingHeader = document.querySelector('.slideshow__slide:first-of-type .banner__heading');
+      
         const accessoriesContent = `
-            <span>Free accessory options:</span>
-            <img src="{% endraw %}{{- 'accessories-transparent-500w.png' | file_img_url: '200x' -}}{% raw %}" alt="Voltbike accessories." />
+          <span>Free accessory options:</span>
+          <img src="{% endraw %}
+            {{- 'accessories-transparent-500w.png' | file_img_url: '200x' -}}
+            {% raw %}" alt="Voltbike accessories." />
         `;
+
+        const subHeading = document.createElement("h2");
+        const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
+        subHeading.classList.add("banner__heading", "inline-richtext", "h2")
+        subHeading.innerHTML = subHeadingContent;
+        headingHeader.insertAdjacentElement('afterend', subHeading);
         
         const accessoriesContainer = document.createElement("div");
         const waveElement = document.createElement("div");
@@ -536,8 +561,11 @@
         const bikeElement = document.createElement("div");
         const cloudsElement = document.createElement("div");
         const sunElement = document.createElement("div");
+        const gradientElement = document.createElement("div");
+        
 
         accessoriesContainer.innerHTML = accessoriesContent;
+        
         
         waveElementBackground.classList.add("wave__blue--background", "animation__wave--background")
         waveElement.classList.add("wave__blue", "animation__wave");
@@ -546,14 +574,16 @@
         cloudsElement.classList.add("sky__clouds");
         sunElement.classList.add("sky__sun");
         accessoriesContainer.classList.add("banner__accessories");
+        gradientElement.classList.add("banner__gradient");
 
         // targetBanner.appendChild(waveElementBackground);
         // targetBanner.appendChild(waveElement);        
         targetBanner.appendChild(beachElement);
-        targetBanner.appendChild(cloudsElement);
+        targetBanner.appendChild(gradientElement);
+        //targetBanner.appendChild(cloudsElement);
         // targetBanner.appendChild(sunElement);
 
-        heading.insertAdjacentElement('afterend', accessoriesContainer);
+        // heading.insertAdjacentElement('afterend', accessoriesContainer);
         // targetBanner.appendChild(bikeElement);
 
 
