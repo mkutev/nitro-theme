@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.footer.name",
   "type": "footer",
@@ -5,11 +14,10 @@
     "footer": {
       "type": "footer",
       "blocks": {
-        "914b1f0e-aea9-4c6a-be44-7288b70e9331": {
-          "type": "text",
+        "brand_information_x79pWw": {
+          "type": "brand_information",
           "settings": {
-            "heading": "<strong>VoltBike Electric Inc.<\/strong>",
-            "subtext": "<p>We are a proud Canadian business located in beautiful British Columbia, Canada! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.<\/p>"
+            "show_social": true
           }
         },
         "link_list_qM3YNa": {
@@ -28,7 +36,7 @@
         }
       },
       "block_order": [
-        "914b1f0e-aea9-4c6a-be44-7288b70e9331",
+        "brand_information_x79pWw",
         "link_list_qM3YNa",
         "link_list_EaVw9g"
       ],
@@ -43,7 +51,7 @@
         "payment_enable": false,
         "show_policy": false,
         "margin_top": 0,
-        "padding_top": 36,
+        "padding_top": 64,
         "padding_bottom": 36
       }
     }
