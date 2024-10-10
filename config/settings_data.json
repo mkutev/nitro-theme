@@ -1,8 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/logo.svg",
+    "logo": "shopify://shop_images/logo.svg",
     "logo_width": 200,
-    "favicon": "shopify:\/\/shop_images\/bluedot.svg",
+    "favicon": "shopify://shop_images/bluedot.svg",
     "type_header_font": "montserrat_n7",
     "heading_scale": 100,
     "type_body_font": "rubik_n4",
@@ -99,10 +108,10 @@
     "sale_badge_color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "VoltBike Electric Inc.",
-    "brand_description": "<p>We are a proud Canadian business located in beautiful British Columbia and we are here to stay! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.<\/p>",
-    "brand_image": "shopify:\/\/shop_images\/logo.svg",
+    "brand_description": "<p>We are a proud Canadian business located in beautiful British Columbia and we are here to stay! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.</p>",
+    "brand_image": "shopify://shop_images/logo.svg",
     "brand_image_width": 100,
-    "social_facebook_link": "",
+    "social_facebook_link": "https://www.facebook.com/VoltBikes",
     "social_instagram_link": "",
     "social_youtube_link": "",
     "social_tiktok_link": "",
@@ -120,7 +129,7 @@
     "show_cart_note": false,
     "cart_drawer_collection": "",
     "cart_color_scheme": "background-1",
-    "checkout_logo_image": "shopify:\/\/shop_images\/logo.svg",
+    "checkout_logo_image": "shopify://shop_images/logo.svg",
     "checkout_logo_size": "small",
     "sections": {
       "main-password-header": {
@@ -141,25 +150,25 @@
     ],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
       },
       "5784066569132941777": {
-        "type": "shopify:\/\/apps\/s-store-locator\/blocks\/embed-app\/e7003487-cc51-4321-9488-2c47c07a5b17",
+        "type": "shopify://apps/s-store-locator/blocks/embed-app/e7003487-cc51-4321-9488-2c47c07a5b17",
         "disabled": false,
         "settings": {
         }
       },
       "316487575649303945": {
-        "type": "shopify:\/\/apps\/easify-product-options\/blocks\/app-embed-block\/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
+        "type": "shopify://apps/easify-product-options/blocks/app-embed-block/d2288b18-c1ba-42f5-b3b3-26c75c8820bf",
         "disabled": false,
         "settings": {
         }
       },
       "15683396631634586217": {
-        "type": "shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
           "button_color": "#2979ff",
@@ -173,19 +182,19 @@
         }
       },
       "13768625480086291342": {
-        "type": "shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
         "settings": {
         }
       },
       "319724205969189013": {
-        "type": "shopify:\/\/apps\/hulk-form-builder\/blocks\/app-embed\/b6b8dd14-356b-4725-a4ed-77232212b3c3",
+        "type": "shopify://apps/hulk-form-builder/blocks/app-embed/b6b8dd14-356b-4725-a4ed-77232212b3c3",
         "disabled": true,
         "settings": {
         }
       },
       "1342486269105851359": {
-        "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-embed\/c034554a-35ea-4075-93e4-50cbca95a696",
+        "type": "shopify://apps/betterdocs/blocks/app-embed/c034554a-35ea-4075-93e4-50cbca95a696",
         "disabled": true,
         "settings": {
         }
@@ -427,7 +436,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
