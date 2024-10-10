@@ -395,14 +395,14 @@
           }
         }
 
-        /* .slideshow__slide:first-of-type .banner__heading:before {
+        .slideshow__slide:first-of-type .banner__heading:before {
           content: "Extended";
           display: block;
           font-size: 0.7em;
           text-transform: uppercase;
           font-style: italic;
           color: #ff6b6b;
-        } */
+        }
 
         .slideshow__slide:first-of-type .slideshow__media {
           background: linear-gradient(180deg, hsl(215 66% 88% / 1), hsl(75 2% 98% / 1));
@@ -498,40 +498,6 @@
         .slideshow__slide:first-of-type .banner__accessories img {
           max-width: 200px;
         }
-
-        @keyframes spinY {
-          from {
-            transform: rotateY(0deg);
-          }
-          to {
-            transform: rotateY(360deg);
-          }
-        }
-
-        @keyframes animation__wave {
-          0% {
-            background-position-x: 0;
-            background-position-y: 100%;
-          }
-          33% {
-            background-position-y: 103%;
-          }
-          100% {
-            background-position-x: calc(100vw/2);
-            background-position-y: 100%;
-          }
-        }
-
-        @keyframes animation__wave--background {
-          0% {
-            background-position-x: 0;
-          }
-          33% {
-          }
-          100% {
-            background-position-x: calc(100vw/3);
-          }
-        }
       {% endstyle %}
     {% endif %}
 
@@ -562,7 +528,6 @@
         const cloudsElement = document.createElement("div");
         const sunElement = document.createElement("div");
         const gradientElement = document.createElement("div");
-        
 
         accessoriesContainer.innerHTML = accessoriesContent;
         
@@ -574,34 +539,10 @@
         cloudsElement.classList.add("sky__clouds");
         sunElement.classList.add("sky__sun");
         accessoriesContainer.classList.add("banner__accessories");
-        gradientElement.classList.add("banner__gradient");
-
-        // targetBanner.appendChild(waveElementBackground);
-        // targetBanner.appendChild(waveElement);        
+        gradientElement.classList.add("banner__gradient");     
         targetBanner.appendChild(beachElement);
         targetBanner.appendChild(gradientElement);
-        //targetBanner.appendChild(cloudsElement);
-        // targetBanner.appendChild(sunElement);
 
-        // heading.insertAdjacentElement('afterend', accessoriesContainer);
-        // targetBanner.appendChild(bikeElement);
-
-
-        // let delay = 200;
-        // let h2 = document.querySelector(".slideshow__slide:first-of-type h2");
-    
-        // h2.innerHTML = "Labour Day Sale"
-        //   .split("")
-        //   .map(letter => {
-        //     return `<span>` + letter + `</span>`;
-        //   })
-        //   .join("");
-  
-        // Array.from(h2.children).forEach((span, index) => {
-        //   setTimeout(() => {
-        //     span.classList.add("wavy");
-        //   }, index * 30 + delay);
-        // });
             
       </script>
     {% endraw %}
