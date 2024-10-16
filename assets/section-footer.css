@@ -121,8 +121,8 @@
 
 .footer-block--newsletter {
   display: flex;
-  align-items: flex-end;
-  margin-top: 3rem;
+  /* align-items: flex-end; */
+  /* margin-top: 3rem; */
   gap: 1rem;
 }
 
@@ -144,7 +144,9 @@
 }
 
 .footer-block__heading {
-  margin-bottom: 2rem;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 300;
+  margin-bottom: 1rem;
   margin-top: 0;
   font-size: calc(var(--font-heading-scale) * 1.6rem);
 }
@@ -170,7 +172,7 @@
 }
 
 .footer-block__newsletter {
-  text-align: center;
+  /* text-align: center; */
   flex-grow: 1;
 }
 
@@ -190,7 +192,8 @@
     margin: 0;
   }
 
-  .footer-block__newsletter:not(:only-child) .newsletter-form__message--success {
+  .footer-block__newsletter:not(:only-child)
+    .newsletter-form__message--success {
     left: auto;
   }
 
@@ -296,7 +299,8 @@
 }
 
 @media screen and (min-width: 750px) {
-  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center) .footer__copyright {
+  .footer__content-bottom-wrapper:not(.footer__content-bottom-wrapper--center)
+    .footer__copyright {
     text-align: right;
   }
 }
@@ -340,6 +344,10 @@
   color: rgba(var(--color-foreground), 0.75);
 }
 
+.footer-block__details-content .list-menu__item--link {
+  line-height: normal;
+}
+
 .footer-block__details-content .list-menu__item--active {
   transition: text-decoration-thickness var(--duration-short) ease;
   color: rgb(var(--color-foreground));
@@ -362,6 +370,10 @@
   .footer-block__details-content .list-menu__item--link {
     padding-top: 1rem;
     padding-bottom: 1rem;
+  }
+
+  .footer-block__details-content.rte {
+    padding-right: 20px;
   }
 }
 
@@ -420,7 +432,9 @@
   text-align: center;
 }
 
-.footer-block:only-child > .footer-block__brand-info > .footer-block__image-wrapper {
+.footer-block:only-child
+  > .footer-block__brand-info
+  > .footer-block__image-wrapper {
   margin-left: auto;
   margin-right: auto;
 }
@@ -430,7 +444,9 @@
   height: auto;
 }
 
-.footer-block:only-child .footer-block__brand-info .footer__list-social.list-social {
+.footer-block:only-child
+  .footer-block__brand-info
+  .footer__list-social.list-social {
   justify-content: center;
 }
 
@@ -464,7 +480,7 @@
 }
 
 .policies li::before {
-  content: '\00B7';
+  content: "\00B7";
   padding: 0 0.8rem;
 }
 
