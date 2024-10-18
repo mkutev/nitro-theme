@@ -304,5 +304,10 @@
         {% render 'icon-caret' %}
       </button>
     </slider-component>
+
+    {% comment %} Insert highlighted product features snippet if we the product is an ebike. {% endcomment %}
+    {% if product.template_suffix == 'ebikes' %}
+      {% render 'product-highlight-features' %}
+    {% endif %}
   {%- endif -%}
 </media-gallery>
