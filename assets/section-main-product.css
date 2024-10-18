@@ -1023,7 +1023,7 @@ a.product__text {
 
 .thumbnail-list {
   flex-wrap: wrap;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 /* Fix to show some space at the end of our sliders in all browsers to be applied on thumbnails */
@@ -1095,6 +1095,7 @@ a.product__text {
 
   .thumbnail-slider .thumbnail-list.slider--tablet-up {
     display: flex;
+    justify-content: center; 
     padding: 0.5rem;
     flex: 1;
     scroll-padding-left: 0.5rem;
@@ -1119,7 +1120,7 @@ a.product__text {
   }
 
   .thumbnail-list.slider--tablet-up .thumbnail-list__item.slider__slide {
-    width: calc(20% - 0.8rem);
+    width: calc(8% - 0.8rem);
   }
 }
 
@@ -1145,7 +1146,7 @@ a.product__text {
 }
 
 .thumbnail[aria-current] {
-  box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground));
+  /* box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground)); */
   border-color: rgb(var(--color-foreground));
 }
 
@@ -1218,11 +1219,11 @@ a.product__text {
 }
 .thumbnail[aria-current]:focus:not(:focus-visible) {
   outline: 0;
-  box-shadow: 0 0 0 0.1rem rgb(var(--color-foreground));
+  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground),0);
 }
 
 .thumbnail img {
-  object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   pointer-events: none;
