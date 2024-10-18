@@ -1135,6 +1135,7 @@ a.product__text {
   color: rgb(var(--color-foreground));
   cursor: pointer;
   background-color: transparent;
+  opacity: 50%;
 }
 
 .thumbnail:hover {
