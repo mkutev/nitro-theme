@@ -1,0 +1,128 @@
+{% comment %}
+  A snippet showcasing key selling points of a given product.
+  Uses metafields with the 'highlights' prefix.
+{% endcomment %}
+
+{% style %}
+  .highlight-features__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin: 3em auto;
+  }
+
+  .highlight-features__feature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .feature__icon {
+    width: 50px;
+    height: 50px;
+    /* background-color: #f1f1f1; */
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .feature__icon svg {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+
+  .feature__content--label {
+    /* text-transform: uppercase; */
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  .feature__content--value {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+  }
+{% endstyle %}
+
+{% assign fields = ['power', 'torque', 'range', 'top_speed', 'payload'] %}
+
+{%- if product.metafields.highlights.power != blank
+  or product.metafields.highlights.torque != blank
+  or product.metafields.highlights.range != blank
+  or product.metafields.highlights.top_speed != blank
+  or product.metafields.highlights.payload != blank
+-%}
+  <div class="highlight-features__container">
+    {%- if product.metafields.highlights.power != blank -%}
+      <div class="highlight-features__feature">
+        <div class="feature__icon">{%- render 'icon-power' -%}</div>
+        <div class="feature__content">
+          <div class="feature__content--label">Power</div>
+          <div class="feature__content--value">
+            {{- product.metafields.highlights.power -}}
+            W
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if product.metafields.highlights.torque != blank -%}
+      <div class="highlight-features__feature">
+        <div class="feature__icon">{%- render 'icon-torque' -%}</div>
+        <div class="feature__content">
+          <div class="feature__content--label">Torque</div>
+          <div class="feature__content--value">
+            {{- product.metafields.highlights.torque -}}
+            Nm
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if product.metafields.highlights.range != blank -%}
+      <div class="highlight-features__feature">
+        <div class="feature__icon">{%- render 'icon-range' -%}</div>
+        <div class="feature__content">
+          <div class="feature__content--label">Range</div>
+          <div class="feature__content--value">
+            {{- product.metafields.highlights.range -}}
+            + km
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if product.metafields.highlights.top_speed != blank -%}
+      <div class="highlight-features__feature">
+        <div class="feature__icon">{%- render 'icon-speed' -%}</div>
+        <div class="feature__content">
+          <div class="feature__content--label">Top Speed</div>
+          <div class="feature__content--value">
+            {{- product.metafields.highlights.top_speed -}}
+            km/h
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    {%- if product.metafields.highlights.payload != blank -%}
+      <div class="highlight-features__feature">
+        <div class="feature__icon">{%- render 'icon-payload' -%}</div>
+        <div class="feature__content">
+          <div class="feature__content--label">Payload</div>
+          <div class="feature__content--value">
+            {{- product.metafields.highlights.payload -}}
+            lbs
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  </div>
+{%- endif -%}
