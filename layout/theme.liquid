@@ -518,12 +518,12 @@
         // const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
       {% endraw %}
     const subHeadingContent = '
-    {{- 'pumpkin-icon.webp' | file_img_url -}}
+    {{- 'pumpkin-icon.webp' | file_url -}}
     ';
     {%- raw -%}
         subHeading.classList.add("banner__heading", "inline-richtext", "h2")
         subHeading.innerHTML = subHeadingContent;
-        // headingHeader.insertAdjacentElement('beforebegin', subHeading);
+        headingHeader.insertAdjacentElement('beforebegin', subHeading);
         
         const accessoriesContainer = document.createElement("div");
         const waveElement = document.createElement("div");
