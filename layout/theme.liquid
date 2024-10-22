@@ -372,7 +372,7 @@
           font-family: 'Unbounded', sans-serif;
           font-weight: normal;
         }
-        
+
         .wavy {
           animation-name: wavy;
           animation-duration: 2s;
@@ -510,15 +510,15 @@
         const accessoriesContent = `
           <span>Free accessory options:</span>
           <img src="{% endraw %}
-            {{- 'accessories-transparent-500w.png' | file_img_url: '200x' -}}
-            {% raw %}" alt="Voltbike accessories." />
+    {{- 'accessories-transparent-500w.png' | file_img_url: '200x' -}}
+    {% raw %}" alt="Voltbike accessories." />
         `;
 
         const subHeading = document.createElement("h2");
         const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
         subHeading.classList.add("banner__heading", "inline-richtext", "h2")
         subHeading.innerHTML = subHeadingContent;
-        headingHeader.insertAdjacentElement('afterend', subHeading);
+        // headingHeader.insertAdjacentElement('afterend', subHeading);
         
         const accessoriesContainer = document.createElement("div");
         const waveElement = document.createElement("div");
