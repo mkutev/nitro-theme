@@ -37,10 +37,7 @@
   }
 
   .feature__content--label {
-    /* text-transform: uppercase; */
-    font-family: 'Unbounded', sans-serif;
     font-weight: 300;
-    font-size: 14px;
     line-height: 140%;
   }
 
@@ -49,78 +46,51 @@
     font-weight: 600;
     line-height: 1;
   }
+
+  .feature__content--value span {
+    font-size: 0.8em;
+  }
 {% endstyle %}
 
-{%- if product.metafields.highlights.power != blank
-  or product.metafields.highlights.torque != blank
-  or product.metafields.highlights.range != blank
-  or product.metafields.highlights.top_speed != blank
-  or product.metafields.highlights.payload != blank
--%}
+{% assign field_values = 'power, torque, range, top_speed, payload' | split: ', ' %}
+{% assign field_names = 'Power, Torque, Range, Top Speed, Payload' | split: ', ' %}
+{% assign has_data = false %}
+
+{% for field in field_values %}
+  {% if product.metafields.highlights[field] != empty %}
+    {% assign has_data = true %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
+{% if has_data %}
   <div class="highlight-features__container">
-    {%- if product.metafields.highlights.power != blank -%}
-      <div class="highlight-features__feature">
-        <div class="feature__icon">{%- render 'icon-power' -%}</div>
-        <div class="feature__content">
-          <div class="feature__content--label">Power</div>
-          <div class="feature__content--value">
-            {{- product.metafields.highlights.power -}}
-            W
+    {% for field in field_values %}
+      {% if product.metafields.highlights[field] != empty %}
+        <div class="highlight-features__feature">
+          <div class="feature__icon">{%- render 'icon-product-highlights' | icon_type: field -%}</div>
+          <div class="feature__content">
+            <div class="feature__content--label caption-with-letter-spacing">{{- field_names[forloop.index0] -}}</div>
+            <div class="feature__content--value">
+              {{- product.metafields.highlights[field] -}}
+              <span>
+                {%- case field -%}
+                  {%- when 'power' -%}
+                    W
+                  {%- when 'torque' -%}
+                    Nm
+                  {%- when 'range' -%}
+                    + km
+                  {%- when 'top_speed' -%}
+                    km/h
+                  {%- when 'payload' -%}
+                    lbs
+                {%- endcase -%}
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-    {%- endif -%}
-
-    {%- if product.metafields.highlights.torque != blank -%}
-      <div class="highlight-features__feature">
-        <div class="feature__icon">{%- render 'icon-torque' -%}</div>
-        <div class="feature__content">
-          <div class="feature__content--label">Torque</div>
-          <div class="feature__content--value">
-            {{- product.metafields.highlights.torque -}}
-            Nm
-          </div>
-        </div>
-      </div>
-    {%- endif -%}
-
-    {%- if product.metafields.highlights.range != blank -%}
-      <div class="highlight-features__feature">
-        <div class="feature__icon">{%- render 'icon-range' -%}</div>
-        <div class="feature__content">
-          <div class="feature__content--label">Range</div>
-          <div class="feature__content--value">
-            {{- product.metafields.highlights.range -}}
-            + km
-          </div>
-        </div>
-      </div>
-    {%- endif -%}
-
-    {%- if product.metafields.highlights.top_speed != blank -%}
-      <div class="highlight-features__feature">
-        <div class="feature__icon">{%- render 'icon-speed' -%}</div>
-        <div class="feature__content">
-          <div class="feature__content--label">Top Speed</div>
-          <div class="feature__content--value">
-            {{- product.metafields.highlights.top_speed -}}
-            km/h
-          </div>
-        </div>
-      </div>
-    {%- endif -%}
-
-    {%- if product.metafields.highlights.payload != blank -%}
-      <div class="highlight-features__feature">
-        <div class="feature__icon">{%- render 'icon-payload' -%}</div>
-        <div class="feature__content">
-          <div class="feature__content--label">Payload</div>
-          <div class="feature__content--value">
-            {{- product.metafields.highlights.payload -}}
-            lbs
-          </div>
-        </div>
-      </div>
-    {%- endif -%}
+      {% endif %}
+    {% endfor %}
   </div>
-{%- endif -%}
+{% endif %}
