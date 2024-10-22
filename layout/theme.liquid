@@ -516,9 +516,11 @@
 
         const subHeading = document.createElement("h2");
         // const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
-        const subHeadingContent = '{% endraw %}
+      {% endraw %}
+    const subHeadingContent = '
     {{- 'pumpkin-icon.webp' | file_img_url -}}
-    {% raw %}';
+    ';
+    {%- raw -%}
         subHeading.classList.add("banner__heading", "inline-richtext", "h2")
         subHeading.innerHTML = subHeadingContent;
         // headingHeader.insertAdjacentElement('beforebegin', subHeading);
@@ -548,6 +550,6 @@
 
             
       </script>
-    {% endraw %}
+    {%- endraw -%}
   </body>
 </html>
