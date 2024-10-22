@@ -515,10 +515,11 @@
         `;
 
         const subHeading = document.createElement("h2");
-        const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
+        // const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
+        const subHeadingContent = '{{ 'pumpkin-icon.webp' | file_img_url }}';
         subHeading.classList.add("banner__heading", "inline-richtext", "h2")
         subHeading.innerHTML = subHeadingContent;
-        // headingHeader.insertAdjacentElement('afterend', subHeading);
+        headingHeader.insertAdjacentElement('beforebegin', subHeading);
         
         const accessoriesContainer = document.createElement("div");
         const waveElement = document.createElement("div");
