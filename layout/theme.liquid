@@ -517,9 +517,7 @@
         const subHeading = document.createElement("h2");
         // const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
       {% endraw %}
-    const subHeadingContent = '
-    {{- 'pumpkin-icon.webp' | file_url -}}
-    ';
+    const subHeadingContent = '<img src="{{- 'pumpkin-icon.webp' | file_url -}}" width="50" alt="Pumpkin icon.">';
     {%- raw -%}
         subHeading.classList.add("banner__heading", "inline-richtext", "h2")
         subHeading.innerHTML = subHeadingContent;
