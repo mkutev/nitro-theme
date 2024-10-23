@@ -48,6 +48,18 @@
   .feature__content--value span {
     font-size: 0.8em;
   }
+
+  @media screen and (min-width: 990px) {
+    .highlight-features__feature {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+    
+    .feature__icon {
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+  }
 {% endstyle %}
 
 {% assign field_values = 'power, torque, range, top_speed, payload' | split: ', ' %}
