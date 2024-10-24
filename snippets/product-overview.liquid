@@ -27,6 +27,8 @@
         grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9";
       {% when 10 %}
         grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9" "zone-10";
+      {% when 11 %}
+        grid-template-areas: "zone-1" "zone-2" "zone-3" "zone-4" "zone-5" "zone-6" "zone-7" "zone-8" "zone-9" "zone-10" "zone-11";
     {% endcase %}
   }
 
@@ -37,24 +39,44 @@
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "." ".";
     box-shadow: 0 0 15px rgb(0 0 0 / 5%);
+    border-radius: 20px;
+    overflow: hidden;
   }
 
   .product-overview__grid .zone.dark,
   .product-overview__grid .zone.dark * {
     background-color: #3d3d3d;
-    color: white; 
+    color: white;
+  }
+
+  .product-overview__grid .zone.rebate {
+    background: hsl(145 34% 95% / 1);
+  }
+
+  .product-overview__grid .zone.safety {
+    background: hsl(42 64% 95% / 1);
+  }
+
+  .product-overview__grid .zone.rebate h2 {
+    margin-top: 0;
+  }
+
+  .zone.safety .zone__cover,
+  .zone.rebate .zone__cover {
+    background-size: 40% !important;
+  }
+
+  .product-overview__grid .zone__cover {
+    display: block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .product-overview__grid .zone__cover img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  .product-overview__grid .zone__cover {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
   }
 
   .product-overview__grid.contain .zone__cover {
@@ -68,6 +90,10 @@
     padding: 3em;
   }
 
+  .product-overview__grid .button {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 
   {% for i in (1..zone_count) %}
     .zone-{{ i }} { grid-area: zone-{{ i }}}
@@ -95,6 +121,9 @@
         {% when 10 %}
           grid-template-rows: repeat(8, 1fr);
           grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" "zone-10 zone-10 zone-10";
+        {% when 11 %}
+          grid-template-rows: repeat(9, 1fr);
+          grid-template-areas: "zone-1 zone-1 zone-2" "zone-3 zone-3 zone-2" "zone-4 zone-4 zone-4" "zone-5 zone-6 zone-6" "zone-5 zone-7 zone-7" "zone-8 zone-8 zone-8" "zone-9 zone-9 zone-9" "zone-10 zone-10 zone-10" "zone-11 zone-11 zone-11";
       {% endcase %}
     }
 
@@ -124,12 +153,15 @@
     }
 
     .product-overview__grid .zone-9,
-    .product-overview__grid .zone-10 {
+    .product-overview__grid .zone-10,
+    .product-overview__grid .zone-11 {
       grid-template-columns: 2fr 3fr;
     }
 
     .product-overview__grid .zone-6 .zone__content,
-    .product-overview__grid .zone-9 .zone__content {
+    .product-overview__grid .zone-9 .zone__content,
+    .product-overview__grid .zone-10 .zone__content,
+    .product-overview__grid .zone-11 .zone__content {
       order: 2;
     }
   }
@@ -150,9 +182,9 @@
         assign classes = field[css_key].value
         assign image = field[image_key].value
         if classes contains 'contain'
-          assign image_size = 'contain'
+          assign background_size = 'contain'
         else
-          assign image_size = 'cover'
+          assign background_size = 'cover'
         endif
       %}
 
@@ -163,22 +195,21 @@
           style="--animation-order: {{ i }}"
         >
           <div class="zone__content">
-            <h2>{{ header }}</h2>
-            <p>{{ content }}</p>
+            {%- if classes contains 'rebate' -%}
+              <p class="caption-with-letter-spacing">Now eligible for</p>
+              <h2>{{ header }}</h2>
+              <p>{{ content }}</p>
+              {{ 'Read more' | link_to: 'https://bcebikerebates.ca/', class: 'button button--primary' }}
+            {%- else -%}
+              <h2>{{ header }}</h2>
+              <p>{{ content }}</p>
+            {% endif %}
           </div>
-          
-          {% if classes contains 'xl-image' %}
-            <div
-              class="zone__cover"
-              style="background: url('{{ image | image_url: width:1000 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-            > </div>
-          {% else %}
-            <div
-              class="zone__cover"
-              style="background: url('{{ image | image_url: width:500 }}'); background-size: {{ image_size }}; background-position: center; background-repeat: no-repeat;"
-            > </div>
-          {% endif %}
-        
+
+          <div
+            class="zone__cover"
+            style="background: url('{% if classes contains 'xl-image' %}{{ image | image_url: width:1000 }}{% else %}{{ image | image_url: width:500 }}{% endif %}'); background-size: {{ background_size }}; background-position: center; background-repeat: no-repeat;"
+          ></div>
         </div>
       {% endunless %}
     {% endfor %}
