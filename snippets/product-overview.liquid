@@ -99,6 +99,12 @@
     .zone-{{ i }} { grid-area: zone-{{ i }}}
   {% endfor %}
 
+   @media screen and (max-width: 767px) {
+     .product-overview__grid .zone.rebate .zone__cover {
+       order: 2;
+     }
+   }
+
   @media screen and (min-width: 768px) {
     .product-overview__grid .zone {
       grid-template-areas: ". .";
