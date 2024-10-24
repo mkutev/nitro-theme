@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_liquid_wWizfr": {
@@ -34,7 +34,7 @@
           }
         },
         "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         },
@@ -72,13 +72,13 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "truck",
-            "image_1": "shopify:\/\/shop_images\/shipping-icon.svg",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
             "heading_1": "Free Shipping",
             "icon_2": "star",
-            "image_2": "shopify:\/\/shop_images\/warranty-icon.svg",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
             "heading_2": "1 Year Warranty",
             "icon_3": "star",
-            "image_3": "shopify:\/\/shop_images\/quality-assurance-test.png",
+            "image_3": "shopify://shop_images/quality-assurance-test.png",
             "heading_3": "20+ Quality Standards Checklist"
           }
         }
@@ -114,7 +114,7 @@
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render 'product-overview' %}",
-        "color_scheme": "",
+        "color_scheme": "scheme-6cd37af9-fd1f-46cb-9079-dbf620dd0857",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -168,7 +168,7 @@
       "type": "apps",
       "blocks": {
         "9c9d34f6-307a-49e1-9f26-99a1769bda2c": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
           }
         }
@@ -193,7 +193,7 @@
       "type": "apps",
       "blocks": {
         "betterdocs_app_faq_block_DMarXd": {
-          "type": "shopify:\/\/apps\/betterdocs\/blocks\/app-faq-block\/c034554a-35ea-4075-93e4-50cbca95a696",
+          "type": "shopify://apps/betterdocs/blocks/app-faq-block/c034554a-35ea-4075-93e4-50cbca95a696",
           "settings": {
           }
         }
