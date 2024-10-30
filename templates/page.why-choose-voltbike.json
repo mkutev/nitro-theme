@@ -15,9 +15,197 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "image_with_text_HGpT4C": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8Jc9Rf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Local Canadian Company",
+            "heading_size": "h1"
+          }
+        },
+        "text_N9TRk7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_yBakxg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8Jc9Rf",
+        "text_N9TRk7",
+        "button_yBakxg"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_BjDVcJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_iMErM7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Support for your bike by Phone with Support Line",
+            "heading_size": "h1"
+          }
+        },
+        "text_TedVKG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_R9Gxg3": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iMErM7",
+        "text_TedVKG",
+        "button_R9Gxg3"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_pbVhUd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_pUXP8B": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shipping Fully Assembled",
+            "heading_size": "h1"
+          }
+        },
+        "text_WaB97E": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_pPgHri": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pUXP8B",
+        "text_WaB97E",
+        "button_pPgHri"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_4g4MaJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_HJkxYN": {
+          "type": "heading",
+          "settings": {
+            "heading": "1 Year Warranty",
+            "heading_size": "h1"
+          }
+        },
+        "text_Rb474j": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_4rxiiT": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_HJkxYN",
+        "text_Rb474j",
+        "button_4rxiiT"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "image_with_text_HGpT4C",
+    "image_with_text_BjDVcJ",
+    "image_with_text_pbVhUd",
+    "image_with_text_4g4MaJ"
   ]
 }
