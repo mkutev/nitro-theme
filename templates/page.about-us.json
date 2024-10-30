@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "e16c4942-1fcf-4859-b500-a91988b5c19b": {
@@ -6,8 +15,8 @@
         "heading": "",
         "heading_size": "h1",
         "enable_video_looping": true,
-        "video": "shopify:\/\/files\/videos\/AboutUs-Banner-Alt.mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video": "shopify://files/videos/AboutUs-Banner-Alt.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "full_width": true,
         "color_scheme": "",
@@ -28,9 +37,9 @@
         "column_DdzVkj": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/george-krastev.jpg",
+            "image": "shopify://shop_images/george-krastev.jpg",
             "title": "George Krastev",
-            "text": "<h5>Founder and CEO<\/h5><p>George Krastev (Georgi Krastev) is originally from Europe and started VoltBike Electric Inc. in 2013 as a side project at his home garage in Coquitlam, BC, Canada. 7 years later, that side project has become a profitable, self-funded company with thousands of riders around North America.<\/p><p>Prior to VoltBike he was a successful web developer for various e-commerce companies the most significant of which is Best Buy Canada. He has a master’s degree in computer science and technology. He lives in Vancouver, BC with his wife and two daughters.<\/p>",
+            "text": "<h5>Founder and CEO</h5><p>George Krastev (Georgi Krastev) is originally from Europe and started VoltBike Electric Inc. in 2013 as a side project at his home garage in Coquitlam, BC, Canada. 7 years later, that side project has become a profitable, self-funded company with thousands of riders around North America.</p><p>Prior to VoltBike he was a successful web developer for various e-commerce companies the most significant of which is Best Buy Canada. He has a master’s degree in computer science and technology. He lives in Vancouver, BC with his wife and two daughters.</p>",
             "link_label": "",
             "link": ""
           }
@@ -38,9 +47,9 @@
         "column_7Wm7xg": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Joe-1.jpg",
+            "image": "shopify://shop_images/Joe-1.jpg",
             "title": "Joe Fedilo",
-            "text": "<h5>Senior Bike Mechanic<\/h5><p>Known for his attention to detail, Joe has become the go-to maestro for ebike enthusiasts. Joe started his VoltBike journey in 2020. Throughout his career, he embraced the evolution of VoltBike and the ebike technology. Whether he’s providing troubleshooting support over the phone or offering in-person assistance in our showroom, Joe’s cheerful smile reflects his authentic commitment to ensuring each client feels valued and well-supported.<\/p>",
+            "text": "<h5>Senior Bike Mechanic</h5><p>Known for his attention to detail, Joe has become the go-to maestro for ebike enthusiasts. Joe started his VoltBike journey in 2020. Throughout his career, he embraced the evolution of VoltBike and the ebike technology. Whether he’s providing troubleshooting support over the phone or offering in-person assistance in our showroom, Joe’s cheerful smile reflects his authentic commitment to ensuring each client feels valued and well-supported.</p>",
             "link_label": "",
             "link": ""
           }
@@ -48,9 +57,9 @@
         "column_yzwXJB": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Atta-4.jpg",
+            "image": "shopify://shop_images/Atta-4.jpg",
             "title": "Atta Dimitrova",
-            "text": "<h5>Assistant Manager<\/h5><p>Atta is valuable team member with many years of work experience in administration and customer relations sectors. No matter how tense a meeting, she effortlessly leaves everyone with a smile. She has a great ability to handle pressure and sudden deadlines.<\/p><p>Atta will be your go to person when you have issues, and she will make sure to resolve them as per your satisfaction.<\/p>",
+            "text": "<h5>Assistant Manager</h5><p>Atta is valuable team member with many years of work experience in administration and customer relations sectors. No matter how tense a meeting, she effortlessly leaves everyone with a smile. She has a great ability to handle pressure and sudden deadlines.</p><p>Atta will be your go to person when you have issues, and she will make sure to resolve them as per your satisfaction.</p>",
             "link_label": "",
             "link": ""
           }
@@ -58,9 +67,9 @@
         "column_BAMcFw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jason_photo_3.jpg",
+            "image": "shopify://shop_images/jason_photo_3.jpg",
             "title": "Jason Tomblin",
-            "text": "<h5>Marketing Manager<\/h5><p>Erin joined the VoltBike team to meet the demand for the 2020 season. Holding down the customer support lines, Erin is essential part of our team. You can typically find her swimming, working out, and soon to be out on the trail with the rest of the VoltBike crew!<\/p>",
+            "text": "<h5>Marketing Manager</h5><p>Jason's focus is spreading the good word of VoltBike, and coming up with great ideas to keep our offerings fresh and fun. Jason helps out wherever he's needed, so whether its on the phone, email or in the showroom, you'll see him working on something new at all times. </p>",
             "link_label": "",
             "link": ""
           }
@@ -68,9 +77,9 @@
         "column_MhXhHb": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Erin-2.jpg",
+            "image": "shopify://shop_images/Erin-2.jpg",
             "title": "Erin Altstadt",
-            "text": "<h5>Customer Relations Specialist<\/h5><p>Erin joined the VoltBike team to meet the demand for the 2020 season. Holding down the customer support lines, Erin is essential part of our team. You can typically find her swimming, working out, and soon to be out on the trail with the rest of the VoltBike crew!<\/p>",
+            "text": "<h5>Customer Relations Specialist</h5><p>Erin joined the VoltBike team to meet the demand for the 2020 season. Holding down the customer support lines, Erin is essential part of our team. You can typically find her swimming, working out, and soon to be out on the trail with the rest of the VoltBike crew!</p>",
             "link_label": "",
             "link": ""
           }
@@ -78,9 +87,9 @@
         "column_C7XgGf": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Momchil-3.jpg",
+            "image": "shopify://shop_images/Momchil-3.jpg",
             "title": "Momchil Kutev",
-            "text": "<h5>Web & Graphic Designer<\/h5><p>Momchil splits his time between web development, product photography, and the design of marketing materials. In his spare time, he likes going for bike rides, taking photos, spending time with family and friends, and checking up on the Canucks.<\/p>",
+            "text": "<h5>Web & Graphic Designer</h5><p>Momchil splits his time between web development, product photography, and the design of marketing materials. In his spare time, he likes going for bike rides, taking photos, spending time with family and friends, and checking up on the Canucks.</p>",
             "link_label": "",
             "link": ""
           }
@@ -88,9 +97,9 @@
         "column_MckeEQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chinard-1.jpg",
+            "image": "shopify://shop_images/Chinard-1.jpg",
             "title": "Chinard Benedicto",
-            "text": "<h5>Bike Mechanic<\/h5><p>Meet Chinard, our dynamic young talent! Despite his youthfulness, Chinard is an experienced bike mechanic, infusing his passion for cycling into every project. Chinard is committed to ensuring that each bike order departs in peak performance. During his leisure time, you'll frequently find him immersed in a romantic novel or cycling along the trails in Port Coquitlam, BC.<\/p>",
+            "text": "<h5>Bike Mechanic</h5><p>Meet Chinard, our dynamic young talent! Despite his youthfulness, Chinard is an experienced bike mechanic, infusing his passion for cycling into every project. Chinard is committed to ensuring that each bike order departs in peak performance. During his leisure time, you'll frequently find him immersed in a romantic novel or cycling along the trails in Port Coquitlam, BC.</p>",
             "link_label": "",
             "link": ""
           }
@@ -98,9 +107,9 @@
         "column_zqRneP": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Bernie-2.jpg",
+            "image": "shopify://shop_images/Bernie-2.jpg",
             "title": "Bernard Henze",
-            "text": "<h5>Bike Mechanic<\/h5><p>Bicycle Bernie joins our team with over 30 years of bicycle maintenance and assembly expertise. During the 80's and 90's, he was one of Richmond's \"go-to-guys\" if you required any kind of assistance associated with your bicycle.<\/p><p>He also brings valuable experience in customer service and sales, and is very much looking forward to getting his hands dirty with your VoltBike!<\/p>",
+            "text": "<h5>Bike Mechanic</h5><p>Bicycle Bernie joins our team with over 30 years of bicycle maintenance and assembly expertise. During the 80's and 90's, he was one of Richmond's \"go-to-guys\" if you required any kind of assistance associated with your bicycle.</p><p>He also brings valuable experience in customer service and sales, and is very much looking forward to getting his hands dirty with your VoltBike!</p>",
             "link_label": "",
             "link": ""
           }
@@ -108,9 +117,9 @@
         "column_Gt78Ga": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pedro-1.jpg",
+            "image": "shopify://shop_images/Pedro-1.jpg",
             "title": "Pedro Bitero",
-            "text": "<h5>Bike Mechanic<\/h5><p>VoltBike welcomed Pedro in 2021 and since then, he has proven to be one of our most efficient and on-point<br\/>mechanics. Pedro’s sense of humor and kind spirit bring an abundance of joy and positive vibes to our team. His laugher resonates with the clinking of wrenches, and you might even catch him serenading the workshop with his great voice. He is more than just a skilled mechanic: he is a melody of joy and competence!<\/p>",
+            "text": "<h5>Bike Mechanic</h5><p>VoltBike welcomed Pedro in 2021 and since then, he has proven to be one of our most efficient and on-point<br/>mechanics. Pedro’s sense of humor and kind spirit bring an abundance of joy and positive vibes to our team. His laugher resonates with the clinking of wrenches, and you might even catch him serenading the workshop with his great voice. He is more than just a skilled mechanic: he is a melody of joy and competence!</p>",
             "link_label": "",
             "link": ""
           }
@@ -118,9 +127,9 @@
         "column_h8WJaU": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Yavor-3.jpg",
+            "image": "shopify://shop_images/Yavor-3.jpg",
             "title": "Yavor Yankov",
-            "text": "<h5>Bike Mechanic<\/h5><p>With his love for biking, Yavor spends his days making sure all bikes meet VoltBike's commitment to quality at the VoltBike manufacturing site in Port Coquitlam, BC, Canada. On the weekend, you will probably find him re-organizing his CD collection.<\/p>",
+            "text": "<h5>Bike Mechanic</h5><p>With his love for biking, Yavor spends his days making sure all bikes meet VoltBike's commitment to quality at the VoltBike manufacturing site in Port Coquitlam, BC, Canada. On the weekend, you will probably find him re-organizing his CD collection.</p>",
             "link_label": "",
             "link": ""
           }
@@ -128,9 +137,9 @@
         "column_UD39pC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/gerald_voltbike_3.jpg",
+            "image": "shopify://shop_images/gerald_voltbike_3.jpg",
             "title": "Gerald Quintas",
-            "text": "<h5>Shipping & Receiving<\/h5><p>With his love for biking, Yavor spends his days making sure all bikes meet VoltBike's commitment to quality at the VoltBike manufacturing site in Port Coquitlam, BC, Canada. On the weekend, you will probably find him re-organizing his CD collection.<\/p>",
+            "text": "<h5>Shipping & Receiving</h5><p>With his love for biking, Yavor spends his days making sure all bikes meet VoltBike's commitment to quality at the VoltBike manufacturing site in Port Coquitlam, BC, Canada. On the weekend, you will probably find him re-organizing his CD collection.</p>",
             "link_label": "",
             "link": ""
           }
@@ -179,7 +188,7 @@
         "text_YhJBKP": {
           "type": "text",
           "settings": {
-            "text": "<p>VoltBike's main distribution center is a brand new warehouse facility and is located in Port Coquitlam, BC, Canada. From this location, we serve entire Canada and ship bicycles and parts every day. Situated with 2x loading docks our warehouse is able to receive and ship at the same time more than a dozen bikes per day. This location is also open for test rides, repairs and service and also local pickups.<\/p>",
+            "text": "<p>VoltBike's main distribution center is a brand new warehouse facility and is located in Port Coquitlam, BC, Canada. From this location, we serve entire Canada and ship bicycles and parts every day. Situated with 2x loading docks our warehouse is able to receive and ship at the same time more than a dozen bikes per day. This location is also open for test rides, repairs and service and also local pickups.</p>",
             "text_style": "body"
           }
         }
@@ -189,7 +198,7 @@
         "text_YhJBKP"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/warehouse-new-2.jpg",
+        "image": "shopify://shop_images/warehouse-new-2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -217,7 +226,7 @@
         "text_qcDBPm": {
           "type": "text",
           "settings": {
-            "text": "<p>Unlike other companies on the market, at VoltBike we store all bikes in-house making sure the bike is available at the time of the order. This allow us to provide better customer experience and you wait less for your bike to arrive.<\/p>",
+            "text": "<p>Unlike other companies on the market, at VoltBike we store all bikes in-house making sure the bike is available at the time of the order. This allow us to provide better customer experience and you wait less for your bike to arrive.</p>",
             "text_style": "body"
           }
         }
@@ -227,7 +236,7 @@
         "text_qcDBPm"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/warehouse.jpg",
+        "image": "shopify://shop_images/warehouse.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -255,7 +264,7 @@
         "text_xRVPWj": {
           "type": "text",
           "settings": {
-            "text": "<p>Once a new order is placed, each bike is individually inspected and tested. Our bike mechanics are doing complete mechanical tune-up. Performance test is executed on each of the electrical components. Once the bike has passed the VoltBike inspection process, it is then assembled based on your specific modifications, including upgrades and added accessories.<\/p>",
+            "text": "<p>Once a new order is placed, each bike is individually inspected and tested. Our bike mechanics are doing complete mechanical tune-up. Performance test is executed on each of the electrical components. Once the bike has passed the VoltBike inspection process, it is then assembled based on your specific modifications, including upgrades and added accessories.</p>",
             "text_style": "body"
           }
         }
@@ -265,7 +274,7 @@
         "text_xRVPWj"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/service_center.jpg",
+        "image": "shopify://shop_images/service_center.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
