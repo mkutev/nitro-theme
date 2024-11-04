@@ -160,9 +160,10 @@
 
 /* Form Elements */
 .product-form__input {
-  flex: 0 0 100%;
+  /* flex: 0 0 100%; */
   padding: 0;
-  margin: 0 0 1.2rem 0;
+  margin: 0;
+  /* margin: 0 0 1.2rem 0; */
   max-width: 44rem;
   min-width: fit-content;
   border: none;
@@ -170,7 +171,11 @@
 
 variant-radios,
 variant-selects {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .product-form__input--dropdown {
@@ -1149,6 +1154,7 @@ a.product__text {
 .thumbnail[aria-current] {
   /* box-shadow: 0 0 0rem 0.1rem rgb(var(--color-foreground)); */
   border-color: rgb(var(--color-foreground));
+  opacity: 100%;
 }
 
 .image-magnify-full-size {
