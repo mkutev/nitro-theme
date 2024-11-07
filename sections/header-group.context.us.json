@@ -12,5 +12,23 @@
   "context": {
     "market": "us"
   },
-  "sections": {}
+  "sections": {
+    "announcement-bar": {
+      "settings": {},
+      "blocks": {
+        "announcement_EyFin": {
+          "type": "announcement",
+          "disabled": false,
+          "settings": {
+            "text": "All US Orders are tax included",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0",
+        "announcement_EyFin"
+      ]
+    }
+  }
 }
