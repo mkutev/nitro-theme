@@ -23,6 +23,10 @@
             "text": "All US Orders are tax included",
             "link": ""
           }
+        },
+        "announcement-bar-0": {
+          "disabled": true,
+          "settings": {}
         }
       },
       "block_order": [
