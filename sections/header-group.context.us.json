@@ -16,17 +16,17 @@
     "announcement-bar": {
       "settings": {},
       "blocks": {
+        "announcement-bar-0": {
+          "disabled": true,
+          "settings": {}
+        },
         "announcement_EyFin": {
           "type": "announcement",
           "disabled": false,
           "settings": {
-            "text": "All US Orders are tax included",
+            "text": "All prices are in USD. Tax and shipping included. Ships from Blaine, WA.",
             "link": ""
           }
-        },
-        "announcement-bar-0": {
-          "disabled": true,
-          "settings": {}
         }
       },
       "block_order": [
