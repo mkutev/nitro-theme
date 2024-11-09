@@ -321,6 +321,10 @@ fieldset.product-form__input .form__label {
   margin: 1.5rem 0;
 }
 
+.tpo_option-set-wrapper {
+  margin: 1.5rem 0;
+}
+
 .product__info-container iframe {
   max-width: 100%;
 }
