@@ -321,10 +321,6 @@ fieldset.product-form__input .form__label {
   margin: 1.5rem 0;
 }
 
-.product__info-container .tpo_option-set-wrapper {
-  margin: 1.5rem 0;
-}
-
 .product__info-container iframe {
   max-width: 100%;
 }
@@ -1616,4 +1612,8 @@ a.product__text {
 /* Easify Crap CSS Overwrite */
 .tpo_option-set-container:has( + .tpo_total-additional-price-wrapper.tpo_hidden) {
   margin-bottom: 0 !important;
+}
+
+.product__info-container .tpo_option-set-wrapper {
+  margin: 1.5rem 0;
 }
