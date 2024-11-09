@@ -373,121 +373,16 @@
           font-weight: normal;
         }
 
-        .wavy {
-          animation-name: wavy;
-          animation-duration: 2s;
-          animation-timing-function: ease-in-out;
-          animation-iteration-count: infinite;
-          position: relative;
-          top: 0;
-          left: 0;
-        }
 
-        @keyframes wavy {
-          0% {
-            top: 0px;
-          }
-          50% {
-            top: -15px;
-          }
-          100% {
-            top: 0px;
-          }
-        }
 
-        .slideshow__slide:first-of-type .banner__heading.h1:before {
-          content: "Halloween Sale";
+        /* .slideshow__slide:first-of-type .banner__heading:before {
+          content: "Extended";
           display: block;
           font-size: 0.7em;
           text-transform: uppercase;
           font-style: italic;
-          color: #ed7a1d;
-        }
-
-        .slideshow__slide:first-of-type .slideshow__media {
-          background: linear-gradient(180deg, hsl(215 66% 88% / 1), hsl(75 2% 98% / 1));
-          background-color: #E0F2FE;
-          display: block;
-        }
-
-        .slideshow__slide:first-of-type .banner__content .banner__text {
-          line-height: 140%;
-        }
-
-        .slideshow__slide:first-of-type .wave__blue--background {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url("{{'blue-wave-2.svg' | file_url}}");
-          background-position: 0 86%;
-          background-repeat: repeat-x;
-          background-size: calc(100vw/3);;
-          animation: animation__wave--background 5s infinite linear;
-        }
-
-        .slideshow__slide:first-of-type .wave__blue {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: url("{{'blue-wave-2.svg' | file_url}}");
-          background-position: 0 100%;
-          background-repeat: repeat-x;
-          background-size: calc(100vw/2);
-          animation: animation__wave 5s infinite linear;
-          mix-blend-mode: overlay;
-        }
-
-        .slideshow__slide:first-of-type .beach__foreground {
-          display: block;
-          width: 100%;
-          height: 100%;
-          /* background-image: url("{{ 'labourday-sale-background.webp' | file_url }}"); */
-          background-image: url("{{ 'thanksgiving2024-homepage-banner-3x.webp' | file_url }}");
-          background-position: center bottom;
-          background-size: cover;
-          background-repeat: no-repeat;
-        }
-
-        .slideshow__slide:first-of-type .banner__gradient {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(to right, #FED8B1 20%, #FED8B100 50%);
-          background-position: center;
-          background-size: cover;
-          background-repeat: no-repeat;
-        }
-
-        .slideshow__slide:first-of-type .beach__bike {
-          display: block;
-          width: 100%;
-          max-width: 400px;
-          height: 100%;
-          background-image: url("{{ 'yukon-white-vector.svg' | file_url }}");
-          background-position: 90% 70%;
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-        }
-
-        .slideshow__slide:first-of-type .sky__clouds {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background-image: url("{{ 'cloud-group-v2.svg' | file_url }}");
-          background-position: center -40%;
-          background-size: 70% auto;
-          background-repeat: no-repeat;
-        }
-
-        .slideshow__slide:first-of-type .sky__sun {
-          display: block;
-          width: 100%;
-          height: 100%;
-          background-image: url("{{ 'sun.svg' | file_url }}");
-          background-position: 70% 5%;
-          background-size: 10vh auto;
-          background-repeat: no-repeat;
-        }
+          color: #ff6b6b;
+        } */
 
         .slideshow__slide:first-of-type .banner__accessories {
           display: flex;
@@ -502,14 +397,28 @@
         .slideshow__slide:first-of-type .banner__accessories img {
           max-width: 200px;
         }
+
+        .banner__list {
+          list-style: inside;
+          padding-inline-start: 0px;
+          color: white;
+          font-size: 17px;
+        }
       {% endstyle %}
     {% endif %}
 
     {% raw %}
       <script>
         const targetBanner = document.querySelector('.slideshow__slide:first-of-type .slideshow__media');
-        const heading = document.querySelector('.slideshow__slide:first-of-type .banner__text');
-        const headingHeader = document.querySelector('.slideshow__slide:first-of-type .banner__heading');
+        const heading = document.querySelector('.slideshow__slide:first-of-type .banner__heading');
+        
+        const saleDetailsList = document.createElement("ul");
+        saleDetailsList.innerHTML = `
+          <li>Save up to $700 on select door-crashers</li>
+          <li>Save $100 when you purchase two ebikes</li>
+          <li>Two free accessories with each bike [$150 value]</li>
+          <li>Free shipping</li>
+        `;
       
         const accessoriesContent = `
           <span>Free accessory options:</span>
@@ -518,40 +427,10 @@
     {% raw %}" alt="Voltbike accessories." />
         `;
 
-        const subHeading = document.createElement("h2");
-        // const subHeadingContent = 'Save an additional $100 when you purchase two ebikes.';
-      {% endraw %}
-    const subHeadingContent = '<img src="{{- 'pumpkin-icon.webp' | file_url -}}" width="50" alt="Pumpkin icon.">';
-    {%- raw -%}
-        subHeading.classList.add("banner__heading", "inline-richtext", "h2")
-        subHeading.innerHTML = subHeadingContent;
-        headingHeader.insertAdjacentElement('beforebegin', subHeading);
-        
-        const accessoriesContainer = document.createElement("div");
-        const waveElement = document.createElement("div");
-        const waveElementBackground = document.createElement("div");
-        const beachElement = document.createElement("div");
-        const bikeElement = document.createElement("div");
-        const cloudsElement = document.createElement("div");
-        const sunElement = document.createElement("div");
-        const gradientElement = document.createElement("div");
-
-        accessoriesContainer.innerHTML = accessoriesContent;
-        
-        
-        waveElementBackground.classList.add("wave__blue--background", "animation__wave--background")
-        waveElement.classList.add("wave__blue", "animation__wave");
-        beachElement.classList.add("beach__foreground");
-        bikeElement.classList.add("beach__bike");
-        cloudsElement.classList.add("sky__clouds");
-        sunElement.classList.add("sky__sun");
-        accessoriesContainer.classList.add("banner__accessories");
-        gradientElement.classList.add("banner__gradient");     
-        targetBanner.appendChild(beachElement);
-        targetBanner.appendChild(gradientElement);
-
-            
+        saleDetailsList.classList.add("inline-richtext", "banner__list");
+        heading.insertAdjacentElement('afterend', saleDetailsList);
+              
       </script>
-    {%- endraw -%}
+    {% endraw %}
   </body>
 </html>
