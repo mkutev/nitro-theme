@@ -2935,6 +2935,7 @@ details-disclosure > details {
   border: 1px solid transparent;
   border-radius: var(--badge-corner-radius);
   display: inline-block;
+  width: fit-content;
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1;
