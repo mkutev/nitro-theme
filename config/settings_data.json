@@ -107,7 +107,7 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-f045e1ee-cf32-4dc0-a02f-0374e97c9b7a",
     "sold_out_badge_color_scheme": "inverse",
-    "custom_badge_1_enable": "both",
+    "custom_badge_1_enable": "product_cards",
     "custom_badge_1_text": "Black Friday",
     "custom_badge_1_color_scheme": "accent-1",
     "brand_headline": "",
