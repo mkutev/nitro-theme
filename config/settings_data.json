@@ -109,7 +109,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "custom_badge_1_enable": "both",
     "custom_badge_1_text": "Black Friday",
-    "custom_badge_1_color_scheme": "inverse",
+    "custom_badge_1_color_scheme": "accent-1",
     "brand_headline": "",
     "brand_description": "<p>We are a proud Canadian business located in beautiful British Columbia and we are here to stay! We manufacture our electric bicycles, cutting out the middleman and passing the savings on to you.</p>",
     "brand_image": "shopify://shop_images/logo.svg",
