@@ -124,5 +124,87 @@
     <span class="badge price__badge-sold-out color-{{ settings.sold_out_badge_color_scheme }}">
       {{ 'products.product.sold_out' | t }}
     </span>
+
+    {%- if settings.badge_display_order == 'normal' -%}
+      {%- if product.metafields.custom.custom_badge_1 == true -%}
+        {%- if settings.custom_badge_1_enable == 'product_page' or settings.custom_badge_1_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_1_option,
+            custom_badge_color_scheme: settings.custom_badge_1_color_scheme,
+            custom_badge_text: settings.custom_badge_1_text,
+            custom_badge_image: settings.custom_badge_1_image,
+            custom_badge_image_width: settings.custom_badge_1_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.custom_badge_2 == true -%}
+        {%- if settings.custom_badge_2_enable == 'product_page' or settings.custom_badge_2_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_2_option,
+            custom_badge_color_scheme: settings.custom_badge_2_color_scheme,
+            custom_badge_text: settings.custom_badge_2_text,
+            custom_badge_image: settings.custom_badge_2_image,
+            custom_badge_image_width: settings.custom_badge_2_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.custom_badge_3 == true -%}
+        {%- if settings.custom_badge_3_enable == 'product_page' or settings.custom_badge_3_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_3_option,
+            custom_badge_color_scheme: settings.custom_badge_3_color_scheme,
+            custom_badge_text: settings.custom_badge_3_text,
+            custom_badge_image: settings.custom_badge_3_image,
+            custom_badge_image_width: settings.custom_badge_3_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+    {% else %}
+      {%- if product.metafields.custom.custom_badge_3 == true -%}
+        {%- if settings.custom_badge_3_enable == 'product_page' or settings.custom_badge_3_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_3_option,
+            custom_badge_color_scheme: settings.custom_badge_3_color_scheme,
+            custom_badge_text: settings.custom_badge_3_text,
+            custom_badge_image: settings.custom_badge_3_image,
+            custom_badge_image_width: settings.custom_badge_3_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.custom_badge_2 == true -%}
+        {%- if settings.custom_badge_2_enable == 'product_page' or settings.custom_badge_2_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_2_option,
+            custom_badge_color_scheme: settings.custom_badge_2_color_scheme,
+            custom_badge_text: settings.custom_badge_2_text,
+            custom_badge_image: settings.custom_badge_2_image,
+            custom_badge_image_width: settings.custom_badge_2_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if product.metafields.custom.custom_badge_1 == true -%}
+        {%- if settings.custom_badge_1_enable == 'product_page' or settings.custom_badge_1_enable == 'both' -%}
+          {%- render 'custom-badge-product-page',
+            product: product,
+            section_id: section.id,
+            custom_badge_option: settings.custom_badge_1_option,
+            custom_badge_color_scheme: settings.custom_badge_1_color_scheme,
+            custom_badge_text: settings.custom_badge_1_text,
+            custom_badge_image: settings.custom_badge_1_image,
+            custom_badge_image_width: settings.custom_badge_1_image_width
+          -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
   {%- endif -%}
 </div>
