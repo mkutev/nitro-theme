@@ -1,0 +1,27 @@
+{% comment %}
+  Renders a custom badge based on provided settings.
+{% endcomment %}
+
+{%- if custom_badge_option == 'text' -%}
+  <span class="badge color-{{ custom_badge_color_scheme }}">
+    {{ custom_badge_text }}
+  </span>
+{%- elsif custom_badge_option == 'image' -%}
+  <span
+    id="price__badge-image-{{ section_id }}"
+  >
+    <img src="{{ custom_badge_image | img_url: 'master' }}" width="{{ custom_badge_image_width }}" height="auto">
+  </span>
+{%- elsif custom_badge_option == 'dynamic_image' -%}
+  {% if product.metafields.custom.custom_dynamic_badge != null %}
+    <span
+      id="price__badge-dynamic-image-{{ section_id }}"
+    >
+      <img
+        src="{{ product.metafields.custom.custom_dynamic_badge | img_url: 'master' }}"
+        width="{{ custom_badge_image_width }}"
+        height="auto"
+      >
+    </span>
+  {% endif %}
+{%- endif -%}
