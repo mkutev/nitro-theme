@@ -1,0 +1,51 @@
+{% comment %}
+  Renders a custom badge based on provided settings.
+{% endcomment %}
+
+{%- if badge_type == 'standard' -%}
+  {%- if product.available == false -%}
+    <span
+      id="NoMediaStandardBadge-{{ section_id }}-{{ product.id }}"
+      class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}"
+      style="display: {{ settings.custom_badge_layout }}; margin-top: {{ settings.custom_badge_spacing }}px;"
+    >
+      {{- 'products.product.sold_out' | t -}}
+    </span>
+  {%- elsif product.compare_at_price > product.price and product.available -%}
+    <span
+      id="NoMediaStandardBadge-{{ section_id }}-{{ product.id }}"
+      class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}"
+      style="display: {{ settings.custom_badge_layout }}; margin-top: {{ settings.custom_badge_spacing }}px;"
+    >
+      {{- 'products.product.on_sale' | t -}}
+    </span>
+  {%- endif -%}
+{%- elsif badge_type == 'custom' -%}
+  {%- if custom_badge_option == 'text' -%}
+    <span
+      id="NoMediaCustomBadge-{{ section_id }}-{{ product.id }}"
+      class="badge badge--bottom-left color-{{ custom_badge_color_scheme }}"
+      style="display: {{ settings.custom_badge_layout }}; margin-top: {{ settings.custom_badge_spacing }}px;"
+    >
+      {{ custom_badge_text }}
+    </span>
+  {%- elsif custom_badge_option == 'image' -%}
+    <span
+      id="NoMediaCustomBadge-{{ section_id }}-{{ product.id }}"
+    >
+      <img src="{{ custom_badge_image | img_url: 'master' }}" width="{{ custom_badge_image_width }}" height="auto">
+    </span>
+  {%- elsif custom_badge_option == 'dynamic_image' -%}
+    {% if product.metafields.custom.custom_dynamic_badge != null %}
+      <span
+        id="NoMediaCustomBadge-{{ section_id }}-{{ product.id }}"
+      >
+        <img
+          src="{{ product.metafields.custom.custom_dynamic_badge | img_url: 'master' }}"
+          width="{{ custom_badge_image_width }}"
+          height="auto"
+        >
+      </span>
+    {% endif %}
+  {%- endif -%}
+{% endif %}
