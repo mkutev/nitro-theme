@@ -2965,7 +2965,7 @@ details-disclosure > details {
   border-radius: var(--badge-corner-radius);
 }
 
-.car__badge:has(.badge.color-accent-1) {
+.card__badge:has(.badge.color-accent-1) {
   position: relative;
 }
 
