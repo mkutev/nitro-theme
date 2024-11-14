@@ -2965,6 +2965,10 @@ details-disclosure > details {
   border-radius: var(--badge-corner-radius);
 }
 
+.car__badge:has(.badge.color-accent-1) {
+  position: relative;
+}
+
 @keyframes pulse {
   0% {
     transform: scale(1);
