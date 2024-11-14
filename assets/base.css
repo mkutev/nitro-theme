@@ -13,7 +13,7 @@
   --shadow-horizontal-offset: var(--product-card-shadow-horizontal-offset);
   --shadow-vertical-offset: var(--product-card-shadow-vertical-offset);
   --shadow-blur-radius: var(--product-card-shadow-blur-radius);
-  --shadow-opacity: var(--product-card-shadow-opacity);
+  --shadow-opacity: var(--productborder-width: 4px;-card-shadow-opacity);
   --shadow-visible: var(--product-card-shadow-visible);
   --image-padding: var(--product-card-image-padding);
   --text-alignment: var(--product-card-text-alignment);
@@ -2945,6 +2945,42 @@ details-disclosure > details {
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
+}
+
+.badge.color-accent-1 {
+  color: rgb(240, 197, 57);
+  background-color: #000;
+}
+
+.badge.color-accent-1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  animation: pulse 4s ease-out infinite;
+  border: 2px solid rgb(231, 186, 35);
+  border-radius: var(--badge-corner-radius);
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    border-width: 2px;
+  }
+  50% {
+    transform: scale(1.1, 1.4);
+    opacity: 0.5;
+    border-width: 5px;
+  }
+  100% {
+    transform: scale(1.2, 1.6);
+    opacity: 0;
+    border-width: 8px;
+  }
 }
 
 .gradient {
