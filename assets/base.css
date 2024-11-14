@@ -2950,6 +2950,7 @@ details-disclosure > details {
 .badge.color-accent-1 {
   color: rgb(240, 197, 57);
   background-color: #000;
+  mix-blend-mode: luminosity;
 }
 
 .badge.color-accent-1::before {
