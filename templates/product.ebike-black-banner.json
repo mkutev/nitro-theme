@@ -73,9 +73,8 @@
             "icon_2": "star",
             "image_2": "shopify://shop_images/warranty-icon.svg",
             "heading_2": "1 Year Warranty",
-            "icon_3": "star",
-            "image_3": "shopify://shop_images/quality-assurance-test.png",
-            "heading_3": "20+ Quality Standards Checklist"
+            "icon_3": "none",
+            "heading_3": ""
           }
         }
       },
@@ -106,11 +105,47 @@
         "padding_bottom": 80
       }
     },
+    "image_banner_7W9KcN": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_wQExPi": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_hEwDNq": {
+          "type": "text",
+          "settings": {
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis turpis pulvinar tortor egestas, sed posuere arcu semper. ",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wQExPi",
+        "text_hEwDNq"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Yukon_Elite_-_Black_Friday_Banner_-_Medium_8b59d3bc-77b5-4cd3-9309-c40ffa0df1db.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
       "type": "custom-liquid",
       "settings": {
         "custom_liquid": "{% render 'product-overview' %}",
-        "color_scheme": "scheme-6cd37af9-fd1f-46cb-9079-dbf620dd0857",
+        "color_scheme": "scheme-a1ac4de9-34f7-4267-ac07-984b861167e8",
         "padding_top": 40,
         "padding_bottom": 52
       }
@@ -230,6 +265,7 @@
   "order": [
     "custom_liquid_wWizfr",
     "main",
+    "image_banner_7W9KcN",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
