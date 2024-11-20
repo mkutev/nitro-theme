@@ -106,6 +106,42 @@
         "padding_bottom": 80
       }
     },
+    "image_banner_fTNmcn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_APJ7tC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_mAf3YT": {
+          "type": "text",
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_APJ7tC",
+        "text_mAf3YT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/blackfriday-yukon_elite-2500w.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
       "type": "custom-liquid",
       "settings": {
@@ -230,6 +266,7 @@
   "order": [
     "custom_liquid_wWizfr",
     "main",
+    "image_banner_fTNmcn",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
