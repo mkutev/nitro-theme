@@ -227,7 +227,7 @@
         "show_image": true,
         "show_date": true,
         "show_author": false,
-        "show_view_all": false,
+        "show_view_all": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
