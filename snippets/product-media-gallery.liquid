@@ -306,7 +306,7 @@
     </slider-component>
 
     {% comment %} Insert highlighted product features snippet if we the product is an ebike. {% endcomment %}
-    {% if product.template_suffix == 'ebikes' %}
+    {% if product.template_suffix contains 'ebikes' %}
       {% render 'product-highlight-features' %}
     {% endif %}
   {%- endif -%}
