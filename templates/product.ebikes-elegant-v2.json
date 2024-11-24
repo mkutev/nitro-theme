@@ -1,0 +1,282 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_wWizfr": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'global-banner' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b": {
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "custom_liquid_katXdi": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% render 'product-stock-alert' %}"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "icon_with_text_wJnRbE": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
+            "heading_1": "Free Shipping",
+            "icon_2": "star",
+            "image_2": "shopify://shop_images/warranty-icon.svg",
+            "heading_2": "1 Year Warranty",
+            "icon_3": "star",
+            "image_3": "shopify://shop_images/quality-assurance-test.png",
+            "heading_3": "20+ Quality Standards Checklist"
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b",
+        "description",
+        "custom_liquid_katXdi",
+        "price",
+        "variant_picker",
+        "buy_buttons",
+        "icon_with_text_wJnRbE"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-72e5b2db-b71f-48b9-bdc2-4251a683ba66",
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 40,
+        "padding_bottom": 80
+      }
+    },
+    "image_banner_fTNmcn": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_APJ7tC": {
+          "type": "heading",
+          "settings": {
+            "heading": "Be Seen. Be Unique. Ride One of a Kind.",
+            "heading_size": "h1"
+          }
+        },
+        "text_mAf3YT": {
+          "type": "text",
+          "settings": {
+            "text": "Dominate the Trails with the Yukon Elite: Designed for performance and power, this masculine masterpiece features a robust top-bar frame, a 20Ah extended range battery, the formidable Bafang M600 mid-drive motor with 120Nm of torque, and a precise Box Components clutch derailleur. Built to conquer any terrain in style.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_APJ7tC",
+        "text_mAf3YT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/blackfriday-yukon_elite-2500w.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-left",
+        "show_text_box": true,
+        "desktop_content_alignment": "left",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-overview' %}",
+        "color_scheme": "scheme-6cd37af9-fd1f-46cb-9079-dbf620dd0857",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_eVNAhC": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-parts-included' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "e6d53c50-c137-4648-8957-d41ebf4426e8": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-specs-metafields' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_WeMtDF": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-sizing-metafields' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_8eq7nr": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-instagram-feed' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_QHDtRT": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-blog-posts' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "170452725046cbedab": {
+      "type": "apps",
+      "blocks": {
+        "9c9d34f6-307a-49e1-9f26-99a1769bda2c": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "9c9d34f6-307a-49e1-9f26-99a1769bda2c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_liquid_XR8Uw3": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-videos' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1712235400718697d5": {
+      "type": "apps",
+      "blocks": {
+        "betterdocs_app_faq_block_DMarXd": {
+          "type": "shopify://apps/betterdocs/blocks/app-faq-block/c034554a-35ea-4075-93e4-50cbca95a696",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "betterdocs_app_faq_block_DMarXd"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "custom_liquid_Jwz6Fk": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-additional-information' %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 100
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 5,
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_wWizfr",
+    "main",
+    "image_banner_fTNmcn",
+    "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
+    "custom_liquid_eVNAhC",
+    "e6d53c50-c137-4648-8957-d41ebf4426e8",
+    "custom_liquid_WeMtDF",
+    "custom_liquid_8eq7nr",
+    "custom_liquid_QHDtRT",
+    "170452725046cbedab",
+    "custom_liquid_XR8Uw3",
+    "1712235400718697d5",
+    "custom_liquid_Jwz6Fk",
+    "related-products"
+  ]
+}
