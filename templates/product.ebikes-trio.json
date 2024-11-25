@@ -106,13 +106,22 @@
         "padding_bottom": 80
       }
     },
+    "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "{% render 'product-overview' %}",
+        "color_scheme": "scheme-6cd37af9-fd1f-46cb-9079-dbf620dd0857",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_banner_fTNmcn": {
       "type": "image-banner",
       "blocks": {
         "heading_APJ7tC": {
           "type": "heading",
           "settings": {
-            "heading": "Be Seen. Be Unique. Ride One of a Kind.",
+            "heading": "Three Wheels. Long Range. Unmatched Stopping Power.",
             "heading_size": "h1"
           }
         },
@@ -140,15 +149,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% render 'product-overview' %}",
-        "color_scheme": "scheme-6cd37af9-fd1f-46cb-9079-dbf620dd0857",
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "custom_liquid_eVNAhC": {
