@@ -128,7 +128,6 @@
         "heading_APJ7tC",
         "text_mAf3YT"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Trio_-_Dark_Background_-_3x2_73cb9244-101d-44a2-afd2-a9fc9fea703d.jpg",
         "image_overlay_opacity": 0,
@@ -267,8 +266,8 @@
   "order": [
     "custom_liquid_wWizfr",
     "main",
-    "image_banner_fTNmcn",
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
+    "image_banner_fTNmcn",
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
     "custom_liquid_WeMtDF",
