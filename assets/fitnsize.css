@@ -1,0 +1,144 @@
+#fitnsize .multicolumn-card {
+  height: fit-content;
+}
+
+.comfort-range__container h4 {
+  font-family: 'Rubik' ;
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-top: 25px; 
+}
+
+.comfort-range {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+.comfort-range .graph-element__line {
+  display: block !important;
+  width: 100%;
+  height: 6px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.comfort-range .graph-element__text {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* Comfort: Bad */
+.comfort-range .comfort--bad {
+  flex: 2;
+  display: block !important;
+}
+
+.comfort-range .comfort--bad.left {
+  background: linear-gradient(to left, #f3929d1a, #f3929d00);
+}
+
+.comfort-range .comfort--bad.right {
+  background: linear-gradient(to right, #f3929d1a, #f3929d00);
+}
+
+.comfort-range .comfort--bad.left .graph-element__line {
+  background: linear-gradient(to right, #F3929D00, #F3929D);
+}
+
+.comfort-range .comfort--bad.right .graph-element__line {
+  background: linear-gradient(to left, #F3929D00, #F3929D);
+}
+
+/* Comfort: Caution */
+.comfort-range .comfort--caution {
+  flex: 4;
+  background-color: #F0D9751a;
+}
+
+.comfort-range .comfort--caution.left {
+  border-left: 2px dashed #F0D975;
+}
+
+.comfort-range .comfort--caution.right {
+  border-right: 2px dashed #F0D975;
+}
+
+.comfort-range .comfort--caution .graph-element__line {
+  background-color: #F0D975; 
+}
+
+/* Comfort: Good */
+.comfort-range .comfort--good {
+  flex: 6;
+  background-color: #6cd9ba1a;
+}
+
+.comfort-range .comfort--good.left {
+  border-left: 2px dashed #6CD9BA;
+}
+
+.comfort-range .comfort--good.right {
+  border-right: 2px dashed #6CD9BA;
+}
+
+.comfort-range .comfort--good .graph-element__line {
+  background-color: #6CD9BA;
+}
+
+
+.comfort-range .imperial {
+  font-size: 18px;
+  line-height: 1.1;
+}
+
+.comfort-range .metric {
+  font-size: 14px;
+  line-height: 1.1;
+  opacity: 0.7;
+}
+
+/* Legend */
+.comfort-range__legend {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.comfort-range__legend .legend-entry {
+  display: flex;
+  align-items: center; 
+  gap: 10px;
+  flex: 1;
+}
+
+.comfort-range__legend .legend-entry p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.comfort-range__legend .legend-entry .legend-symbol{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  /* margin-bottom: 10px; */
+}
+
+.comfort-range__legend .legend--bad .legend-symbol {
+  background-color: #f3929d;
+}
+
+.comfort-range__legend .legend--caution .legend-symbol {
+  background-color: #F0D975;
+}
+
+.comfort-range__legend .legend--good .legend-symbol {
+  background-color: #6cd9ba;
+}
