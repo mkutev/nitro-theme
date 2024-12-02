@@ -20,18 +20,10 @@
             "text": "Black Friday Sale Extended! Get 2 Free Accessories. Buy 2 bikes, get extra $100 off.",
             "link": ""
           }
-        },
-        "announcement_7bjYwr": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "announcement-bar-0",
-        "announcement_7bjYwr"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "inverse",
