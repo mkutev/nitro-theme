@@ -30,18 +30,15 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "c8524ada-e6ae-4d04-9ee1-cfdf9aebfc1b": {
           "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "custom_liquid_katXdi": {
           "type": "custom_liquid",
@@ -51,8 +48,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -137,6 +133,45 @@
         "padding_bottom": 52
       }
     },
+    "fitnsize_xaVA8C": {
+      "type": "fitnsize",
+      "blocks": {
+        "column_zApx4Y": {
+          "type": "column",
+          "settings": {
+            "column_type": "fit",
+            "title": "Fit Guidelines",
+            "text": "<p>Choosing the right frame size is essential for ensuring comfort on your new bike, and the simplest way to approach this is by measuring your inseam. Your inseam is measured from the middle of your crotch down to your ankle bone on either leg.</p>"
+          }
+        },
+        "column_ymUzzp": {
+          "type": "column",
+          "settings": {
+            "column_type": "sizing",
+            "title": "Sizing",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_zApx4Y",
+        "column_ymUzzp"
+      ],
+      "settings": {
+        "title": "Fit & Size",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 2,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_liquid_WeMtDF": {
       "type": "custom-liquid",
       "settings": {
@@ -169,8 +204,7 @@
       "blocks": {
         "9c9d34f6-307a-49e1-9f26-99a1769bda2c": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -194,8 +228,7 @@
       "blocks": {
         "betterdocs_app_faq_block_DMarXd": {
           "type": "shopify://apps/betterdocs/blocks/app-faq-block/c034554a-35ea-4075-93e4-50cbca95a696",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -239,6 +272,7 @@
     "4a09e7f6-e2db-4f7e-94fa-d88fafbe8429",
     "custom_liquid_eVNAhC",
     "e6d53c50-c137-4648-8957-d41ebf4426e8",
+    "fitnsize_xaVA8C",
     "custom_liquid_WeMtDF",
     "custom_liquid_8eq7nr",
     "custom_liquid_QHDtRT",
