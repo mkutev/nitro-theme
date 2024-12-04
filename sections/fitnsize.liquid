@@ -227,6 +227,19 @@
                         {% endfor %}
 
                       {%- else -%}
+                        <h4>Suitable inseam range:</h4>
+                        {% comment %}    
+                        {% if step_thru %}
+                              <p class="comfort-range__preface">
+                                The lower/upper limits of the range are based on the min/max seat height respectfully.
+                              </p>
+                            {% else %}
+                              <p class="comfort-range__preface">
+                                The lower/upper limits of the range are based on the standover height and max seat
+                                height respectfully.
+                              </p>
+                            {% endif %}
+                        {% endcomment %}
                         <div class="comfort-range">
                           <div class="graph-element comfort--bad left">
                             <div class="graph-element__line"></div>
