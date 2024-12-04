@@ -174,6 +174,7 @@
     },
     "custom_liquid_WeMtDF": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "{% render 'product-sizing-metafields' %}",
         "color_scheme": "",
