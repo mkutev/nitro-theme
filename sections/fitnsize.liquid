@@ -2,39 +2,6 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'fitnsize.css' | asset_url | stylesheet_tag }}
 
-{% style %}
-  #fitnsize .sizing {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #fitnsize .sizing ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    flex-wrap: wrap;
-    gap: 0 10px;
-    margin-top: 1em;
-  }
-
-  #fitnsize .sizing ul i {
-    color: #2979ff;
-    font-weight: bold;
-    font-style: normal;
-    text-transform: uppercase;
-    margin-right: 5px;
-  }
-
-  #fitnsize .sizing ul span {
-    color: black;
-  }
-
-  #fitnsize .sizing ul li {
-    display: inline-block;
-  }
-{% endstyle %}
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -57,7 +24,10 @@
   endif
 -%}
 
-<div id="fitnsize" class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
+<div
+  id="fitnsize"
+  class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}"
+>
   <div
     class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
     {% if settings.animations_reveal_on_scroll %}
@@ -109,117 +79,272 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
+
                 {%- if block.settings.text != blank -%}
                   <div class="rte">{{ block.settings.text }}</div>
                 {%- endif -%}
 
-                {%- case block.settings.column_type -%}
-                  
-                  {%- when 'fit' -%}
-                  <div class="comfort-range__container">
-                    <h4>Suitable inseam range</h4> 
-                    <div class="comfort-range">
-                      <div class="graph-element comfort--bad left">
-                        <div class="graph-element__line"></div>
-                      </div>
-                      <div class="graph-element comfort--caution left">
-                        <div class="graph-element__line"></div>
-                        <div class="graph-element__text">
-                          <span class="imperial">26"</span>
-                          <span class="metric">66cm</span>
-                        </div>
-                      </div>
-                      <div class="graph-element comfort--good left">
-                        <div class="graph-element__line"></div>
-                        <div class="graph-element__text">
-                          <span class="imperial">28"</span>
-                          <span class="metric">71cm</span>
-                        </div>
-                      </div>
-                      <div class="graph-element comfort--good right">
-                        <div class="graph-element__line"></div>
-                        <div class="graph-element__text">
-                          <span class="imperial">37"</span>
-                          <span class="metric">94cm</span>
-                        </div>
-                      </div>
-                      <div class="graph-element comfort--caution right">
-                        <div class="graph-element__line"></div>
-                        <div class="graph-element__text">
-                          <span class="imperial">39"</span>
-                          <span class="metric">99cm</span>
-                        </div>
-                      </div>
-                      <div class="graph-element comfort--bad right">
-                        <div class="graph-element__line"></div>
-                      </div>
-                    </div>
-                    <!-- <h4>Understanding the range</h4> -->
-                    <div class="comfort-range__legend">
-                      <div class="legend-entry legend--good">
-                        <span class="legend-symbol"></span>
-                        <p>Great fit with plenty of room for seat height adjustment.</p>
-                      </div>
-                      <div class="legend-entry legend--caution">
-                        <span class="legend-symbol"></span>
-                        <p>Good fit but potentially limited seat height adjustment or top tube clearence.</p>
-                      </div>
-                      <div class="legend-entry legend--bad">
-                        <span class="legend-symbol"></span>
-                        <p>Poor fit, frame is either too big or too small.</p>
-                      </div>
-                    </div>
-                  </div>
-                  {%- when 'sizing' -%}
-                    {%- if product.metafields.sizing['content-text'] != empty -%}
-                      <ul>{{ product.metafields.sizing['content-text'] }}</ul>
-                  {%- endif -%}
+                {% if product.tags contains 'Step-Thru' %}
+                  {% assign step_thru = true %}
+                  {% assign inseam_lower_limit = product.metafields.sizing.seat_height_min | minus: 1 | round %}
+                {% else %}
+                  {% assign step_thru = false %}
+                  {% assign inseam_lower_limit = product.metafields.sizing.stand_over_height | minus: 1 | round %}
+                {% endif %}
 
+                {% assign inseam_lower_limit_safe = inseam_lower_limit | plus: 2 %}
+                {% assign inseam_lower_limit_bad = inseam_lower_limit | minus: 1 %}
+                {% assign inseam_upper_limit_safe = product.metafields.sizing.seat_height_max | plus: 2 | round %}
+                {% assign inseam_upper_limit = inseam_upper_limit_safe | plus: 2 %}
+                {% assign inseam_upper_limit_bad = inseam_upper_limit | plus: 1 %}
+
+                {%- case block.settings.column_type -%}
+                  {%- when 'fit' -%}
+                    <div class="comfort-range__container">
+                      {%- if product.options contains 'Frame Size' -%}
+                        {% assign frame_sizes = '' %}
+                        {% assign frame_sizes_ignore = '' %}
+
+                        {% for value in product.options_by_name['Frame Size'].values %}
+                          {% unless frame_sizes contains value %}
+                            {% unless forloop.first %}
+                              {% assign frame_sizes = frame_sizes | append: ',' %}
+                            {% endunless %}
+                            {% assign frame_sizes = frame_sizes | append: value %}
+                          {% endunless %}
+                        {% endfor %}
+
+                        {% for variant in product.variants %}
+                          {% unless frame_sizes_ignore contains variant.option1 %}
+                            <h4>Suitable inseam range for {{ variant.option1 }} frame:</h4>
+                            {% if step_thru %}
+                              {% assign range_min = variant.metafields.sizing.seat_height_min %}
+                              {% comment %} <p class="comfort-range__preface">
+                                The lower/upper limits of the range are based on the min/max seat height respectfully.
+                              </p> {% endcomment %}
+                            {% else %}
+                              {% assign range_min = variant.metafields.sizing.standover_height %}
+                              {% comment %} <p class="comfort-range__preface">
+                                The lower/upper limits of the range are based on the standover height and max seat
+                                height respectfully.
+                              </p> {% endcomment %}
+                            {% endif %}
+                            {% assign range_min_bad = range_min | minus: 3 %}
+                            {% assign range_min_caution = range_min | minus: 1 %}
+                            {% assign range_max = variant.metafields.sizing.seat_height_max %}
+                            {% assign range_max_bad = range_max | plus: 3 %}
+                            {% assign range_max_caution = range_max | plus: 1 %}
+
+                            {% unless frame_sizes_ignore == empty %}
+                              {% assign frame_sizes_ignore = frame_sizes_ignore | append: ','%}
+                            {% endunless %}
+                            {% assign frame_sizes_ignore = frame_sizes_ignore | append: variant.option1 %}
+
+                            <div class="comfort-range">
+                              <div class="graph-element comfort--bad left">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    &lt;&nbsp;
+                                    {{- range_min_bad -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    {{- range_min_bad | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="graph-element comfort--caution left">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    {{- range_min_caution -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    {{- range_min_caution | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="graph-element comfort--good left">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    {{- range_min -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    {{- range_min | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="graph-element comfort--good right">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    {{- range_max -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    {{- range_max | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="graph-element comfort--caution right">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    {{- range_max_caution -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    {{- range_max_caution | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                              <div class="graph-element comfort--bad right">
+                                <div class="graph-element__line"></div>
+                                <div class="graph-element__text">
+                                  <span class="imperial">
+                                    &gt;&nbsp;
+                                    {{- range_max_bad -}}
+                                    "</span
+                                  >
+                                  <span class="metric">
+                                    {{- range_max_bad | times: 2.54 | round -}}
+                                    cm</span
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          {% endunless %}
+                        {% endfor %}
+
+                      {%- else -%}
+                        <div class="comfort-range">
+                          <div class="graph-element comfort--bad left">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                &lt;&nbsp;
+                                {{- inseam_lower_limit_bad -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                {{- inseam_lower_limit_bad | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                          <div class="graph-element comfort--caution left">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                {{- inseam_lower_limit -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                {{- inseam_lower_limit | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                          <div class="graph-element comfort--good left">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                {{- inseam_lower_limit_safe -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                {{- inseam_lower_limit_safe | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                          <div class="graph-element comfort--good right">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                {{- inseam_upper_limit_safe -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                {{- inseam_upper_limit_safe | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                          <div class="graph-element comfort--caution right">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                {{- inseam_upper_limit -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                {{- inseam_upper_limit | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                          <div class="graph-element comfort--bad right">
+                            <div class="graph-element__line"></div>
+                            <div class="graph-element__text">
+                              <span class="imperial">
+                                &gt;&nbsp;
+                                {{- inseam_upper_limit_bad -}}
+                                "</span
+                              >
+                              <span class="metric">
+                                {{- inseam_upper_limit_bad | times: 2.54 | round -}}
+                                cm</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      {%- endif -%}
+
+                      <!-- <h4>Understanding the range</h4> -->
+                      <div class="comfort-range__legend">
+                        <div class="legend-entry legend--good">
+                          <span class="legend-symbol"></span>
+                          <p>Great fit with plenty of room for seat height adjustment.</p>
+                        </div>
+                        <div class="legend-entry legend--caution">
+                          <span class="legend-symbol"></span>
+                          <p>Good fit but potentially limited seat height adjustment or top tube clearence.</p>
+                        </div>
+                        <div class="legend-entry legend--bad">
+                          <span class="legend-symbol"></span>
+                          <p>Poor fit, frame is either too big or too small.</p>
+                        </div>
+                      </div>
+                    </div>
+                  {%- when 'sizing' -%}
+                    <div class="sizing-chart__container">
+                      {%- if product.metafields.sizing['content-text'] != empty -%}
+                        <ul class="sizing-chart__content">
+                          {{ product.metafields.sizing['content-text'] }}
+                        </ul>
+                      {%- endif -%}
+                      {%- if product.metafields.sizing.diagram != empty -%}
+                        {{
+                          product.metafields.sizing.diagram
+                          | image_url: width: 1000
+                          | image_tag: class: 'sizing-chart__diagram'
+                        }}
+                      {%- endif -%}
+                    </div>
                 {%- endcase -%}
               </div>
-
-              {%- if block.settings.image != blank -%}
-                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
-                  {% assign spaced_image = true %}
-                {% endif %}
-                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
-                  <div
-                    class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
-                  >
-                    {%- liquid
-                      assign number_of_columns = section.settings.columns_desktop
-                      assign number_of_columns_mobile = section.settings.columns_mobile
-                      assign grid_space_desktop = number_of_columns | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_tablet = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | plus: 100 | append: 'px'
-                      assign grid_space_mobile = number_of_columns_mobile | minus: 1 | times: settings.spacing_grid_horizontal | divided_by: 2 | plus: 30 | append: 'px'
-                      if section.settings.image_width == 'half'
-                        assign image_width = 0.5
-                      elsif section.settings.image_width == 'third'
-                        assign image_width = 0.33
-                      else
-                        assign image_width = 1
-                      endif
-                    -%}
-                    {% capture sizes %}
-                      (min-width: {{ settings.page_width }}px) calc(({{ settings.page_width }}px - {{ grid_space_desktop }}) * {{ image_width }} /  {{ number_of_columns }}),
-                      (min-width: 990px) calc((100vw - {{ grid_space_desktop }}) * {{ image_width }} / {{ number_of_columns }}),
-                      (min-width: 750px) calc((100vw - {{ grid_space_tablet }}) * {{ image_width }} / {{ number_of_columns_mobile }}),
-                      calc((100vw - {{ grid_space_mobile }}) * {{ image_width }} / {{ number_of_columns_mobile }})
-                    {% endcapture %}
-                    {{
-                      block.settings.image
-                      | image_url: width: 3200
-                      | image_tag:
-                        widths: '50, 75, 100, 150, 200, 300, 400, 500, 750, 1000, 1250, 1500, 1750, 2000, 2250, 2500, 2750, 3000, 3200',
-                        sizes: sizes,
-                        class: 'multicolumn-card__image'
-                    }}
-                  </div>
-                </div>
-              {%- endif -%}
             </div>
           </li>
         {%- endfor -%}
@@ -454,11 +579,6 @@
               "label": "Sizing"
             }
           ]
-        },
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
           "type": "inline_richtext",
