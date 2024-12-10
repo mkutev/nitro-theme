@@ -15,10 +15,10 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/BlackFriday2024-HomepageBanner-v1.jpg",
+            "image": "shopify://shop_images/christmas2024-banner-v5.jpg",
             "heading": "Black Friday Sale",
             "heading_size": "h1",
-            "subheading": "Offer ends December 8th.",
+            "subheading": "Offer ends December 25th.",
             "button_label": "Shop Sale",
             "link": "shopify://collections/black-friday-deals",
             "button_style_secondary": false,
