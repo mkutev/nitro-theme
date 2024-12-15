@@ -86,10 +86,10 @@
 
                 {% if product.tags contains 'Step-Thru' %}
                   {% assign step_thru = true %}
-                  {% assign inseam_lower_limit = product.metafields.sizing.seat_height_min | minus: 1 | round %}
+                  {% assign inseam_lower_limit = product.metafields.sizing.seat_height_min | minus: 6 | round %}
                 {% else %}
                   {% assign step_thru = false %}
-                  {% assign inseam_lower_limit = product.metafields.sizing.stand_over_height | minus: 1 | round %}
+                  {% assign inseam_lower_limit = product.metafields.sizing.stand_over_height | minus: 2 | round %}
                 {% endif %}
 
                 {% assign inseam_lower_limit_safe = inseam_lower_limit | plus: 2 %}
