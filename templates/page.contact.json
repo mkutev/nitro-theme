@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,14 +22,14 @@
         "heading_AaRzp7": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Canada Headquarters<\/strong>",
+            "heading": "<strong>Canada Headquarters</strong>",
             "heading_size": "h1"
           }
         },
         "text_H8zfmH": {
           "type": "text",
           "settings": {
-            "text": "<p>Our headquarters, distribution center and showroom are located at 1125 - 1579 Kingsway Ave., Port Coquitlam, BC, V3C 0H1, Canada. <\/p><p>At this location we meet new customers, test and inspect each bike prior to shipping. Our showroom is also open for local pickups and test rides during the regular work hours. There is no need of appointment to visit our headquarter. <\/p><p>Wearing an approved helmet and signing liability waiver is mandatory when test riding our bikes. If you don't bring your own helmet then you can use one of the VoltBike helmets available at the entrance. <\/p><p>Please click on the link for <a href=\"https:\/\/voltbike.com\/a\/support\/before-you-buy\/can-i-test-ride-your-bikes-at-your-port-coquitlam-bc-location\" target=\"_blank\" title=\"https:\/\/voltbike.com\/a\/support\/before-you-buy\/can-i-test-ride-your-bikes-at-your-port-coquitlam-bc-location\">full test ride instructions.<\/a><\/p><p>Please click below for <a href=\"https:\/\/voltbike.com\/a\/support\/before-you-buy\/can-i-pick-up-my-bike-canadian-customers\" target=\"_blank\" title=\"https:\/\/voltbike.com\/a\/support\/before-you-buy\/can-i-pick-up-my-bike-canadian-customers\">local pickup instructions<\/a>.<\/p><h3>Phone Number:<\/h3><p>1-800-350-4840<\/p><h3>Hours:<\/h3><ul><li>Monday - Friday: 9am - 5:30pm<\/li><li>Saturday: 10am - 3:00pm<\/li><li>Sunday: CLOSED<\/li><\/ul>",
+            "text": "<p>Our headquarters, distribution center and showroom are located at 1125 - 1579 Kingsway Ave., Port Coquitlam, BC, V3C 0H1, Canada. </p><p>At this location we meet new customers, test and inspect each bike prior to shipping. Our showroom is also open for local pickups and test rides during the regular work hours. There is no need of appointment to visit our headquarter. </p><p>Wearing an approved helmet and signing liability waiver is mandatory when test riding our bikes. If you don't bring your own helmet then you can use one of the VoltBike helmets available at the entrance. </p><p>Please click on the link for <a href=\"https://voltbike.com/a/support/before-you-buy/can-i-test-ride-your-bikes-at-your-port-coquitlam-bc-location\" target=\"_blank\" title=\"https://voltbike.com/a/support/before-you-buy/can-i-test-ride-your-bikes-at-your-port-coquitlam-bc-location\">full test ride instructions.</a></p><p>Please click below for <a href=\"https://voltbike.com/a/support/before-you-buy/can-i-pick-up-my-bike-canadian-customers\" target=\"_blank\" title=\"https://voltbike.com/a/support/before-you-buy/can-i-pick-up-my-bike-canadian-customers\">local pickup instructions</a>.</p><h3>Phone Number:</h3><p>1-800-350-4840</p><h3>Hours:</h3><ul><li>Monday - Friday: 9am - 5:00pm</li><li>Saturday: 10am - 3:00pm</li><li>Sunday: CLOSED</li></ul>",
             "text_style": "body"
           }
         }
@@ -30,7 +39,7 @@
         "text_H8zfmH"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/voltbike_store_new.jpg",
+        "image": "shopify://shop_images/voltbike_store_new.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -58,7 +67,7 @@
         "text_yVHA3h": {
           "type": "text",
           "settings": {
-            "text": "<p>Our new Calgary store is now fully open and ready to meet the local crowd. Please visit us at 7930 Bowness Rd NW #12, Calgary, AB, T3B 0H3.<\/p><p>At this location you can test ride VoltBike or get your electric bike serviced. Wearing a helmet and signing a liability waiver is mandatory for test riding our electric bikes.<\/p><h3>Phone Number:<\/h3><p>403-970-6024<\/p><h3>Hours:<\/h3><ul><li>Monday: 10am - 6:00pm<\/li><li>Tuesday: 10am - 6:00pm<\/li><li>Wednesday: 10am - 6:00pm<\/li><li>Thursday: 10am - 6:00pm<\/li><li>Friday: 10am - 6:00pm<\/li><li>Saturday: 10am - 6:00pm<\/li><li>Sunday: CLOSED<\/li><\/ul>",
+            "text": "<p>Our new Calgary store is now fully open and ready to meet the local crowd. Please visit us at 7930 Bowness Rd NW #12, Calgary, AB, T3B 0H3.</p><p>At this location you can test ride VoltBike or get your electric bike serviced. Wearing a helmet and signing a liability waiver is mandatory for test riding our electric bikes.</p><h3>Phone Number:</h3><p>403-970-6024</p><h3>Hours:</h3><ul><li>Monday: 10am - 6:00pm</li><li>Tuesday: 10am - 6:00pm</li><li>Wednesday: 10am - 6:00pm</li><li>Thursday: 10am - 6:00pm</li><li>Friday: 10am - 6:00pm</li><li>Saturday: 10am - 6:00pm</li><li>Sunday: CLOSED</li></ul>",
             "text_style": "body"
           }
         }
@@ -68,7 +77,7 @@
         "text_yVHA3h"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/calgary_store.jpg",
+        "image": "shopify://shop_images/calgary_store.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
