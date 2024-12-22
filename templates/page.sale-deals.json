@@ -19,6 +19,16 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
+        "row_TNRYWE": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Buy 2 Bikes Save $100",
+            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "button_label": "Shop eBikes",
+            "button_link": "shopify://collections/all-bikes"
+          }
+        },
         "row_XrWBBP": {
           "type": "row",
           "settings": {
@@ -54,6 +64,7 @@
         }
       },
       "block_order": [
+        "row_TNRYWE",
         "row_XrWBBP",
         "row_DGyKJt",
         "row_xzPLe4"
