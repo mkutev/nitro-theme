@@ -22,6 +22,7 @@
         "row_XrWBBP": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/pannier.png",
             "caption": "Caption",
             "heading": "10% OFF ACCESSORIES",
             "text": "<p>Use code BOXINGDAY10 at checkout. Does not include vehicle racks.</p>",
