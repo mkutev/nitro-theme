@@ -71,8 +71,8 @@
           "type": "row",
           "settings": {
             "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "heading": "5% OFF BATTERIES AND CHARGERS",
+            "text": "<p>Use code BATTERY5 at checkout.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
