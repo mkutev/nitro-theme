@@ -23,7 +23,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/pannier.png",
-            "caption": "Caption",
+            "caption": "Boxing Day Deal",
             "heading": "10% OFF ACCESSORIES",
             "text": "<p>Use code BOXINGDAY10 at checkout. Does not include vehicle racks.</p>",
             "button_label": "Shop Accessories",
@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Caption",
+            "caption": "Boxing Day Deal",
             "heading": "5% OFF THULE VEHICLE RACKS",
             "text": "<p>Use code BIKERACK5 at checkout.</p>",
             "button_label": "Shop Thule Racks",
@@ -44,10 +44,10 @@
         "row_xzPLe4": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
+            "caption": "Boxing Day Deal",
             "heading": "5% OFF BATTERIES AND CHARGERS",
             "text": "<p>Use code BATTERY5 at checkout.</p>",
-            "button_label": "Button label",
+            "button_label": "Shop Batteries",
             "button_link": ""
           }
         }
