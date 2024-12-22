@@ -30,6 +30,16 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
+        "row_BaCQRE": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Get 2 Free Accessories With Each Bike",
+            "text": "<p>Purchase any VoltBike and receive 2 free accessories. ($150 value). Make your selection at the product details page. No coupon required.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
         "row_XrWBBP": {
           "type": "row",
           "settings": {
@@ -66,6 +76,7 @@
       },
       "block_order": [
         "row_TNRYWE",
+        "row_BaCQRE",
         "row_XrWBBP",
         "row_DGyKJt",
         "row_xzPLe4"
