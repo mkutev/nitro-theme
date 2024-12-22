@@ -33,9 +33,9 @@
         "row_BaCQRE": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
+            "caption": "Boxing Day Deal",
             "heading": "Get 2 Free Accessories With Each Bike",
-            "text": "<p>Purchase any VoltBike and receive 2 free accessories. ($150 value). Make your selection at the product details page. No coupon required.</p>",
+            "text": "<p>Purchase any VoltBike and receive 2 free accessories ($150 value). Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
