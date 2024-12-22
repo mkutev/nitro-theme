@@ -24,7 +24,7 @@
           "settings": {
             "image": "shopify://shop_images/pannier.png",
             "caption": "Boxing Day Deal",
-            "heading": "10% OFF ACCESSORIES",
+            "heading": "10% Off Accessories",
             "text": "<p>Use code BOXINGDAY10 at checkout for 10% off accessories. This promotion does not include vehicle racks. You can combine this offer with other existing deals.</p><p>Ends January 5 at midnight.</p>",
             "button_label": "Shop Accessories",
             "button_link": ""
@@ -44,7 +44,7 @@
         "row_xzPLe4": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/19-2ah_battery.jpg",
+            "image": "shopify://shop_images/battery_yukon750_1.jpg",
             "caption": "Boxing Day Deal",
             "heading": "5% OFF BATTERIES AND CHARGERS",
             "text": "<p>Use code BATTERY5 at checkout.</p>",
