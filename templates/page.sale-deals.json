@@ -22,6 +22,7 @@
         "row_TNRYWE": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/two_bikes.jpg",
             "caption": "Boxing Day Deal",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
