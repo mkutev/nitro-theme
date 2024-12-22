@@ -19,12 +19,12 @@
     "featured_collection_DHjwij": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured collection",
+        "title": "Featured accessories",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "",
+        "collection": "accessories",
         "products_to_show": 4,
         "columns_desktop": 4,
         "full_width": false,
