@@ -19,6 +19,17 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
+        "row_XrWBBP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2_accessories_image_new.jpg",
+            "caption": "Boxing Day Deal",
+            "heading": "10% Off Accessories",
+            "text": "<p>Use code BOXINGDAY10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends January 5 at midnight.</p>",
+            "button_label": "Shop Accessories",
+            "button_link": "shopify://collections/accessories"
+          }
+        },
         "row_TNRYWE": {
           "type": "row",
           "settings": {
@@ -39,17 +50,6 @@
             "text": "<p>Purchase any VoltBike and receive 2 free accessories ($150 value). Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
             "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_XrWBBP": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/2_accessories_image_new.jpg",
-            "caption": "Boxing Day Deal",
-            "heading": "10% Off Accessories",
-            "text": "<p>Use code BOXINGDAY10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends January 5 at midnight.</p>",
-            "button_label": "Shop Accessories",
-            "button_link": "shopify://collections/accessories"
           }
         },
         "row_DGyKJt": {
@@ -76,9 +76,9 @@
         }
       },
       "block_order": [
+        "row_XrWBBP",
         "row_TNRYWE",
         "row_BaCQRE",
-        "row_XrWBBP",
         "row_DGyKJt",
         "row_xzPLe4"
       ],
