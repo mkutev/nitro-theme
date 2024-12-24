@@ -20,7 +20,7 @@
             "heading_size": "h0",
             "subheading": "Offer ends January 5th.",
             "button_label": "See Details",
-            "link": "shopify://collections/all-bikes",
+            "link": "shopify://pages/sale",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
