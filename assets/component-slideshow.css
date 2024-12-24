@@ -204,3 +204,27 @@ slideshow-component:not(.page-width) .slider-buttons {
   opacity: 0;
   transform: scale(0.8);
 }
+
+/* Custom slideshow content styles */
+.slideshow__slide:first-of-type h2 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.slideshow__slide:first-of-type h2.h2 {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: normal;
+}
+
+.slideshow__slide:first-of-type .banner__text {
+  font-family: monospace;
+  filter: brightness(0.75);
+}
+
+.banner__list {
+  list-style: inside;
+  padding-inline-start: 0px;
+  font-size: 17px;
+  filter: brightness(0.35);
+}
