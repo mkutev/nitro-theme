@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Boxing Day Sale! Get 2 Free Accessories. Buy 2 bikes, get extra $100 off.",
-            "link": ""
+            "link": "shopify://pages/sale"
           }
         }
       },
