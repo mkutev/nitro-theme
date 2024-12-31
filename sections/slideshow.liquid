@@ -141,9 +141,9 @@
                 assign widths_array = widths | split: ','
               endif
 
-              assign fetch_priority = 'auto'
+              assign fetch_priority = 'low'
 
-              if section.index == 1
+              if forloop.first
                 assign fetch_priority = 'high'
               endif
             -%}
