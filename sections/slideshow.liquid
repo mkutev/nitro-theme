@@ -129,44 +129,69 @@
       >
         <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
+
+
             {%- liquid
               assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+              assign mobile_height = block.settings.image_mobile.width | divided_by: block.settings.image_mobile.aspect_ratio | round
+              
+              
               if section.settings.image_behavior == 'ambient'
                 assign sizes = '120vw'
                 assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
               else
                 assign sizes = '100vw'
-                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                assign widths = '375, 550, 750,1100, 1500, 1780, 2000, 3000, 3840'
+                assign widths_array = widths | split: ','
+                assign mobile_widths= '375, 550, 750'
+                assign mobile_widths_array = mobile_widths | split: ','
               endif
+
               assign fetch_priority = 'auto'
+
               if section.index == 1
                 assign fetch_priority = 'high'
               endif
             -%}
 
-            {{
-              forloop.index
-              | append: ': w'
-              | append: block.settings.image.width
-              | append: ', ar'
-              | append: block.settings.image.aspect_ratio
-              | append: ', h'
-              | append: height
-            }}
+            <picture>
+              <source
+                media="(min-width: 751px)"
+                srcset="{%- for width in widths_array offset: 3 -%}
+                  {{- block.settings.image | image_url: width: width }} {{ width }}w,
+                {%- endfor -%}"
+              >
+              <source
+                media="(max-width: 750px)"
+                srcset="{%- for width in widths_array limit: 3 -%}
+                  {{- block.settings.image_mobile | image_url: width: width }} {{ width }}w,
+                {%- endfor -%}"
+              >
+              <img
+                src="{{ block.settings.image | image_url: width: 3840 }}"
+                alt="Home Page Banner"
+                height="{{ height }}"
+                width="{{ block.settings.image.width }}"
+                fetchpriority="{{ fetch_priority }}"
+                {% unless forloop.first %}
+                  loading="lazy"
+                {% endunless %}
+                style="width: 100%; height: 100%; object-fit: cover; object-position: center;"
+              >
+            </picture>
 
-            {%- if forloop.first %}
-              {{
+              {% comment %} {{
                 block.settings.image
                 | image_url: width: 3840
                 | image_tag: height: height, sizes: sizes, widths: widths, fetchpriority: fetch_priority
               }}
-            {%- else -%}
+
               {{
                 block.settings.image
                 | image_url: width: 3840
                 | image_tag: loading: 'lazy', height: height, sizes: sizes, widths: widths
-              }}
-            {%- endif -%}
+              }} {% endcomment %}
+
           {%- else -%}
             {%- assign placeholder_slide = forloop.index | modulo: 2 -%}
             {%- if placeholder_slide == 1 -%}
@@ -437,6 +462,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_mobile",
+          "label": "Image - Mobile"
         },
         {
           "type": "inline_richtext",
