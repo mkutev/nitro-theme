@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/boxingday2024-dotted-pattern-v3.jpg",
+            "image_mobile": "shopify://shop_images/boxingday2024-narrow.jpg",
             "heading": "Boxing Day Sale",
             "heading_size": "h0",
             "subheading": "Offer ends January 5th.",
