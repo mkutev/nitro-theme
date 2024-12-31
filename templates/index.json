@@ -31,48 +31,11 @@
             "text_alignment_mobile": "left"
           }
         },
-        "slide_nD8xRB": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/canada-day_banner-v2.png",
-            "heading": "Canada Day Sale",
-            "heading_size": "h1",
-            "subheading": "Save <strong>up to $450</strong> on a new ebike, plus, receive <strong>Free shipping</strong> and a <strong>Free accessory</strong> with every ebike purchase. <em>Offer ends July 8.</em>",
-            "button_label": "Shop Sale",
-            "link": "https://voltbike.com/collections/all-bikes",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "inverse",
-            "text_alignment_mobile": "left"
-          }
-        },
-        "slide_jP6xij": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/cherry-blossom-yukonelitest-banner-v7-compressed.jpg",
-            "heading": "Pedal into Springtime Deals",
-            "heading_size": "h0",
-            "subheading": "<strong>Save up to $400</strong>, receive a <strong>complimentary accessory</strong>, and get <strong>free, next day shipping</strong> with the purchase of any ebike. Offer ends April 28.",
-            "button_label": "Shop Now",
-            "link": "shopify://collections/all-bikes",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": false,
-            "text_alignment": "left",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "left"
-          }
-        },
         "slide_MVQBDK": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
+            "image_mobile": "shopify://shop_images/yukon-elite-banner-mobile-compressed.jpg",
             "heading": "<strong>Yukon Elite</strong>",
             "heading_size": "h0",
             "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD</strong> with Free Shipping.",
@@ -91,6 +54,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/NewWestPolice-50_6df65766-44cf-4b22-acae-3271ffde2b5a.webp",
+            "image_mobile": "shopify://shop_images/NewWestPolice-mobile-compressed.jpg",
             "heading": "Trusted",
             "heading_size": "h1",
             "subheading": "By law enforcement.",
@@ -108,8 +72,6 @@
       },
       "block_order": [
         "slide_TgWykU",
-        "slide_nD8xRB",
-        "slide_jP6xij",
         "slide_MVQBDK",
         "slide_iXcAPM"
       ],
