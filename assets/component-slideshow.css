@@ -205,7 +205,7 @@ slideshow-component:not(.page-width) .slider-buttons {
   transform: scale(0.8);
 }
 
-/* Custom slideshow content styles */
+/* Custom slideshow content styles
 .slideshow__slide:first-of-type h2 {
   font-family: 'Unbounded', sans-serif;
   font-weight: 900;
@@ -215,7 +215,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 .slideshow__slide:first-of-type h2.h2 {
   font-family: 'Unbounded', sans-serif;
   font-weight: normal;
-}
+} */
 
 .slideshow__slide:first-of-type .banner__text {
   font-family: monospace;
@@ -225,6 +225,6 @@ slideshow-component:not(.page-width) .slider-buttons {
 .banner__list {
   list-style: inside;
   padding-inline-start: 0px;
-  font-size: 17px;
+  /* font-size: 17px; */
   filter: brightness(0.35);
 }
