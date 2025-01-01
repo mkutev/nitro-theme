@@ -76,13 +76,21 @@
           >
             <div class="multicolumn-card content-container">
               <div class="multicolumn-card__info">
-                {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext">{{ block.settings.title }}</h3>
-                {%- endif -%}
+                <div class="card-header {%- if block.settings.column_type == 'fit' %} card--with-image{% endif %}">
+                  <div class="card-header__content">
+                    {%- if block.settings.title != blank -%}
+                      <h3 class="inline-richtext">{{ block.settings.title }}</h3>
+                    {%- endif -%}
+                    {%- if block.settings.text != blank -%}
+                      <div class="rte">{{ block.settings.text }}</div>
+                    {%- endif -%}
+                  </div>
+                  {%- if block.settings.column_type == 'fit' -%}
+                    <div class="card-header__image">
 
-                {%- if block.settings.text != blank -%}
-                  <div class="rte">{{ block.settings.text }}</div>
-                {%- endif -%}
+                    </div>
+                  {%- endif -%}
+                </div>
 
                 {% if product.tags contains 'Step-Thru' %}
                   {% assign step_thru = true %}
