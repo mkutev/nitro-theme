@@ -51,6 +51,8 @@
                                 src="{{ 'compare--icon.png' | file_img_url }}"
                                 alt="Compare icon."
                                 height="25"
+                                width=""
+                                loading="lazy"
                               >
                               <span>Compare</span>
                             </a>
@@ -62,6 +64,7 @@
                                 width="40"
                                 height="16"
                                 alt="Affirm Logo."
+                                loading="lazy"
 
                               >.</a
                             >
@@ -83,12 +86,16 @@
                             src="{{ 'Accessories-compressed.jpg' | file_img_url: '200x200' }}"
                             alt="Thumbnail of various VoltBike accessories."
                             width="200"
+                            height=""
+                            loading="lazy"
                           >
                         {% when 'image-container-replacement-parts' %}
                           <img
                             src="{{ 'ReplacementParts_Category.jpg' | file_img_url: '228x205' }}"
                             alt="Thumbnail of various VoltBike replacement parts."
                             width="228"
+                            height=""
+                            loading="lazy"
                           >
                         {% when 'company-info' %}
                           <ul class="mega-menu__company-info" style="margin-top: 0;">
@@ -147,6 +154,9 @@
                                       <img
                                         src="{{ collection.image.src | image_url: width: 135 }}"
                                         alt="{{ collection.title | escape }}"
+                                        width=""
+                                        height=""
+                                        loading="lazy"
                                       >
                                     {% endif %}
                                   {% elsif grandchildlink.type == 'product_link' %}
@@ -157,6 +167,9 @@
                                       <img
                                         src="{{ product.featured_image.src | image_url: width: 135 }}"
                                         alt="{{ product.title | escape }}"
+                                        width=""
+                                        height=""
+                                        loading="lazy"
                                       >
                                     {% endif %}
                                   {% endif %}
@@ -173,6 +186,8 @@
                                       src="{{ iconFileName | file_img_url }}"
                                       alt="Icon for {{ grandchildlink.handle }} link"
                                       height="25"
+                                      width=""
+                                      loading="lazy"
                                     >
                                     <span>{{ grandchildlink.title | escape }}</span>
                                     <span>></span>
