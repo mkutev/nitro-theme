@@ -15,7 +15,7 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/boxingday2024-dotted-pattern-v3.jpg",
+            "image": "shopify://shop_images/2025-bluebackground-v7-3-compresed.webp",
             "image_mobile": "shopify://shop_images/boxingday2024-narrow.jpg",
             "heading": "Boxing Day Sale",
             "heading_size": "h0",
@@ -27,7 +27,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4c4c842b-53f5-480f-89be-f83fde20955c",
+            "color_scheme": "inverse",
             "text_alignment_mobile": "left"
           }
         },
