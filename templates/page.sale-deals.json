@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "Boxing Day Deal",
+            "caption": "New Year Deal",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -57,7 +57,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Boxing Day Deal",
+            "caption": "New Year Deal",
             "heading": "5% Off Batteries and Chargers",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends January 5</p>",
             "button_label": "Shop Batteries",
@@ -68,7 +68,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Boxing Day Deal",
+            "caption": "New Year Deal",
             "heading": "Save $50 on a Thule Rack + VotBike Bundle",
             "text": "<p>Get additional $50 off when you purchase Thule Rack and VoltBike together. Discount automatically applied at checkout. You can combine this offer with other existing deals.</p>",
             "button_label": "Shop Thule Racks",
