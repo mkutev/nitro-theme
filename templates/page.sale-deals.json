@@ -21,6 +21,7 @@
       "blocks": {
         "row_XrWBBP": {
           "type": "row",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/2_accessories_image_new.jpg",
             "caption": "Boxing Day Deal",
