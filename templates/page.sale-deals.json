@@ -53,17 +53,6 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
-        "row_DGyKJt": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Boxing Day Deal",
-            "heading": "Save $50 on a Thule Rack + VotBike Bundle",
-            "text": "<p>Get additional $50 off when you purchase Thule Rack and VoltBike together. Discount automatically applied at checkout. You can combine this offer with other existing deals.</p>",
-            "button_label": "Shop Thule Racks",
-            "button_link": "shopify://collections/vehicle-racks"
-          }
-        },
         "row_xzPLe4": {
           "type": "row",
           "settings": {
@@ -74,14 +63,25 @@
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
           }
+        },
+        "row_DGyKJt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1409010.jpg",
+            "caption": "Boxing Day Deal",
+            "heading": "Save $50 on a Thule Rack + VotBike Bundle",
+            "text": "<p>Get additional $50 off when you purchase Thule Rack and VoltBike together. Discount automatically applied at checkout. You can combine this offer with other existing deals.</p>",
+            "button_label": "Shop Thule Racks",
+            "button_link": "shopify://collections/vehicle-racks"
+          }
         }
       },
       "block_order": [
         "row_XrWBBP",
         "row_TNRYWE",
         "row_BaCQRE",
-        "row_DGyKJt",
-        "row_xzPLe4"
+        "row_xzPLe4",
+        "row_DGyKJt"
       ],
       "settings": {
         "image_height": "medium",
