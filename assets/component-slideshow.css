@@ -219,12 +219,13 @@ slideshow-component:not(.page-width) .slider-buttons {
 
 .slideshow__slide:first-of-type .banner__text {
   font-family: monospace;
-  filter: brightness(0.75);
+  /* filter: brightness(0.75); */
+  
 }
 
 .banner__list {
   list-style: inside;
   padding-inline-start: 0px;
-  /* font-size: 17px; */
-  filter: brightness(0.35);
+  font-size: 1.8rem;
+  /* filter: brightness(0.35); */
 }
