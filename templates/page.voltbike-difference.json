@@ -44,7 +44,7 @@
           "settings": {
             "caption": "Caption",
             "heading": "Customized for You",
-            "text": "",
+            "text": "<p>You can customize your VoltBike to suit your preferences and needs. Depending on the model you choose, options include different battery capacities, tire colors, tire sizes tailored to riders of various heights, a super-bright front light, a suspension seat post for added comfort, a front rack, gear and shifting setups, and more.<br/><br/>Each e-bike we build is designed to be a unique reflection of its owner, making your VoltBike truly one of a kind.</p>",
             "button_label": "Button label",
             "button_link": ""
           }
