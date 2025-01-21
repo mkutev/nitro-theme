@@ -18,6 +18,7 @@
             "image": "shopify://shop_images/2025-bluebackground-v7-3-compresed.webp",
             "image_mobile": "shopify://shop_images/newyear2024-homepage-mobile-compressed.webp",
             "heading": "New Year Sale",
+            "extended": true,
             "heading_size": "h0",
             "subheading": "Offer ends February 2.",
             "button_label": "See Details",
@@ -37,6 +38,7 @@
             "image": "shopify://shop_images/Yukon_Elite_Banner_v1.jpg",
             "image_mobile": "shopify://shop_images/yukon-elite-banner-mobile-compressed.jpg",
             "heading": "<strong>Yukon Elite</strong>",
+            "extended": false,
             "heading_size": "h0",
             "subheading": "Discover the ultimate mid-drive electric bike. Equipped with 20Ah battery. Only <strong>$2949 CAD</strong> with Free Shipping.",
             "button_label": "Learn more",
@@ -56,6 +58,7 @@
             "image": "shopify://shop_images/NewWestPolice-50_6df65766-44cf-4b22-acae-3271ffde2b5a.webp",
             "image_mobile": "shopify://shop_images/NewWestPolice-mobile-compressed.jpg",
             "heading": "Trusted",
+            "extended": false,
             "heading_size": "h1",
             "subheading": "By law enforcement.",
             "button_label": "Shop Rugged Ebikes",
@@ -75,7 +78,9 @@
         "slide_MVQBDK",
         "slide_iXcAPM"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".banner__heading--extended {font-weight: 800; font-size: larger; font-style: italic; font-size: 1.8em; text-transform: uppercase; line-height: 1; letter-spacing: 3px; margin: 1em 0 0; -webkit-text-stroke: 1px #000000; color: #000000; mix-blend-mode: normal;}"
+      ],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
