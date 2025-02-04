@@ -45,10 +45,10 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1000000857.jpg",
-            "caption": "Caption",
+            "caption": "",
             "heading": "Customized for You",
             "text": "<p>You can customize your VoltBike to suit your preferences and needs. Depending on the model you choose, options include different battery capacities, tire colors, tire sizes tailored to riders of various heights, a super-bright front light, a suspension seat post for added comfort, a front rack, gear and shifting setups, and more.<br/><br/>Each e-bike we build is designed to be a unique reflection of its owner, making your VoltBike truly one of a kind.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -56,10 +56,10 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1000000862.jpg",
-            "caption": "Caption",
+            "caption": "",
             "heading": "Live Support and Resources",
             "text": "<p>Your journey with VoltBike is more than just owning an e-bike—it's about ongoing support and connection.<br/><br/>We offer live technical assistance, allowing you to consult directly with experienced bike mechanics about your needs. Our website also features an extensive FAQ knowledge base and a wealth of online resources to address all your e-bike questions.<br/><br/>From detailed guides and informative articles to interactive tools, we make sure every query is resolved and every need is fulfilled.<br/><br/>We’re committed to keeping you informed and empowered by regularly updating our resources, ensuring your e-biking experience is seamless and enjoyable.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
