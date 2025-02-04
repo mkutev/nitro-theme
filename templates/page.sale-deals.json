@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "New Year Deal",
+            "caption": "Valentine's Day Deal",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -57,7 +57,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "New Year Deal",
+            "caption": "Valentine's Day Deal",
             "heading": "5% Off Batteries and Chargers",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends February 2</p>",
             "button_label": "Shop Batteries",
