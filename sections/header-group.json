@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "New Year Sale! Get Free Accessory. Buy 2 bikes, get extra $100 off.",
+            "text": "Proudly Canadian! Get Free Accessory. Buy 2 bikes, get extra $100 off.",
             "link": "shopify://pages/sale"
           }
         }
