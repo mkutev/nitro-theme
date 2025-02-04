@@ -66,6 +66,7 @@
         "row_AFMmRR": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/team_photo.jpg",
             "caption": "Caption",
             "heading": "Celebrating 11 Years",
             "text": "<p>VoltBike has been a trusted name in the e-bike industry for 11 years. While many e-bike companies come and go within just a few years, VoltBike has remained strong, offering over a decade of reliable customer service. Our commitment to continuous improvement is reflected in our ever-evolving bike models, which is why our e-bikes are known for their exceptional reliability. With us, you can have peace of mind knowing we're here to stay and support your riding journey.</p>",
