@@ -23,10 +23,10 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1000000828.jpg",
-            "caption": "Caption",
+            "caption": "",
             "heading": "Delivered Fully-Built",
             "text": "<p>Our bikes come fully assembled—a premium service that often costs extra with other bike companies. This process enables us to perform comprehensive quality, safety, and performance inspections on every bike before it leaves our factory. With minimal setup required, your bike is ready to ride straight out of the box.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
@@ -34,10 +34,10 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/IMG_2594.jpg",
-            "caption": "Caption",
+            "caption": "",
             "heading": "Tuned in Vancouver, Canada",
             "text": "<p>Every VoltBike undergoes a thorough tune-up and testing process before shipping. This includes procedures such as tightening the spokes, adjusting the rear derailleur, fine-tuning the brakes to eliminate rotor rubbing, and lubricating essential components. Additionally, we test all electrical components to ensure the bike is fully operational and ready for your ride. And it's all done right here in Vancouver, BC, Canada—by Canadians, for Canadians.</p>",
-            "button_label": "Button label",
+            "button_label": "",
             "button_link": ""
           }
         },
