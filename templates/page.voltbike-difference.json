@@ -54,6 +54,7 @@
         "row_teMTtM": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/1000000862.jpg",
             "caption": "Caption",
             "heading": "Live Support and Resources",
             "text": "<p>Your journey with VoltBike is more than just owning an e-bike—it's about ongoing support and connection.<br/><br/>We offer live technical assistance, allowing you to consult directly with experienced bike mechanics about your needs. Our website also features an extensive FAQ knowledge base and a wealth of online resources to address all your e-bike questions.<br/><br/>From detailed guides and informative articles to interactive tools, we make sure every query is resolved and every need is fulfilled.<br/><br/>We’re committed to keeping you informed and empowered by regularly updating our resources, ensuring your e-biking experience is seamless and enjoyable.</p>",
