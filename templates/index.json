@@ -15,8 +15,8 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/valentinesday2024_homepage-banner_2x_583a336b-a7d2-44d5-aad0-186c4cff65c6.webp",
-            "image_mobile": "shopify://shop_images/valentinesday2024_homepage-banner-2bikes--narrow.webp",
+            "image": "shopify://shop_images/snowmelts2025_homepage-banner-2bikes_2x_91e73a6b-e4ac-4d31-b996-a9f04b450fa8.webp",
+            "image_mobile": "shopify://shop_images/snowmelts2025_homepage-banner-2bikes--narrow.webp",
             "heading": "Snow Melts, Prices Drop",
             "extended": false,
             "heading_size": "h0",
@@ -28,7 +28,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58",
+            "color_scheme": "background-2",
             "text_alignment_mobile": "left"
           }
         },
