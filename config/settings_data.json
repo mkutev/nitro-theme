@@ -311,8 +311,8 @@
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
-          "text": "#306a7f",
-          "button": "#306a7f",
+          "text": "#e16831",
+          "button": "#e16831",
           "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
