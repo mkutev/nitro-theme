@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/snowmelts2025_homepage-banner-2bikes_2x_91e73a6b-e4ac-4d31-b996-a9f04b450fa8.webp",
             "image_mobile": "shopify://shop_images/snowmelts2025_homepage-banner-2bikes--narrow.webp",
             "heading": "Snow Melts, Prices Drop",
-            "extended": true,
+            "extended": false,
             "heading_size": "h0",
             "subheading": "Offer ends March 19.",
             "button_label": "Shop Sale",
