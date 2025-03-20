@@ -23,7 +23,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/2_accessories.jpg",
-            "caption": "Snow Melts Deal",
+            "caption": "Spring Sale Deal",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive a free accessory (up to $50 value). Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "Snow Melts Deal",
+            "caption": "Spring Sale Deal",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -57,7 +57,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Snow Melts Deal",
+            "caption": "Spring Sale Deal",
             "heading": "5% Off Batteries and Chargers",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends February 16</p>",
             "button_label": "Shop Batteries",
@@ -68,7 +68,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Snow Melts Deal",
+            "caption": "Spring Sale Deal",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Get additional $50 off when you purchase Thule Rack and VoltBike together. Discount automatically applied at checkout. You can combine this offer with other existing deals.</p>",
             "button_label": "Shop Thule Racks",
