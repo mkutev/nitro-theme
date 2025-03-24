@@ -1,0 +1,40 @@
+.product-compatibility__container {
+    padding: 1em;
+    border: 2px dashed #7BE1A4;
+    background-color: #F0F5F2;
+    border-radius: 10px;
+}
+
+.product-compatibility__title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    line-height: normal;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.product-compatibility__title svg {
+    height: 25px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.product-compatibility__list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.product-compatibility__list-item {
+    background-color: #D9E8DF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: normal;
+    color: rgb(var(--color-foreground));
+}
