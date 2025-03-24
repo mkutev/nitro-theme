@@ -1,10 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "7e5544b3-a15e-4a28-8050-381c21f384ea": {
       "type": "custom-liquid",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "custom_liquid": "{% render 'global-banner' %}",
         "color_scheme": "",
@@ -24,23 +31,21 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "19bbc261-446d-4362-ac75-156cf142620b": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/preview_badge\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
-        "custom_liquid_yarKMG": {
-          "type": "custom_liquid",
+        "product_compatibility_8JbpnN": {
+          "type": "product_compatibility",
           "settings": {
-            "custom_liquid": "{% render 'product-compatibility' %}"
+            "show_compatibility_icon": true,
+            "title": "Compatible with:"
           }
         },
         "custom_liquid_6KQb4w": {
@@ -51,8 +56,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -62,8 +66,7 @@
         },
         "quantity_selector": {
           "type": "quantity_selector",
-          "settings": {
-          }
+          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -85,7 +88,7 @@
         "title",
         "19bbc261-446d-4362-ac75-156cf142620b",
         "description",
-        "custom_liquid_yarKMG",
+        "product_compatibility_8JbpnN",
         "custom_liquid_6KQb4w",
         "price",
         "variant_picker",
@@ -149,9 +152,8 @@
       "type": "apps",
       "blocks": {
         "1b1ca003-1038-4a89-abdc-84ea049a36bf": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {}
         }
       },
       "block_order": [
