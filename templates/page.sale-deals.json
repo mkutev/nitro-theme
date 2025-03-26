@@ -70,9 +70,19 @@
             "image": "shopify://shop_images/1409010.jpg",
             "caption": "Spring Sale Deal",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
-            "text": "<p>Get additional $50 off when you purchase Thule Rack and VoltBike together. Discount automatically applied at checkout. You can combine this offer with other existing deals.</p>",
+            "text": "",
             "button_label": "Shop Thule Racks",
             "button_link": "shopify://collections/vehicle-racks"
+          }
+        },
+        "row_NpzMNY": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
+            "text": "<p>Purchase Yukon 750 Limited in 17\" frame size in white color and receive free $75 gift card. To get advantage on this promotion you have to add both Yukon 750 Limited 17\" in white and the $75 gift card to the cart. The promotion automatically will apply. No coupon code needed.</p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         }
       },
@@ -81,7 +91,8 @@
         "row_TNRYWE",
         "row_XrWBBP",
         "row_xzPLe4",
-        "row_DGyKJt"
+        "row_DGyKJt",
+        "row_NpzMNY"
       ],
       "settings": {
         "image_height": "medium",
