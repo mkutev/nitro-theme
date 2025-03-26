@@ -81,8 +81,8 @@
             "caption": "Caption",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends April 6!</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Shop Gift Cards",
+            "button_link": "shopify://products/voltbike-gift-card"
           }
         }
       },
