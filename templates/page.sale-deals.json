@@ -53,6 +53,17 @@
             "button_link": "shopify://collections/accessories"
           }
         },
+        "row_NpzMNY": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/newsletter_white.jpg",
+            "caption": "Spring Sale Deal",
+            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends April 6!</p>",
+            "button_label": "Shop Gift Cards",
+            "button_link": "shopify://products/voltbike-gift-card"
+          }
+        },
         "row_xzPLe4": {
           "type": "row",
           "settings": {
@@ -74,26 +85,15 @@
             "button_label": "Shop Thule Racks",
             "button_link": "shopify://collections/vehicle-racks"
           }
-        },
-        "row_NpzMNY": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/newsletter_white.jpg",
-            "caption": "Spring Sale Deal",
-            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends April 6!</p>",
-            "button_label": "Shop Gift Cards",
-            "button_link": "shopify://products/voltbike-gift-card"
-          }
         }
       },
       "block_order": [
         "row_BaCQRE",
         "row_TNRYWE",
         "row_XrWBBP",
+        "row_NpzMNY",
         "row_xzPLe4",
-        "row_DGyKJt",
-        "row_NpzMNY"
+        "row_DGyKJt"
       ],
       "settings": {
         "image_height": "medium",
