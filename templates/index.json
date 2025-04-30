@@ -17,10 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/easter2025-homepage-banner-outbackv2_3x_9682682f-5d9d-4644-a7e5-b486943b0c08.webp",
             "image_mobile": "shopify://shop_images/easter2025-homepage-banner-mobile_2x_95d36666-eb1a-48f3-8ccc-80f4c1cfeda5.webp",
-            "heading": "Easter Savings",
+            "heading": "Mid-Spring Sale",
             "extended": false,
             "heading_size": "h0",
-            "subheading": "Offer ends April 27.",
+            "subheading": "Offer ends May 18.",
             "button_label": "Shop Sale",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
