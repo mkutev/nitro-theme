@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/midspring2025-homepage-banner_2x_59fb5951-ad10-4947-85db-7004e1e824a7.webp",
+            "image_mobile": "shopify://shop_images/midspring2025-homepage-banner--narrow.webp",
             "heading": "Mid-Spring Sale",
             "extended": false,
             "heading_size": "h0",
