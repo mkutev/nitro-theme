@@ -59,7 +59,7 @@
             "image": "shopify://shop_images/newsletter_white.jpg",
             "caption": "Spring Sale Deal",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends May 31!</p>",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends June 15!</p>",
             "button_label": "Shop Gift Cards",
             "button_link": "shopify://products/voltbike-gift-card"
           }
@@ -70,7 +70,7 @@
             "image": "shopify://shop_images/batteries_offer_image.jpg",
             "caption": "Spring Sale Deal",
             "heading": "5% Off Batteries and Chargers",
-            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends April 6</p>",
+            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends May 31</p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
           }
