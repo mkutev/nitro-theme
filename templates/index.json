@@ -15,8 +15,7 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/midspring2025-homepage-banner_2x_59fb5951-ad10-4947-85db-7004e1e824a7.webp",
-            "image_mobile": "shopify://shop_images/midspring2025-homepage-banner--narrow.webp",
+            "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--2x1-crop.jpg",
             "heading": "Spring Savings",
             "extended": false,
             "heading_size": "h0",
@@ -28,7 +27,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58",
+            "color_scheme": "accent-1",
             "text_alignment_mobile": "left"
           }
         },
@@ -79,7 +78,8 @@
         "slide_iXcAPM"
       ],
       "custom_css": [
-        ".banner__heading--extended {font-weight: 800; font-size: larger; font-style: italic; font-size: 1.8em; text-transform: uppercase; line-height: 1; letter-spacing: 3px; margin: 1em 0 0; -webkit-text-stroke: 1px #4c1e32; color: #4c1e32; mix-blend-mode: normal;}"
+        ".banner__media:first-of-type:after {background: linear-gradient(to right, #3837048c, transparent 50%) !important; opacity: 100%;}",
+        ".banner__media: first-of-type picture img {object-position: bottom;}"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -96,7 +96,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Featured electric bikes",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "description": "<p>A selection of our most popular and best-selling electric bikes.</p>",
         "show_description": false,
         "description_style": "body",
