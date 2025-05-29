@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--2x1-crop.jpg",
+            "image_mobile": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
             "heading": "Spring Savings",
             "extended": false,
             "heading_size": "h0",
