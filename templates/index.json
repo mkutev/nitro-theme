@@ -15,12 +15,12 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--2x1-crop.jpg",
+            "image": "shopify://shop_images/canada-day_homepage-banner.png",
             "image_mobile": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "heading": "Spring Savings",
+            "heading": "Canada Day Sale",
             "extended": false,
             "heading_size": "h0",
-            "subheading": "Offer ends June 15.",
+            "subheading": "Offer ends July 8.",
             "button_label": "Shop Sale",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
