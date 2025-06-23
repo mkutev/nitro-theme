@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/canadaday2025_homepage-banner.webp",
+            "image_mobile": "shopify://shop_images/CanadaDay2025-HomepageBanner--Mobile.jpg",
             "heading": "Canada Day Sale",
             "extended": false,
             "heading_size": "h0",
