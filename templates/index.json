@@ -77,10 +77,7 @@
         "slide_MVQBDK",
         "slide_iXcAPM"
       ],
-      "custom_css": [
-        ".banner__media:first-of-type:after {background: linear-gradient(to right, #3837048c, transparent 50%) !important; opacity: 100%;}",
-        ".banner__media:first-of-type picture img {object-position: bottom !important;}"
-      ],
+      "custom_css": [],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
