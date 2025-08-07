@@ -15,11 +15,11 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/summer2025-homepagebanner-foreground--2x.webp",
-            "heading": "Summer Sale",
+            "image": "shopify://shop_images/Summer2025-SecondEdition-HomepageBanner-v2.webp",
+            "heading": "August Adventure",
             "extended": false,
             "heading_size": "h0",
-            "subheading": "Sale ends August 23rd.",
+            "subheading": "Sale ends August 31st.",
             "button_label": "Shop Sale",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
@@ -27,7 +27,7 @@
             "show_text_box": false,
             "text_alignment": "left",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-72e5b2db-b71f-48b9-bdc2-4251a683ba66",
+            "color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58",
             "text_alignment_mobile": "left"
           }
         },
@@ -50,35 +50,15 @@
             "color_scheme": "background-1",
             "text_alignment_mobile": "center"
           }
-        },
-        "slide_iXcAPM": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/NewWestPolice-50_6df65766-44cf-4b22-acae-3271ffde2b5a.webp",
-            "image_mobile": "shopify://shop_images/NewWestPolice-mobile-compressed.jpg",
-            "heading": "Trusted",
-            "extended": false,
-            "heading_size": "h1",
-            "subheading": "By law enforcement.",
-            "button_label": "Shop Rugged Ebikes",
-            "link": "shopify://collections/fat-tire",
-            "button_style_secondary": false,
-            "box_align": "middle-left",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "accent-2",
-            "text_alignment_mobile": "center"
-          }
         }
       },
       "block_order": [
         "slide_TgWykU",
-        "slide_MVQBDK",
-        "slide_iXcAPM"
+        "slide_MVQBDK"
       ],
       "custom_css": [
-        ".banner:first-of-type .banner__media picture img {object-position: right bottom !important;}"
+        ".banner:first-of-type h2 {font-family: 'Chicle';}",
+        ".banner:first-of-type .banner__media picture img {object-position: center !important;}"
       ],
       "settings": {
         "layout": "full_bleed",

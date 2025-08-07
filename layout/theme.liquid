@@ -52,6 +52,16 @@
         display: swap;
       }
 
+      {%- if template == 'index' -%}
+        @font-face {
+          font-family: 'Chicle';
+          font-style: normal;
+          font-weight: 400;
+          font-display: swap;
+          src: url('{{ "Chicle-Regular.ttf" | asset_url }}') format('truetype');
+        }
+      {%- endif -%}
+
       /* {{ settings.type_body_font | font_face: font_display: 'swap' }}
       {{ body_font_bold | font_face: font_display: 'swap' }}
       {{ body_font_500 | font_face: font_display: 'swap' }}

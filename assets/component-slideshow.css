@@ -224,7 +224,7 @@ slideshow-component:not(.page-width) .slider-buttons {
 }
 
 .banner__list {
-  list-style: inside;
+  list-style: "- " inside none;
   padding-inline-start: 0px;
   font-size: 1.8rem;
   /* filter: brightness(0.35); */
