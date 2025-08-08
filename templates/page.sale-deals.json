@@ -68,9 +68,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Canada Day Sale",
+            "caption": "August Adventure Sale",
             "heading": "5% Off Batteries and Chargers",
-            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends June 15</p>",
+            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends August 31</p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
           }
@@ -79,7 +79,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Canada Day Sale",
+            "caption": "August Adventure Sale",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
