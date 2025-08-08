@@ -18,7 +18,9 @@
       "blocks": {
         "announcement-bar-0": {
           "disabled": true,
-          "settings": {}
+          "settings": {
+            "text": "Proudly Canadian! 🍁 August Sale! Buy 2 bikes & get $100 off + a FREE gift!"
+          }
         },
         "announcement_EyFin": {
           "type": "announcement",
