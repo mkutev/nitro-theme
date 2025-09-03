@@ -59,7 +59,8 @@
       ],
       "custom_css": [
         ".banner:first-of-type h2 {font-family: \"Chicle\";}",
-        ".banner:first-of-type .banner__media picture img {object-position: center !important;}"
+        ".banner:first-of-type .banner__media picture img {object-position: center !important;}",
+        ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; }"
       ],
       "settings": {
         "layout": "full_bleed",
