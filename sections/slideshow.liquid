@@ -2,6 +2,26 @@
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 {{ 'component-slideshow.css' | asset_url | stylesheet_tag }}
 
+<style>
+  .wave-text {
+    display: inline-block;
+  }
+  
+  .wave-letter {
+    display: inline-block;
+    animation: wave-animation 2s ease-in-out infinite;
+  }
+  
+  @keyframes wave-animation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+</style>
+
 {%- if section.settings.slide_height == 'adapt_image' and section.blocks.first.settings.image != blank -%}
   {%- style -%}
     @media screen and (max-width: 749px) {
@@ -191,7 +211,16 @@
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
           
             {% if block.settings.extended and forloop.first %}
-              <h3 class="banner__heading--extended inline-richtext">Extended</h3>
+              <h3 class="banner__heading--extended inline-richtext wave-text">
+                <span class="wave-letter" style="animation-delay: 0s;">E</span>
+                <span class="wave-letter" style="animation-delay: 0.2s;">x</span>
+                <span class="wave-letter" style="animation-delay: 0.4s;">t</span>
+                <span class="wave-letter" style="animation-delay: 0.6s;">e</span>
+                <span class="wave-letter" style="animation-delay: 0.8s;">n</span>
+                <span class="wave-letter" style="animation-delay: 1.0s;">d</span>
+                <span class="wave-letter" style="animation-delay: 1.2s;">e</span>
+                <span class="wave-letter" style="animation-delay: 1.4s;">d</span>
+              </h3>
             {% endif %}
 
             {%- if block.settings.heading != blank -%}
