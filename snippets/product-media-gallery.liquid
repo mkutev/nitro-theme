@@ -306,6 +306,8 @@
     </slider-component>
 
     {% comment %} Insert highlighted product features snippet if we the product is an ebike. {% endcomment %}
+
+    <script>console.log({{ product.template_suffix }})</script>
     {% if product.template_suffix contains 'ebikes' %}
       {% render 'product-highlight-features' %}
     {% endif %}
