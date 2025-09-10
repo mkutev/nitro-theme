@@ -313,5 +313,14 @@
   {%- endif -%}
 </media-gallery>
 
-<script>console.log({{ product.template_suffix | json }})</script>
+<script>
+  console.log({{ product.template_suffix | json }})
+  console.log("Metafields:", {
+    power: {{ product.metafields.highlights.power | json }},
+    torque: {{ product.metafields.highlights.torque | json }},
+    range: {{ product.metafields.highlights.range | json }},
+    top_speed: {{ product.metafields.highlights.top_speed | json }},
+    payload: {{ product.metafields.highlights.payload | json }}
+  });
+</script>
 
