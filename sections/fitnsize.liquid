@@ -353,14 +353,11 @@
                     <div class="sizing-chart__container">
                       {%- if product.metafields.sizing['content-text'] != blank -%}
                         <ul class="sizing-chart__content">
-                          {% comment %} {{ product.metafields.sizing['content-text'] }} {% endcomment %}
+                          {{ product.metafields.sizing['content-text'] }}
                         </ul>
                       {%- endif -%}
 
-                      <p>Sizing Diagram Object:<code>{{ product.metafields.sizing.diagram }}</code>;</p>
-
                       {%- if product.metafields.sizing.diagram != blank -%}
-                        <code>Diagram true;</code>
                         {{
                           product.metafields.sizing.diagram
                           | image_url: width: 1000
