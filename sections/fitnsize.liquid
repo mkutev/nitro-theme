@@ -357,9 +357,10 @@
                         </ul>
                       {%- endif -%}
 
-                      <p>Sizing Diagram Object:<code>{{ product.metafields.sizing.diagram }}</code></p>
+                      <p>Sizing Diagram Object:<code>{{ product.metafields.sizing.diagram }}</code>;</p>
 
                       {%- if product.metafields.sizing.diagram != empty -%}
+                        <code>Diagram true;</code>
                         {{
                           product.metafields.sizing.diagram
                           | image_url: width: 1000
