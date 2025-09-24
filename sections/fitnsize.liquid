@@ -356,13 +356,13 @@
                           {% comment %} {{ product.metafields.sizing['content-text'] }} {% endcomment %}
                         </ul>
                       {%- endif -%}
-                      {%- if product.metafields.sizing.diagram != empty -%}
+                      {% comment %} {%- if product.metafields.sizing.diagram != empty -%}
                         {{
                           product.metafields.sizing.diagram
                           | image_url: width: 1000
                           | image_tag: class: 'sizing-chart__diagram'
                         }}
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                     </div>
                 {%- endcase -%}
               </div>
