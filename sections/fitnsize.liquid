@@ -351,7 +351,7 @@
                     </div>
                   {%- when 'sizing' -%}
                     <div class="sizing-chart__container">
-                      {%- if product.metafields.sizing['content-text'] != empty -%}
+                      {%- if product.metafields.sizing['content-text'] != blank -%}
                         <ul class="sizing-chart__content">
                           {{ product.metafields.sizing['content-text'] }}
                         </ul>
