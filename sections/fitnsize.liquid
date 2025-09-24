@@ -359,7 +359,7 @@
 
                       <p>Sizing Diagram Object:<code>{{ product.metafields.sizing.diagram }}</code>;</p>
 
-                      {%- if product.metafields.sizing.diagram != empty -%}
+                      {%- if product.metafields.sizing.diagram != '' -%}
                         <code>Diagram true;</code>
                         {{
                           product.metafields.sizing.diagram
