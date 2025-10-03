@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "Cool Breezes, Hot Deals",
+            "caption": "Haunted ebike sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -57,7 +57,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/yukon_white_promo.jpg",
-            "caption": "Cool Breezes, Hot Deals",
+            "caption": "Haunted ebike sale",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
             "button_label": "Shop Gift Cards",
@@ -68,7 +68,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Cool Breezes, Hot Deals",
+            "caption": "Haunted ebike sale",
             "heading": "5% Off Batteries and Chargers",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends September 30</p>",
             "button_label": "Shop Batteries",
@@ -79,7 +79,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Cool Breezes, Hot Deals",
+            "caption": "Haunted ebike sale",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
