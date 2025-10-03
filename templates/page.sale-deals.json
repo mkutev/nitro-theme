@@ -23,7 +23,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/2_accessories.jpg",
-            "caption": "Cool Breezes, Hot Deals",
+            "caption": "Haunted ebike sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive a free accessory (up to $50 value). Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -59,7 +59,7 @@
             "image": "shopify://shop_images/yukon_white_promo.jpg",
             "caption": "Cool Breezes, Hot Deals",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 30!</p>",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
             "button_label": "Shop Gift Cards",
             "button_link": "shopify://products/voltbike-gift-card"
           }
