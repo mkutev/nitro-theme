@@ -24,7 +24,7 @@
           "settings": {
             "image": "shopify://shop_images/2_accessories.jpg",
             "caption": "Haunted ebike sale",
-            "heading": "Get One Free Accessory With Each Bike",
+            "heading": "Get Two Free Accessories With Each Bike",
             "text": "<p>Purchase any VoltBike and receive a free accessory (up to $50 value). Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
             "button_link": "shopify://collections/all-bikes"
