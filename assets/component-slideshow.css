@@ -227,5 +227,6 @@ slideshow-component:not(.page-width) .slider-buttons {
   list-style: "- " inside none;
   padding-inline-start: 0px;
   font-size: 1.8rem;
+  font-weight: bolder;
   /* filter: brightness(0.35); */
 }
