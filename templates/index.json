@@ -16,6 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/voltbike-halloween2025-homepage-banner-v6.webp",
+            "image_mobile": "shopify://shop_images/voltbike-halloween2025-homepage-banner--narrow-v6.webp",
             "heading": "Haunted eBike Sale",
             "extended": false,
             "heading_size": "h0",
