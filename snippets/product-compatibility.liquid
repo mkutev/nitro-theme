@@ -45,7 +45,7 @@
   }
 {% endstyle %}
 
-{%- if product.metafields.custom.compatible_with -%}
+{%- if product.metafields.custom.compatible_with != blank -%}
   <div class="product-compatibility__container">
     <span class="product-compatibility__title">{% render 'icon-wrench' %} Compatible with:</span>
 
