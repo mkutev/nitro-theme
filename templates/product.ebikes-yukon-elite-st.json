@@ -54,7 +54,7 @@
           "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/product-block/6dce54be-130d-4d13-9636-1e8f611b3071",
           "settings": {
             "logo_align": "left",
-            "font_size": 16,
+            "font_size": 13,
             "logo_color": "blue",
             "logo_type": "logo",
             "public_api_key": "",
