@@ -197,7 +197,7 @@
       },
       "5057006142565981955": {
         "type": "shopify://apps/affirm-pay-over-time-messaging/blocks/cart-drawer-embed-block/6dce54be-130d-4d13-9636-1e8f611b3071",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "logo_align_drawer": "left",
           "font_size_drawer": 16,
