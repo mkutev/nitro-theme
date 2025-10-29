@@ -35,7 +35,7 @@
 <!-- End Affirm -->;
 function initializePromos() { 
 
-let promosJSON = '[{"promoStatus":true,"pageType":"product","selector":".price-item--sale","onChange":null,"fontSize":"12","logoType":"logo","logoColor":"blue","position":"afterend","addCents":false,"saleSelector":".price__sale","comparePrices":false,"dataElement":null,"alaElement":null,"shopifyPageType":"product"},{"promoStatus":false,"pageType":"cart","selector":null,"onChange":null,"fontSize":"12","logoType":"logo","logoColor":"blue","position":"afterend","addCents":false,"saleSelector":null,"comparePrices":false,"dataElement":null,"alaElement":null,"shopifyPageType":"global"}]';
+let promosJSON = '[{"promoStatus":true,"pageType":"product","selector":".price-item--sale","onChange":null,"fontSize":"12","logoType":"logo","logoColor":"blue","position":"afterend","addCents":false,"saleSelector":".price__container","comparePrices":false,"dataElement":null,"alaElement":null,"shopifyPageType":"product"},{"promoStatus":false,"pageType":"cart","selector":null,"onChange":null,"fontSize":"12","logoType":"logo","logoColor":"blue","position":"afterend","addCents":false,"saleSelector":null,"comparePrices":false,"dataElement":null,"alaElement":null,"shopifyPageType":"global"}]';
 
 let promos = JSON.parse(promosJSON);
 
