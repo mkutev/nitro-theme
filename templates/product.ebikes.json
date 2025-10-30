@@ -67,6 +67,19 @@
             "picker_type": "button"
           }
         },
+        "complementary_VDdVr7": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "price_tag",
+            "product_list_limit": 10,
+            "products_per_page": 3,
+            "pagination_style": "counter",
+            "image_ratio": "square",
+            "enable_quick_add": false
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -99,6 +112,7 @@
         "price",
         "affirm_pay_over_time_messaging_product_block_NVikdj",
         "variant_picker",
+        "complementary_VDdVr7",
         "buy_buttons",
         "icon_with_text_wJnRbE"
       ],
