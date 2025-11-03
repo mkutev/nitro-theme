@@ -60,7 +60,7 @@
       "custom_css": [
         ".banner:first-of-type h2 {font-family: \"Chicle\"; font-weight: normal;}",
         ".banner:first-of-type .banner__media picture img {}",
-        ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #ff8c42;}"
+        ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #fff;}"
       ],
       "settings": {
         "layout": "full_bleed",
