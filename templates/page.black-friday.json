@@ -1,0 +1,119 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "multirow_WDcQHG": {
+      "type": "multirow",
+      "blocks": {
+        "row_BaCQRE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2_accessories.jpg",
+            "caption": "Haunted ebike sale",
+            "heading": "Get Two Free Accessories With Each Bike",
+            "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
+            "button_label": "Shop eBIkes",
+            "button_link": "shopify://collections/all-bikes"
+          }
+        },
+        "row_TNRYWE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/two_bikes_new.jpg",
+            "caption": "Haunted ebike sale",
+            "heading": "Buy 2 Bikes Save $100",
+            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "button_label": "Shop eBikes",
+            "button_link": "shopify://collections/all-bikes"
+          }
+        },
+        "row_XrWBBP": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/2_accessories_image_new.jpg",
+            "caption": "Boxing Day Deal",
+            "heading": "10% Off Accessories",
+            "text": "<p>Use code BOXINGDAY10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends January 5 at midnight.</p>",
+            "button_label": "Shop Accessories",
+            "button_link": "shopify://collections/accessories"
+          }
+        },
+        "row_NpzMNY": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/yukon_white_promo.jpg",
+            "caption": "Haunted ebike sale",
+            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
+            "button_label": "Shop Gift Cards",
+            "button_link": "shopify://products/voltbike-gift-card"
+          }
+        },
+        "row_xzPLe4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/batteries_offer_image.jpg",
+            "caption": "Haunted ebike sale",
+            "heading": "5% Off Batteries and Chargers",
+            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends September 30</p>",
+            "button_label": "Shop Batteries",
+            "button_link": "shopify://collections/batteries"
+          }
+        },
+        "row_DGyKJt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1409010.jpg",
+            "caption": "Haunted ebike sale",
+            "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
+            "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
+            "button_label": "Shop Thule Racks",
+            "button_link": "shopify://collections/vehicle-racks"
+          }
+        }
+      },
+      "block_order": [
+        "row_BaCQRE",
+        "row_TNRYWE",
+        "row_XrWBBP",
+        "row_NpzMNY",
+        "row_xzPLe4",
+        "row_DGyKJt"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "small",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "primary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-8f423b99-4897-4d8e-a2cc-57bdefc73e58",
+        "row_color_scheme": "scheme-72e5b2db-b71f-48b9-bdc2-4251a683ba66",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "multirow_WDcQHG"
+  ]
+}
