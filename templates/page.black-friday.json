@@ -130,6 +130,9 @@
         "row_xzPLe4",
         "row_DGyKJt"
       ],
+      "custom_css": [
+        ".image-with-text__media-item {padding:20px; background-color: #000;}"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "small",
