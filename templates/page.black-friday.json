@@ -30,6 +30,17 @@
             "button_link": "shopify://collections/accessories"
           }
         },
+        "row_K7VPH8": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/pannier.png",
+            "caption": "Major Upgrade",
+            "heading": "2x Pannier Bags $150",
+            "text": "<p>Get a pair of our Pannier bags and save $40! This price has never been seen before and may never be available again. 20L capacity, and waterproof too!</p>",
+            "button_label": "Pannier Set",
+            "button_link": "shopify://products/pannier-bag"
+          }
+        },
         "row_zD7ppt": {
           "type": "row",
           "settings": {
@@ -37,8 +48,8 @@
             "caption": "Keep The Fun Rolling",
             "heading": "2x Kenda 26x4\" Tires with Tubes $170",
             "text": "<p>Fit your Yukon 750 bike with new rubber, and new tubes! Our best deal ever on a full set of tires. Save </p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Shop Tires",
+            "button_link": "shopify://products/kenda-juggernaut-26x4-tire"
           }
         },
         "row_EjnWLC": {
@@ -48,8 +59,8 @@
             "caption": "Maintenance Essentials!",
             "heading": "Two Brake Pads & Box Components Chain $60",
             "text": "<p>Get your bike ready for smooth riding with a new chain and new brake pads. Save 27% off the regular price!</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "button_label": "Click Here",
+            "button_link": "shopify://products/disc-brake-pads"
           }
         },
         "row_BaCQRE": {
@@ -63,24 +74,13 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
-        "row_TNRYWE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "Haunted ebike sale",
-            "heading": "Buy 2 Bikes Save $100",
-            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
-            "button_label": "Shop eBikes",
-            "button_link": "shopify://collections/all-bikes"
-          }
-        },
         "row_ANxtt4": {
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/trio_mathias_1_334535b5-663b-4f5c-a186-5a19178a176d.jpg",
             "caption": "6-Wheel Deal",
             "heading": "Buy Two Trio's, Save $200",
-            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! </p>",
+            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. </p>",
             "button_label": "Button label",
             "button_link": ""
           }
@@ -121,10 +121,10 @@
       },
       "block_order": [
         "row_XrWBBP",
+        "row_K7VPH8",
         "row_zD7ppt",
         "row_EjnWLC",
         "row_BaCQRE",
-        "row_TNRYWE",
         "row_ANxtt4",
         "row_NpzMNY",
         "row_xzPLe4",
