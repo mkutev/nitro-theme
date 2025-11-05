@@ -1,6 +1,301 @@
+{% doc %}
+  @prompt
+    list style offers. Make the list full size width and to have 5 offers
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-offers-list-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .ai-offers-list-item-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: {{ block.settings.item_padding }}px;
+    background-color: {{ block.settings.item_background_color }};
+    border-radius: {{ block.settings.item_border_radius }}px;
+    margin-bottom: {{ block.settings.item_spacing }}px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .ai-offers-list-item-{{ ai_gen_id }}:last-child {
+    margin-bottom: 0;
+  }
+
+  .ai-offers-list-item-{{ ai_gen_id }}:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .ai-offers-list-icon-{{ ai_gen_id }} {
+    flex-shrink: 0;
+    width: {{ block.settings.icon_size }}px;
+    height: {{ block.settings.icon_size }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: {{ block.settings.icon_background_color }};
+    border-radius: 50%;
+    color: {{ block.settings.icon_color }};
+  }
+
+  .ai-offers-list-icon-{{ ai_gen_id }} svg {
+    width: calc({{ block.settings.icon_size }}px * 0.5);
+    height: calc({{ block.settings.icon_size }}px * 0.5);
+  }
+
+  .ai-offers-list-content-{{ ai_gen_id }} {
+    flex-grow: 1;
+  }
+
+  .ai-offers-list-title-{{ ai_gen_id }} {
+    margin: 0 0 4px 0;
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 600;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-offers-list-description-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.description_color }};
+    line-height: 1.5;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-offers-list-item-{{ ai_gen_id }} {
+      flex-direction: column;
+      text-align: center;
+      gap: 12px;
+    }
+  }
+{% endstyle %}
+
+<ul class="ai-offers-list-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% for i in (1..5) %}
+    {% liquid
+      assign title_key = 'offer_' | append: i | append: '_title'
+      assign description_key = 'offer_' | append: i | append: '_description'
+      
+      assign offer_title = block.settings[title_key]
+      assign offer_description = block.settings[description_key]
+    %}
+    
+    <li class="ai-offers-list-item-{{ ai_gen_id }}">
+      <div class="ai-offers-list-icon-{{ ai_gen_id }}">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <div class="ai-offers-list-content-{{ ai_gen_id }}">
+        {% if offer_title != blank %}
+          <h3 class="ai-offers-list-title-{{ ai_gen_id }}">{{ offer_title }}</h3>
+        {% endif %}
+        {% if offer_description != blank %}
+          <p class="ai-offers-list-description-{{ ai_gen_id }}">{{ offer_description }}</p>
+        {% endif %}
+      </div>
+    </li>
+  {% endfor %}
+</ul>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Offers list",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Offer 1"
+    },
+    {
+      "type": "text",
+      "id": "offer_1_title",
+      "label": "Title",
+      "default": "Free shipping"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_1_description",
+      "label": "Description",
+      "default": "On all orders over $100"
+    },
+    {
+      "type": "header",
+      "content": "Offer 2"
+    },
+    {
+      "type": "text",
+      "id": "offer_2_title",
+      "label": "Title",
+      "default": "30-day returns"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_2_description",
+      "label": "Description",
+      "default": "Hassle-free returns within 30 days"
+    },
+    {
+      "type": "header",
+      "content": "Offer 3"
+    },
+    {
+      "type": "text",
+      "id": "offer_3_title",
+      "label": "Title",
+      "default": "Secure checkout"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_3_description",
+      "label": "Description",
+      "default": "SSL encrypted payment processing"
+    },
+    {
+      "type": "header",
+      "content": "Offer 4"
+    },
+    {
+      "type": "text",
+      "id": "offer_4_title",
+      "label": "Title",
+      "default": "24/7 support"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_4_description",
+      "label": "Description",
+      "default": "Customer service available anytime"
+    },
+    {
+      "type": "header",
+      "content": "Offer 5"
+    },
+    {
+      "type": "text",
+      "id": "offer_5_title",
+      "label": "Title",
+      "default": "Quality guarantee"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_5_description",
+      "label": "Description",
+      "default": "Premium products backed by warranty"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Item padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "item_spacing",
+      "min": 4,
+      "max": 32,
+      "step": 4,
+      "unit": "px",
+      "label": "Space between items",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "label": "Item border radius",
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "header",
+      "content": "Icon"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 30,
+      "max": 70,
+      "step": 5,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "icon_background_color",
+      "label": "Icon background",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Text"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Title size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#020202"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 10,
+      "max": 18,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#586171"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Offers list"
+    }
+  ]
+}
 {% endschema %}
