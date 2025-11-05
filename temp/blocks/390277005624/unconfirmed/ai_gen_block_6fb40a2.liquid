@@ -1,6 +1,447 @@
+{% doc %}
+  @prompt
+    An interactive before/after image slider. It should show 2 images overlapped that can be compared by dragging the slider.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-before-after-slider-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: {{ block.settings.border_radius }}px;
+    user-select: none;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: {{ block.settings.aspect_ratio }};
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__image-placeholder {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__image-placeholder svg {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__empty-state {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 20px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__after-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__after-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: {{ block.settings.divider_width }}px;
+    background-color: {{ block.settings.divider_color }};
+    cursor: ew-resize;
+    transform: translateX(-50%);
+    z-index: 10;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__handle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: {{ block.settings.handle_size }}px;
+    height: {{ block.settings.handle_size }}px;
+    background-color: {{ block.settings.handle_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__handle svg {
+    width: calc({{ block.settings.handle_size }}px * 0.5);
+    height: calc({{ block.settings.handle_size }}px * 0.5);
+    fill: {{ block.settings.handle_icon_color }};
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__label {
+    position: absolute;
+    top: 20px;
+    padding: 8px 16px;
+    background-color: {{ block.settings.label_bg_color }};
+    color: {{ block.settings.label_text_color }};
+    font-size: {{ block.settings.label_font_size }}px;
+    font-weight: 600;
+    border-radius: 4px;
+    pointer-events: none;
+    z-index: 5;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__label--before {
+    left: 20px;
+  }
+
+  .ai-before-after-slider-{{ ai_gen_id }}__label--after {
+    right: 20px;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-before-after-slider-{{ ai_gen_id }}__label {
+      font-size: calc({{ block.settings.label_font_size }}px * 0.85);
+      padding: 6px 12px;
+    }
+
+    .ai-before-after-slider-{{ ai_gen_id }}__handle {
+      width: calc({{ block.settings.handle_size }}px * 0.8);
+      height: calc({{ block.settings.handle_size }}px * 0.8);
+    }
+  }
+{% endstyle %}
+
+<before-after-slider-{{ ai_gen_id }} class="ai-before-after-slider-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-before-after-slider-{{ ai_gen_id }}__wrapper">
+    <div class="ai-before-after-slider-{{ ai_gen_id }}__image-container">
+      {% if block.settings.before_image %}
+        <img
+          src="{{ block.settings.before_image | image_url: width: 2000 }}"
+          alt="{{ block.settings.before_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.before_image.width }}"
+          height="{{ block.settings.before_image.height }}"
+          class="ai-before-after-slider-{{ ai_gen_id }}__image"
+        >
+      {% else %}
+        <div class="ai-before-after-slider-{{ ai_gen_id }}__image-placeholder">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-before-after-slider-{{ ai_gen_id }}__empty-state">
+            Add a "before" image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-before-after-slider-{{ ai_gen_id }}__after-container" data-after-container>
+      {% if block.settings.after_image %}
+        <img
+          src="{{ block.settings.after_image | image_url: width: 2000 }}"
+          alt="{{ block.settings.after_image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.after_image.width }}"
+          height="{{ block.settings.after_image.height }}"
+          class="ai-before-after-slider-{{ ai_gen_id }}__after-image"
+        >
+      {% else %}
+        <div class="ai-before-after-slider-{{ ai_gen_id }}__image-placeholder">
+          {{ 'image' | placeholder_svg_tag }}
+          <div class="ai-before-after-slider-{{ ai_gen_id }}__empty-state">
+            Add an "after" image
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-before-after-slider-{{ ai_gen_id }}__divider" data-divider>
+      <div class="ai-before-after-slider-{{ ai_gen_id }}__handle">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+          <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z"/>
+        </svg>
+      </div>
+    </div>
+
+    {% if block.settings.show_labels %}
+      {% if block.settings.before_label != blank %}
+        <div class="ai-before-after-slider-{{ ai_gen_id }}__label ai-before-after-slider-{{ ai_gen_id }}__label--before">
+          {{ block.settings.before_label }}
+        </div>
+      {% endif %}
+      {% if block.settings.after_label != blank %}
+        <div class="ai-before-after-slider-{{ ai_gen_id }}__label ai-before-after-slider-{{ ai_gen_id }}__label--after">
+          {{ block.settings.after_label }}
+        </div>
+      {% endif %}
+    {% endif %}
+  </div>
+</before-after-slider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BeforeAfterSlider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.isDragging = false;
+        this.startPosition = {{ block.settings.initial_position }};
+      }
+
+      connectedCallback() {
+        this.wrapper = this.querySelector('.ai-before-after-slider-{{ ai_gen_id }}__wrapper');
+        this.afterContainer = this.querySelector('[data-after-container]');
+        this.divider = this.querySelector('[data-divider]');
+
+        if (!this.wrapper || !this.afterContainer || !this.divider) return;
+
+        this.setPosition(this.startPosition);
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.divider.addEventListener('mousedown', this.startDrag.bind(this));
+        this.divider.addEventListener('touchstart', this.startDrag.bind(this), { passive: true });
+
+        document.addEventListener('mousemove', this.onDrag.bind(this));
+        document.addEventListener('touchmove', this.onDrag.bind(this), { passive: false });
+
+        document.addEventListener('mouseup', this.stopDrag.bind(this));
+        document.addEventListener('touchend', this.stopDrag.bind(this));
+      }
+
+      startDrag(e) {
+        this.isDragging = true;
+        e.preventDefault();
+      }
+
+      stopDrag() {
+        this.isDragging = false;
+      }
+
+      onDrag(e) {
+        if (!this.isDragging) return;
+
+        e.preventDefault();
+
+        const rect = this.wrapper.getBoundingClientRect();
+        const clientX = e.type.includes('touch') ? e.touches[0].clientX : e.clientX;
+        const x = clientX - rect.left;
+        const percentage = (x / rect.width) * 100;
+
+        this.setPosition(Math.max(0, Math.min(100, percentage)));
+      }
+
+      setPosition(percentage) {
+        const clampedPercentage = Math.max(0, Math.min(100, percentage));
+        
+        this.afterContainer.style.clipPath = `inset(0 ${100 - clampedPercentage}% 0 0)`;
+        this.divider.style.left = `${clampedPercentage}%`;
+      }
+    }
+
+    customElements.define('before-after-slider-{{ ai_gen_id }}', BeforeAfterSlider{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Before/after slider",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Images"
+    },
+    {
+      "type": "image_picker",
+      "id": "before_image",
+      "label": "Before image"
+    },
+    {
+      "type": "image_picker",
+      "id": "after_image",
+      "label": "After image"
+    },
+    {
+      "type": "select",
+      "id": "aspect_ratio",
+      "label": "Aspect ratio",
+      "options": [
+        {
+          "value": "16/9",
+          "label": "16:9"
+        },
+        {
+          "value": "4/3",
+          "label": "4:3"
+        },
+        {
+          "value": "1/1",
+          "label": "Square"
+        },
+        {
+          "value": "3/4",
+          "label": "3:4"
+        },
+        {
+          "value": "9/16",
+          "label": "9:16"
+        }
+      ],
+      "default": "16/9"
+    },
+    {
+      "type": "header",
+      "content": "Labels"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_labels",
+      "label": "Show labels",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "before_label",
+      "label": "Before label",
+      "default": "Before"
+    },
+    {
+      "type": "text",
+      "id": "after_label",
+      "label": "After label",
+      "default": "After"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Label font size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "label_bg_color",
+      "label": "Label background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "label_text_color",
+      "label": "Label text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Slider"
+    },
+    {
+      "type": "range",
+      "id": "initial_position",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Initial position",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "unit": "px",
+      "label": "Divider width",
+      "default": 3
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Divider color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "handle_size",
+      "min": 30,
+      "max": 70,
+      "step": 5,
+      "unit": "px",
+      "label": "Handle size",
+      "default": 50
+    },
+    {
+      "type": "color",
+      "id": "handle_color",
+      "label": "Handle background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "handle_icon_color",
+      "label": "Handle icon",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 10
+    }
+  ],
+  "presets": [
+    {
+      "name": "Before/after slider"
+    }
+  ]
+}
 {% endschema %}
