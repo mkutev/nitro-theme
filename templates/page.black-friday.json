@@ -140,7 +140,7 @@
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
         "section_color_scheme": "accent-1",
-        "row_color_scheme": "inverse",
+        "row_color_scheme": "background-2",
         "mobile_content_alignment": "left",
         "padding_top": 64,
         "padding_bottom": 24
