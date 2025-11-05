@@ -9,6 +9,88 @@
  */
 {
   "sections": {
+    "1762326398f22ea905": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_d7ec3da_eKJNcC": {
+          "type": "ai_gen_block_d7ec3da",
+          "settings": {
+            "container_width": 800,
+            "text_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_horizontal": 20,
+            "background_color": "#000000",
+            "background_gradient": "",
+            "show_badge": true,
+            "badge_text": "Black Friday Sale",
+            "badge_color": "#dd1d1d",
+            "badge_text_color": "#ffffff",
+            "badge_radius": 20,
+            "title": "Exclusive Black Friday Deals",
+            "title_size": 48,
+            "title_color": "#ffffff",
+            "subtitle": "Limited time offers - Don't miss out on these incredible savings!",
+            "subtitle_size": 18,
+            "subtitle_color": "#ffffff",
+            "show_countdown": true,
+            "countdown_end": "",
+            "timer_bg_color": "#ffffff",
+            "timer_text_color": "#000000",
+            "timer_radius": 10,
+            "offer_1_enabled": true,
+            "offer_1_title": "Electric Bike Bundle",
+            "offer_1_description": "Premium e-bike with accessories included",
+            "offer_1_discount": "40% OFF",
+            "offer_1_original_price": "$2,499",
+            "offer_1_sale_price": "$1,499",
+            "offer_1_link": "",
+            "offer_2_enabled": true,
+            "offer_2_title": "Battery Upgrade",
+            "offer_2_description": "Extended range battery pack",
+            "offer_2_discount": "30% OFF",
+            "offer_2_original_price": "$599",
+            "offer_2_sale_price": "$419",
+            "offer_2_link": "",
+            "offer_3_enabled": true,
+            "offer_3_title": "Accessories Pack",
+            "offer_3_description": "Complete set of essential accessories",
+            "offer_3_discount": "50% OFF",
+            "offer_3_original_price": "$299",
+            "offer_3_sale_price": "$149",
+            "offer_3_link": "",
+            "card_bg_color": "#ffffff",
+            "card_border_color": "#e0e0e0",
+            "card_radius": 10,
+            "card_title_color": "#000000",
+            "card_text_color": "#666666",
+            "discount_badge_color": "#dd1d1d",
+            "discount_badge_text_color": "#ffffff",
+            "sale_price_color": "#dd1d1d",
+            "card_button_text": "Shop Now",
+            "button_bg_color": "#334fb4",
+            "button_text_color": "#ffffff",
+            "button_hover_bg_color": "#2a3f8f",
+            "button_radius": 10,
+            "show_cta": true,
+            "cta_button_text": "View All Black Friday Deals",
+            "cta_link": "",
+            "cta_button_bg_color": "#dd1d1d",
+            "cta_button_text_color": "#ffffff",
+            "cta_button_hover_bg_color": "#b81717"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_d7ec3da_eKJNcC"
+      ],
+      "settings": {}
+    },
+    "17623262610b7997dc": {
+      "type": "_blocks",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
       "settings": {
@@ -148,6 +230,8 @@
     }
   },
   "order": [
+    "1762326398f22ea905",
+    "17623262610b7997dc",
     "main",
     "multirow_WDcQHG"
   ]
