@@ -19,6 +19,39 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
+        "row_XrWBBP": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2_accessories_image_new.jpg",
+            "caption": "Black Friday Deal",
+            "heading": "20% Off Accessories",
+            "text": "<p>We never have sales on Accessories, so this one is extra special just for Black Friday. Now's the time to get that upgrade you've been hoping for!</p><p>Use code BFACC20 at checkout for 20% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can stack this offer with other existing deals.</p>",
+            "button_label": "Shop Accessories",
+            "button_link": "shopify://collections/accessories"
+          }
+        },
+        "row_zD7ppt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/kenda_tire_inner_tube_bundle_a3912595-c697-4ddc-9095-7c093e62be66.jpg",
+            "caption": "Keep The Fun Rolling",
+            "heading": "2x Kenda 26x4\" Tires with Tubes $170",
+            "text": "<p>Fit your Yukon 750 bike with new rubber, and new tubes! Our best deal ever on a full set of tires. Save </p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_EjnWLC": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/brake-pads-1.jpg",
+            "caption": "Maintenance Essentials!",
+            "heading": "Two Brake Pads & Box Components Chain $60",
+            "text": "<p>Get your bike ready for smooth riding with a new chain and new brake pads. Save 27% off the regular price!</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
         "row_BaCQRE": {
           "type": "row",
           "settings": {
@@ -41,15 +74,15 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
-        "row_XrWBBP": {
+        "row_ANxtt4": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/2_accessories_image_new.jpg",
-            "caption": "Black Friday Deal",
-            "heading": "20% Off Accessories",
-            "text": "<p>We never have sales on Accessories, so this one is extra special just for Black Friday. Now's the time to get that upgrade you've been hoping for!</p><p>Use code BFACC20 at checkout for 20% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can stack this offer with other existing deals.</p>",
-            "button_label": "Shop Accessories",
-            "button_link": "shopify://collections/accessories"
+            "image": "shopify://shop_images/trio_mathias_1_334535b5-663b-4f5c-a186-5a19178a176d.jpg",
+            "caption": "6-Wheel Deal",
+            "heading": "Buy Two Trio's, Save $200",
+            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! </p>",
+            "button_label": "Button label",
+            "button_link": ""
           }
         },
         "row_NpzMNY": {
@@ -87,9 +120,12 @@
         }
       },
       "block_order": [
+        "row_XrWBBP",
+        "row_zD7ppt",
+        "row_EjnWLC",
         "row_BaCQRE",
         "row_TNRYWE",
-        "row_XrWBBP",
+        "row_ANxtt4",
         "row_NpzMNY",
         "row_xzPLe4",
         "row_DGyKJt"
