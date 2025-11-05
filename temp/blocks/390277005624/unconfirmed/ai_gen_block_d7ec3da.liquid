@@ -1,6 +1,926 @@
+{% doc %}
+  @prompt
+    black friday offers
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-bf-offers-{{ ai_gen_id }} {
+    padding: {{ block.settings.padding_top }}px {{ block.settings.padding_horizontal }}px {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+    background-image: {{ block.settings.background_gradient }};
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-bf-offers-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.container_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-bf-offers-header-{{ ai_gen_id }} {
+    text-align: {{ block.settings.text_alignment }};
+    margin-bottom: 40px;
+  }
+
+  .ai-bf-offers-badge-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.badge_color }};
+    color: {{ block.settings.badge_text_color }};
+    padding: 8px 20px;
+    border-radius: {{ block.settings.badge_radius }}px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 16px;
+  }
+
+  .ai-bf-offers-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+    margin: 0 0 16px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+
+  .ai-bf-offers-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.subtitle_color }};
+    margin: 0 0 24px;
+    line-height: 1.5;
+  }
+
+  .ai-bf-offers-timer-{{ ai_gen_id }} {
+    display: flex;
+    gap: 16px;
+    justify-content: {{ block.settings.text_alignment }};
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+  }
+
+  .ai-bf-offers-timer-box-{{ ai_gen_id }} {
+    background-color: {{ block.settings.timer_bg_color }};
+    color: {{ block.settings.timer_text_color }};
+    padding: 16px 20px;
+    border-radius: {{ block.settings.timer_radius }}px;
+    min-width: 80px;
+    text-align: center;
+  }
+
+  .ai-bf-offers-timer-number-{{ ai_gen_id }} {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  .ai-bf-offers-timer-label-{{ ai_gen_id }} {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+  }
+
+  .ai-bf-offers-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .ai-bf-offers-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_bg_color }};
+    border-radius: {{ block.settings.card_radius }}px;
+    padding: 24px;
+    text-align: center;
+    position: relative;
+    border: 2px solid {{ block.settings.card_border_color }};
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-bf-offers-card-{{ ai_gen_id }}:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-bf-offers-card-discount-{{ ai_gen_id }} {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: {{ block.settings.discount_badge_color }};
+    color: {{ block.settings.discount_badge_text_color }};
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .ai-bf-offers-card-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: {{ block.settings.card_radius }}px;
+    margin-bottom: 16px;
+  }
+
+  .ai-bf-offers-card-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 200px;
+    background-color: #f4f4f4;
+    border-radius: {{ block.settings.card_radius }}px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-bf-offers-card-image-placeholder-{{ ai_gen_id }} svg {
+    width: 80px;
+    height: 80px;
+    opacity: 0.3;
+  }
+
+  .ai-bf-offers-card-title-{{ ai_gen_id }} {
+    font-size: 20px;
+    font-weight: 600;
+    color: {{ block.settings.card_title_color }};
+    margin: 0 0 8px;
+  }
+
+  .ai-bf-offers-card-description-{{ ai_gen_id }} {
+    font-size: 14px;
+    color: {{ block.settings.card_text_color }};
+    margin: 0 0 16px;
+    line-height: 1.5;
+  }
+
+  .ai-bf-offers-card-price-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+
+  .ai-bf-offers-card-price-original-{{ ai_gen_id }} {
+    font-size: 18px;
+    color: {{ block.settings.card_text_color }};
+    text-decoration: line-through;
+    opacity: 0.6;
+  }
+
+  .ai-bf-offers-card-price-sale-{{ ai_gen_id }} {
+    font-size: 24px;
+    font-weight: 700;
+    color: {{ block.settings.sale_price_color }};
+  }
+
+  .ai-bf-offers-card-button-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.button_bg_color }};
+    color: {{ block.settings.button_text_color }};
+    padding: 12px 32px;
+    border-radius: {{ block.settings.button_radius }}px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ai-bf-offers-card-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_bg_color }};
+    transform: scale(1.05);
+  }
+
+  .ai-bf-offers-cta-{{ ai_gen_id }} {
+    text-align: center;
+  }
+
+  .ai-bf-offers-cta-button-{{ ai_gen_id }} {
+    display: inline-block;
+    background-color: {{ block.settings.cta_button_bg_color }};
+    color: {{ block.settings.cta_button_text_color }};
+    padding: 16px 48px;
+    border-radius: {{ block.settings.button_radius }}px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+
+  .ai-bf-offers-cta-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.cta_button_hover_bg_color }};
+    transform: scale(1.05);
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-bf-offers-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.6 }}px {{ block.settings.padding_horizontal | times: 0.6 }}px {{ block.settings.padding_bottom | times: 0.6 }}px;
+    }
+
+    .ai-bf-offers-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-bf-offers-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-bf-offers-grid-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+    }
+
+    .ai-bf-offers-timer-{{ ai_gen_id }} {
+      justify-content: center;
+    }
+  }
+{% endstyle %}
+
+<black-friday-offers-{{ ai_gen_id }} class="ai-bf-offers-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-bf-offers-container-{{ ai_gen_id }}">
+    <div class="ai-bf-offers-header-{{ ai_gen_id }}">
+      {% if block.settings.show_badge %}
+        <div class="ai-bf-offers-badge-{{ ai_gen_id }}">{{ block.settings.badge_text }}</div>
+      {% endif %}
+      
+      {% if block.settings.title != blank %}
+        <h2 class="ai-bf-offers-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+      {% endif %}
+      
+      {% if block.settings.subtitle != blank %}
+        <div class="ai-bf-offers-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+      {% endif %}
+
+      {% if block.settings.show_countdown %}
+        <div class="ai-bf-offers-timer-{{ ai_gen_id }}" data-countdown-end="{{ block.settings.countdown_end }}">
+          <div class="ai-bf-offers-timer-box-{{ ai_gen_id }}">
+            <span class="ai-bf-offers-timer-number-{{ ai_gen_id }}" data-days>00</span>
+            <span class="ai-bf-offers-timer-label-{{ ai_gen_id }}">Days</span>
+          </div>
+          <div class="ai-bf-offers-timer-box-{{ ai_gen_id }}">
+            <span class="ai-bf-offers-timer-number-{{ ai_gen_id }}" data-hours>00</span>
+            <span class="ai-bf-offers-timer-label-{{ ai_gen_id }}">Hours</span>
+          </div>
+          <div class="ai-bf-offers-timer-box-{{ ai_gen_id }}">
+            <span class="ai-bf-offers-timer-number-{{ ai_gen_id }}" data-minutes>00</span>
+            <span class="ai-bf-offers-timer-label-{{ ai_gen_id }}">Minutes</span>
+          </div>
+          <div class="ai-bf-offers-timer-box-{{ ai_gen_id }}">
+            <span class="ai-bf-offers-timer-number-{{ ai_gen_id }}" data-seconds>00</span>
+            <span class="ai-bf-offers-timer-label-{{ ai_gen_id }}">Seconds</span>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-bf-offers-grid-{{ ai_gen_id }}">
+      {% for i in (1..3) %}
+        {% liquid
+          assign offer_enabled_key = 'offer_' | append: i | append: '_enabled'
+          assign offer_image_key = 'offer_' | append: i | append: '_image'
+          assign offer_title_key = 'offer_' | append: i | append: '_title'
+          assign offer_description_key = 'offer_' | append: i | append: '_description'
+          assign offer_discount_key = 'offer_' | append: i | append: '_discount'
+          assign offer_original_price_key = 'offer_' | append: i | append: '_original_price'
+          assign offer_sale_price_key = 'offer_' | append: i | append: '_sale_price'
+          assign offer_link_key = 'offer_' | append: i | append: '_link'
+
+          assign offer_enabled = block.settings[offer_enabled_key]
+          assign offer_image = block.settings[offer_image_key]
+          assign offer_title = block.settings[offer_title_key]
+          assign offer_description = block.settings[offer_description_key]
+          assign offer_discount = block.settings[offer_discount_key]
+          assign offer_original_price = block.settings[offer_original_price_key]
+          assign offer_sale_price = block.settings[offer_sale_price_key]
+          assign offer_link = block.settings[offer_link_key]
+        %}
+
+        {% if offer_enabled %}
+          <div class="ai-bf-offers-card-{{ ai_gen_id }}">
+            {% if offer_discount != blank %}
+              <div class="ai-bf-offers-card-discount-{{ ai_gen_id }}">{{ offer_discount }}</div>
+            {% endif %}
+
+            {% if offer_image %}
+              <img
+                src="{{ offer_image | image_url: width: 600 }}"
+                alt="{{ offer_image.alt | escape }}"
+                class="ai-bf-offers-card-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="600"
+                height="400"
+              >
+            {% else %}
+              <div class="ai-bf-offers-card-image-placeholder-{{ ai_gen_id }}">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+
+            {% if offer_title != blank %}
+              <h3 class="ai-bf-offers-card-title-{{ ai_gen_id }}">{{ offer_title }}</h3>
+            {% endif %}
+
+            {% if offer_description != blank %}
+              <div class="ai-bf-offers-card-description-{{ ai_gen_id }}">{{ offer_description }}</div>
+            {% endif %}
+
+            {% if offer_original_price != blank or offer_sale_price != blank %}
+              <div class="ai-bf-offers-card-price-{{ ai_gen_id }}">
+                {% if offer_original_price != blank %}
+                  <span class="ai-bf-offers-card-price-original-{{ ai_gen_id }}">{{ offer_original_price }}</span>
+                {% endif %}
+                {% if offer_sale_price != blank %}
+                  <span class="ai-bf-offers-card-price-sale-{{ ai_gen_id }}">{{ offer_sale_price }}</span>
+                {% endif %}
+              </div>
+            {% endif %}
+
+            {% if offer_link != blank %}
+              <a href="{{ offer_link }}" class="ai-bf-offers-card-button-{{ ai_gen_id }}">
+                {{ block.settings.card_button_text }}
+              </a>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if block.settings.show_cta and block.settings.cta_link != blank %}
+      <div class="ai-bf-offers-cta-{{ ai_gen_id }}">
+        <a href="{{ block.settings.cta_link }}" class="ai-bf-offers-cta-button-{{ ai_gen_id }}">
+          {{ block.settings.cta_button_text }}
+        </a>
+      </div>
+    {% endif %}
+  </div>
+</black-friday-offers-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BlackFridayOffers{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.countdownTimer = this.querySelector('[data-countdown-end]');
+      }
+
+      connectedCallback() {
+        if (this.countdownTimer) {
+          this.initCountdown();
+        }
+      }
+
+      initCountdown() {
+        const endDate = this.countdownTimer.getAttribute('data-countdown-end');
+        if (!endDate) return;
+
+        const countdownEnd = new Date(endDate).getTime();
+        const daysEl = this.countdownTimer.querySelector('[data-days]');
+        const hoursEl = this.countdownTimer.querySelector('[data-hours]');
+        const minutesEl = this.countdownTimer.querySelector('[data-minutes]');
+        const secondsEl = this.countdownTimer.querySelector('[data-seconds]');
+
+        const updateCountdown = () => {
+          const now = new Date().getTime();
+          const distance = countdownEnd - now;
+
+          if (distance < 0) {
+            daysEl.textContent = '00';
+            hoursEl.textContent = '00';
+            minutesEl.textContent = '00';
+            secondsEl.textContent = '00';
+            clearInterval(this.interval);
+            return;
+          }
+
+          const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          daysEl.textContent = String(days).padStart(2, '0');
+          hoursEl.textContent = String(hours).padStart(2, '0');
+          minutesEl.textContent = String(minutes).padStart(2, '0');
+          secondsEl.textContent = String(seconds).padStart(2, '0');
+        };
+
+        updateCountdown();
+        this.interval = setInterval(updateCountdown, 1000);
+      }
+
+      disconnectedCallback() {
+        if (this.interval) {
+          clearInterval(this.interval);
+        }
+      }
+    }
+
+    customElements.define('black-friday-offers-{{ ai_gen_id }}', BlackFridayOffers{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Black Friday offers",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 600,
+      "max": 1600,
+      "step": 100,
+      "unit": "px",
+      "label": "Container width",
+      "default": 1200
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_horizontal",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding horizontal",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color_background",
+      "id": "background_gradient",
+      "label": "Background gradient"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_badge",
+      "label": "Show badge",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge text",
+      "default": "Black Friday Sale"
+    },
+    {
+      "type": "color",
+      "id": "badge_color",
+      "label": "Badge background",
+      "default": "#dd1d1d"
+    },
+    {
+      "type": "color",
+      "id": "badge_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "badge_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Badge border radius",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Title"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Exclusive Black Friday Deals"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Subtitle"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Limited time offers - Don't miss out on these incredible savings!"
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Subtitle size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "subtitle_color",
+      "label": "Subtitle color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Countdown timer"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_countdown",
+      "label": "Show countdown",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "countdown_end",
+      "label": "End date and time",
+      "info": "Format: YYYY-MM-DD HH:MM:SS (e.g., 2025-11-29 23:59:59)"
+    },
+    {
+      "type": "color",
+      "id": "timer_bg_color",
+      "label": "Timer background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "timer_text_color",
+      "label": "Timer text color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "timer_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Timer border radius",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Offer 1"
+    },
+    {
+      "type": "checkbox",
+      "id": "offer_1_enabled",
+      "label": "Enable offer 1",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "offer_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "offer_1_title",
+      "label": "Title",
+      "default": "Electric Bike Bundle"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_1_description",
+      "label": "Description",
+      "default": "Premium e-bike with accessories included"
+    },
+    {
+      "type": "text",
+      "id": "offer_1_discount",
+      "label": "Discount badge",
+      "default": "40% OFF"
+    },
+    {
+      "type": "text",
+      "id": "offer_1_original_price",
+      "label": "Original price",
+      "default": "$2,499"
+    },
+    {
+      "type": "text",
+      "id": "offer_1_sale_price",
+      "label": "Sale price",
+      "default": "$1,499"
+    },
+    {
+      "type": "url",
+      "id": "offer_1_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Offer 2"
+    },
+    {
+      "type": "checkbox",
+      "id": "offer_2_enabled",
+      "label": "Enable offer 2",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "offer_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "offer_2_title",
+      "label": "Title",
+      "default": "Battery Upgrade"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_2_description",
+      "label": "Description",
+      "default": "Extended range battery pack"
+    },
+    {
+      "type": "text",
+      "id": "offer_2_discount",
+      "label": "Discount badge",
+      "default": "30% OFF"
+    },
+    {
+      "type": "text",
+      "id": "offer_2_original_price",
+      "label": "Original price",
+      "default": "$599"
+    },
+    {
+      "type": "text",
+      "id": "offer_2_sale_price",
+      "label": "Sale price",
+      "default": "$419"
+    },
+    {
+      "type": "url",
+      "id": "offer_2_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Offer 3"
+    },
+    {
+      "type": "checkbox",
+      "id": "offer_3_enabled",
+      "label": "Enable offer 3",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "offer_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "offer_3_title",
+      "label": "Title",
+      "default": "Accessories Pack"
+    },
+    {
+      "type": "textarea",
+      "id": "offer_3_description",
+      "label": "Description",
+      "default": "Complete set of essential accessories"
+    },
+    {
+      "type": "text",
+      "id": "offer_3_discount",
+      "label": "Discount badge",
+      "default": "50% OFF"
+    },
+    {
+      "type": "text",
+      "id": "offer_3_original_price",
+      "label": "Original price",
+      "default": "$299"
+    },
+    {
+      "type": "text",
+      "id": "offer_3_sale_price",
+      "label": "Sale price",
+      "default": "$149"
+    },
+    {
+      "type": "url",
+      "id": "offer_3_link",
+      "label": "Link"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Card background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 10
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Card title color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "card_text_color",
+      "label": "Card text color",
+      "default": "#666666"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_color",
+      "label": "Discount badge background",
+      "default": "#dd1d1d"
+    },
+    {
+      "type": "color",
+      "id": "discount_badge_text_color",
+      "label": "Discount badge text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "sale_price_color",
+      "label": "Sale price color",
+      "default": "#dd1d1d"
+    },
+    {
+      "type": "header",
+      "content": "Card button"
+    },
+    {
+      "type": "text",
+      "id": "card_button_text",
+      "label": "Button text",
+      "default": "Shop Now"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button background",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_bg_color",
+      "label": "Button hover background",
+      "default": "#2a3f8f"
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_cta",
+      "label": "Show CTA button",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "cta_button_text",
+      "label": "CTA button text",
+      "default": "View All Black Friday Deals"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA link"
+    },
+    {
+      "type": "color",
+      "id": "cta_button_bg_color",
+      "label": "CTA button background",
+      "default": "#dd1d1d"
+    },
+    {
+      "type": "color",
+      "id": "cta_button_text_color",
+      "label": "CTA button text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cta_button_hover_bg_color",
+      "label": "CTA button hover background",
+      "default": "#b81717"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Black Friday offers"
+    }
+  ]
+}
 {% endschema %}
