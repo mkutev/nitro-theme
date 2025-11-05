@@ -33,7 +33,7 @@
         "row_K7VPH8": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/pannier_bag.jpg",
+            "image": "shopify://shop_images/pannier.png",
             "caption": "Major Upgrade",
             "heading": "2x Pannier Bags $150",
             "text": "<p>Get a pair of our Pannier bags and save $40! This price has never been seen before and may never be available again. 20L capacity, and waterproof too!</p>",
@@ -110,7 +110,7 @@
         "row_DGyKJt": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/1409010.jpg",
+            "image": "shopify://shop_images/1409010.png",
             "caption": "Haunted ebike sale",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
