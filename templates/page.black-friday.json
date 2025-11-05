@@ -131,7 +131,7 @@
         "row_DGyKJt"
       ],
       "custom_css": [
-        ".image-with-text__media-item {padding:20px; background-color: #000;}"
+        ".image-with-text__media-item {padding: 20px; background-color: #121212;}"
       ],
       "settings": {
         "image_height": "medium",
