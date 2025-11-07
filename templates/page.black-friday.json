@@ -30,6 +30,17 @@
             "button_link": "shopify://collections/accessories"
           }
         },
+        "row_BaCQRE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2_accessories.jpg",
+            "caption": "Black Friday Deal",
+            "heading": "Get Two Free Accessories With Each Bike",
+            "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
+            "button_label": "Shop eBIkes",
+            "button_link": "shopify://collections/all-bikes"
+          }
+        },
         "row_K7VPH8": {
           "type": "row",
           "settings": {
@@ -61,17 +72,6 @@
             "text": "<p>Get your bike ready for smooth riding with a new chain and new brake pads. Save 27% off the regular price!</p>",
             "button_label": "Click Here",
             "button_link": "shopify://products/disc-brake-pads"
-          }
-        },
-        "row_BaCQRE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/2_accessories.jpg",
-            "caption": "Black Friday Deal",
-            "heading": "Get Two Free Accessories With Each Bike",
-            "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
-            "button_label": "Shop eBIkes",
-            "button_link": "shopify://collections/all-bikes"
           }
         },
         "row_ANxtt4": {
@@ -121,10 +121,10 @@
       },
       "block_order": [
         "row_XrWBBP",
+        "row_BaCQRE",
         "row_K7VPH8",
         "row_zD7ppt",
         "row_EjnWLC",
-        "row_BaCQRE",
         "row_ANxtt4",
         "row_NpzMNY",
         "row_xzPLe4",
