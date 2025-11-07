@@ -67,7 +67,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/2_accessories.jpg",
-            "caption": "Haunted ebike sale",
+            "caption": "Black Friday Deal",
             "heading": "Get Two Free Accessories With Each Bike",
             "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -89,7 +89,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/yukon_white_promo.jpg",
-            "caption": "Haunted ebike sale",
+            "caption": "Black Friday Deal",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
             "button_label": "Shop Gift Cards",
@@ -101,7 +101,7 @@
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
             "caption": "Haunted ebike sale",
-            "heading": "5% Off Batteries and Chargers",
+            "heading": "Black Friday Deal",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends September 30</p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
@@ -111,7 +111,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.png",
-            "caption": "Haunted ebike sale",
+            "caption": "Black Friday Deal",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
