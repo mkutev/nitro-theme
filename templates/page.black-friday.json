@@ -66,7 +66,7 @@
         "row_EjnWLC": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/brake-pads-1.jpg",
+            "image": "shopify://shop_images/brake-pads-1_1.jpg",
             "caption": "Maintenance Essentials!",
             "heading": "Two Brake Pads & Box Components Chain $60",
             "text": "<p>Get your bike ready for smooth riding with a new chain and new brake pads. Save 27% off the regular price!</p>",
@@ -80,7 +80,7 @@
             "image": "shopify://shop_images/trio_mathias_1_334535b5-663b-4f5c-a186-5a19178a176d.jpg",
             "caption": "6-Wheel Deal",
             "heading": "Buy Two Trio's, Save $200",
-            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. </p>",
+            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. Applies to either the Trio, or Trio V2. </p>",
             "button_label": "Shop Trikes",
             "button_link": "shopify://collections/trio"
           }
@@ -91,9 +91,9 @@
             "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
             "caption": "Black Friday Deal",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
-            "button_label": "Shop Gift Cards",
-            "button_link": "shopify://products/voltbike-gift-card"
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, White only) and get a free $75 VoltBike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends December 1st!</p>",
+            "button_label": "Click Here",
+            "button_link": "shopify://products/yukon-750-limited"
           }
         },
         "row_xzPLe4": {
