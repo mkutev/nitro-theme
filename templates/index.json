@@ -17,7 +17,7 @@
           "settings": {
             "image": "shopify://shop_images/Black_Friday_2025_-_Banner_-_Dark_BG_-_Elegant_V2_Red.jpg",
             "image_mobile": "shopify://shop_images/Black_Friday_2025_-_Narrow_Banner_-_Dark_BG_-_Elegant_V2_Red.jpg",
-            "heading": "Black Friday Sale",
+            "heading": "Early Black Friday Sale",
             "extended": false,
             "heading_size": "h0",
             "subheading": "Sale ends Dec 1.",
@@ -58,7 +58,7 @@
         "slide_MVQBDK"
       ],
       "custom_css": [
-        ".banner:first-of-type h2 {/* font-family: \"Chicle\"; */ font-weight: 900;}",
+        ".banner:first-of-type h2 {font-family: \"Montserrat\"; font-weight: 900;}",
         ".banner:first-of-type .banner__media picture img {object-position: center right;}",
         ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #5d3594;}"
       ],
