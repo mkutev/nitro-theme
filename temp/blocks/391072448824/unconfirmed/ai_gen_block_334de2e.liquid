@@ -1,6 +1,574 @@
+{% doc %}
+  @prompt
+    Technical specification button that opens a pop-up showing list of specs.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-tech-specs-{{ ai_gen_id }} {
+    display: inline-block;
+  }
+
+  .ai-tech-specs-button-{{ ai_gen_id }} {
+    padding: 12px 24px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    border: {{ block.settings.button_border_thickness }}px solid {{ block.settings.button_border_color }};
+    border-radius: {{ block.settings.button_radius }}px;
+    font-size: {{ block.settings.button_font_size }}px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .ai-tech-specs-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+    color: {{ block.settings.button_hover_text_color }};
+  }
+
+  .ai-tech-specs-overlay-{{ ai_gen_id }} {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .ai-tech-specs-overlay-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .ai-tech-specs-popup-{{ ai_gen_id }} {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    background-color: {{ block.settings.popup_bg_color }};
+    border-radius: {{ block.settings.popup_radius }}px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    max-width: {{ block.settings.popup_width }}px;
+    width: 90%;
+    max-height: 80vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-tech-specs-popup-{{ ai_gen_id }}.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .ai-tech-specs-popup-header-{{ ai_gen_id }} {
+    padding: 24px;
+    border-bottom: 1px solid {{ block.settings.popup_border_color }};
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .ai-tech-specs-popup-title-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.popup_title_size }}px;
+    color: {{ block.settings.popup_text_color }};
+  }
+
+  .ai-tech-specs-close-{{ ai_gen_id }} {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    color: {{ block.settings.popup_text_color }};
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+
+  .ai-tech-specs-close-{{ ai_gen_id }}:hover {
+    opacity: 1;
+  }
+
+  .ai-tech-specs-popup-content-{{ ai_gen_id }} {
+    padding: 24px;
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+
+  .ai-tech-specs-list-{{ ai_gen_id }} {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ai-tech-specs-item-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid {{ block.settings.popup_border_color }};
+    gap: 16px;
+  }
+
+  .ai-tech-specs-item-{{ ai_gen_id }}:last-child {
+    border-bottom: none;
+  }
+
+  .ai-tech-specs-label-{{ ai_gen_id }} {
+    font-weight: 600;
+    color: {{ block.settings.popup_text_color }};
+    font-size: {{ block.settings.spec_font_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-tech-specs-value-{{ ai_gen_id }} {
+    color: {{ block.settings.popup_text_color }};
+    font-size: {{ block.settings.spec_font_size }}px;
+    text-align: right;
+  }
+
+  .ai-tech-specs-empty-{{ ai_gen_id }} {
+    text-align: center;
+    padding: 40px 20px;
+    color: {{ block.settings.popup_text_color }};
+    opacity: 0.6;
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-tech-specs-popup-{{ ai_gen_id }} {
+      max-width: 95%;
+    }
+
+    .ai-tech-specs-item-{{ ai_gen_id }} {
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .ai-tech-specs-value-{{ ai_gen_id }} {
+      text-align: left;
+    }
+  }
+{% endstyle %}
+
+<tech-specs-{{ ai_gen_id }} class="ai-tech-specs-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <button
+    class="ai-tech-specs-button-{{ ai_gen_id }}"
+    aria-label="View technical specifications"
+    aria-expanded="false"
+  >
+    {{ block.settings.button_text }}
+  </button>
+
+  <div class="ai-tech-specs-overlay-{{ ai_gen_id }}" aria-hidden="true"></div>
+
+  <div
+    class="ai-tech-specs-popup-{{ ai_gen_id }}"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="ai-tech-specs-title-{{ ai_gen_id }}"
+  >
+    <div class="ai-tech-specs-popup-header-{{ ai_gen_id }}">
+      <h2 id="ai-tech-specs-title-{{ ai_gen_id }}" class="ai-tech-specs-popup-title-{{ ai_gen_id }}">
+        {{ block.settings.popup_title }}
+      </h2>
+      <button class="ai-tech-specs-close-{{ ai_gen_id }}" aria-label="Close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="ai-tech-specs-popup-content-{{ ai_gen_id }}">
+      {% assign has_specs = false %}
+      {% for i in (1..10) %}
+        {% assign label_key = 'spec_' | append: i | append: '_label' %}
+        {% assign value_key = 'spec_' | append: i | append: '_value' %}
+        {% assign label = block.settings[label_key] %}
+        {% assign value = block.settings[value_key] %}
+        {% if label != blank and value != blank %}
+          {% assign has_specs = true %}
+        {% endif %}
+      {% endfor %}
+
+      {% if has_specs %}
+        <ul class="ai-tech-specs-list-{{ ai_gen_id }}">
+          {% for i in (1..10) %}
+            {% assign label_key = 'spec_' | append: i | append: '_label' %}
+            {% assign value_key = 'spec_' | append: i | append: '_value' %}
+            {% assign label = block.settings[label_key] %}
+            {% assign value = block.settings[value_key] %}
+            {% if label != blank and value != blank %}
+              <li class="ai-tech-specs-item-{{ ai_gen_id }}">
+                <span class="ai-tech-specs-label-{{ ai_gen_id }}">{{ label }}</span>
+                <span class="ai-tech-specs-value-{{ ai_gen_id }}">{{ value }}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      {% else %}
+        <div class="ai-tech-specs-empty-{{ ai_gen_id }}">
+          Next, add technical specifications in the block settings
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</tech-specs-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class TechSpecs{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.button = this.querySelector('.ai-tech-specs-button-{{ ai_gen_id }}');
+        this.popup = this.querySelector('.ai-tech-specs-popup-{{ ai_gen_id }}');
+        this.overlay = this.querySelector('.ai-tech-specs-overlay-{{ ai_gen_id }}');
+        this.closeButton = this.querySelector('.ai-tech-specs-close-{{ ai_gen_id }}');
+
+        this.setupEventListeners();
+      }
+
+      setupEventListeners() {
+        this.button.addEventListener('click', () => this.openPopup());
+        this.closeButton.addEventListener('click', () => this.closePopup());
+        this.overlay.addEventListener('click', () => this.closePopup());
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && this.popup.classList.contains('active')) {
+            this.closePopup();
+          }
+        });
+      }
+
+      openPopup() {
+        this.popup.classList.add('active');
+        this.overlay.classList.add('active');
+        this.button.setAttribute('aria-expanded', 'true');
+        document.body.style.overflow = 'hidden';
+        this.closeButton.focus();
+      }
+
+      closePopup() {
+        this.popup.classList.remove('active');
+        this.overlay.classList.remove('active');
+        this.button.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        this.button.focus();
+      }
+    }
+
+    customElements.define('tech-specs-{{ ai_gen_id }}', TechSpecs{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Technical specifications",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "View Specifications"
+    },
+    {
+      "type": "range",
+      "id": "button_font_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Font size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "button_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "button_border_thickness",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "label": "Border thickness",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Background color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Border color",
+      "default": "#334fb4"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Hover background color",
+      "default": "#2a3f91"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Popup"
+    },
+    {
+      "type": "text",
+      "id": "popup_title",
+      "label": "Popup title",
+      "default": "Technical Specifications"
+    },
+    {
+      "type": "range",
+      "id": "popup_width",
+      "min": 400,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Popup width",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "popup_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "popup_title_size",
+      "min": 16,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "spec_font_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Specification font size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "popup_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "popup_text_color",
+      "label": "Text color",
+      "default": "#020202"
+    },
+    {
+      "type": "color",
+      "id": "popup_border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "header",
+      "content": "Specification 1"
+    },
+    {
+      "type": "text",
+      "id": "spec_1_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_1_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 2"
+    },
+    {
+      "type": "text",
+      "id": "spec_2_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_2_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 3"
+    },
+    {
+      "type": "text",
+      "id": "spec_3_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_3_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 4"
+    },
+    {
+      "type": "text",
+      "id": "spec_4_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_4_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 5"
+    },
+    {
+      "type": "text",
+      "id": "spec_5_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_5_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 6"
+    },
+    {
+      "type": "text",
+      "id": "spec_6_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_6_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 7"
+    },
+    {
+      "type": "text",
+      "id": "spec_7_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_7_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 8"
+    },
+    {
+      "type": "text",
+      "id": "spec_8_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_8_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 9"
+    },
+    {
+      "type": "text",
+      "id": "spec_9_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_9_value",
+      "label": "Value"
+    },
+    {
+      "type": "header",
+      "content": "Specification 10"
+    },
+    {
+      "type": "text",
+      "id": "spec_10_label",
+      "label": "Label"
+    },
+    {
+      "type": "text",
+      "id": "spec_10_value",
+      "label": "Value"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Technical specifications"
+    }
+  ]
+}
 {% endschema %}
