@@ -63,6 +63,17 @@
             "button_link": "shopify://products/kenda-juggernaut-fat-tire-bundle"
           }
         },
+        "row_hw3tYy": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gemini_Generated_Image_i5pibhi5pibhi5pi.png",
+            "caption": "Lock Up That Bike",
+            "heading": "Black Friday Security Bundle - from $75 +",
+            "text": "<p>Protect your VoltBike investment with our Black Friday Security Bundle. </p><p>This comprehensive package includes your choice of lock that secures your bike to any fixed object, plus a BikeBac tracker for real-time GPS monitoring and theft recovery.</p>",
+            "button_label": "Click Here",
+            "button_link": "shopify://products/black-friday-security-bundle"
+          }
+        },
         "row_EjnWLC": {
           "type": "row",
           "settings": {
@@ -124,6 +135,7 @@
         "row_BaCQRE",
         "row_K7VPH8",
         "row_zD7ppt",
+        "row_hw3tYy",
         "row_EjnWLC",
         "row_ANxtt4",
         "row_NpzMNY",
