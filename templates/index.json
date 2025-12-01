@@ -60,7 +60,7 @@
       "custom_css": [
         ".banner:first-of-type h2 {font-weight: 900;}",
         ".banner:first-of-type .banner__media picture img {object-position: center right;}",
-        ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #5d3594;}"
+        ".banner__heading--extended {text-transform: uppercase; margin-bottom: 0; color: #ff0000;}"
       ],
       "settings": {
         "layout": "full_bleed",
