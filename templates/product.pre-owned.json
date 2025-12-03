@@ -41,13 +41,6 @@
           "type": "description",
           "settings": {}
         },
-        "product_compatibility_8JbpnN": {
-          "type": "product_compatibility",
-          "settings": {
-            "show_compatibility_icon": true,
-            "title": "Compatible with:"
-          }
-        },
         "custom_liquid_6KQb4w": {
           "type": "custom_liquid",
           "settings": {
@@ -88,7 +81,6 @@
         "title",
         "19bbc261-446d-4362-ac75-156cf142620b",
         "description",
-        "product_compatibility_8JbpnN",
         "custom_liquid_6KQb4w",
         "price",
         "variant_picker",
@@ -153,7 +145,12 @@
       "blocks": {
         "1b1ca003-1038-4a89-abdc-84ea049a36bf": {
           "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
+          "settings": {
+            "review_data": "sample_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
         }
       },
       "block_order": [
