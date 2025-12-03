@@ -69,6 +69,18 @@
             "show_gift_card_recipient": true
           }
         },
+        "icon_with_text_xN8xc8": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Free Shipping",
+            "icon_2": "return",
+            "heading_2": "Heading",
+            "icon_3": "truck",
+            "heading_3": "Heading"
+          }
+        },
         "share": {
           "type": "share",
           "disabled": true,
@@ -87,6 +99,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "icon_with_text_xN8xc8",
         "share"
       ],
       "settings": {
