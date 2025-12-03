@@ -74,6 +74,7 @@
           "settings": {
             "layout": "horizontal",
             "icon_1": "truck",
+            "image_1": "shopify://shop_images/shipping-icon.svg",
             "heading_1": "Free Shipping",
             "icon_2": "return",
             "heading_2": "<strong>20+ Quality Standards Checklist</strong>",
