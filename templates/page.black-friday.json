@@ -23,22 +23,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/2_accessories_image_new.jpg",
-            "caption": "Holiday Deal",
+            "caption": "Black Friday Deal",
             "heading": "15% Off Accessories",
             "text": "<p>We never have sales on Accessories, so this one is extra special just for Black Friday. Now's the time to get that upgrade you've been hoping for!</p><p>Use code BFACC15 at checkout for 15% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can stack this offer with other existing deals.</p>",
             "button_label": "Shop Accessories",
             "button_link": "shopify://collections/accessories"
-          }
-        },
-        "row_BaCQRE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "Holiday Deal",
-            "heading": "Get Two Free Accessories With Each Bike",
-            "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
-            "button_label": "Shop eBIkes",
-            "button_link": "shopify://collections/all-bikes"
           }
         },
         "row_K7VPH8": {
@@ -52,15 +41,15 @@
             "button_link": "shopify://products/pannier-bag-set"
           }
         },
-        "row_zD7ppt": {
+        "row_BaCQRE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/kenda_tire_inner_tube_bundle_a3912595-c697-4ddc-9095-7c093e62be66.jpg",
-            "caption": "Keep The Fun Rolling",
-            "heading": "2x Kenda 26x4\" Tires with Tubes $170",
-            "text": "<p>Fit your Yukon 750 bike with new rubber, and new tubes! Our best deal ever on a full set of tires. Save </p>",
-            "button_label": "Shop Tires",
-            "button_link": "shopify://products/kenda-juggernaut-fat-tire-bundle"
+            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
+            "caption": "Black Friday Deal",
+            "heading": "Get Two Free Accessories With Each Bike",
+            "text": "<p>Purchase any VoltBike and receive two FREE accessories with each bike. One premium accessory [$100 value] and one standard accessory [$50 value]. Make your selection at the product details page. No coupon code required.</p>",
+            "button_label": "Shop eBIkes",
+            "button_link": "shopify://collections/all-bikes"
           }
         },
         "row_hw3tYy": {
@@ -74,15 +63,26 @@
             "button_link": "shopify://products/black-friday-security-bundle"
           }
         },
-        "row_EjnWLC": {
+        "row_NpzMNY": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/brake-pads-1.png",
-            "caption": "Maintenance Essentials!",
-            "heading": "Two Brake Pads & Two 180mm Brake Rotors $99",
-            "text": "<p>Get your bike ready for smooth, quiet riding with two new brake pads and two brake rotors. Save $27!</p>",
+            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
+            "caption": "Black Friday Deal",
+            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, White only) and get a free $75 VoltBike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends December 28th!</p>",
             "button_label": "Click Here",
-            "button_link": "shopify://products/two-brake-pads-two-180mm-brake-rotors-bundle"
+            "button_link": "shopify://products/yukon-750-limited"
+          }
+        },
+        "row_zD7ppt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/kenda_tire_inner_tube_bundle_a3912595-c697-4ddc-9095-7c093e62be66.jpg",
+            "caption": "Keep The Fun Rolling",
+            "heading": "2x Kenda 26x4\" Tires with Tubes $170",
+            "text": "<p>Fit your Yukon 750 bike with new rubber, and new tubes! Our best deal ever on a full set of tires. Save </p>",
+            "button_label": "Shop Tires",
+            "button_link": "shopify://products/kenda-juggernaut-fat-tire-bundle"
           }
         },
         "row_ANxtt4": {
@@ -96,24 +96,24 @@
             "button_link": "shopify://collections/trio"
           }
         },
-        "row_NpzMNY": {
+        "row_EjnWLC": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "Holiday Deal",
-            "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, White only) and get a free $75 VoltBike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends December 1st!</p>",
+            "image": "shopify://shop_images/brake-pads-1.png",
+            "caption": "Maintenance Essentials!",
+            "heading": "Two Brake Pads & Two 180mm Brake Rotors $99",
+            "text": "<p>Get your bike ready for smooth, quiet riding with two new brake pads and two brake rotors. Save $27!</p>",
             "button_label": "Click Here",
-            "button_link": "shopify://products/yukon-750-limited"
+            "button_link": "shopify://products/two-brake-pads-two-180mm-brake-rotors-bundle"
           }
         },
         "row_xzPLe4": {
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Holiday Deal",
+            "caption": "Black Friday Deal",
             "heading": "Save on Batteries",
-            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends December 1</p>",
+            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends December 28th</p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
           }
@@ -122,7 +122,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.png",
-            "caption": "Holiday Deal",
+            "caption": "Black Friday Deal",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
@@ -132,13 +132,13 @@
       },
       "block_order": [
         "row_XrWBBP",
-        "row_BaCQRE",
         "row_K7VPH8",
-        "row_zD7ppt",
+        "row_BaCQRE",
         "row_hw3tYy",
-        "row_EjnWLC",
-        "row_ANxtt4",
         "row_NpzMNY",
+        "row_zD7ppt",
+        "row_ANxtt4",
+        "row_EjnWLC",
         "row_xzPLe4",
         "row_DGyKJt"
       ],
