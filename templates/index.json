@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/christmas2024-home-banner-rev1.jpg",
             "image_mobile": "shopify://shop_images/christmas2024-email-banner.jpg",
             "heading": "Boxing Day Sale",
-            "extended": false,
+            "extended": true,
             "heading_size": "h0",
             "subheading": "Sale ends Dec 28.",
             "button_label": "See All Deals",
