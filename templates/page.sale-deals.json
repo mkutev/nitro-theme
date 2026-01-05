@@ -95,6 +95,10 @@
         "row_xzPLe4",
         "row_DGyKJt"
       ],
+      "custom_css": [
+        ".image-with-text__media-item {padding: 20px; background-color: #bfe1ce;}",
+        ".image-with-text__media-item img {border-radius: 10px;}"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "small",
