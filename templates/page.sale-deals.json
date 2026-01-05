@@ -96,7 +96,7 @@
         "row_DGyKJt"
       ],
       "custom_css": [
-        ".image-with-text__media-item {padding: 20px; background-color: #bfe1ce;}",
+        ".image-with-text__media-item {padding: 20px; background-color: #b8c9ef;}",
         ".image-with-text__media-item img {border-radius: 10px;}"
       ],
       "settings": {
