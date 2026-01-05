@@ -75,17 +75,6 @@
             "button_link": "shopify://collections/batteries"
           }
         },
-        "row_DGyKJt": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/1409010.jpg",
-            "caption": "New Year Sale",
-            "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
-            "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
-            "button_label": "Shop Thule Racks",
-            "button_link": "shopify://collections/vehicle-racks"
-          }
-        },
         "row_BPbRXR": {
           "type": "row",
           "settings": {
@@ -96,6 +85,17 @@
             "button_label": "Shop Trikes",
             "button_link": "shopify://collections/trio"
           }
+        },
+        "row_DGyKJt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1409010.jpg",
+            "caption": "New Year Sale",
+            "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
+            "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
+            "button_label": "Shop Thule Racks",
+            "button_link": "shopify://collections/vehicle-racks"
+          }
         }
       },
       "block_order": [
@@ -104,8 +104,8 @@
         "row_XrWBBP",
         "row_NpzMNY",
         "row_xzPLe4",
-        "row_DGyKJt",
-        "row_BPbRXR"
+        "row_BPbRXR",
+        "row_DGyKJt"
       ],
       "custom_css": [
         ".image-with-text__media-item {padding: 20px; background-color: #b8c9ef;}",
