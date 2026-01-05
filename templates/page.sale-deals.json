@@ -85,6 +85,16 @@
             "button_label": "Shop Thule Racks",
             "button_link": "shopify://collections/vehicle-racks"
           }
+        },
+        "row_BPbRXR": {
+          "type": "row",
+          "settings": {
+            "caption": "Caption",
+            "heading": "Buy Two Trio's, Save $200",
+            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. Applies to either the Trio, or Trio V2.</p>",
+            "button_label": "Shop e-Trikes",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
@@ -93,7 +103,8 @@
         "row_XrWBBP",
         "row_NpzMNY",
         "row_xzPLe4",
-        "row_DGyKJt"
+        "row_DGyKJt",
+        "row_BPbRXR"
       ],
       "custom_css": [
         ".image-with-text__media-item {padding: 20px; background-color: #b8c9ef;}",
