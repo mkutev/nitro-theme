@@ -34,7 +34,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.jpg",
-            "caption": "Haunted ebike sale",
+            "caption": "New Year Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -79,7 +79,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "Haunted ebike sale",
+            "caption": "New Year Sale",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
