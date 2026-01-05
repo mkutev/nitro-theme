@@ -89,10 +89,10 @@
         "row_BPbRXR": {
           "type": "row",
           "settings": {
-            "caption": "Caption",
+            "caption": "6-Wheel Deal",
             "heading": "Buy Two Trio's, Save $200",
             "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. Applies to either the Trio, or Trio V2.</p>",
-            "button_label": "Shop e-Trikes",
+            "button_label": "Shop Trikes",
             "button_link": ""
           }
         }
