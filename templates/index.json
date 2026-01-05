@@ -22,7 +22,7 @@
             "heading_size": "h0",
             "subheading": "Sale ends January 18.",
             "button_label": "See All Deals",
-            "link": "shopify://pages/black-friday-deals",
+            "link": "shopify://pages/sale",
             "button_style_secondary": false,
             "box_align": "middle-left",
             "show_text_box": false,
