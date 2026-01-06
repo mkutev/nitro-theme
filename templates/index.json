@@ -186,6 +186,7 @@
       "blocks": {
         "ai_gen_block_ebb6180_4fVhpF": {
           "type": "ai_gen_block_ebb6180",
+          "disabled": true,
           "settings": {
             "heading": "Join our newsletter",
             "text": "<p>Subscribe to get special offers, free giveaways, and exclusive deals.</p>",
@@ -214,7 +215,7 @@
             "close_button_color": "#ffffff",
             "close_button_icon_color": "#121212",
             "success_color": "#008060",
-            "error_color": "#D82C0D",
+            "error_color": "#d82c0d",
             "heading_size": 28,
             "text_size": 15,
             "input_border_radius": 10,
