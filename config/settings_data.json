@@ -209,6 +209,11 @@
         "type": "shopify://apps/betterdocs/blocks/app-embed/c034554a-35ea-4075-93e4-50cbca95a696",
         "disabled": true,
         "settings": {}
+      },
+      "4015264832934714879": {
+        "type": "shopify://apps/sendwill-email-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
