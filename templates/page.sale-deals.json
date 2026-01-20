@@ -43,12 +43,11 @@
         },
         "row_XrWBBP": {
           "type": "row",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/2_accessories_image_new.jpg",
-            "caption": "Boxing Day Deal",
+            "image": "shopify://shop_images/Gemini_Generated_Image_nt8m8vnt8m8vnt8m.png",
+            "caption": "Limited Time Offer",
             "heading": "10% Off Accessories",
-            "text": "<p>Use code BOXINGDAY10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends January 5 at midnight.</p>",
+            "text": "<p>Use code ACC10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends February 1 at midnight.</p>",
             "button_label": "Shop Accessories",
             "button_link": "shopify://collections/accessories"
           }
