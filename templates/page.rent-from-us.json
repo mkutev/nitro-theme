@@ -85,6 +85,41 @@
         "padding_bottom": 52
       }
     },
+    "multirow_BmkhAq": {
+      "type": "multirow",
+      "blocks": {
+        "row_6L4ztE": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/voltbike_store_new.jpg",
+            "caption": "How to Book",
+            "heading": "Pickup Location",
+            "text": "<p>Reservations are easy—simply call or email us to secure your bike. Pick-up and return are at our showroom (self pick-up required).</p><p>Contact us using the form below, or give us a call at 1-800-350-4840 and get ready to roll! <br/><br/></p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_6L4ztE"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "contact_form_3z8wnt": {
       "type": "contact-form",
       "name": "t:sections.contact-form.presets.name",
@@ -101,6 +136,7 @@
     "main",
     "image_banner_Cb7xAi",
     "rich_text_6wHCtG",
+    "multirow_BmkhAq",
     "contact_form_3z8wnt"
   ]
 }
