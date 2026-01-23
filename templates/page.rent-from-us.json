@@ -85,6 +85,61 @@
         "padding_bottom": 52
       }
     },
+    "multicolumn_azgjq8": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_n8Aiba": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/elegant-pink-ds.jpg",
+            "title": "Voltbike Elegant",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FzP6yL": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KxdThC": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_n8Aiba",
+        "column_FzP6yL",
+        "column_KxdThC"
+      ],
+      "name": "t:sections.multicolumn.presets.name",
+      "settings": {
+        "title": "Available Bikes for Rental",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multirow_BmkhAq": {
       "type": "multirow",
       "blocks": {
@@ -136,6 +191,7 @@
     "main",
     "image_banner_Cb7xAi",
     "rich_text_6wHCtG",
+    "multicolumn_azgjq8",
     "multirow_BmkhAq",
     "contact_form_3z8wnt"
   ]
