@@ -29,30 +29,18 @@
         "text_ndryMK": {
           "type": "text",
           "settings": {
-            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text": "Offering Daily Rentals for $90 and Hourly Rentals with a 3 Hour minimum.",
             "text_style": "body"
-          }
-        },
-        "buttons_EzHLtY": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "heading_dipDfm",
-        "text_ndryMK",
-        "buttons_EzHLtY"
+        "text_ndryMK"
       ],
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/image0_3.jpg",
+        "image": "shopify://shop_images/Firefly_Gemini_Flash_Instead_of_the_woman_have_the_man_in_photo_2_posing_at_this_location._He_sit_posin_380791.png",
         "image_2": "shopify://shop_images/Mai_helmet_on_Mariner_ST_White.png",
         "image_overlay_opacity": 20,
         "image_height": "small",
@@ -65,10 +53,54 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "rich_text_6wHCtG": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_L8ACj4": {
+          "type": "heading",
+          "settings": {
+            "heading": "VoltBike Rentals at our Port Coquitlam HQ",
+            "heading_size": "h2"
+          }
+        },
+        "text_JW4LHM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Experience the thrill of riding a premium VoltBike electric bike—perfect for exploring trails, commuting, or enjoying a leisurely day out!</p><p>Renting from us is a great way to try our bikes out, and see why we have been so successful with our VoltBike models. Our wide range of bikes means there's the perfect bike for you. </p><p><strong>Rental Options: </strong></p><p><em>Full Day Rental for $90  <br/>Hourly: $20 Per Hour with a 3 Hour minimum</em><br/><br/>Every bike is fully charged, tuned, and ready to ride right from our Port Coquitlam showroom. </p><p><em><strong>A Helmet is included at no extra cost. Riders must be 19+ and $500 deposit is required for each bike rented. We will go over all the operational and safety features of the bikes prior to your ride.</strong></em></p><p><strong>How to Book</strong>:<br/>Reservations are easy—simply call or email us to secure your bike. Pick-up and return are at our showroom (self pick-up required).</p><p>Contact us using the form below, or give us a call at 1-800-350-4840 and get ready to roll! <br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_L8ACj4",
+        "text_JW4LHM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "contact_form_3z8wnt": {
+      "type": "contact-form",
+      "name": "t:sections.contact-form.presets.name",
+      "settings": {
+        "heading": "Book Your Adventure",
+        "heading_size": "h1",
+        "color_scheme": "",
+        "padding_top": 12,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_Cb7xAi"
+    "image_banner_Cb7xAi",
+    "rich_text_6wHCtG",
+    "contact_form_3z8wnt"
   ]
 }
