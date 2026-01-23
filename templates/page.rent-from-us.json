@@ -140,7 +140,7 @@
         "title": "Available Bikes for Rental",
         "heading_size": "h1",
         "image_width": "full",
-        "image_ratio": "square",
+        "image_ratio": "adapt",
         "columns_desktop": 4,
         "column_alignment": "left",
         "background_style": "primary",
