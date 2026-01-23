@@ -43,7 +43,7 @@
         "image": "shopify://shop_images/Firefly_Gemini_Flash_Instead_of_the_woman_have_the_man_in_photo_2_posing_at_this_location._He_sit_posin_380791.png",
         "image_2": "shopify://shop_images/Mai_helmet_on_Mariner_ST_White.png",
         "image_overlay_opacity": 20,
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
