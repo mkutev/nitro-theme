@@ -16,44 +16,6 @@
         "padding_bottom": 28
       }
     },
-    "image_banner_Cb7xAi": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_dipDfm": {
-          "type": "heading",
-          "settings": {
-            "heading": "VoltBike Rentals",
-            "heading_size": "h1"
-          }
-        },
-        "text_ndryMK": {
-          "type": "text",
-          "settings": {
-            "text": "Offering Daily Rentals for $90 and Hourly Rentals with a 3 Hour minimum.",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_dipDfm",
-        "text_ndryMK"
-      ],
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Firefly_Gemini_Flash_Instead_of_the_woman_have_the_man_in_photo_2_posing_at_this_location._He_sit_posin_380791.png",
-        "image_2": "shopify://shop_images/Mai_helmet_on_Mariner_ST_White.png",
-        "image_overlay_opacity": 20,
-        "image_height": "small",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "rich_text_6wHCtG": {
       "type": "rich-text",
       "blocks": {
@@ -84,23 +46,10 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "contact_form_3z8wnt": {
-      "type": "contact-form",
-      "name": "t:sections.contact-form.presets.name",
-      "settings": {
-        "heading": "Book Your Adventure",
-        "heading_size": "h1",
-        "color_scheme": "",
-        "padding_top": 12,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "image_banner_Cb7xAi",
-    "rich_text_6wHCtG",
-    "contact_form_3z8wnt"
+    "rich_text_6wHCtG"
   ]
 }
