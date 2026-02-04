@@ -11,6 +11,7 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "custom_css": [],
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
@@ -47,7 +48,7 @@
             "image": "shopify://shop_images/unnamed_2.jpg",
             "caption": "Limited Time Offer",
             "heading": "10% Off Accessories",
-            "text": "<p>Use code ACC10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends February 14 at midnight.</p>",
+            "text": "<p>Use code ACC10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends February 15 at midnight.</p>",
             "button_label": "Shop Accessories",
             "button_link": "shopify://collections/accessories"
           }
@@ -56,9 +57,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "New Year Sale",
+            "caption": "Valentine's Sale",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends October 31!</p>",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends February 15!</p>",
             "button_label": "Shop Gift Cards",
             "button_link": "shopify://products/voltbike-gift-card"
           }
@@ -69,7 +70,7 @@
             "image": "shopify://shop_images/batteries_offer_image.jpg",
             "caption": "New Year Sale",
             "heading": "5% Off Batteries and Chargers",
-            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends January 31</p>",
+            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends February 15</p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://collections/batteries"
           }
