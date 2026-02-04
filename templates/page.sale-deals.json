@@ -24,7 +24,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/2_accessories.png",
-            "caption": "New Year Sale",
+            "caption": "Valentine's Day Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($50 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -35,7 +35,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.png",
-            "caption": "New Year Sale",
+            "caption": "Valentine's Day Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -68,7 +68,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "New Year Sale",
+            "caption": "Valentine Day Sale",
             "heading": "5% Off Batteries and Chargers",
             "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends February 15</p>",
             "button_label": "Shop Batteries",
@@ -90,7 +90,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1409010.jpg",
-            "caption": "New Year Sale",
+            "caption": "While Supplies Last",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
             "button_label": "Shop Thule Racks",
