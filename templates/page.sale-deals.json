@@ -20,6 +20,17 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
+        "row_Wzd7Nh": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/Gift_Box_-_5_e53019fa-09c3-4f17-b510-e373697a5206.jpg",
+            "caption": "Limited Time Offer",
+            "heading": "Free Shipping on Parts & Accessories Orders over $100",
+            "text": "<p>Get the parts and accessories you need to make your VoltBike running flawlessly. We have all sorts of great accessories and parts in stock and ready to ship. Save the $9.99 shipping fee on all Parts & Accessory orders over $100! </p>",
+            "button_label": "Shop Accessories",
+            "button_link": "shopify://collections/accessories"
+          }
+        },
         "row_BaCQRE": {
           "type": "row",
           "settings": {
@@ -40,17 +51,6 @@
             "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_Wzd7Nh": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/snow-avalanche-Silica-Studded-240-studs-2_web.webp",
-            "caption": "Limited Time Offer",
-            "heading": "Free Shipping on Parts/Accessories Orders over $100",
-            "text": "<p>Get the parts and accessories you need to make your VoltBike running flawlessly. We have all sorts of great accessories and parts in stock and ready to ship. Save the $9.99 shipping fee on all Parts & Accessory orders over $100! </p>",
-            "button_label": "Shop Accessories",
-            "button_link": "shopify://collections/accessories"
           }
         },
         "row_NpzMNY": {
@@ -88,9 +88,9 @@
         }
       },
       "block_order": [
+        "row_Wzd7Nh",
         "row_BaCQRE",
         "row_TNRYWE",
-        "row_Wzd7Nh",
         "row_NpzMNY",
         "row_BPbRXR",
         "row_DGyKJt"
