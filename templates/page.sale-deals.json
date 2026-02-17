@@ -42,13 +42,13 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
-        "row_XrWBBP": {
+        "row_Wzd7Nh": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/unnamed_2.jpg",
+            "image": "shopify://shop_images/snow-avalanche-Silica-Studded-240-studs-2_web.webp",
             "caption": "Limited Time Offer",
-            "heading": "10% Off Accessories",
-            "text": "<p>Use code ACC10 at checkout for 10% off accessories. Vehicle racks and gift cards are excluded from the promotion. You can combine this offer with other existing deals.</p><p>Ends February 15 at midnight.</p>",
+            "heading": "Free Shipping on Parts/Accessories Orders over $100",
+            "text": "<p>Get the parts and accessories you need to make your VoltBike running flawlessly. We have all sorts of great accessories and parts in stock and ready to ship. Save the $9.99 shipping fee on all Parts & Accessory orders over $100! </p>",
             "button_label": "Shop Accessories",
             "button_link": "shopify://collections/accessories"
           }
@@ -62,17 +62,6 @@
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends February 15!</p>",
             "button_label": "Shop Gift Cards",
             "button_link": "shopify://products/voltbike-gift-card"
-          }
-        },
-        "row_xzPLe4": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/batteries_offer_image.jpg",
-            "caption": "Valentine Day Sale",
-            "heading": "5% Off Batteries and Chargers",
-            "text": "<p>Use code BATTERY5 at checkout to get 5% off our already discounted batteries and chargers.</p><p>Ends February 15</p>",
-            "button_label": "Shop Batteries",
-            "button_link": "shopify://collections/batteries"
           }
         },
         "row_BPbRXR": {
@@ -89,7 +78,7 @@
         "row_DGyKJt": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/1409010.jpg",
+            "image": "shopify://shop_images/1409010.png",
             "caption": "While Supplies Last",
             "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
             "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
@@ -101,9 +90,8 @@
       "block_order": [
         "row_BaCQRE",
         "row_TNRYWE",
-        "row_XrWBBP",
+        "row_Wzd7Nh",
         "row_NpzMNY",
-        "row_xzPLe4",
         "row_BPbRXR",
         "row_DGyKJt"
       ],
