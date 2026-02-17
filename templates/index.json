@@ -17,10 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/valentinesday2024_homepage-banner_2x_583a336b-a7d2-44d5-aad0-186c4cff65c6.webp",
             "image_mobile": "shopify://shop_images/valentinesday2024_homepage-banner-2bikes--narrow.webp",
-            "heading": "Valentine's Day Sale",
+            "heading": "Trailblazer Blowout Sale",
             "extended": false,
             "heading_size": "h0",
-            "subheading": "Sale ends February 15.",
+            "subheading": "<strong>Sale ends March 8th</strong>.",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
