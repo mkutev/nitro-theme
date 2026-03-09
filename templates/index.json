@@ -17,10 +17,10 @@
           "settings": {
             "image": "shopify://shop_images/fallintosavings-homepage-banner-v2.webp",
             "image_mobile": "shopify://shop_images/fallintosavings-homepage-banner.svg",
-            "heading": "Trailblazer Blowout Sale",
+            "heading": "VoltBike's Spring Sale",
             "extended": false,
             "heading_size": "h0",
-            "subheading": "<strong>Sale ends March 8th</strong>.",
+            "subheading": "<strong>Sale ends March 31st.</strong>",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
