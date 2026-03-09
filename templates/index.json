@@ -121,9 +121,9 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Featured accessories",
+        "title": "Featured Cccessories",
         "heading_size": "h2",
-        "description": "<p>A selection of our most popular best-selling accessories.</p>",
+        "description": "<p>VoltBike's most popular best-selling accessories.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "accessories",
