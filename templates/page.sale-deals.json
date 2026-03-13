@@ -69,8 +69,8 @@
           "settings": {
             "image": "shopify://shop_images/Firefly_Gemini_Flash_Create_a_commercial_advert_to_be_used_in_a_facebook_post_to_promote_the_VoltBike_Trio_242154.png",
             "caption": "6-Wheel Deal",
-            "heading": "Buy Two Trio's, Save $200",
-            "text": "<p>Pair Two Trio trikes together and enjoy a further $200 off your order! Get double the fun, so you and a friend can both have a great adventure. Applies to either the Trio, or Trio V2. Discount automatically applied at checkout.</p>",
+            "heading": "Buy Two Trio's, Save $100",
+            "text": "<p>Pair Two Trio trikes together and enjoy a further $100 off your order! Get double the fun, so you and a friend can both have a great adventure. Applies to either the Trio, or Trio V2. Discount automatically applied at checkout.</p>",
             "button_label": "Shop Trikes",
             "button_link": "shopify://collections/trio"
           }
