@@ -20,15 +20,15 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
-        "row_Wzd7Nh": {
+        "row_TNRYWE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Gift_Box_-_5_e53019fa-09c3-4f17-b510-e373697a5206.jpg",
-            "caption": "Limited Time Offer",
-            "heading": "Free Shipping on Parts & Accessories Orders over $100",
-            "text": "<p>Get the parts and accessories you need to make your VoltBike running flawlessly. We have all sorts of great accessories and parts in stock and ready to ship. Save the $9.99 shipping fee on all Parts & Accessory orders over $100! </p>",
-            "button_label": "Shop Accessories",
-            "button_link": "shopify://collections/accessories"
+            "image": "shopify://shop_images/two_bikes_new.png",
+            "caption": "Valentine's Day Sale",
+            "heading": "Buy 2 Bikes Save $100",
+            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "button_label": "Shop eBikes",
+            "button_link": "shopify://collections/all-bikes"
           }
         },
         "row_BaCQRE": {
@@ -42,24 +42,13 @@
             "button_link": "shopify://collections/all-bikes"
           }
         },
-        "row_TNRYWE": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/two_bikes_new.png",
-            "caption": "Valentine's Day Sale",
-            "heading": "Buy 2 Bikes Save $100",
-            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
-            "button_label": "Shop eBikes",
-            "button_link": "shopify://collections/all-bikes"
-          }
-        },
         "row_NpzMNY": {
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "Valentine's Sale",
+            "caption": "White Hot Sale",
             "heading": "Get a $75 Gift Card with the Yukon 17\" in White",
-            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed. Offer ends February 15!</p>",
+            "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $75 Voltbike gift card! Just add both the bike and the gift card to your cart—the discount applies automatically. No coupon needed!</p>",
             "button_label": "Shop Gift Cards",
             "button_link": "shopify://products/voltbike-gift-card"
           }
@@ -88,9 +77,8 @@
         }
       },
       "block_order": [
-        "row_Wzd7Nh",
-        "row_BaCQRE",
         "row_TNRYWE",
+        "row_BaCQRE",
         "row_NpzMNY",
         "row_BPbRXR",
         "row_DGyKJt"
