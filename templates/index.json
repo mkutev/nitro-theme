@@ -18,7 +18,7 @@
             "image": "shopify://shop_images/hero_main_banner_1.jpg",
             "image_mobile": "shopify://shop_images/hero_main_banner_1.jpg",
             "heading": "Spring Sale",
-            "extended": false,
+            "extended": true,
             "heading_size": "h0",
             "subheading": "<strong>Sale ends March 29.</strong>",
             "button_label": "See All Deals",
