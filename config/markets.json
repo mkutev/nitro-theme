@@ -11,6 +11,9 @@
   "markets": {
     "us": {
       "parent": "@default"
+    },
+    "ca": {
+      "parent": "@default"
     }
   }
 }

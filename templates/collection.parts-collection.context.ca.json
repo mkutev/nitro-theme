@@ -12,5 +12,12 @@
     "market": "ca"
   },
   "parent": "collection.parts-collection.json",
-  "sections": {}
+  "sections": {
+    "product-grid": {
+      "settings": {
+        "image_ratio": "square"
+      },
+      "blocks": {}
+    }
+  }
 }
