@@ -24,9 +24,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_bikes_new.png",
-            "caption": "Valentine's Day Sale",
+            "caption": "Spring Sale",
             "heading": "Buy 2 Bikes Save $100",
-            "text": "<p>Purchase 2 ebikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "text": "<p>Purchase 2 VoltBikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
           }
@@ -35,7 +35,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "caption": "Valentine's Day Sale",
+            "caption": "Spring Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($50 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
