@@ -23,7 +23,7 @@
         "row_TNRYWE": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/two_bikes_new.png",
+            "image": "shopify://shop_images/ElegantV2-Red-DS-Angled_dc10fb6d-2d3e-4350-af15-d621c95f00a6.png",
             "caption": "Spring Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 VoltBikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
@@ -84,7 +84,7 @@
         "row_DGyKJt"
       ],
       "custom_css": [
-        ".image-with-text__media-item {padding: 20px; background-color: #01776B;}",
+        ".image-with-text__media-item {padding: 20px; background-color: #01776b;}",
         ".image-with-text__media-item img {border-radius: 10px;}"
       ],
       "settings": {
