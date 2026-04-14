@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/spring_banner_ultimate_4.jpg",
-            "image_mobile": "shopify://shop_images/hero_main_banner_1.jpg",
+            "image_mobile": "shopify://shop_images/spring_banner_ultimate_4.jpg",
             "heading": "Adventure Sale",
             "extended": false,
             "heading_size": "h0",
