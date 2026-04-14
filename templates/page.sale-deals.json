@@ -20,6 +20,17 @@
     "multirow_WDcQHG": {
       "type": "multirow",
       "blocks": {
+        "row_B74rVc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/two_battery_ad.png",
+            "caption": "Battery Bonanza",
+            "heading": "Two 19.6Ah Batteries for $999.99",
+            "text": "<p>Go anywhere you'd like this year with our 19.6ah VoltBike battery deal. Get two high-capacity 19.6ah clip-in batteries for just $999.99 and boost your e-bike's capacity.<br/><br/></p>",
+            "button_label": "Shop Batteries",
+            "button_link": "shopify://products/battery-clip-in"
+          }
+        },
         "row_TNRYWE": {
           "type": "row",
           "settings": {
@@ -77,6 +88,7 @@
         }
       },
       "block_order": [
+        "row_B74rVc",
         "row_TNRYWE",
         "row_BaCQRE",
         "row_NpzMNY",
