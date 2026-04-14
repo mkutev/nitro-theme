@@ -15,10 +15,10 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/hero_main_banner_1.jpg",
+            "image": "shopify://shop_images/spring_banner_ultimate_4.jpg",
             "image_mobile": "shopify://shop_images/hero_main_banner_1.jpg",
             "heading": "Spring Sale",
-            "extended": true,
+            "extended": false,
             "heading_size": "h0",
             "subheading": "<strong>Sale ends April 12.</strong>",
             "button_label": "See All Deals",
