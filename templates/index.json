@@ -16,8 +16,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Summer2025-SecondEdition-HomepageBanner.webp",
-            "image_mobile": "shopify://shop_images/spring_banner_ultimate_4.jpg",
-            "heading": "Adventure Sale",
+            "image_mobile": "shopify://shop_images/Summer2025-SecondEdition-HomepageBanner--narrow.webp",
+            "heading": "Sunshine Savings Event",
             "extended": true,
             "heading_size": "h0",
             "subheading": "<strong>Sale ends May 3.</strong>",
