@@ -15,12 +15,12 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Summer2025-SecondEdition-HomepageBanner-v2.webp",
+            "image": "shopify://shop_images/spring2025_homepage-banner_3x_afc92bcb-16d9-46b9-af7d-3651cdb9343c.webp",
             "image_mobile": "shopify://shop_images/Summer2025-SecondEdition-HomepageBanner--narrow.webp",
-            "heading": "Sunshine Savings Event",
-            "extended": true,
+            "heading": "Watt's Hot Sale",
+            "extended": false,
             "heading_size": "h0",
-            "subheading": "<strong>Sale ends May 24.</strong>",
+            "subheading": "<strong>Sale ends July 7.</strong>",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
