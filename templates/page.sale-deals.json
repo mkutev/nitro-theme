@@ -24,7 +24,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/ElegantV2-Red-DS-Angled_b1bdd067-8a9c-4df9-9e09-989df0bfbe60.png",
-            "caption": "Sunshine Savings Event",
+            "caption": "Watt's Hot Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 VoltBikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -35,7 +35,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "caption": "Sunshine Savings Event",
+            "caption": "Watt's Hot Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
