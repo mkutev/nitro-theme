@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -30,7 +39,7 @@
         "text_PLpqhN"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/AshConrad-WhistlerEbikes-sm2.jpg",
+        "image": "shopify://shop_images/AshConrad-WhistlerEbikes-sm2.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -49,7 +58,7 @@
         "text_fPcXJr": {
           "type": "text",
           "settings": {
-            "text": "<p>We understand the value which this would bring to our brand and because of that we are offering aggressive incentive. In addition for the chance to work with established brand you will also have the opportunity to take part in our referral ambassador program and earn money with every bike you sell. Our rental fleet partners will be added to our ambassador map where potential customers in your area would be directed to you. On top of that we will promote your location on Facebook, Instagram and other media channels we use.<\/p>"
+            "text": "<p>We understand the value which this would bring to our brand and because of that we are offering aggressive incentive. In addition for the chance to work with established brand you will also have the opportunity to take part in our referral ambassador program and earn money with every bike you sell. Our rental fleet partners will be added to our ambassador map where potential customers in your area would be directed to you. On top of that we will promote your location on Facebook, Instagram and other media channels we use.</p>"
           }
         }
       },
@@ -78,7 +87,7 @@
         "text_kBfXL8": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>10% off our already aggressive prices for all models, with additional volume discounts for &gt; 10 bike orders (Applies to USA and Canada).<\/li><li>$300 worth of spare parts with every fleet purchased ( including sensors, tubes, lights, controllers, and more).<\/li><li>You can become part of our ambassador program through which you will be eligible to receive $50 reward every time you are referred on a new order.<\/li><\/ul>",
+            "text": "<ul><li>10% off our already aggressive prices for all models, with additional volume discounts for &gt; 10 bike orders (Applies to USA and Canada).</li><li>You can become part of our ambassador program through which you will be eligible to receive $50 reward every time you are referred on a new order.</li></ul>",
             "text_style": "body"
           }
         }
@@ -88,7 +97,7 @@
         "text_kBfXL8"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/voltbike-rain.jpg",
+        "image": "shopify://shop_images/voltbike-rain.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -116,7 +125,7 @@
         "text_49n7QW": {
           "type": "text",
           "settings": {
-            "text": "<ul><li>Your company must have valid business license and permit to operate rental bike business.<\/li><li>It's recommended that your business do have insurance coverage for rental bikes.<\/li><li>You must have physical location where you can meet customers. We are also going to use this location to promote your business on our website and social channels.<\/li><li>You business should have online presence and website. Customers should be able to find online information they need like rental prices, rental availability, rental policies, photos of the bikes and more.<\/li><\/ul>",
+            "text": "<ul><li>Your company must have valid business license and permit to operate rental bike business.</li><li>It's recommended that your business do have insurance coverage for rental bikes.</li><li>You must have physical location where you can meet customers. We are also going to use this location to promote your business on our website and social channels.</li><li>You business should have online presence and website. Customers should be able to find online information they need like rental prices, rental availability, rental policies, photos of the bikes and more.</li></ul>",
             "text_style": "body"
           }
         }
@@ -126,7 +135,7 @@
         "text_49n7QW"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/voltbike-police.jpg",
+        "image": "shopify://shop_images/voltbike-police.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
