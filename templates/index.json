@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/summer_sale.jpg",
-            "image_mobile": "shopify://shop_images/CanadaDay2025-HomepageBanner--Mobile.jpg",
+            "image_mobile": "shopify://shop_images/summer_sale.jpg",
             "heading": "Summer Adventure Sale",
             "extended": false,
             "heading_size": "h0",
