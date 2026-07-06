@@ -24,9 +24,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/ElegantV2-Red-DS-Angled_b1bdd067-8a9c-4df9-9e09-989df0bfbe60.png",
-            "caption": "Watt's Hot Sale",
+            "caption": "Summer Adventure Sale",
             "heading": "Buy 2 Bikes Save $100",
-            "text": "<p>Purchase 2 VoltBikes and save additional $100. Discount automatically applied at checkout. No coupon code needed.</p>",
+            "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
             "button_link": "shopify://collections/all-bikes"
           }
@@ -35,7 +35,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "caption": "Watt's Hot Sale",
+            "caption": "Summer Adventure Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
@@ -46,9 +46,9 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/two_battery_ad.png",
-            "caption": "Battery Bonanza",
+            "caption": "Summer Battery Bonanza",
             "heading": "Two 19.6Ah Batteries for $999.99",
-            "text": "<p>Go anywhere you'd like this year with our 19.6ah VoltBike battery deal. Get two high-capacity 19.6ah clip-in batteries for just $999.99 and boost your e-bike's capacity.<br/><br/></p>",
+            "text": "<p>Go anywhere you'd like this year with our 19.6ah VoltBike battery deal. Get two high-capacity 19.6ah clip-in batteries for just $999.99 and boost your VoltBike's capacity.<br/><br/></p>",
             "button_label": "Shop Batteries",
             "button_link": "shopify://products/battery-clip-in"
           }
@@ -57,7 +57,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/yukon-w20-ds-v2_8219c94a-7b9d-497f-ad04-9125107616bf.png",
-            "caption": "White Hot Sale",
+            "caption": "White Hot Deal!",
             "heading": "Get a $50 Gift Card with the Yukon 17\" in White",
             "text": "<p>Buy the Yukon 750 Limited (17\" frame, white) and get a free $50 VoltBike gift card! Just add both the bike and the $50 gift card to your cart—the discount applies automatically. No coupon needed!</p>",
             "button_label": "Shop Gift Cards",
