@@ -24,7 +24,7 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/ElegantV2-Red-DS-Angled_b1bdd067-8a9c-4df9-9e09-989df0bfbe60.png",
-            "caption": "Summer Adventure Sale",
+            "caption": "Endless Summer Sale",
             "heading": "Buy 2 Bikes Save $100",
             "text": "<p>Purchase 2 VoltBikes and save $100! Get a bike for yourself and your riding partner and save. Discount automatically applied at checkout. No coupon code needed.</p>",
             "button_label": "Shop eBikes",
@@ -35,22 +35,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/Royale-In-Field-HomepageBannerpsd--mobile.jpg",
-            "caption": "Summer Adventure Sale",
+            "caption": "Endless Summer Sale",
             "heading": "Get One Free Accessory With Each Bike",
             "text": "<p>Purchase any VoltBike and receive one FREE accessory ($40 value) with each bike. Make your selection at the product details page. No coupon code required.</p>",
             "button_label": "Shop eBIkes",
             "button_link": "shopify://collections/all-bikes"
-          }
-        },
-        "row_B74rVc": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/two_battery_ad.png",
-            "caption": "Summer Battery Bonanza",
-            "heading": "Two 19.6Ah Batteries for $999.99",
-            "text": "<p>Go anywhere you'd like this year with our 19.6ah VoltBike battery deal. Get two high-capacity 19.6ah clip-in batteries for just $999.99 and boost your VoltBike's capacity.<br/><br/></p>",
-            "button_label": "Shop Batteries",
-            "button_link": "shopify://products/battery-clip-in"
           }
         },
         "row_NpzMNY": {
@@ -64,6 +53,28 @@
             "button_link": "shopify://products/voltbike-gift-card"
           }
         },
+        "row_B74rVc": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/two_battery_ad.png",
+            "caption": "Summer Battery Bonanza",
+            "heading": "Two 19.6Ah Batteries for $999.99",
+            "text": "<p>Go anywhere you'd like this year with our 19.6ah VoltBike battery deal. Get two high-capacity 19.6ah clip-in batteries for just $999.99 and boost your VoltBike's capacity.<br/><br/></p>",
+            "button_label": "Shop Batteries",
+            "button_link": "shopify://products/battery-clip-in"
+          }
+        },
+        "row_DGyKJt": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1409010.png",
+            "caption": "Take The Fun With You",
+            "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
+            "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
+            "button_label": "Shop Thule Racks",
+            "button_link": "shopify://collections/vehicle-racks"
+          }
+        },
         "row_BPbRXR": {
           "type": "row",
           "settings": {
@@ -74,26 +85,15 @@
             "button_label": "Shop Trikes",
             "button_link": "shopify://collections/trio"
           }
-        },
-        "row_DGyKJt": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/1409010.png",
-            "caption": "While Supplies Last",
-            "heading": "Save $50 on a Thule Rack + VoltBike Bundle",
-            "text": "<p>Buy any bike and a Thule rack together to get $50 off! Just add both to your cart—the discount applies automatically. No coupon needed.</p>",
-            "button_label": "Shop Thule Racks",
-            "button_link": "shopify://collections/vehicle-racks"
-          }
         }
       },
       "block_order": [
         "row_TNRYWE",
         "row_BaCQRE",
-        "row_B74rVc",
         "row_NpzMNY",
-        "row_BPbRXR",
-        "row_DGyKJt"
+        "row_B74rVc",
+        "row_DGyKJt",
+        "row_BPbRXR"
       ],
       "custom_css": [
         ".image-with-text__media-item {padding: 20px; background-color: #e9e5d9;}",
