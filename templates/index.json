@@ -16,7 +16,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Endless_Summer_Sale_-_Main_page.png",
-            "image_mobile": "shopify://shop_images/summer_sale.jpg",
+            "image_mobile": "shopify://shop_images/Endless_Summer_Sale_-_Main_page.png",
             "heading": "Endless Summer Sale",
             "extended": false,
             "heading_size": "h0",
