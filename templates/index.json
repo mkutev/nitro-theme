@@ -15,12 +15,12 @@
         "slide_TgWykU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/summer_sale.jpg",
+            "image": "shopify://shop_images/Endless_Summer_Sale_-_Main_page.png",
             "image_mobile": "shopify://shop_images/summer_sale.jpg",
-            "heading": "Summer Adventure Sale",
-            "extended": true,
+            "heading": "Endless Summer Sale",
+            "extended": false,
             "heading_size": "h0",
-            "subheading": "<strong>Sale ends August 2.</strong>",
+            "subheading": "<strong>Sale ends August 15th</strong>",
             "button_label": "See All Deals",
             "link": "shopify://pages/sale",
             "button_style_secondary": false,
