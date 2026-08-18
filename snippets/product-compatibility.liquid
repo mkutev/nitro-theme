@@ -45,6 +45,8 @@
   }
 {% endstyle %}
 
+<code>size: {{ product.metafields.custom.compatible_with.value.size }} </code>
+
 {%- unless product.metafields.custom.compatible_with.value.size > 0  -%}
   <div class="product-compatibility__container">
     <span class="product-compatibility__title">{% render 'icon-wrench' %} Compatible with:</span>
