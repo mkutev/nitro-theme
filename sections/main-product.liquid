@@ -632,12 +632,7 @@
               {%- when 'icon-with-text' -%}
                 {% render 'icon-with-text', block: block %}
               {%- when 'product_compatibility' -%}
-                {% assign values = product.metafields.custom.compatible_with.value
-                  | remove: '['
-                  | remove: ']'
-                  | remove: '"'
-                  | split: ','
-                %}
+                {% assign values = product.metafields.custom.compatible_with.value %}
 
                 {% if values.size > 0 %}
                   <div class="product-compatibility__container">
