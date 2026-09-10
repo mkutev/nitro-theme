@@ -132,7 +132,7 @@
       "name": "t:product.recommended_accessories.name",
       "settings": {
         "subheading": "",
-        "heading": "Related products",
+        "heading": "Recommended Accessories",
         "heading_size": "h1",
         "columns": "4",
         "columns_mobile": "2",
