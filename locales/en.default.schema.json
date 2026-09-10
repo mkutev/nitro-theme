@@ -3323,6 +3323,42 @@
       "presets": {
         "name": "Collapsible content"
       }
+    },
+    "recommended_accessories": {
+      "name": "Recommended Accessories",
+      "settings": {
+        "subheading": {
+          "label": "Subheading",
+          "default": "You may also like"
+        },
+        "heading": {
+          "label": "Heading",
+          "default": "Related products"
+        },
+        "columns": {
+          "label": "Number of columns"
+        },
+        "columns_mobile": {
+          "label": "Number of columns on mobile"
+        },
+        "image_ratio": {
+          "label": "Aspect ratio",
+          "options": {
+            "adapt" : "Adapt",
+            "square" : "Square",
+            "portrait" : "Portrait"
+          }
+        },
+        "show_secondary_image": {
+          "label": "Show secondary image"
+        },
+        "show_vendor": {
+          "label": "Show vendor"
+        },
+        "show_rating": {
+          "label": "Show rating"
+        }
+      }
     }
   }
 }
