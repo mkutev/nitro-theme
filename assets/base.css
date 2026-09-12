@@ -3554,4 +3554,4 @@ details-disclosure > details {
   }
 }
 
-.price-item {font-weight: bold;}
+.price-item.price-item--sale {font-weight: bold;}
